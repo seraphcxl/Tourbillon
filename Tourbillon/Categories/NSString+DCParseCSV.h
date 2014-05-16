@@ -2,7 +2,7 @@
 //  NSString+DCParseCSV.h
 //  Tourbillon
 //
-//  Created by Chen XiaoLiang on 9/28/13.
+//  Created by Derek Chen on 9/28/13.
 //  Copyright (c) 2013 CaptainSolid Studio. All rights reserved.
 //
 

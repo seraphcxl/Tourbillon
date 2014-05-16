@@ -2,7 +2,7 @@
 //  DCUIMainThreadGuard.m
 //  Tourbillon
 //
-//  Created by Chen XiaoLiang on 10/13/13.
+//  Created by Derek Chen on 10/13/13.
 //  Copyright (c) 2013 CaptainSolid Studio. All rights reserved.
 //
 
