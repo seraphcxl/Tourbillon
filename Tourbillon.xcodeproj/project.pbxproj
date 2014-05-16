@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89E137441925B11000A3EFB7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
+		89E1374E1925B11000A3EFB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89E1374C1925B11000A3EFB7 /* InfoPlist.strings */; };
+		89E137521925B11000A3EFB7 /* Tourbillon.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137511925B11000A3EFB7 /* Tourbillon.m */; };
+		89E137591925B11000A3EFB7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137581925B11000A3EFB7 /* XCTest.framework */; };
+		89E1375A1925B11000A3EFB7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
+		89E1375D1925B11000A3EFB7 /* Tourbillon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137401925B11000A3EFB7 /* Tourbillon.framework */; };
+		89E137631925B11000A3EFB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89E137611925B11000A3EFB7 /* InfoPlist.strings */; };
+		89E137651925B11000A3EFB7 /* TourbillonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137641925B11000A3EFB7 /* TourbillonTests.m */; };
+		89E137741925B13D00A3EFB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137731925B13D00A3EFB7 /* Foundation.framework */; };
+		89E137791925B13D00A3EFB7 /* Tourbillon_iOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137781925B13D00A3EFB7 /* Tourbillon_iOS.h */; };
+		89E1377B1925B13D00A3EFB7 /* Tourbillon_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1377A1925B13D00A3EFB7 /* Tourbillon_iOS.m */; };
+		89E137811925B13D00A3EFB7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137581925B11000A3EFB7 /* XCTest.framework */; };
+		89E137821925B13D00A3EFB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137731925B13D00A3EFB7 /* Foundation.framework */; };
+		89E137841925B13D00A3EFB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137831925B13D00A3EFB7 /* UIKit.framework */; };
+		89E137871925B13D00A3EFB7 /* libTourbillon-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137721925B13D00A3EFB7 /* libTourbillon-iOS.a */; };
+		89E1378D1925B13D00A3EFB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89E1378B1925B13D00A3EFB7 /* InfoPlist.strings */; };
+		89E1378F1925B13D00A3EFB7 /* Tourbillon_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1378E1925B13D00A3EFB7 /* Tourbillon_iOSTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89E1375B1925B11000A3EFB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89E137371925B11000A3EFB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89E1373F1925B11000A3EFB7;
+			remoteInfo = Tourbillon;
+		};
+		89E137851925B13D00A3EFB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89E137371925B11000A3EFB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89E137711925B13D00A3EFB7;
+			remoteInfo = "Tourbillon-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		89E137701925B13D00A3EFB7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				89E137791925B13D00A3EFB7 /* Tourbillon_iOS.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		89E137401925B11000A3EFB7 /* Tourbillon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tourbillon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E137431925B11000A3EFB7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		89E137461925B11000A3EFB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		89E137471925B11000A3EFB7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		89E137481925B11000A3EFB7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		89E1374B1925B11000A3EFB7 /* Tourbillon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tourbillon-Info.plist"; sourceTree = "<group>"; };
+		89E1374D1925B11000A3EFB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89E1374F1925B11000A3EFB7 /* Tourbillon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tourbillon-Prefix.pch"; sourceTree = "<group>"; };
+		89E137501925B11000A3EFB7 /* Tourbillon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tourbillon.h; sourceTree = "<group>"; };
+		89E137511925B11000A3EFB7 /* Tourbillon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tourbillon.m; sourceTree = "<group>"; };
+		89E137571925B11000A3EFB7 /* TourbillonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TourbillonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E137581925B11000A3EFB7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		89E137601925B11000A3EFB7 /* TourbillonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TourbillonTests-Info.plist"; sourceTree = "<group>"; };
+		89E137621925B11000A3EFB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89E137641925B11000A3EFB7 /* TourbillonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TourbillonTests.m; sourceTree = "<group>"; };
+		89E137721925B13D00A3EFB7 /* libTourbillon-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTourbillon-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E137731925B13D00A3EFB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		89E137771925B13D00A3EFB7 /* Tourbillon-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tourbillon-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		89E137781925B13D00A3EFB7 /* Tourbillon_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tourbillon_iOS.h; sourceTree = "<group>"; };
+		89E1377A1925B13D00A3EFB7 /* Tourbillon_iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tourbillon_iOS.m; sourceTree = "<group>"; };
+		89E137801925B13D00A3EFB7 /* Tourbillon-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tourbillon-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E137831925B13D00A3EFB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		89E1378A1925B13D00A3EFB7 /* Tourbillon-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tourbillon-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		89E1378C1925B13D00A3EFB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89E1378E1925B13D00A3EFB7 /* Tourbillon_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tourbillon_iOSTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89E1373C1925B11000A3EFB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E137441925B11000A3EFB7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E137541925B11000A3EFB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E1375A1925B11000A3EFB7 /* Cocoa.framework in Frameworks */,
+				89E137591925B11000A3EFB7 /* XCTest.framework in Frameworks */,
+				89E1375D1925B11000A3EFB7 /* Tourbillon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E1376F1925B13D00A3EFB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E137741925B13D00A3EFB7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E1377D1925B13D00A3EFB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E137811925B13D00A3EFB7 /* XCTest.framework in Frameworks */,
+				89E137841925B13D00A3EFB7 /* UIKit.framework in Frameworks */,
+				89E137821925B13D00A3EFB7 /* Foundation.framework in Frameworks */,
+				89E137871925B13D00A3EFB7 /* libTourbillon-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89E137361925B11000A3EFB7 = {
+			isa = PBXGroup;
+			children = (
+				89E137491925B11000A3EFB7 /* Tourbillon */,
+				89E1375E1925B11000A3EFB7 /* TourbillonTests */,
+				89E137751925B13D00A3EFB7 /* Tourbillon-iOS */,
+				89E137881925B13D00A3EFB7 /* Tourbillon-iOSTests */,
+				89E137421925B11000A3EFB7 /* Frameworks */,
+				89E137411925B11000A3EFB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89E137411925B11000A3EFB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89E137401925B11000A3EFB7 /* Tourbillon.framework */,
+				89E137571925B11000A3EFB7 /* TourbillonTests.xctest */,
+				89E137721925B13D00A3EFB7 /* libTourbillon-iOS.a */,
+				89E137801925B13D00A3EFB7 /* Tourbillon-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89E137421925B11000A3EFB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89E137431925B11000A3EFB7 /* Cocoa.framework */,
+				89E137581925B11000A3EFB7 /* XCTest.framework */,
+				89E137731925B13D00A3EFB7 /* Foundation.framework */,
+				89E137831925B13D00A3EFB7 /* UIKit.framework */,
+				89E137451925B11000A3EFB7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89E137451925B11000A3EFB7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89E137461925B11000A3EFB7 /* Foundation.framework */,
+				89E137471925B11000A3EFB7 /* CoreData.framework */,
+				89E137481925B11000A3EFB7 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		89E137491925B11000A3EFB7 /* Tourbillon */ = {
+			isa = PBXGroup;
+			children = (
+				89E137501925B11000A3EFB7 /* Tourbillon.h */,
+				89E137511925B11000A3EFB7 /* Tourbillon.m */,
+				89E1374A1925B11000A3EFB7 /* Supporting Files */,
+			);
+			path = Tourbillon;
+			sourceTree = "<group>";
+		};
+		89E1374A1925B11000A3EFB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89E1374B1925B11000A3EFB7 /* Tourbillon-Info.plist */,
+				89E1374C1925B11000A3EFB7 /* InfoPlist.strings */,
+				89E1374F1925B11000A3EFB7 /* Tourbillon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89E1375E1925B11000A3EFB7 /* TourbillonTests */ = {
+			isa = PBXGroup;
+			children = (
+				89E137641925B11000A3EFB7 /* TourbillonTests.m */,
+				89E1375F1925B11000A3EFB7 /* Supporting Files */,
+			);
+			path = TourbillonTests;
+			sourceTree = "<group>";
+		};
+		89E1375F1925B11000A3EFB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89E137601925B11000A3EFB7 /* TourbillonTests-Info.plist */,
+				89E137611925B11000A3EFB7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89E137751925B13D00A3EFB7 /* Tourbillon-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				89E137781925B13D00A3EFB7 /* Tourbillon_iOS.h */,
+				89E1377A1925B13D00A3EFB7 /* Tourbillon_iOS.m */,
+				89E137761925B13D00A3EFB7 /* Supporting Files */,
+			);
+			path = "Tourbillon-iOS";
+			sourceTree = "<group>";
+		};
+		89E137761925B13D00A3EFB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89E137771925B13D00A3EFB7 /* Tourbillon-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89E137881925B13D00A3EFB7 /* Tourbillon-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				89E1378E1925B13D00A3EFB7 /* Tourbillon_iOSTests.m */,
+				89E137891925B13D00A3EFB7 /* Supporting Files */,
+			);
+			path = "Tourbillon-iOSTests";
+			sourceTree = "<group>";
+		};
+		89E137891925B13D00A3EFB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89E1378A1925B13D00A3EFB7 /* Tourbillon-iOSTests-Info.plist */,
+				89E1378B1925B13D00A3EFB7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		89E1373D1925B11000A3EFB7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		89E1373F1925B11000A3EFB7 /* Tourbillon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89E137681925B11000A3EFB7 /* Build configuration list for PBXNativeTarget "Tourbillon" */;
+			buildPhases = (
+				89E1373B1925B11000A3EFB7 /* Sources */,
+				89E1373C1925B11000A3EFB7 /* Frameworks */,
+				89E1373D1925B11000A3EFB7 /* Headers */,
+				89E1373E1925B11000A3EFB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tourbillon;
+			productName = Tourbillon;
+			productReference = 89E137401925B11000A3EFB7 /* Tourbillon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		89E137561925B11000A3EFB7 /* TourbillonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89E1376B1925B11000A3EFB7 /* Build configuration list for PBXNativeTarget "TourbillonTests" */;
+			buildPhases = (
+				89E137531925B11000A3EFB7 /* Sources */,
+				89E137541925B11000A3EFB7 /* Frameworks */,
+				89E137551925B11000A3EFB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89E1375C1925B11000A3EFB7 /* PBXTargetDependency */,
+			);
+			name = TourbillonTests;
+			productName = TourbillonTests;
+			productReference = 89E137571925B11000A3EFB7 /* TourbillonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		89E137711925B13D00A3EFB7 /* Tourbillon-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89E137901925B13D00A3EFB7 /* Build configuration list for PBXNativeTarget "Tourbillon-iOS" */;
+			buildPhases = (
+				89E1376E1925B13D00A3EFB7 /* Sources */,
+				89E1376F1925B13D00A3EFB7 /* Frameworks */,
+				89E137701925B13D00A3EFB7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tourbillon-iOS";
+			productName = "Tourbillon-iOS";
+			productReference = 89E137721925B13D00A3EFB7 /* libTourbillon-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		89E1377F1925B13D00A3EFB7 /* Tourbillon-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89E137931925B13D00A3EFB7 /* Build configuration list for PBXNativeTarget "Tourbillon-iOSTests" */;
+			buildPhases = (
+				89E1377C1925B13D00A3EFB7 /* Sources */,
+				89E1377D1925B13D00A3EFB7 /* Frameworks */,
+				89E1377E1925B13D00A3EFB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89E137861925B13D00A3EFB7 /* PBXTargetDependency */,
+			);
+			name = "Tourbillon-iOSTests";
+			productName = "Tourbillon-iOSTests";
+			productReference = 89E137801925B13D00A3EFB7 /* Tourbillon-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89E137371925B11000A3EFB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Derek Chen";
+				TargetAttributes = {
+					89E137561925B11000A3EFB7 = {
+						TestTargetID = 89E1373F1925B11000A3EFB7;
+					};
+					89E1377F1925B13D00A3EFB7 = {
+						TestTargetID = 89E1373F1925B11000A3EFB7;
+					};
+				};
+			};
+			buildConfigurationList = 89E1373A1925B11000A3EFB7 /* Build configuration list for PBXProject "Tourbillon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 89E137361925B11000A3EFB7;
+			productRefGroup = 89E137411925B11000A3EFB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89E1373F1925B11000A3EFB7 /* Tourbillon */,
+				89E137561925B11000A3EFB7 /* TourbillonTests */,
+				89E137711925B13D00A3EFB7 /* Tourbillon-iOS */,
+				89E1377F1925B13D00A3EFB7 /* Tourbillon-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89E1373E1925B11000A3EFB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E1374E1925B11000A3EFB7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E137551925B11000A3EFB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E137631925B11000A3EFB7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E1377E1925B13D00A3EFB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E1378D1925B13D00A3EFB7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89E1373B1925B11000A3EFB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E137521925B11000A3EFB7 /* Tourbillon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E137531925B11000A3EFB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E137651925B11000A3EFB7 /* TourbillonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E1376E1925B13D00A3EFB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E1377B1925B13D00A3EFB7 /* Tourbillon_iOS.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E1377C1925B13D00A3EFB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E1378F1925B13D00A3EFB7 /* Tourbillon_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89E1375C1925B11000A3EFB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89E1373F1925B11000A3EFB7 /* Tourbillon */;
+			targetProxy = 89E1375B1925B11000A3EFB7 /* PBXContainerItemProxy */;
+		};
+		89E137861925B13D00A3EFB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89E137711925B13D00A3EFB7 /* Tourbillon-iOS */;
+			targetProxy = 89E137851925B13D00A3EFB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		89E1374C1925B11000A3EFB7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89E1374D1925B11000A3EFB7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		89E137611925B11000A3EFB7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89E137621925B11000A3EFB7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		89E1378B1925B13D00A3EFB7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89E1378C1925B13D00A3EFB7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89E137661925B11000A3EFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		89E137671925B11000A3EFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		89E137691925B11000A3EFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tourbillon/Tourbillon-Prefix.pch";
+				INFOPLIST_FILE = "Tourbillon/Tourbillon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		89E1376A1925B11000A3EFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tourbillon/Tourbillon-Prefix.pch";
+				INFOPLIST_FILE = "Tourbillon/Tourbillon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		89E1376C1925B11000A3EFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tourbillon.framework/Versions/A/Tourbillon";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tourbillon/Tourbillon-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TourbillonTests/TourbillonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		89E1376D1925B11000A3EFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tourbillon.framework/Versions/A/Tourbillon";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tourbillon/Tourbillon-Prefix.pch";
+				INFOPLIST_FILE = "TourbillonTests/TourbillonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		89E137911925B13D00A3EFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Tourbillon_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tourbillon-iOS/Tourbillon-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		89E137921925B13D00A3EFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Tourbillon_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tourbillon-iOS/Tourbillon-iOS-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89E137941925B13D00A3EFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tourbillon.framework/Versions/A/Tourbillon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tourbillon-iOS/Tourbillon-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tourbillon-iOSTests/Tourbillon-iOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		89E137951925B13D00A3EFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tourbillon.framework/Versions/A/Tourbillon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tourbillon-iOS/Tourbillon-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Tourbillon-iOSTests/Tourbillon-iOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89E1373A1925B11000A3EFB7 /* Build configuration list for PBXProject "Tourbillon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89E137661925B11000A3EFB7 /* Debug */,
+				89E137671925B11000A3EFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89E137681925B11000A3EFB7 /* Build configuration list for PBXNativeTarget "Tourbillon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89E137691925B11000A3EFB7 /* Debug */,
+				89E1376A1925B11000A3EFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		89E1376B1925B11000A3EFB7 /* Build configuration list for PBXNativeTarget "TourbillonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89E1376C1925B11000A3EFB7 /* Debug */,
+				89E1376D1925B11000A3EFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		89E137901925B13D00A3EFB7 /* Build configuration list for PBXNativeTarget "Tourbillon-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89E137911925B13D00A3EFB7 /* Debug */,
+				89E137921925B13D00A3EFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		89E137931925B13D00A3EFB7 /* Build configuration list for PBXNativeTarget "Tourbillon-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89E137941925B13D00A3EFB7 /* Debug */,
+				89E137951925B13D00A3EFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89E137371925B11000A3EFB7 /* Project object */;
+}
