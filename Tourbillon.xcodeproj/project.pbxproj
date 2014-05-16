@@ -15,126 +15,193 @@
 		89E137631925B11000A3EFB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89E137611925B11000A3EFB7 /* InfoPlist.strings */; };
 		89E137651925B11000A3EFB7 /* TourbillonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137641925B11000A3EFB7 /* TourbillonTests.m */; };
 		89E137741925B13D00A3EFB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137731925B13D00A3EFB7 /* Foundation.framework */; };
-		89E137791925B13D00A3EFB7 /* Tourbillon_iOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137781925B13D00A3EFB7 /* Tourbillon_iOS.h */; };
-		89E1377B1925B13D00A3EFB7 /* Tourbillon_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1377A1925B13D00A3EFB7 /* Tourbillon_iOS.m */; };
 		89E137811925B13D00A3EFB7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137581925B11000A3EFB7 /* XCTest.framework */; };
 		89E137821925B13D00A3EFB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137731925B13D00A3EFB7 /* Foundation.framework */; };
 		89E137841925B13D00A3EFB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137831925B13D00A3EFB7 /* UIKit.framework */; };
 		89E137871925B13D00A3EFB7 /* libTourbillon-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137721925B13D00A3EFB7 /* libTourbillon-iOS.a */; };
 		89E1378D1925B13D00A3EFB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89E1378B1925B13D00A3EFB7 /* InfoPlist.strings */; };
 		89E1378F1925B13D00A3EFB7 /* Tourbillon_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1378E1925B13D00A3EFB7 /* Tourbillon_iOSTests.m */; };
-		89E137AE1925B24800A3EFB7 /* DCBase64Define.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137971925B24800A3EFB7 /* DCBase64Define.h */; };
-		89E137B41925B24800A3EFB7 /* NSData+DCBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1379A1925B24800A3EFB7 /* NSData+DCBase64.h */; };
+		89E137AE1925B24800A3EFB7 /* DCBase64Define.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137971925B24800A3EFB7 /* DCBase64Define.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E137B41925B24800A3EFB7 /* NSData+DCBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1379A1925B24800A3EFB7 /* NSData+DCBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E137B51925B24800A3EFB7 /* NSData+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1379B1925B24800A3EFB7 /* NSData+DCBase64.m */; };
 		89E137B61925B24800A3EFB7 /* NSData+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1379B1925B24800A3EFB7 /* NSData+DCBase64.m */; };
 		89E137B71925B24800A3EFB7 /* NSData+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1379B1925B24800A3EFB7 /* NSData+DCBase64.m */; };
 		89E137B81925B24800A3EFB7 /* NSData+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1379B1925B24800A3EFB7 /* NSData+DCBase64.m */; };
-		89E137BE1925B24800A3EFB7 /* NSDictionary+DCSortable.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1379E1925B24800A3EFB7 /* NSDictionary+DCSortable.h */; };
+		89E137BE1925B24800A3EFB7 /* NSDictionary+DCSortable.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1379E1925B24800A3EFB7 /* NSDictionary+DCSortable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E137BF1925B24800A3EFB7 /* NSDictionary+DCSortable.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1379F1925B24800A3EFB7 /* NSDictionary+DCSortable.m */; };
 		89E137C01925B24800A3EFB7 /* NSDictionary+DCSortable.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1379F1925B24800A3EFB7 /* NSDictionary+DCSortable.m */; };
 		89E137C11925B24800A3EFB7 /* NSDictionary+DCSortable.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1379F1925B24800A3EFB7 /* NSDictionary+DCSortable.m */; };
 		89E137C21925B24800A3EFB7 /* NSDictionary+DCSortable.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1379F1925B24800A3EFB7 /* NSDictionary+DCSortable.m */; };
-		89E137C31925B24800A3EFB7 /* NSNumber+DCRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137A01925B24800A3EFB7 /* NSNumber+DCRandom.h */; };
+		89E137C31925B24800A3EFB7 /* NSNumber+DCRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137A01925B24800A3EFB7 /* NSNumber+DCRandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E137C41925B24800A3EFB7 /* NSNumber+DCRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A11925B24800A3EFB7 /* NSNumber+DCRandom.m */; };
 		89E137C51925B24800A3EFB7 /* NSNumber+DCRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A11925B24800A3EFB7 /* NSNumber+DCRandom.m */; };
 		89E137C61925B24800A3EFB7 /* NSNumber+DCRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A11925B24800A3EFB7 /* NSNumber+DCRandom.m */; };
 		89E137C71925B24800A3EFB7 /* NSNumber+DCRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A11925B24800A3EFB7 /* NSNumber+DCRandom.m */; };
-		89E137C81925B24800A3EFB7 /* NSObject+Swizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137A21925B24800A3EFB7 /* NSObject+Swizzle.h */; };
+		89E137C81925B24800A3EFB7 /* NSObject+Swizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137A21925B24800A3EFB7 /* NSObject+Swizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E137C91925B24800A3EFB7 /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A31925B24800A3EFB7 /* NSObject+Swizzle.m */; };
 		89E137CA1925B24800A3EFB7 /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A31925B24800A3EFB7 /* NSObject+Swizzle.m */; };
 		89E137CB1925B24800A3EFB7 /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A31925B24800A3EFB7 /* NSObject+Swizzle.m */; };
 		89E137CC1925B24800A3EFB7 /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A31925B24800A3EFB7 /* NSObject+Swizzle.m */; };
-		89E137CD1925B24800A3EFB7 /* NSString+DCBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137A41925B24800A3EFB7 /* NSString+DCBase64.h */; };
+		89E137CD1925B24800A3EFB7 /* NSString+DCBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137A41925B24800A3EFB7 /* NSString+DCBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E137CE1925B24800A3EFB7 /* NSString+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A51925B24800A3EFB7 /* NSString+DCBase64.m */; };
 		89E137CF1925B24800A3EFB7 /* NSString+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A51925B24800A3EFB7 /* NSString+DCBase64.m */; };
 		89E137D01925B24800A3EFB7 /* NSString+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A51925B24800A3EFB7 /* NSString+DCBase64.m */; };
 		89E137D11925B24800A3EFB7 /* NSString+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A51925B24800A3EFB7 /* NSString+DCBase64.m */; };
-		89E137D21925B24800A3EFB7 /* NSString+DCCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137A61925B24800A3EFB7 /* NSString+DCCrypto.h */; };
+		89E137D21925B24800A3EFB7 /* NSString+DCCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137A61925B24800A3EFB7 /* NSString+DCCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E137D31925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A71925B24800A3EFB7 /* NSString+DCCrypto.m */; };
 		89E137D41925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A71925B24800A3EFB7 /* NSString+DCCrypto.m */; };
 		89E137D51925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A71925B24800A3EFB7 /* NSString+DCCrypto.m */; };
 		89E137D61925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A71925B24800A3EFB7 /* NSString+DCCrypto.m */; };
-		89E137D71925B24800A3EFB7 /* NSString+DCParseCSV.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137A81925B24800A3EFB7 /* NSString+DCParseCSV.h */; };
+		89E137D71925B24800A3EFB7 /* NSString+DCParseCSV.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137A81925B24800A3EFB7 /* NSString+DCParseCSV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E137D81925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A91925B24800A3EFB7 /* NSString+DCParseCSV.m */; };
 		89E137D91925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A91925B24800A3EFB7 /* NSString+DCParseCSV.m */; };
 		89E137DA1925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A91925B24800A3EFB7 /* NSString+DCParseCSV.m */; };
 		89E137DB1925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A91925B24800A3EFB7 /* NSString+DCParseCSV.m */; };
-		89E137DC1925B24800A3EFB7 /* NSString+DCURLCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137AA1925B24800A3EFB7 /* NSString+DCURLCoding.h */; };
+		89E137DC1925B24800A3EFB7 /* NSString+DCURLCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137AA1925B24800A3EFB7 /* NSString+DCURLCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E137DD1925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137AB1925B24800A3EFB7 /* NSString+DCURLCoding.m */; };
 		89E137DE1925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137AB1925B24800A3EFB7 /* NSString+DCURLCoding.m */; };
 		89E137DF1925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137AB1925B24800A3EFB7 /* NSString+DCURLCoding.m */; };
 		89E137E01925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137AB1925B24800A3EFB7 /* NSString+DCURLCoding.m */; };
-		89E137EC1925B24F00A3EFB7 /* DCCommonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137E71925B24F00A3EFB7 /* DCCommonConstants.h */; };
-		89E137ED1925B24F00A3EFB7 /* DCLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137E81925B24F00A3EFB7 /* DCLogger.h */; };
+		89E137EC1925B24F00A3EFB7 /* DCCommonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137E71925B24F00A3EFB7 /* DCCommonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E137ED1925B24F00A3EFB7 /* DCLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137E81925B24F00A3EFB7 /* DCLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E137EE1925B24F00A3EFB7 /* DCLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137E91925B24F00A3EFB7 /* DCLogger.m */; };
 		89E137EF1925B24F00A3EFB7 /* DCLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137E91925B24F00A3EFB7 /* DCLogger.m */; };
 		89E137F01925B24F00A3EFB7 /* DCLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137E91925B24F00A3EFB7 /* DCLogger.m */; };
 		89E137F11925B24F00A3EFB7 /* DCLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137E91925B24F00A3EFB7 /* DCLogger.m */; };
-		89E137F21925B24F00A3EFB7 /* DCSafeARC.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137EA1925B24F00A3EFB7 /* DCSafeARC.h */; };
-		89E137F31925B24F00A3EFB7 /* DCSingletonTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137EB1925B24F00A3EFB7 /* DCSingletonTemplate.h */; };
-		89E137F71925B25600A3EFB7 /* DCTestBlocker.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137F51925B25600A3EFB7 /* DCTestBlocker.h */; };
+		89E137F21925B24F00A3EFB7 /* DCSafeARC.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137EA1925B24F00A3EFB7 /* DCSafeARC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E137F31925B24F00A3EFB7 /* DCSingletonTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137EB1925B24F00A3EFB7 /* DCSingletonTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E137F71925B25600A3EFB7 /* DCTestBlocker.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137F51925B25600A3EFB7 /* DCTestBlocker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E137F81925B25600A3EFB7 /* DCTestBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137F61925B25600A3EFB7 /* DCTestBlocker.m */; };
 		89E137F91925B25600A3EFB7 /* DCTestBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137F61925B25600A3EFB7 /* DCTestBlocker.m */; };
 		89E137FA1925B25600A3EFB7 /* DCTestBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137F61925B25600A3EFB7 /* DCTestBlocker.m */; };
 		89E137FB1925B25600A3EFB7 /* DCTestBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137F61925B25600A3EFB7 /* DCTestBlocker.m */; };
-		89E138121925B25C00A3EFB7 /* DCAtomicSetters.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137FD1925B25C00A3EFB7 /* DCAtomicSetters.h */; };
-		89E138131925B25C00A3EFB7 /* DCCommonUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137FE1925B25C00A3EFB7 /* DCCommonUtility.h */; };
+		89E138121925B25C00A3EFB7 /* DCAtomicSetters.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137FD1925B25C00A3EFB7 /* DCAtomicSetters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E138131925B25C00A3EFB7 /* DCCommonUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137FE1925B25C00A3EFB7 /* DCCommonUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E138141925B25C00A3EFB7 /* DCCommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137FF1925B25C00A3EFB7 /* DCCommonUtility.m */; };
 		89E138151925B25C00A3EFB7 /* DCCommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137FF1925B25C00A3EFB7 /* DCCommonUtility.m */; };
 		89E138161925B25C00A3EFB7 /* DCCommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137FF1925B25C00A3EFB7 /* DCCommonUtility.m */; };
 		89E138171925B25C00A3EFB7 /* DCCommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137FF1925B25C00A3EFB7 /* DCCommonUtility.m */; };
-		89E138181925B25C00A3EFB7 /* DCHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138001925B25C00A3EFB7 /* DCHTTPOperation.h */; };
+		89E138181925B25C00A3EFB7 /* DCHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138001925B25C00A3EFB7 /* DCHTTPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E138191925B25C00A3EFB7 /* DCHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138011925B25C00A3EFB7 /* DCHTTPOperation.m */; };
 		89E1381A1925B25C00A3EFB7 /* DCHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138011925B25C00A3EFB7 /* DCHTTPOperation.m */; };
 		89E1381B1925B25C00A3EFB7 /* DCHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138011925B25C00A3EFB7 /* DCHTTPOperation.m */; };
 		89E1381C1925B25C00A3EFB7 /* DCHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138011925B25C00A3EFB7 /* DCHTTPOperation.m */; };
-		89E1381D1925B25C00A3EFB7 /* DCImageUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138021925B25C00A3EFB7 /* DCImageUtility.h */; };
+		89E1381D1925B25C00A3EFB7 /* DCImageUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138021925B25C00A3EFB7 /* DCImageUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E1381E1925B25C00A3EFB7 /* DCImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138031925B25C00A3EFB7 /* DCImageUtility.m */; };
 		89E1381F1925B25C00A3EFB7 /* DCImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138031925B25C00A3EFB7 /* DCImageUtility.m */; };
 		89E138201925B25C00A3EFB7 /* DCImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138031925B25C00A3EFB7 /* DCImageUtility.m */; };
 		89E138211925B25C00A3EFB7 /* DCImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138031925B25C00A3EFB7 /* DCImageUtility.m */; };
-		89E138221925B25C00A3EFB7 /* DCRPNUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138041925B25C00A3EFB7 /* DCRPNUtility.h */; };
+		89E138221925B25C00A3EFB7 /* DCRPNUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138041925B25C00A3EFB7 /* DCRPNUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E138231925B25C00A3EFB7 /* DCRPNUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138051925B25C00A3EFB7 /* DCRPNUtility.m */; };
 		89E138241925B25C00A3EFB7 /* DCRPNUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138051925B25C00A3EFB7 /* DCRPNUtility.m */; };
 		89E138251925B25C00A3EFB7 /* DCRPNUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138051925B25C00A3EFB7 /* DCRPNUtility.m */; };
 		89E138261925B25C00A3EFB7 /* DCRPNUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138051925B25C00A3EFB7 /* DCRPNUtility.m */; };
-		89E138271925B25C00A3EFB7 /* DCRunLoopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138061925B25C00A3EFB7 /* DCRunLoopOperation.h */; };
+		89E138271925B25C00A3EFB7 /* DCRunLoopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138061925B25C00A3EFB7 /* DCRunLoopOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E138281925B25C00A3EFB7 /* DCRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138071925B25C00A3EFB7 /* DCRunLoopOperation.m */; };
 		89E138291925B25C00A3EFB7 /* DCRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138071925B25C00A3EFB7 /* DCRunLoopOperation.m */; };
 		89E1382A1925B25C00A3EFB7 /* DCRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138071925B25C00A3EFB7 /* DCRunLoopOperation.m */; };
 		89E1382B1925B25C00A3EFB7 /* DCRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138071925B25C00A3EFB7 /* DCRunLoopOperation.m */; };
-		89E1382C1925B25C00A3EFB7 /* DCStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138081925B25C00A3EFB7 /* DCStack.h */; };
+		89E1382C1925B25C00A3EFB7 /* DCStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138081925B25C00A3EFB7 /* DCStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E1382D1925B25C00A3EFB7 /* DCStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138091925B25C00A3EFB7 /* DCStack.m */; };
 		89E1382E1925B25C00A3EFB7 /* DCStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138091925B25C00A3EFB7 /* DCStack.m */; };
 		89E1382F1925B25C00A3EFB7 /* DCStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138091925B25C00A3EFB7 /* DCStack.m */; };
 		89E138301925B25C00A3EFB7 /* DCStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138091925B25C00A3EFB7 /* DCStack.m */; };
-		89E138311925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1380A1925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.h */; };
-		89E138321925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1380B1925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.m */; };
-		89E138331925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1380B1925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.m */; };
-		89E138341925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1380B1925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.m */; };
-		89E138351925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1380B1925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.m */; };
-		89E138361925B25C00A3EFB7 /* DCUIMainThreadGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1380C1925B25C00A3EFB7 /* DCUIMainThreadGuard.h */; };
+		89E138361925B25C00A3EFB7 /* DCUIMainThreadGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1380C1925B25C00A3EFB7 /* DCUIMainThreadGuard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E138371925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1380D1925B25C00A3EFB7 /* DCUIMainThreadGuard.m */; };
 		89E138381925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1380D1925B25C00A3EFB7 /* DCUIMainThreadGuard.m */; };
 		89E138391925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1380D1925B25C00A3EFB7 /* DCUIMainThreadGuard.m */; };
 		89E1383A1925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1380D1925B25C00A3EFB7 /* DCUIMainThreadGuard.m */; };
-		89E1383B1925B25C00A3EFB7 /* DCWatchedOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1380E1925B25C00A3EFB7 /* DCWatchedOperationQueue.h */; };
+		89E1383B1925B25C00A3EFB7 /* DCWatchedOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1380E1925B25C00A3EFB7 /* DCWatchedOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E1383C1925B25C00A3EFB7 /* DCWatchedOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1380F1925B25C00A3EFB7 /* DCWatchedOperationQueue.m */; };
 		89E1383D1925B25C00A3EFB7 /* DCWatchedOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1380F1925B25C00A3EFB7 /* DCWatchedOperationQueue.m */; };
 		89E1383E1925B25C00A3EFB7 /* DCWatchedOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1380F1925B25C00A3EFB7 /* DCWatchedOperationQueue.m */; };
 		89E1383F1925B25C00A3EFB7 /* DCWatchedOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1380F1925B25C00A3EFB7 /* DCWatchedOperationQueue.m */; };
-		89E138401925B25C00A3EFB7 /* DCWebUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138101925B25C00A3EFB7 /* DCWebUtility.h */; };
+		89E138401925B25C00A3EFB7 /* DCWebUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138101925B25C00A3EFB7 /* DCWebUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E138411925B25C00A3EFB7 /* DCWebUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138111925B25C00A3EFB7 /* DCWebUtility.m */; };
 		89E138421925B25C00A3EFB7 /* DCWebUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138111925B25C00A3EFB7 /* DCWebUtility.m */; };
 		89E138431925B25C00A3EFB7 /* DCWebUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138111925B25C00A3EFB7 /* DCWebUtility.m */; };
 		89E138441925B25C00A3EFB7 /* DCWebUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138111925B25C00A3EFB7 /* DCWebUtility.m */; };
-		89E138481925B61000A3EFB7 /* UIColor+DCAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138461925B61000A3EFB7 /* UIColor+DCAdditions.h */; };
+		89E138481925B61000A3EFB7 /* UIColor+DCAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138461925B61000A3EFB7 /* UIColor+DCAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E1384B1925B61000A3EFB7 /* UIColor+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138471925B61000A3EFB7 /* UIColor+DCAdditions.m */; };
 		89E1384C1925B61000A3EFB7 /* UIColor+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138471925B61000A3EFB7 /* UIColor+DCAdditions.m */; };
-		89E138501925B61900A3EFB7 /* NSColor+DCAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1384E1925B61900A3EFB7 /* NSColor+DCAdditions.h */; };
+		89E138501925B61900A3EFB7 /* NSColor+DCAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1384E1925B61900A3EFB7 /* NSColor+DCAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E138511925B61900A3EFB7 /* NSColor+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1384F1925B61900A3EFB7 /* NSColor+DCAdditions.m */; };
 		89E138521925B61900A3EFB7 /* NSColor+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1384F1925B61900A3EFB7 /* NSColor+DCAdditions.m */; };
-		89E1385D1925B71100A3EFB7 /* DCTourbillon.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1385C1925B71100A3EFB7 /* DCTourbillon.h */; };
+		89E1385D1925B71100A3EFB7 /* DCTourbillon.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1385C1925B71100A3EFB7 /* DCTourbillon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E1386B1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1385F1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E1386C1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138601925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m */; };
+		89E1386D1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138601925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m */; };
+		89E1386E1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138601925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m */; };
+		89E1386F1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138601925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m */; };
+		89E138701925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138611925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E138711925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138621925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m */; };
+		89E138721925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138621925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m */; };
+		89E138731925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138621925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m */; };
+		89E138741925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138621925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m */; };
+		89E138751925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138631925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E138761925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138641925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.m */; };
+		89E138771925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138641925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.m */; };
+		89E138781925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138641925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.m */; };
+		89E138791925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138641925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.m */; };
+		89E1387A1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138651925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E1387B1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138661925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m */; };
+		89E1387C1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138661925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m */; };
+		89E1387D1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138661925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m */; };
+		89E1387E1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138661925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m */; };
+		89E1387F1925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138671925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E138801925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138681925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m */; };
+		89E138811925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138681925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m */; };
+		89E138821925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138681925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m */; };
+		89E138831925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138681925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m */; };
+		89E138841925B94600A3EFB7 /* NSObject+GCDThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138691925B94600A3EFB7 /* NSObject+GCDThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E138851925B94600A3EFB7 /* NSObject+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1386A1925B94600A3EFB7 /* NSObject+GCDThreadSafe.m */; };
+		89E138861925B94600A3EFB7 /* NSObject+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1386A1925B94600A3EFB7 /* NSObject+GCDThreadSafe.m */; };
+		89E138871925B94600A3EFB7 /* NSObject+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1386A1925B94600A3EFB7 /* NSObject+GCDThreadSafe.m */; };
+		89E138881925B94600A3EFB7 /* NSObject+GCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1386A1925B94600A3EFB7 /* NSObject+GCDThreadSafe.m */; };
+		89E1388D1925BAC200A3EFB7 /* NSViewController+ViewLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138891925BAC200A3EFB7 /* NSViewController+ViewLogic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E1388E1925BAC200A3EFB7 /* NSViewController+ViewLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1388A1925BAC200A3EFB7 /* NSViewController+ViewLogic.m */; };
+		89E1388F1925BAC200A3EFB7 /* NSViewController+ViewLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1388A1925BAC200A3EFB7 /* NSViewController+ViewLogic.m */; };
+		89E138901925BAC200A3EFB7 /* NSWindowController+CenterToScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1388B1925BAC200A3EFB7 /* NSWindowController+CenterToScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E138911925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1388C1925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m */; };
+		89E138921925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1388C1925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m */; };
+		89E1389F1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1389D1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E138A01925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1389E1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m */; };
+		89E138A11925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1389E1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m */; };
+		89E138A21925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1389E1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m */; };
+		89E138A31925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1389E1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m */; };
+		89E138A41925BE8C00A3EFB7 /* DCTourbillon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E1385C1925B71100A3EFB7 /* DCTourbillon.h */; };
+		89E138A51925BE8C00A3EFB7 /* DCCommonConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137E71925B24F00A3EFB7 /* DCCommonConstants.h */; };
+		89E138A61925BE8C00A3EFB7 /* DCLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137E81925B24F00A3EFB7 /* DCLogger.h */; };
+		89E138A71925BE8C00A3EFB7 /* DCSafeARC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137EA1925B24F00A3EFB7 /* DCSafeARC.h */; };
+		89E138A81925BE8C00A3EFB7 /* DCSingletonTemplate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137EB1925B24F00A3EFB7 /* DCSingletonTemplate.h */; };
+		89E138A91925BE8C00A3EFB7 /* NSMutableArray+GCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E1385F1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.h */; };
+		89E138AA1925BE8C00A3EFB7 /* NSMutableData+GCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E138611925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.h */; };
+		89E138AB1925BE8C00A3EFB7 /* NSMutableDictionary+GCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E138631925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.h */; };
+		89E138AC1925BE8C00A3EFB7 /* NSMutableSet+GCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E138651925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.h */; };
+		89E138AD1925BE8C00A3EFB7 /* NSMutableString+GCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E138671925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.h */; };
+		89E138AE1925BE8C00A3EFB7 /* NSObject+GCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E138691925B94600A3EFB7 /* NSObject+GCDThreadSafe.h */; };
+		89E138AF1925BE8C00A3EFB7 /* UIColor+DCAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E138461925B61000A3EFB7 /* UIColor+DCAdditions.h */; };
+		89E138B01925BE8C00A3EFB7 /* DCBase64Define.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137971925B24800A3EFB7 /* DCBase64Define.h */; };
+		89E138B11925BE8C00A3EFB7 /* NSData+DCBase64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E1379A1925B24800A3EFB7 /* NSData+DCBase64.h */; };
+		89E138B21925BE8C00A3EFB7 /* NSDictionary+DCSortable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E1379E1925B24800A3EFB7 /* NSDictionary+DCSortable.h */; };
+		89E138B31925BE8C00A3EFB7 /* NSNumber+DCRandom.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137A01925B24800A3EFB7 /* NSNumber+DCRandom.h */; };
+		89E138B41925BE8C00A3EFB7 /* NSObject+Swizzle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137A21925B24800A3EFB7 /* NSObject+Swizzle.h */; };
+		89E138B51925BE8C00A3EFB7 /* NSString+DCBase64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137A41925B24800A3EFB7 /* NSString+DCBase64.h */; };
+		89E138B61925BE8C00A3EFB7 /* NSString+DCCrypto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137A61925B24800A3EFB7 /* NSString+DCCrypto.h */; };
+		89E138B71925BE8C00A3EFB7 /* NSString+DCParseCSV.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137A81925B24800A3EFB7 /* NSString+DCParseCSV.h */; };
+		89E138B81925BE8C00A3EFB7 /* NSString+DCURLCoding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137AA1925B24800A3EFB7 /* NSString+DCURLCoding.h */; };
+		89E138B91925BE8C00A3EFB7 /* DCAtomicSetters.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137FD1925B25C00A3EFB7 /* DCAtomicSetters.h */; };
+		89E138BA1925BE8C00A3EFB7 /* DCCommonUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137FE1925B25C00A3EFB7 /* DCCommonUtility.h */; };
+		89E138BB1925BE8C00A3EFB7 /* DCHTTPOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E138001925B25C00A3EFB7 /* DCHTTPOperation.h */; };
+		89E138BC1925BE8C00A3EFB7 /* DCImageUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E138021925B25C00A3EFB7 /* DCImageUtility.h */; };
+		89E138BD1925BE8C00A3EFB7 /* DCRPNUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E138041925B25C00A3EFB7 /* DCRPNUtility.h */; };
+		89E138BE1925BE8C00A3EFB7 /* DCRunLoopOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E138061925B25C00A3EFB7 /* DCRunLoopOperation.h */; };
+		89E138BF1925BE8C00A3EFB7 /* DCStack.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E138081925B25C00A3EFB7 /* DCStack.h */; };
+		89E138C01925BE8C00A3EFB7 /* DCUIMainThreadGuard.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E1380C1925B25C00A3EFB7 /* DCUIMainThreadGuard.h */; };
+		89E138C11925BE8C00A3EFB7 /* DCWatchedOperationQueue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E1380E1925B25C00A3EFB7 /* DCWatchedOperationQueue.h */; };
+		89E138C21925BE8C00A3EFB7 /* DCWebUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E138101925B25C00A3EFB7 /* DCWebUtility.h */; };
+		89E138C31925BE8C00A3EFB7 /* DCMainThreadAsyncReactiveObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E1389D1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.h */; };
+		89E138C41925BE8C00A3EFB7 /* DCTestBlocker.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137F51925B25600A3EFB7 /* DCTestBlocker.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,7 +228,39 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				89E137791925B13D00A3EFB7 /* Tourbillon_iOS.h in CopyFiles */,
+				89E138A41925BE8C00A3EFB7 /* DCTourbillon.h in CopyFiles */,
+				89E138A51925BE8C00A3EFB7 /* DCCommonConstants.h in CopyFiles */,
+				89E138A61925BE8C00A3EFB7 /* DCLogger.h in CopyFiles */,
+				89E138A71925BE8C00A3EFB7 /* DCSafeARC.h in CopyFiles */,
+				89E138A81925BE8C00A3EFB7 /* DCSingletonTemplate.h in CopyFiles */,
+				89E138A91925BE8C00A3EFB7 /* NSMutableArray+GCDThreadSafe.h in CopyFiles */,
+				89E138AA1925BE8C00A3EFB7 /* NSMutableData+GCDThreadSafe.h in CopyFiles */,
+				89E138AB1925BE8C00A3EFB7 /* NSMutableDictionary+GCDThreadSafe.h in CopyFiles */,
+				89E138AC1925BE8C00A3EFB7 /* NSMutableSet+GCDThreadSafe.h in CopyFiles */,
+				89E138AD1925BE8C00A3EFB7 /* NSMutableString+GCDThreadSafe.h in CopyFiles */,
+				89E138AE1925BE8C00A3EFB7 /* NSObject+GCDThreadSafe.h in CopyFiles */,
+				89E138AF1925BE8C00A3EFB7 /* UIColor+DCAdditions.h in CopyFiles */,
+				89E138B01925BE8C00A3EFB7 /* DCBase64Define.h in CopyFiles */,
+				89E138B11925BE8C00A3EFB7 /* NSData+DCBase64.h in CopyFiles */,
+				89E138B21925BE8C00A3EFB7 /* NSDictionary+DCSortable.h in CopyFiles */,
+				89E138B31925BE8C00A3EFB7 /* NSNumber+DCRandom.h in CopyFiles */,
+				89E138B41925BE8C00A3EFB7 /* NSObject+Swizzle.h in CopyFiles */,
+				89E138B51925BE8C00A3EFB7 /* NSString+DCBase64.h in CopyFiles */,
+				89E138B61925BE8C00A3EFB7 /* NSString+DCCrypto.h in CopyFiles */,
+				89E138B71925BE8C00A3EFB7 /* NSString+DCParseCSV.h in CopyFiles */,
+				89E138B81925BE8C00A3EFB7 /* NSString+DCURLCoding.h in CopyFiles */,
+				89E138B91925BE8C00A3EFB7 /* DCAtomicSetters.h in CopyFiles */,
+				89E138BA1925BE8C00A3EFB7 /* DCCommonUtility.h in CopyFiles */,
+				89E138BB1925BE8C00A3EFB7 /* DCHTTPOperation.h in CopyFiles */,
+				89E138BC1925BE8C00A3EFB7 /* DCImageUtility.h in CopyFiles */,
+				89E138BD1925BE8C00A3EFB7 /* DCRPNUtility.h in CopyFiles */,
+				89E138BE1925BE8C00A3EFB7 /* DCRunLoopOperation.h in CopyFiles */,
+				89E138BF1925BE8C00A3EFB7 /* DCStack.h in CopyFiles */,
+				89E138C01925BE8C00A3EFB7 /* DCUIMainThreadGuard.h in CopyFiles */,
+				89E138C11925BE8C00A3EFB7 /* DCWatchedOperationQueue.h in CopyFiles */,
+				89E138C21925BE8C00A3EFB7 /* DCWebUtility.h in CopyFiles */,
+				89E138C31925BE8C00A3EFB7 /* DCMainThreadAsyncReactiveObject.h in CopyFiles */,
+				89E138C41925BE8C00A3EFB7 /* DCTestBlocker.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,8 +283,6 @@
 		89E137721925B13D00A3EFB7 /* libTourbillon-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTourbillon-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E137731925B13D00A3EFB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89E137771925B13D00A3EFB7 /* Tourbillon-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tourbillon-iOS-Prefix.pch"; sourceTree = "<group>"; };
-		89E137781925B13D00A3EFB7 /* Tourbillon_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tourbillon_iOS.h; sourceTree = "<group>"; };
-		89E1377A1925B13D00A3EFB7 /* Tourbillon_iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tourbillon_iOS.m; sourceTree = "<group>"; };
 		89E137801925B13D00A3EFB7 /* Tourbillon-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tourbillon-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E137831925B13D00A3EFB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		89E1378A1925B13D00A3EFB7 /* Tourbillon-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tourbillon-iOSTests-Info.plist"; sourceTree = "<group>"; };
@@ -228,8 +325,6 @@
 		89E138071925B25C00A3EFB7 /* DCRunLoopOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRunLoopOperation.m; sourceTree = "<group>"; };
 		89E138081925B25C00A3EFB7 /* DCStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStack.h; sourceTree = "<group>"; };
 		89E138091925B25C00A3EFB7 /* DCStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStack.m; sourceTree = "<group>"; };
-		89E1380A1925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCThreadSafeMutableDictionary.h; sourceTree = "<group>"; };
-		89E1380B1925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCThreadSafeMutableDictionary.m; sourceTree = "<group>"; };
 		89E1380C1925B25C00A3EFB7 /* DCUIMainThreadGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUIMainThreadGuard.h; sourceTree = "<group>"; };
 		89E1380D1925B25C00A3EFB7 /* DCUIMainThreadGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCUIMainThreadGuard.m; sourceTree = "<group>"; };
 		89E1380E1925B25C00A3EFB7 /* DCWatchedOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCWatchedOperationQueue.h; sourceTree = "<group>"; };
@@ -241,6 +336,24 @@
 		89E1384E1925B61900A3EFB7 /* NSColor+DCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+DCAdditions.h"; sourceTree = "<group>"; };
 		89E1384F1925B61900A3EFB7 /* NSColor+DCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+DCAdditions.m"; sourceTree = "<group>"; };
 		89E1385C1925B71100A3EFB7 /* DCTourbillon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTourbillon.h; sourceTree = "<group>"; };
+		89E1385F1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+GCDThreadSafe.h"; sourceTree = "<group>"; };
+		89E138601925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+GCDThreadSafe.m"; sourceTree = "<group>"; };
+		89E138611925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+GCDThreadSafe.h"; sourceTree = "<group>"; };
+		89E138621925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+GCDThreadSafe.m"; sourceTree = "<group>"; };
+		89E138631925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+GCDThreadSafe.h"; sourceTree = "<group>"; };
+		89E138641925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+GCDThreadSafe.m"; sourceTree = "<group>"; };
+		89E138651925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+GCDThreadSafe.h"; sourceTree = "<group>"; };
+		89E138661925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+GCDThreadSafe.m"; sourceTree = "<group>"; };
+		89E138671925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+GCDThreadSafe.h"; sourceTree = "<group>"; };
+		89E138681925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+GCDThreadSafe.m"; sourceTree = "<group>"; };
+		89E138691925B94600A3EFB7 /* NSObject+GCDThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GCDThreadSafe.h"; sourceTree = "<group>"; };
+		89E1386A1925B94600A3EFB7 /* NSObject+GCDThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GCDThreadSafe.m"; sourceTree = "<group>"; };
+		89E138891925BAC200A3EFB7 /* NSViewController+ViewLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSViewController+ViewLogic.h"; sourceTree = "<group>"; };
+		89E1388A1925BAC200A3EFB7 /* NSViewController+ViewLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSViewController+ViewLogic.m"; sourceTree = "<group>"; };
+		89E1388B1925BAC200A3EFB7 /* NSWindowController+CenterToScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindowController+CenterToScreen.h"; sourceTree = "<group>"; };
+		89E1388C1925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindowController+CenterToScreen.m"; sourceTree = "<group>"; };
+		89E1389D1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCMainThreadAsyncReactiveObject.h; sourceTree = "<group>"; };
+		89E1389E1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCMainThreadAsyncReactiveObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,8 +486,6 @@
 		89E137751925B13D00A3EFB7 /* Tourbillon-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				89E137781925B13D00A3EFB7 /* Tourbillon_iOS.h */,
-				89E1377A1925B13D00A3EFB7 /* Tourbillon_iOS.m */,
 				89E137761925B13D00A3EFB7 /* Supporting Files */,
 			);
 			path = "Tourbillon-iOS";
@@ -409,6 +520,7 @@
 		89E137961925B24800A3EFB7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				89E1385E1925B94600A3EFB7 /* GCDThreadSafe */,
 				89E1384D1925B61900A3EFB7 /* Mac */,
 				89E138451925B61000A3EFB7 /* iOS */,
 				89E137971925B24800A3EFB7 /* DCBase64Define.h */,
@@ -469,14 +581,14 @@
 				89E138071925B25C00A3EFB7 /* DCRunLoopOperation.m */,
 				89E138081925B25C00A3EFB7 /* DCStack.h */,
 				89E138091925B25C00A3EFB7 /* DCStack.m */,
-				89E1380A1925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.h */,
-				89E1380B1925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.m */,
 				89E1380C1925B25C00A3EFB7 /* DCUIMainThreadGuard.h */,
 				89E1380D1925B25C00A3EFB7 /* DCUIMainThreadGuard.m */,
 				89E1380E1925B25C00A3EFB7 /* DCWatchedOperationQueue.h */,
 				89E1380F1925B25C00A3EFB7 /* DCWatchedOperationQueue.m */,
 				89E138101925B25C00A3EFB7 /* DCWebUtility.h */,
 				89E138111925B25C00A3EFB7 /* DCWebUtility.m */,
+				89E1389D1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.h */,
+				89E1389E1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -493,10 +605,33 @@
 		89E1384D1925B61900A3EFB7 /* Mac */ = {
 			isa = PBXGroup;
 			children = (
+				89E138891925BAC200A3EFB7 /* NSViewController+ViewLogic.h */,
+				89E1388A1925BAC200A3EFB7 /* NSViewController+ViewLogic.m */,
+				89E1388B1925BAC200A3EFB7 /* NSWindowController+CenterToScreen.h */,
+				89E1388C1925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m */,
 				89E1384E1925B61900A3EFB7 /* NSColor+DCAdditions.h */,
 				89E1384F1925B61900A3EFB7 /* NSColor+DCAdditions.m */,
 			);
 			path = Mac;
+			sourceTree = "<group>";
+		};
+		89E1385E1925B94600A3EFB7 /* GCDThreadSafe */ = {
+			isa = PBXGroup;
+			children = (
+				89E1385F1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.h */,
+				89E138601925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m */,
+				89E138611925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.h */,
+				89E138621925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m */,
+				89E138631925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.h */,
+				89E138641925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.m */,
+				89E138651925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.h */,
+				89E138661925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m */,
+				89E138671925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.h */,
+				89E138681925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m */,
+				89E138691925B94600A3EFB7 /* NSObject+GCDThreadSafe.h */,
+				89E1386A1925B94600A3EFB7 /* NSObject+GCDThreadSafe.m */,
+			);
+			path = GCDThreadSafe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,19 +643,23 @@
 			files = (
 				89E138501925B61900A3EFB7 /* NSColor+DCAdditions.h in Headers */,
 				89E1385D1925B71100A3EFB7 /* DCTourbillon.h in Headers */,
+				89E1388D1925BAC200A3EFB7 /* NSViewController+ViewLogic.h in Headers */,
 				89E137D21925B24800A3EFB7 /* NSString+DCCrypto.h in Headers */,
 				89E137F31925B24F00A3EFB7 /* DCSingletonTemplate.h in Headers */,
+				89E138701925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.h in Headers */,
 				89E137CD1925B24800A3EFB7 /* NSString+DCBase64.h in Headers */,
 				89E138131925B25C00A3EFB7 /* DCCommonUtility.h in Headers */,
 				89E138401925B25C00A3EFB7 /* DCWebUtility.h in Headers */,
 				89E1383B1925B25C00A3EFB7 /* DCWatchedOperationQueue.h in Headers */,
 				89E138221925B25C00A3EFB7 /* DCRPNUtility.h in Headers */,
 				89E138361925B25C00A3EFB7 /* DCUIMainThreadGuard.h in Headers */,
+				89E1386B1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.h in Headers */,
+				89E138841925B94600A3EFB7 /* NSObject+GCDThreadSafe.h in Headers */,
 				89E137BE1925B24800A3EFB7 /* NSDictionary+DCSortable.h in Headers */,
 				89E137C31925B24800A3EFB7 /* NSNumber+DCRandom.h in Headers */,
+				89E1387F1925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.h in Headers */,
 				89E1381D1925B25C00A3EFB7 /* DCImageUtility.h in Headers */,
 				89E137DC1925B24800A3EFB7 /* NSString+DCURLCoding.h in Headers */,
-				89E138311925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.h in Headers */,
 				89E137B41925B24800A3EFB7 /* NSData+DCBase64.h in Headers */,
 				89E1382C1925B25C00A3EFB7 /* DCStack.h in Headers */,
 				89E138121925B25C00A3EFB7 /* DCAtomicSetters.h in Headers */,
@@ -529,11 +668,15 @@
 				89E138271925B25C00A3EFB7 /* DCRunLoopOperation.h in Headers */,
 				89E137D71925B24800A3EFB7 /* NSString+DCParseCSV.h in Headers */,
 				89E137ED1925B24F00A3EFB7 /* DCLogger.h in Headers */,
+				89E1387A1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.h in Headers */,
 				89E138481925B61000A3EFB7 /* UIColor+DCAdditions.h in Headers */,
+				89E138751925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.h in Headers */,
 				89E137EC1925B24F00A3EFB7 /* DCCommonConstants.h in Headers */,
 				89E137C81925B24800A3EFB7 /* NSObject+Swizzle.h in Headers */,
+				89E138901925BAC200A3EFB7 /* NSWindowController+CenterToScreen.h in Headers */,
 				89E137AE1925B24800A3EFB7 /* DCBase64Define.h in Headers */,
 				89E137F21925B24F00A3EFB7 /* DCSafeARC.h in Headers */,
+				89E1389F1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,8 +824,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				89E1381E1925B25C00A3EFB7 /* DCImageUtility.m in Sources */,
-				89E138321925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.m in Sources */,
 				89E137C91925B24800A3EFB7 /* NSObject+Swizzle.m in Sources */,
+				89E1388E1925BAC200A3EFB7 /* NSViewController+ViewLogic.m in Sources */,
 				89E137D81925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */,
 				89E137EE1925B24F00A3EFB7 /* DCLogger.m in Sources */,
 				89E1383C1925B25C00A3EFB7 /* DCWatchedOperationQueue.m in Sources */,
@@ -693,14 +836,22 @@
 				89E138511925B61900A3EFB7 /* NSColor+DCAdditions.m in Sources */,
 				89E138141925B25C00A3EFB7 /* DCCommonUtility.m in Sources */,
 				89E137B51925B24800A3EFB7 /* NSData+DCBase64.m in Sources */,
+				89E138911925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m in Sources */,
 				89E138281925B25C00A3EFB7 /* DCRunLoopOperation.m in Sources */,
+				89E138A01925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */,
 				89E137CE1925B24800A3EFB7 /* NSString+DCBase64.m in Sources */,
+				89E1387B1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m in Sources */,
+				89E1386C1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m in Sources */,
 				89E138371925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */,
+				89E138851925B94600A3EFB7 /* NSObject+GCDThreadSafe.m in Sources */,
 				89E137D31925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */,
 				89E137DD1925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */,
+				89E138711925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m in Sources */,
 				89E137F81925B25600A3EFB7 /* DCTestBlocker.m in Sources */,
+				89E138801925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m in Sources */,
 				89E1382D1925B25C00A3EFB7 /* DCStack.m in Sources */,
 				89E137C41925B24800A3EFB7 /* NSNumber+DCRandom.m in Sources */,
+				89E138761925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,27 +860,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				89E1381F1925B25C00A3EFB7 /* DCImageUtility.m in Sources */,
-				89E138331925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.m in Sources */,
+				89E1386D1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m in Sources */,
 				89E137CA1925B24800A3EFB7 /* NSObject+Swizzle.m in Sources */,
 				89E137D91925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */,
+				89E138811925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m in Sources */,
 				89E137EF1925B24F00A3EFB7 /* DCLogger.m in Sources */,
+				89E138861925B94600A3EFB7 /* NSObject+GCDThreadSafe.m in Sources */,
 				89E1383D1925B25C00A3EFB7 /* DCWatchedOperationQueue.m in Sources */,
 				89E1381A1925B25C00A3EFB7 /* DCHTTPOperation.m in Sources */,
 				89E137C01925B24800A3EFB7 /* NSDictionary+DCSortable.m in Sources */,
 				89E138421925B25C00A3EFB7 /* DCWebUtility.m in Sources */,
+				89E138921925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m in Sources */,
 				89E138241925B25C00A3EFB7 /* DCRPNUtility.m in Sources */,
 				89E138521925B61900A3EFB7 /* NSColor+DCAdditions.m in Sources */,
 				89E137651925B11000A3EFB7 /* TourbillonTests.m in Sources */,
+				89E138721925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m in Sources */,
 				89E138151925B25C00A3EFB7 /* DCCommonUtility.m in Sources */,
 				89E137B61925B24800A3EFB7 /* NSData+DCBase64.m in Sources */,
 				89E138291925B25C00A3EFB7 /* DCRunLoopOperation.m in Sources */,
 				89E137CF1925B24800A3EFB7 /* NSString+DCBase64.m in Sources */,
+				89E1387C1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m in Sources */,
 				89E138381925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */,
+				89E138A11925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */,
 				89E137D41925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */,
 				89E137DE1925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */,
 				89E137F91925B25600A3EFB7 /* DCTestBlocker.m in Sources */,
 				89E1382E1925B25C00A3EFB7 /* DCStack.m in Sources */,
 				89E137C51925B24800A3EFB7 /* NSNumber+DCRandom.m in Sources */,
+				89E138771925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.m in Sources */,
+				89E1388F1925BAC200A3EFB7 /* NSViewController+ViewLogic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,27 +897,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				89E138201925B25C00A3EFB7 /* DCImageUtility.m in Sources */,
-				89E138341925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.m in Sources */,
+				89E138A21925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */,
+				89E1386E1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m in Sources */,
 				89E137CB1925B24800A3EFB7 /* NSObject+Swizzle.m in Sources */,
 				89E137DA1925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */,
+				89E138821925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m in Sources */,
 				89E137F01925B24F00A3EFB7 /* DCLogger.m in Sources */,
+				89E138871925B94600A3EFB7 /* NSObject+GCDThreadSafe.m in Sources */,
 				89E1383E1925B25C00A3EFB7 /* DCWatchedOperationQueue.m in Sources */,
 				89E1381B1925B25C00A3EFB7 /* DCHTTPOperation.m in Sources */,
 				89E137C11925B24800A3EFB7 /* NSDictionary+DCSortable.m in Sources */,
 				89E138431925B25C00A3EFB7 /* DCWebUtility.m in Sources */,
 				89E138251925B25C00A3EFB7 /* DCRPNUtility.m in Sources */,
 				89E1384B1925B61000A3EFB7 /* UIColor+DCAdditions.m in Sources */,
-				89E1377B1925B13D00A3EFB7 /* Tourbillon_iOS.m in Sources */,
+				89E138731925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m in Sources */,
 				89E138161925B25C00A3EFB7 /* DCCommonUtility.m in Sources */,
 				89E137B71925B24800A3EFB7 /* NSData+DCBase64.m in Sources */,
 				89E1382A1925B25C00A3EFB7 /* DCRunLoopOperation.m in Sources */,
 				89E137D01925B24800A3EFB7 /* NSString+DCBase64.m in Sources */,
+				89E1387D1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m in Sources */,
 				89E138391925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */,
 				89E137D51925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */,
 				89E137DF1925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */,
 				89E137FA1925B25600A3EFB7 /* DCTestBlocker.m in Sources */,
 				89E1382F1925B25C00A3EFB7 /* DCStack.m in Sources */,
 				89E137C61925B24800A3EFB7 /* NSNumber+DCRandom.m in Sources */,
+				89E138781925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,10 +931,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				89E138211925B25C00A3EFB7 /* DCImageUtility.m in Sources */,
-				89E138351925B25C00A3EFB7 /* DCThreadSafeMutableDictionary.m in Sources */,
+				89E138A31925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */,
+				89E1386F1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m in Sources */,
 				89E137CC1925B24800A3EFB7 /* NSObject+Swizzle.m in Sources */,
 				89E137DB1925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */,
+				89E138831925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m in Sources */,
 				89E137F11925B24F00A3EFB7 /* DCLogger.m in Sources */,
+				89E138881925B94600A3EFB7 /* NSObject+GCDThreadSafe.m in Sources */,
 				89E1383F1925B25C00A3EFB7 /* DCWatchedOperationQueue.m in Sources */,
 				89E1381C1925B25C00A3EFB7 /* DCHTTPOperation.m in Sources */,
 				89E137C21925B24800A3EFB7 /* NSDictionary+DCSortable.m in Sources */,
@@ -778,16 +945,19 @@
 				89E138261925B25C00A3EFB7 /* DCRPNUtility.m in Sources */,
 				89E1384C1925B61000A3EFB7 /* UIColor+DCAdditions.m in Sources */,
 				89E1378F1925B13D00A3EFB7 /* Tourbillon_iOSTests.m in Sources */,
+				89E138741925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m in Sources */,
 				89E138171925B25C00A3EFB7 /* DCCommonUtility.m in Sources */,
 				89E137B81925B24800A3EFB7 /* NSData+DCBase64.m in Sources */,
 				89E1382B1925B25C00A3EFB7 /* DCRunLoopOperation.m in Sources */,
 				89E137D11925B24800A3EFB7 /* NSString+DCBase64.m in Sources */,
+				89E1387E1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m in Sources */,
 				89E1383A1925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */,
 				89E137D61925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */,
 				89E137E01925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */,
 				89E137FB1925B25600A3EFB7 /* DCTestBlocker.m in Sources */,
 				89E138301925B25C00A3EFB7 /* DCStack.m in Sources */,
 				89E137C71925B24800A3EFB7 /* NSNumber+DCRandom.m in Sources */,
+				89E138791925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
