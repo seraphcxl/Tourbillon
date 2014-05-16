@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "DCCommonConstants.h"
-#import "DCSafeARC.h"
+//#import "DCSafeARC.h"
 #import "DCSingletonTemplate.h"
 
 // A better assert. NSAssert is too runtime dependant, and assert() doesn't log.
@@ -41,8 +41,8 @@ typedef enum {
 @property (atomic, assign) BOOL enableTimestamp;
 @property (atomic, assign) BOOL enableSourceCodeInfo;
 @property (atomic, assign) BOOL enableThreadInfo;
-@property (atomic, SAFE_ARC_PROP_STRONG, readonly) NSFileHandle *fileHandle;
-@property (atomic, SAFE_ARC_PROP_STRONG, readonly) NSDateFormatter *dateFormatter;
+@property (atomic, strong, readonly) NSFileHandle *fileHandle;
+@property (atomic, strong, readonly) NSDateFormatter *dateFormatter;
 
 DEFINE_SINGLETON_FOR_HEADER(DCLogger)
 

@@ -7,7 +7,7 @@
 //
 
 #import "DCRunLoopOperation.h"
-#import "DCSafeARC.h"
+//#import "DCSafeARC.h"
 
 extern NSString *kDCHTTPOperationErrorDomain;
 
@@ -58,7 +58,7 @@ enum {
 // stream synchronously.  This is fine for file and memory streams, but it would
 // not work well for other types of streams (like a bound pair).
 
-@property (atomic, SAFE_ARC_PROP_STRONG, readwrite) NSOutputStream *responseOutputStream; // defaults to nil, which puts response into responseBody
+@property (atomic, strong, readwrite) NSOutputStream *responseOutputStream; // defaults to nil, which puts response into responseBody
 @property (atomic, assign, readwrite) NSUInteger defaultResponseSize; // default is 1 MB, ignored if responseOutputStream is set
 @property (atomic, assign, readwrite) NSUInteger maximumResponseSize; // default is 4 MB, ignored if responseOutputStream is set
 // defaults are 1/4 of the above on iOS

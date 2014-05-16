@@ -18,6 +18,9 @@ const NSString *DCLogger_OptionKey_EnableLogToFile = @"EnableLogToFile";
 @interface DCLogger () {
 }
 
+@property (atomic, strong) NSFileHandle *fileHandle;
+@property (atomic, strong) NSDateFormatter *dateFormatter;
+
 + (NSString *)levelToLog:(DCLogLevel)level;
 
 @end
@@ -87,15 +90,14 @@ DEFINE_SINGLETON_FOR_CLASS(DCLogger)
                 NSLog(@"Creating log file at %@", logPath);
                 [[NSData data] writeToFile:logPath atomically:YES];
             }
-            _fileHandle = [NSFileHandle fileHandleForWritingAtPath:logPath];
-            SAFE_ARC_RETAIN(_fileHandle);
-            [_fileHandle truncateFileAtOffset:[_fileHandle seekToEndOfFile]];
+            self.fileHandle = [NSFileHandle fileHandleForWritingAtPath:logPath];
+            [self.fileHandle truncateFileAtOffset:[self.fileHandle seekToEndOfFile]];
             
-//            _dateFormatter = [[NSDateFormatter alloc] initWithDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'" allowNaturalLanguage:NO];
+//            self.dateFormatter = [[NSDateFormatter alloc] initWithDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'" allowNaturalLanguage:NO];
             
-            _dateFormatter = [[NSDateFormatter alloc] init];
-            [_dateFormatter setDateStyle:NSDateFormatterShortStyle];
-            [_dateFormatter setTimeStyle:NSDateFormatterLongStyle];
+            self.dateFormatter = [[NSDateFormatter alloc] init];
+            [self.dateFormatter setDateStyle:NSDateFormatterShortStyle];
+            [self.dateFormatter setTimeStyle:NSDateFormatterLongStyle];
         }
         return self;
     }
@@ -104,14 +106,13 @@ DEFINE_SINGLETON_FOR_CLASS(DCLogger)
 - (void)dealloc {
     do {
         @synchronized(self) {
-            SAFE_ARC_SAFERELEASE(_dateFormatter);
+            self.dateFormatter = nil;
             
-            if (_fileHandle) {
-                [_fileHandle closeFile];
-                SAFE_ARC_SAFERELEASE(_fileHandle);
+            if (self.fileHandle) {
+                [self.fileHandle closeFile];
+                self.fileHandle = nil;
             }
         }
-        SAFE_ARC_SUPER_DEALLOC();
     } while (NO);
 }
 

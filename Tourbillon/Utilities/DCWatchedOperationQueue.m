@@ -12,8 +12,8 @@
 @interface DCWatchedOperationFinishedActionStub () {
 }
 
-@property (nonatomic, SAFE_ARC_PROP_WEAK) id target;
-@property (nonatomic, SAFE_ARC_PROP_STRONG) NSThread *thread;
+@property (nonatomic, weak) id target;
+@property (nonatomic, strong) NSThread *thread;
 
 @end
 
@@ -52,7 +52,6 @@
             _target = nil;
             _operation = nil;
         }
-        SAFE_ARC_SUPER_DEALLOC();
     } while (NO);
 }
 
@@ -61,8 +60,8 @@
 @interface DCWatchedOperationQueue () {
 }
 
-@property (nonatomic, SAFE_ARC_PROP_STRONG) NSMutableDictionary *operationToTargetActionDict;
-@property (nonatomic, SAFE_ARC_PROP_STRONG) NSThread *queueThread;
+@property (nonatomic, strong) NSMutableDictionary *operationToTargetActionDict;
+@property (nonatomic, strong) NSThread *queueThread;
 
 - (NSString *)operationUUID:(NSOperation *)operation;
 - (void)didFinishOperation:(NSOperation *)operation;
@@ -82,7 +81,6 @@
         if (self) {
             CFUUIDRef tmpUUID = CFUUIDCreate(kCFAllocatorDefault);
             _uuid = (NSString *)CFBridgingRelease(CFUUIDCreateString(kCFAllocatorDefault, tmpUUID));
-            SAFE_ARC_RETAIN(_uuid);
             CFRelease(tmpUUID);
             
             self.operationToTargetActionDict = [NSMutableDictionary dictionary];
@@ -100,9 +98,7 @@
                 self.operationToTargetActionDict = nil;
             }
             self.queueThread = nil;
-            SAFE_ARC_RELEASE(_uuid);
         }
-        SAFE_ARC_SUPER_DEALLOC();
     } while (NO);
 }
 
@@ -121,12 +117,10 @@
                 }
                 DCAssert([self.operationToTargetActionDict objectForKey:opUUID] == nil, @"self.operationToTargetActionDict contained stub for op:%@", opUUID);
                 DCWatchedOperationFinishedActionStub *stub = [[DCWatchedOperationFinishedActionStub alloc] initWithOperation:operation forTarget:target withFinishedAction:finishedAction andCancelAction:cancelAction];
-                SAFE_ARC_AUTORELEASE(stub);
                 [self.operationToTargetActionDict setObject:stub forKey:opUUID];
             }
         }
         
-        SAFE_ARC_RETAIN(self);
         [operation addObserver:self forKeyPath:@"isFinished" options:0 context:(__bridge void *)(self.uuid)];
         
         [self addOperation:operation];
@@ -193,7 +187,6 @@
         }
         
         [operation removeObserver:self forKeyPath:@"isFinished"];
-        SAFE_ARC_AUTORELEASE(self);
         
         if ((stub != nil) && (stub.target != nil) && (stub.thread != nil)) {
             if (![operation isCancelled] && (stub.finishedAction != nil)) {

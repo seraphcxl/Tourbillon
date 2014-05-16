@@ -8,7 +8,7 @@
 
 #import "NSData+DCBase64.h"
 #import "DCBase64Define.h"
-#import "DCSafeARC.h"
+//#import "DCSafeARC.h"
 
 @implementation NSData (DCBase64)
 
@@ -39,7 +39,6 @@
             }
             
             result = [[NSString alloc] initWithData:buffer encoding:NSASCIIStringEncoding];
-            SAFE_ARC_AUTORELEASE(result);
         }
     } while (NO);
     return result;

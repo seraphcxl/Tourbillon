@@ -18,18 +18,19 @@ NSString * kDCHTTPOperationErrorDomain = @"kDCHTTPOperationErrorDomain";
 }
 
 // Read/write versions of public properties
+@property (atomic, copy, readwrite)  NSURLRequest *request;
 
 @property (atomic, copy, readwrite) NSURLRequest *lastRequest;
 @property (atomic, copy, readwrite) NSHTTPURLResponse *lastResponse;
-
+@property (atomic, copy, readwrite) NSData *responseBody;
 // Internal properties
 
-@property (atomic, SAFE_ARC_PROP_STRONG, readwrite) NSURLConnection *connection;
+@property (atomic, strong, readwrite) NSURLConnection *connection;
 @property (atomic, assign, readwrite) BOOL firstData;
-@property (atomic, SAFE_ARC_PROP_STRONG, readwrite) NSMutableData *dataAccumulator;
+@property (atomic, strong, readwrite) NSMutableData *dataAccumulator;
 
 #if !defined(NDEBUG)
-@property (atomic, SAFE_ARC_PROP_STRONG, readwrite) NSTimer *debugDelayTimer;
+@property (atomic, strong, readwrite) NSTimer *debugDelayTimer;
 #endif
 
 @end
@@ -83,7 +84,7 @@ NSString * kDCHTTPOperationErrorDomain = @"kDCHTTPOperationErrorDomain";
 #else
             static const NSUInteger kPlatformReductionFactor = 1;
 #endif
-            self->_request = [request copy];
+            self.request = [request copy];
             self.defaultResponseSize = DC_MEMSIZE_MB(1) / kPlatformReductionFactor;
             self.maximumResponseSize = DC_MEMSIZE_MB(4) / kPlatformReductionFactor;
             self.firstData = YES;
@@ -131,7 +132,7 @@ NSString * kDCHTTPOperationErrorDomain = @"kDCHTTPOperationErrorDomain";
             self.debugDelayTimer = nil;
 #endif
             // any thread
-            SAFE_ARC_SAFERELEASE(self->_request);
+            self.request = nil;
             self.acceptableStatusCodes = nil;
             self.acceptableContentTypes = nil;
             self.responseOutputStream = nil;
@@ -139,9 +140,7 @@ NSString * kDCHTTPOperationErrorDomain = @"kDCHTTPOperationErrorDomain";
             self.dataAccumulator = nil;
             self.lastRequest = nil;
             self.lastResponse = nil;
-            SAFE_ARC_SAFERELEASE(self->_responseBody);
         }
-        SAFE_ARC_SUPER_DEALLOC();
     } while (NO);
 }
 
@@ -234,8 +233,7 @@ NSString * kDCHTTPOperationErrorDomain = @"kDCHTTPOperationErrorDomain";
 #endif
             
             // Create a connection that's scheduled in the required run loop modes.
-            SAFE_ARC_SAFERELEASE(self->_connection);
-            self->_connection = [[NSURLConnection alloc] initWithRequest:self.request delegate:self startImmediately:NO];
+            self.connection = [[NSURLConnection alloc] initWithRequest:self.request delegate:self startImmediately:NO];
             DCAssert(self.connection != nil);
             
             for (NSString *mode in self.actualRunLoopModes) {
@@ -303,8 +301,6 @@ NSString * kDCHTTPOperationErrorDomain = @"kDCHTTPOperationErrorDomain";
         DCAssert(timer == self.debugDelayTimer);
         
         error = [timer userInfo];
-        SAFE_ARC_RETAIN(error);
-        SAFE_ARC_AUTORELEASE(error);
         DCAssert((error == nil) || [error isKindOfClass:[NSError class]]);
         
         [self.debugDelayTimer invalidate];
@@ -482,7 +478,7 @@ NSString * kDCHTTPOperationErrorDomain = @"kDCHTTPOperationErrorDomain";
         
         // Swap the data accumulator over to the response data so that we don't trigger a copy.
         DCAssert(self.responseBody == nil);
-        self->_responseBody = [self->_dataAccumulator copy];
+        self.responseBody = [self->_dataAccumulator copy];
         self.dataAccumulator = nil;
         
         if (!self.isStatusCodeAcceptable) {

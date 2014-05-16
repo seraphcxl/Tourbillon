@@ -10,7 +10,7 @@
 
 @interface NSObject (GCDThreadSafe)
 
-- (id)threadSafe_init;
+- (instancetype)threadSafe_init;
 - (BOOL)threadSafe_QueueSync:(dispatch_block_t) block;
 - (BOOL)threadSafe_QueueBarrierAsync:(dispatch_block_t) block;
 

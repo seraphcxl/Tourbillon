@@ -121,7 +121,6 @@
 		89E138421925B25C00A3EFB7 /* DCWebUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138111925B25C00A3EFB7 /* DCWebUtility.m */; };
 		89E138431925B25C00A3EFB7 /* DCWebUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138111925B25C00A3EFB7 /* DCWebUtility.m */; };
 		89E138441925B25C00A3EFB7 /* DCWebUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138111925B25C00A3EFB7 /* DCWebUtility.m */; };
-		89E138481925B61000A3EFB7 /* UIColor+DCAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138461925B61000A3EFB7 /* UIColor+DCAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E1384B1925B61000A3EFB7 /* UIColor+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138471925B61000A3EFB7 /* UIColor+DCAdditions.m */; };
 		89E1384C1925B61000A3EFB7 /* UIColor+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138471925B61000A3EFB7 /* UIColor+DCAdditions.m */; };
 		89E138501925B61900A3EFB7 /* NSColor+DCAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1384E1925B61900A3EFB7 /* NSColor+DCAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -164,11 +163,6 @@
 		89E138901925BAC200A3EFB7 /* NSWindowController+CenterToScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1388B1925BAC200A3EFB7 /* NSWindowController+CenterToScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E138911925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1388C1925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m */; };
 		89E138921925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1388C1925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m */; };
-		89E1389F1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1389D1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89E138A01925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1389E1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m */; };
-		89E138A11925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1389E1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m */; };
-		89E138A21925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1389E1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m */; };
-		89E138A31925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1389E1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m */; };
 		89E138A41925BE8C00A3EFB7 /* DCTourbillon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E1385C1925B71100A3EFB7 /* DCTourbillon.h */; };
 		89E138A51925BE8C00A3EFB7 /* DCCommonConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137E71925B24F00A3EFB7 /* DCCommonConstants.h */; };
 		89E138A61925BE8C00A3EFB7 /* DCLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137E81925B24F00A3EFB7 /* DCLogger.h */; };
@@ -200,8 +194,13 @@
 		89E138C01925BE8C00A3EFB7 /* DCUIMainThreadGuard.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E1380C1925B25C00A3EFB7 /* DCUIMainThreadGuard.h */; };
 		89E138C11925BE8C00A3EFB7 /* DCWatchedOperationQueue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E1380E1925B25C00A3EFB7 /* DCWatchedOperationQueue.h */; };
 		89E138C21925BE8C00A3EFB7 /* DCWebUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E138101925B25C00A3EFB7 /* DCWebUtility.h */; };
-		89E138C31925BE8C00A3EFB7 /* DCMainThreadAsyncReactiveObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E1389D1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.h */; };
 		89E138C41925BE8C00A3EFB7 /* DCTestBlocker.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137F51925B25600A3EFB7 /* DCTestBlocker.h */; };
+		89E138C71925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E138C51925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E138C81925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138C61925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m */; };
+		89E138C91925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138C61925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m */; };
+		89E138CA1925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138C61925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m */; };
+		89E138CB1925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E138C61925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m */; };
+		89E138CC1925D28B00A3EFB7 /* NSObject+MainThreadAsyncReactive.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E138C51925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -228,6 +227,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				89E138CC1925D28B00A3EFB7 /* NSObject+MainThreadAsyncReactive.h in CopyFiles */,
 				89E138A41925BE8C00A3EFB7 /* DCTourbillon.h in CopyFiles */,
 				89E138A51925BE8C00A3EFB7 /* DCCommonConstants.h in CopyFiles */,
 				89E138A61925BE8C00A3EFB7 /* DCLogger.h in CopyFiles */,
@@ -259,7 +259,6 @@
 				89E138C01925BE8C00A3EFB7 /* DCUIMainThreadGuard.h in CopyFiles */,
 				89E138C11925BE8C00A3EFB7 /* DCWatchedOperationQueue.h in CopyFiles */,
 				89E138C21925BE8C00A3EFB7 /* DCWebUtility.h in CopyFiles */,
-				89E138C31925BE8C00A3EFB7 /* DCMainThreadAsyncReactiveObject.h in CopyFiles */,
 				89E138C41925BE8C00A3EFB7 /* DCTestBlocker.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,8 +351,8 @@
 		89E1388A1925BAC200A3EFB7 /* NSViewController+ViewLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSViewController+ViewLogic.m"; sourceTree = "<group>"; };
 		89E1388B1925BAC200A3EFB7 /* NSWindowController+CenterToScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindowController+CenterToScreen.h"; sourceTree = "<group>"; };
 		89E1388C1925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindowController+CenterToScreen.m"; sourceTree = "<group>"; };
-		89E1389D1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCMainThreadAsyncReactiveObject.h; sourceTree = "<group>"; };
-		89E1389E1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCMainThreadAsyncReactiveObject.m; sourceTree = "<group>"; };
+		89E138C51925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MainThreadAsyncReactive.h"; sourceTree = "<group>"; };
+		89E138C61925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MainThreadAsyncReactive.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -540,6 +539,8 @@
 				89E137A91925B24800A3EFB7 /* NSString+DCParseCSV.m */,
 				89E137AA1925B24800A3EFB7 /* NSString+DCURLCoding.h */,
 				89E137AB1925B24800A3EFB7 /* NSString+DCURLCoding.m */,
+				89E138C51925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.h */,
+				89E138C61925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -587,8 +588,6 @@
 				89E1380F1925B25C00A3EFB7 /* DCWatchedOperationQueue.m */,
 				89E138101925B25C00A3EFB7 /* DCWebUtility.h */,
 				89E138111925B25C00A3EFB7 /* DCWebUtility.m */,
-				89E1389D1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.h */,
-				89E1389E1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -669,14 +668,13 @@
 				89E137D71925B24800A3EFB7 /* NSString+DCParseCSV.h in Headers */,
 				89E137ED1925B24F00A3EFB7 /* DCLogger.h in Headers */,
 				89E1387A1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.h in Headers */,
-				89E138481925B61000A3EFB7 /* UIColor+DCAdditions.h in Headers */,
 				89E138751925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.h in Headers */,
 				89E137EC1925B24F00A3EFB7 /* DCCommonConstants.h in Headers */,
 				89E137C81925B24800A3EFB7 /* NSObject+Swizzle.h in Headers */,
 				89E138901925BAC200A3EFB7 /* NSWindowController+CenterToScreen.h in Headers */,
 				89E137AE1925B24800A3EFB7 /* DCBase64Define.h in Headers */,
+				89E138C71925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.h in Headers */,
 				89E137F21925B24F00A3EFB7 /* DCSafeARC.h in Headers */,
-				89E1389F1925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -825,6 +823,7 @@
 			files = (
 				89E1381E1925B25C00A3EFB7 /* DCImageUtility.m in Sources */,
 				89E137C91925B24800A3EFB7 /* NSObject+Swizzle.m in Sources */,
+				89E138C81925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m in Sources */,
 				89E1388E1925BAC200A3EFB7 /* NSViewController+ViewLogic.m in Sources */,
 				89E137D81925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */,
 				89E137EE1925B24F00A3EFB7 /* DCLogger.m in Sources */,
@@ -838,7 +837,6 @@
 				89E137B51925B24800A3EFB7 /* NSData+DCBase64.m in Sources */,
 				89E138911925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m in Sources */,
 				89E138281925B25C00A3EFB7 /* DCRunLoopOperation.m in Sources */,
-				89E138A01925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */,
 				89E137CE1925B24800A3EFB7 /* NSString+DCBase64.m in Sources */,
 				89E1387B1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m in Sources */,
 				89E1386C1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m in Sources */,
@@ -881,11 +879,11 @@
 				89E137CF1925B24800A3EFB7 /* NSString+DCBase64.m in Sources */,
 				89E1387C1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m in Sources */,
 				89E138381925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */,
-				89E138A11925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */,
 				89E137D41925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */,
 				89E137DE1925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */,
 				89E137F91925B25600A3EFB7 /* DCTestBlocker.m in Sources */,
 				89E1382E1925B25C00A3EFB7 /* DCStack.m in Sources */,
+				89E138C91925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m in Sources */,
 				89E137C51925B24800A3EFB7 /* NSNumber+DCRandom.m in Sources */,
 				89E138771925B94600A3EFB7 /* NSMutableDictionary+GCDThreadSafe.m in Sources */,
 				89E1388F1925BAC200A3EFB7 /* NSViewController+ViewLogic.m in Sources */,
@@ -897,11 +895,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				89E138201925B25C00A3EFB7 /* DCImageUtility.m in Sources */,
-				89E138A21925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */,
 				89E1386E1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m in Sources */,
 				89E137CB1925B24800A3EFB7 /* NSObject+Swizzle.m in Sources */,
 				89E137DA1925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */,
 				89E138821925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m in Sources */,
+				89E138CA1925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m in Sources */,
 				89E137F01925B24F00A3EFB7 /* DCLogger.m in Sources */,
 				89E138871925B94600A3EFB7 /* NSObject+GCDThreadSafe.m in Sources */,
 				89E1383E1925B25C00A3EFB7 /* DCWatchedOperationQueue.m in Sources */,
@@ -931,7 +929,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				89E138211925B25C00A3EFB7 /* DCImageUtility.m in Sources */,
-				89E138A31925BC5800A3EFB7 /* DCMainThreadAsyncReactiveObject.m in Sources */,
 				89E1386F1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m in Sources */,
 				89E137CC1925B24800A3EFB7 /* NSObject+Swizzle.m in Sources */,
 				89E137DB1925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */,
@@ -950,6 +947,7 @@
 				89E137B81925B24800A3EFB7 /* NSData+DCBase64.m in Sources */,
 				89E1382B1925B25C00A3EFB7 /* DCRunLoopOperation.m in Sources */,
 				89E137D11925B24800A3EFB7 /* NSString+DCBase64.m in Sources */,
+				89E138CB1925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m in Sources */,
 				89E1387E1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m in Sources */,
 				89E1383A1925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */,
 				89E137D61925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */,

@@ -8,12 +8,14 @@
 
 #import "NSObject+GCDThreadSafe.h"
 #import <objc/runtime.h>
+//#import "DCSafeARC.h"
+#import "NSObject+Swizzle.h"
 
 static char NSObjectGCDThreadSafeQueueKey;
 
 @implementation NSObject (GCDThreadSafe)
 
-- (id)threadSafe_init {
+- (instancetype)threadSafe_init {
     do {
         @synchronized(self) {
             if ([self getGCDThreadSafeQueue]) {

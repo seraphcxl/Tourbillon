@@ -94,8 +94,7 @@
         } else {
             options = [[NSDictionary alloc] initWithObjectsAndKeys:(id)kCFBooleanTrue, (id)kCGImageSourceCreateThumbnailWithTransform, (id)kCFBooleanTrue, (id)kCGImageSourceCreateThumbnailFromImageAlways, nil];
         }
-        result = CGImageSourceCreateImageAtIndex(sourceRef, 0, (SAFE_ARC_BRIDGE CFDictionaryRef)options);
-        SAFE_ARC_SAFERELEASE(options);
+        result = CGImageSourceCreateImageAtIndex(sourceRef, 0, (__bridge CFDictionaryRef)options);
     } while (NO);
     if (sourceRef) {
         CFRelease(sourceRef);

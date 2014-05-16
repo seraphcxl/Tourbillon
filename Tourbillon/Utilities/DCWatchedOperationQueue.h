@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DCSafeARC.h"
+//#import "DCSafeARC.h"
 
 @interface DCWatchedOperationFinishedActionStub : NSObject {
 }
 
-@property (nonatomic, SAFE_ARC_PROP_WEAK, readonly) NSOperation *operation;
-@property (nonatomic, SAFE_ARC_PROP_WEAK, readonly) id target;
-@property (nonatomic, SAFE_ARC_PROP_STRONG, readonly) NSThread *thread;
+@property (nonatomic, weak, readonly) NSOperation *operation;
+@property (nonatomic, weak, readonly) id target;
+@property (nonatomic, strong, readonly) NSThread *thread;
 @property (nonatomic, assign, readonly) SEL finishedAction;
 @property (nonatomic, assign, readonly) SEL cancelAction;
 
@@ -25,7 +25,7 @@
 @interface DCWatchedOperationQueue : NSOperationQueue {
 }
 
-@property (atomic, SAFE_ARC_PROP_STRONG, readonly) NSString *uuid;
+@property (atomic, strong, readonly) NSString *uuid;
 
 - (void)addOperation:(NSOperation *)operation forTarget:(id)target withFinishedAction:(SEL)finishedAction andCancelAction:(SEL)cancelAction;
 - (void)invalidate;

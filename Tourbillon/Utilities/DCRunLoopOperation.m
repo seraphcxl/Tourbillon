@@ -64,10 +64,9 @@
             self.runLoopThread = nil;
             self.error = nil;
 #if ! defined(NDEBUG)
-            SAFE_ARC_RELEASE(self->_debugEventLog);
+            _debugEventLog = nil;
 #endif
         }
-        SAFE_ARC_SUPER_DEALLOC();
     } while (NO);
 }
 
@@ -439,7 +438,6 @@
         @synchronized (self) {
             // _debugEventLog may be nil, and that's OK.
             result = [self->_debugEventLog copy];
-            SAFE_ARC_AUTORELEASE(result);
         }
     } while (NO);
     return result;

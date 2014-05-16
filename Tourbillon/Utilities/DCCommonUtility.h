@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DCSafeARC.h"
+//#import "DCSafeARC.h"
 
 #define DC_GOODPOWER 7
 #define DC_GOODMASK ((1 << DC_GOODPOWER) - 1)

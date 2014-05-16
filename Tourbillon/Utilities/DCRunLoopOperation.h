@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DCSafeARC.h"
+//#import "DCSafeARC.h"
 
 typedef enum DCRunLoopOperationState {
     kDCRunLoopOperationStateInited,
@@ -30,13 +30,13 @@ typedef enum DCRunLoopOperationState {
 // IMPORTANT: Do not change these after queuing the operation; it's very likely that
 // bad things will happen if you do.
 
-@property (atomic, SAFE_ARC_PROP_STRONG, readwrite) NSThread *runLoopThread;  // default is nil, implying main thread
+@property (atomic, strong, readwrite) NSThread *runLoopThread;  // default is nil, implying main thread
 @property (atomic, copy, readwrite) NSSet *runLoopModes;  // default is nil, implying set containing NSDefaultRunLoopMode
 
 @property (atomic, copy, readonly) NSError *error;
 
 @property (atomic, assign, readonly) DCRunLoopOperationState state;
-@property (atomic, SAFE_ARC_PROP_STRONG, readonly) NSThread *actualRunLoopThread;  // main thread if runLoopThread is nil, runLoopThread otherwise
+@property (atomic, strong, readonly) NSThread *actualRunLoopThread;  // main thread if runLoopThread is nil, runLoopThread otherwise
 @property (atomic, assign, readonly) BOOL isActualRunLoopThread;  // YES if the current thread is the actual run loop thread
 @property (atomic, copy, readonly) NSSet *actualRunLoopModes;  // set containing NSDefaultRunLoopMode if runLoopModes is nil or empty, runLoopModes otherwise
 

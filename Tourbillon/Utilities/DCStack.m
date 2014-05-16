@@ -11,7 +11,7 @@
 @interface DCStack () {
 }
 
-@property (nonatomic, SAFE_ARC_PROP_STRONG) NSMutableArray *objects;
+@property (nonatomic, strong) NSMutableArray *objects;
 
 @end
 
@@ -39,7 +39,6 @@
         @synchronized(self) {
             self.objects = nil;
         }
-        SAFE_ARC_SUPER_DEALLOC();
     } while (NO);
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DCSafeARC.h"
+//#import "DCSafeARC.h"
 
 extern NSString *const DCRPNUtilityUnknownOperatorException;
 extern NSString *const DCRPNUtilityInvalidInstructionException;
@@ -16,7 +16,7 @@ extern NSString *const DCRPNUtilityInstuctionUnderrunException;
 @interface DCRPNUtility : NSObject {
 }
 
-@property (nonatomic, SAFE_ARC_PROP_STRONG, readonly) NSNumber *currentResult;
+@property (nonatomic, strong, readonly) NSNumber *currentResult;
 
 - (id)initWithInstructions:(NSArray* )instructions;
 

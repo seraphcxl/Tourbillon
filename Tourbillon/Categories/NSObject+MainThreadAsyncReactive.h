@@ -1,5 +1,5 @@
 //
-//  DCMainThreadAsyncReactiveObject.h
+//  NSObject+MainThreadAsyncReactive.h
 //  Tourbillon
 //
 //  Created by Derek Chen on 5/16/14.
@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DCMainThreadAsyncReactiveObject : NSObject {
+@interface NSObject (MainThreadAsyncReactive) {
 }
 
-@property (strong, atomic, readonly) NSOperationQueue *asyncReactiveQueue;
+- (instancetype)mainThreadAsyncReactive_init;
+- (void)mainThreadAsyncReactive_dealloc;
 
 - (void)addOperationForAsyncReactiveInMainThreadWithBlock:(void (^)(id strongSelf))block;
 
