@@ -19,6 +19,8 @@
 		892EE3BB1938C61200571890 /* NSData+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3B81938C61200571890 /* NSData+DCLibrarySupport.m */; };
 		892EE3BC1938C61200571890 /* NSData+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3B81938C61200571890 /* NSData+DCLibrarySupport.m */; };
 		892EE3BD1938C61200571890 /* NSData+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3B81938C61200571890 /* NSData+DCLibrarySupport.m */; };
+		894DF6E919394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 894DF6E819394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m */; };
+		894DF6EA19394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 894DF6E819394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m */; };
 		89E137441925B11000A3EFB7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
 		89E1374E1925B11000A3EFB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89E1374C1925B11000A3EFB7 /* InfoPlist.strings */; };
 		89E137591925B11000A3EFB7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137581925B11000A3EFB7 /* XCTest.framework */; };
@@ -284,6 +286,8 @@
 		892EE3B01938C4BB00571890 /* UIImage+DCLibrarySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DCLibrarySupport.m"; sourceTree = "<group>"; };
 		892EE3B71938C61200571890 /* NSData+DCLibrarySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DCLibrarySupport.h"; sourceTree = "<group>"; };
 		892EE3B81938C61200571890 /* NSData+DCLibrarySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DCLibrarySupport.m"; sourceTree = "<group>"; };
+		894DF6E719394C0B00EF9C9C /* UIViewController+DCLibrarySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DCLibrarySupport.h"; sourceTree = "<group>"; };
+		894DF6E819394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DCLibrarySupport.m"; sourceTree = "<group>"; };
 		89E137401925B11000A3EFB7 /* Tourbillon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tourbillon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E137431925B11000A3EFB7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		89E137461925B11000A3EFB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -621,6 +625,8 @@
 				89E138471925B61000A3EFB7 /* UIColor+DCAdditions.m */,
 				892EE3AF1938C4BB00571890 /* UIImage+DCLibrarySupport.h */,
 				892EE3B01938C4BB00571890 /* UIImage+DCLibrarySupport.m */,
+				894DF6E719394C0B00EF9C9C /* UIViewController+DCLibrarySupport.h */,
+				894DF6E819394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -927,6 +933,7 @@
 				89E138201925B25C00A3EFB7 /* DCImageUtility.m in Sources */,
 				89E1386E1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m in Sources */,
 				89E137CB1925B24800A3EFB7 /* NSObject+Swizzle.m in Sources */,
+				894DF6E919394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m in Sources */,
 				89E137DA1925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */,
 				89E138821925B94600A3EFB7 /* NSMutableString+GCDThreadSafe.m in Sources */,
 				89E138CA1925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m in Sources */,
@@ -984,6 +991,7 @@
 				89E1382B1925B25C00A3EFB7 /* DCRunLoopOperation.m in Sources */,
 				89E137D11925B24800A3EFB7 /* NSString+DCBase64.m in Sources */,
 				89E138CB1925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.m in Sources */,
+				894DF6EA19394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m in Sources */,
 				89E1387E1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m in Sources */,
 				89E1383A1925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */,
 				89E137D61925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */,

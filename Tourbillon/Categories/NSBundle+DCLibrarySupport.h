@@ -12,4 +12,6 @@
 
 + (NSBundle *)libraryResourcesBundle:(NSString *)libraryName;
 
++ (void)removeAllLibraryResourcesBundles;
+
 @end

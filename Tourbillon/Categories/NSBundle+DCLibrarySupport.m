@@ -7,6 +7,9 @@
 //
 
 #import "NSBundle+DCLibrarySupport.h"
+#import "NSMutableDictionary+GCDThreadSafe.h"
+
+static NSMutableDictionary *s_libraryResourcesBundleDict = nil;
 
 @implementation NSBundle (DCLibrarySupport)
 
@@ -17,9 +20,29 @@
             break;
         }
         
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            s_libraryResourcesBundleDict = [[NSMutableDictionary dictionary] threadSafe_init];
+        });
+        
+        libraryResourcesBundle = [s_libraryResourcesBundleDict threadSafe_objectForKey:libraryName];
+        if (libraryResourcesBundle) {
+            break;
+        }
+        
         libraryResourcesBundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:libraryName withExtension:@"bundle"]];
+        [s_libraryResourcesBundleDict threadSafe_setObject:libraryResourcesBundle forKey:libraryName];
+        
     } while (NO);
     return libraryResourcesBundle;
+}
+
++ (void)removeAllLibraryResourcesBundles {
+    do {
+        if (s_libraryResourcesBundleDict) {
+            [s_libraryResourcesBundleDict threadSafe_removeAllObjects];
+        }
+    } while (NO);
 }
 
 @end
