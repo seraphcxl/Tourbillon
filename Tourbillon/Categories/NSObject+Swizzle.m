@@ -15,6 +15,9 @@ BOOL DCReplaceMethodWithBlock(Class c, SEL origSEL, SEL newSEL, id block) {
     do {
         DCAssert(c && origSEL && newSEL && block);
         Method origMethod = class_getInstanceMethod(c, origSEL);
+        if (!origMethod) {
+            break;
+        }
         const char *encoding = method_getTypeEncoding(origMethod);
         
         // Add the new method.
