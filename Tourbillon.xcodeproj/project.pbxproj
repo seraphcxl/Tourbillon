@@ -7,20 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		892EE3AA1938C36400571890 /* NSBundle+DCLibrarySupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 892EE3A81938C36400571890 /* NSBundle+DCLibrarySupport.h */; };
+		892EE3AA1938C36400571890 /* NSBundle+DCLibrarySupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 892EE3A81938C36400571890 /* NSBundle+DCLibrarySupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		892EE3AB1938C36400571890 /* NSBundle+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3A91938C36400571890 /* NSBundle+DCLibrarySupport.m */; };
 		892EE3AC1938C36400571890 /* NSBundle+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3A91938C36400571890 /* NSBundle+DCLibrarySupport.m */; };
 		892EE3AD1938C36400571890 /* NSBundle+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3A91938C36400571890 /* NSBundle+DCLibrarySupport.m */; };
 		892EE3AE1938C36400571890 /* NSBundle+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3A91938C36400571890 /* NSBundle+DCLibrarySupport.m */; };
 		892EE3B11938C4BB00571890 /* UIImage+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3B01938C4BB00571890 /* UIImage+DCLibrarySupport.m */; };
 		892EE3B21938C4BB00571890 /* UIImage+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3B01938C4BB00571890 /* UIImage+DCLibrarySupport.m */; };
-		892EE3B91938C61200571890 /* NSData+DCLibrarySupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 892EE3B71938C61200571890 /* NSData+DCLibrarySupport.h */; };
+		892EE3B91938C61200571890 /* NSData+DCLibrarySupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 892EE3B71938C61200571890 /* NSData+DCLibrarySupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		892EE3BA1938C61200571890 /* NSData+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3B81938C61200571890 /* NSData+DCLibrarySupport.m */; };
 		892EE3BB1938C61200571890 /* NSData+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3B81938C61200571890 /* NSData+DCLibrarySupport.m */; };
 		892EE3BC1938C61200571890 /* NSData+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3B81938C61200571890 /* NSData+DCLibrarySupport.m */; };
 		892EE3BD1938C61200571890 /* NSData+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3B81938C61200571890 /* NSData+DCLibrarySupport.m */; };
 		894DF6E919394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 894DF6E819394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m */; };
 		894DF6EA19394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 894DF6E819394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m */; };
+		89CA25741962CEAC00471681 /* NSURL+UTTypeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CA25721962CEAC00471681 /* NSURL+UTTypeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89CA25751962CEAD00471681 /* NSURL+UTTypeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CA25731962CEAC00471681 /* NSURL+UTTypeSupport.m */; };
+		89CA25761962CEAD00471681 /* NSURL+UTTypeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CA25731962CEAC00471681 /* NSURL+UTTypeSupport.m */; };
 		89E137441925B11000A3EFB7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
 		89E1374E1925B11000A3EFB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89E1374C1925B11000A3EFB7 /* InfoPlist.strings */; };
 		89E137591925B11000A3EFB7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137581925B11000A3EFB7 /* XCTest.framework */; };
@@ -288,6 +291,8 @@
 		892EE3B81938C61200571890 /* NSData+DCLibrarySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DCLibrarySupport.m"; sourceTree = "<group>"; };
 		894DF6E719394C0B00EF9C9C /* UIViewController+DCLibrarySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DCLibrarySupport.h"; sourceTree = "<group>"; };
 		894DF6E819394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DCLibrarySupport.m"; sourceTree = "<group>"; };
+		89CA25721962CEAC00471681 /* NSURL+UTTypeSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+UTTypeSupport.h"; sourceTree = "<group>"; };
+		89CA25731962CEAC00471681 /* NSURL+UTTypeSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+UTTypeSupport.m"; sourceTree = "<group>"; };
 		89E137401925B11000A3EFB7 /* Tourbillon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tourbillon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E137431925B11000A3EFB7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		89E137461925B11000A3EFB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -567,6 +572,8 @@
 				892EE3A91938C36400571890 /* NSBundle+DCLibrarySupport.m */,
 				892EE3B71938C61200571890 /* NSData+DCLibrarySupport.h */,
 				892EE3B81938C61200571890 /* NSData+DCLibrarySupport.m */,
+				89CA25721962CEAC00471681 /* NSURL+UTTypeSupport.h */,
+				89CA25731962CEAC00471681 /* NSURL+UTTypeSupport.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -679,7 +686,6 @@
 				89E137CD1925B24800A3EFB7 /* NSString+DCBase64.h in Headers */,
 				89E138131925B25C00A3EFB7 /* DCCommonUtility.h in Headers */,
 				89E138401925B25C00A3EFB7 /* DCWebUtility.h in Headers */,
-				892EE3B91938C61200571890 /* NSData+DCLibrarySupport.h in Headers */,
 				89E1383B1925B25C00A3EFB7 /* DCWatchedOperationQueue.h in Headers */,
 				89E138221925B25C00A3EFB7 /* DCRPNUtility.h in Headers */,
 				89E138361925B25C00A3EFB7 /* DCUIMainThreadGuard.h in Headers */,
@@ -691,7 +697,6 @@
 				89E1381D1925B25C00A3EFB7 /* DCImageUtility.h in Headers */,
 				89E137DC1925B24800A3EFB7 /* NSString+DCURLCoding.h in Headers */,
 				89E137B41925B24800A3EFB7 /* NSData+DCBase64.h in Headers */,
-				892EE3AA1938C36400571890 /* NSBundle+DCLibrarySupport.h in Headers */,
 				89E1382C1925B25C00A3EFB7 /* DCStack.h in Headers */,
 				89E138121925B25C00A3EFB7 /* DCAtomicSetters.h in Headers */,
 				89E138181925B25C00A3EFB7 /* DCHTTPOperation.h in Headers */,
@@ -704,6 +709,9 @@
 				89E137EC1925B24F00A3EFB7 /* DCCommonConstants.h in Headers */,
 				89E137C81925B24800A3EFB7 /* NSObject+Swizzle.h in Headers */,
 				89E138901925BAC200A3EFB7 /* NSWindowController+CenterToScreen.h in Headers */,
+				892EE3B91938C61200571890 /* NSData+DCLibrarySupport.h in Headers */,
+				89CA25741962CEAC00471681 /* NSURL+UTTypeSupport.h in Headers */,
+				892EE3AA1938C36400571890 /* NSBundle+DCLibrarySupport.h in Headers */,
 				89E137AE1925B24800A3EFB7 /* DCBase64Define.h in Headers */,
 				89E138C71925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.h in Headers */,
 				89E137F21925B24F00A3EFB7 /* DCSafeARC.h in Headers */,
@@ -876,6 +884,7 @@
 				89E1386C1925B94600A3EFB7 /* NSMutableArray+GCDThreadSafe.m in Sources */,
 				89E138371925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */,
 				89E138851925B94600A3EFB7 /* NSObject+GCDThreadSafe.m in Sources */,
+				89CA25751962CEAD00471681 /* NSURL+UTTypeSupport.m in Sources */,
 				89E137D31925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */,
 				89E137DD1925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */,
 				89E138711925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m in Sources */,
@@ -953,6 +962,7 @@
 				89E137D01925B24800A3EFB7 /* NSString+DCBase64.m in Sources */,
 				892EE3B11938C4BB00571890 /* UIImage+DCLibrarySupport.m in Sources */,
 				89E1387D1925B94600A3EFB7 /* NSMutableSet+GCDThreadSafe.m in Sources */,
+				89CA25761962CEAD00471681 /* NSURL+UTTypeSupport.m in Sources */,
 				89E138391925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */,
 				892EE3AD1938C36400571890 /* NSBundle+DCLibrarySupport.m in Sources */,
 				89E137D51925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */,
