@@ -24,6 +24,8 @@
 		89CA25741962CEAC00471681 /* NSURL+UTTypeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CA25721962CEAC00471681 /* NSURL+UTTypeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89CA25751962CEAD00471681 /* NSURL+UTTypeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CA25731962CEAC00471681 /* NSURL+UTTypeSupport.m */; };
 		89CA25761962CEAD00471681 /* NSURL+UTTypeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CA25731962CEAC00471681 /* NSURL+UTTypeSupport.m */; };
+		89CA258A1962FE1300471681 /* NSColor+DCColorful.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CA25881962FE1300471681 /* NSColor+DCColorful.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89CA258B1962FE1300471681 /* NSColor+DCColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CA25891962FE1300471681 /* NSColor+DCColorful.m */; };
 		89E137441925B11000A3EFB7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
 		89E1374E1925B11000A3EFB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89E1374C1925B11000A3EFB7 /* InfoPlist.strings */; };
 		89E137591925B11000A3EFB7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137581925B11000A3EFB7 /* XCTest.framework */; };
@@ -293,6 +295,8 @@
 		894DF6E819394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DCLibrarySupport.m"; sourceTree = "<group>"; };
 		89CA25721962CEAC00471681 /* NSURL+UTTypeSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+UTTypeSupport.h"; sourceTree = "<group>"; };
 		89CA25731962CEAC00471681 /* NSURL+UTTypeSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+UTTypeSupport.m"; sourceTree = "<group>"; };
+		89CA25881962FE1300471681 /* NSColor+DCColorful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+DCColorful.h"; sourceTree = "<group>"; };
+		89CA25891962FE1300471681 /* NSColor+DCColorful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+DCColorful.m"; sourceTree = "<group>"; };
 		89E137401925B11000A3EFB7 /* Tourbillon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tourbillon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E137431925B11000A3EFB7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		89E137461925B11000A3EFB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -647,6 +651,8 @@
 				89E1388C1925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m */,
 				89E1384E1925B61900A3EFB7 /* NSColor+DCAdditions.h */,
 				89E1384F1925B61900A3EFB7 /* NSColor+DCAdditions.m */,
+				89CA25881962FE1300471681 /* NSColor+DCColorful.h */,
+				89CA25891962FE1300471681 /* NSColor+DCColorful.m */,
 			);
 			path = Mac;
 			sourceTree = "<group>";
@@ -714,6 +720,7 @@
 				892EE3AA1938C36400571890 /* NSBundle+DCLibrarySupport.h in Headers */,
 				89E137AE1925B24800A3EFB7 /* DCBase64Define.h in Headers */,
 				89E138C71925BEFD00A3EFB7 /* NSObject+MainThreadAsyncReactive.h in Headers */,
+				89CA258A1962FE1300471681 /* NSColor+DCColorful.h in Headers */,
 				89E137F21925B24F00A3EFB7 /* DCSafeARC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -877,6 +884,7 @@
 				89E137B51925B24800A3EFB7 /* NSData+DCBase64.m in Sources */,
 				89E138911925BAC200A3EFB7 /* NSWindowController+CenterToScreen.m in Sources */,
 				89E138281925B25C00A3EFB7 /* DCRunLoopOperation.m in Sources */,
+				89CA258B1962FE1300471681 /* NSColor+DCColorful.m in Sources */,
 				89E137CE1925B24800A3EFB7 /* NSString+DCBase64.m in Sources */,
 				892EE3BA1938C61200571890 /* NSData+DCLibrarySupport.m in Sources */,
 				892EE3AB1938C36400571890 /* NSBundle+DCLibrarySupport.m in Sources */,

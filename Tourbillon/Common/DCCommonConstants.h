@@ -67,7 +67,7 @@
 /**** **** **** **** **** **** **** ****/
 #ifndef DC_RGB_DEFINE
 #define DC_RGB_DEFINE
-#define DC_RGB(x) (((CGFloat)x) / 255.0f)
+#define DC_RGB(x) ((CGFloat)((x) / 255.0f))
 #endif
 /**** **** **** **** **** **** **** ****/
 #endif
