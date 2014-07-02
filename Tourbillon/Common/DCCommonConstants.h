@@ -65,9 +65,9 @@
 #define DC_MEMSIZE_MB(n) ((NSUInteger)(DC_MEMSIZE_KB(n) * 1024))
 #define DC_MEMSIZE_GB(n) ((NSUInteger)(DC_MEMSIZE_MB(n) * 1024))
 /**** **** **** **** **** **** **** ****/
-#ifndef DC_RGB_DEFINE
-#define DC_RGB_DEFINE
-#define DC_RGB(x) ((CGFloat)((x) / 255.0f))
+#ifndef DC_RGB256_DEFINE
+#define DC_RGB256_DEFINE
+#define DC_RGB256(x) ((CGFloat)((x) / 255.0f))
 #endif
 /**** **** **** **** **** **** **** ****/
 #endif

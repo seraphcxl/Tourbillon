@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		891F1F83196391F700796F46 /* UIColor+DCColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 891F1F82196391F700796F46 /* UIColor+DCColorful.m */; };
 		892EE3AA1938C36400571890 /* NSBundle+DCLibrarySupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 892EE3A81938C36400571890 /* NSBundle+DCLibrarySupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		892EE3AB1938C36400571890 /* NSBundle+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3A91938C36400571890 /* NSBundle+DCLibrarySupport.m */; };
 		892EE3AC1938C36400571890 /* NSBundle+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3A91938C36400571890 /* NSBundle+DCLibrarySupport.m */; };
@@ -285,6 +286,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		891F1F81196391F700796F46 /* UIColor+DCColorful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DCColorful.h"; sourceTree = "<group>"; };
+		891F1F82196391F700796F46 /* UIColor+DCColorful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DCColorful.m"; sourceTree = "<group>"; };
 		892EE3A81938C36400571890 /* NSBundle+DCLibrarySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+DCLibrarySupport.h"; sourceTree = "<group>"; };
 		892EE3A91938C36400571890 /* NSBundle+DCLibrarySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+DCLibrarySupport.m"; sourceTree = "<group>"; };
 		892EE3AF1938C4BB00571890 /* UIImage+DCLibrarySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DCLibrarySupport.h"; sourceTree = "<group>"; };
@@ -638,6 +641,8 @@
 				892EE3B01938C4BB00571890 /* UIImage+DCLibrarySupport.m */,
 				894DF6E719394C0B00EF9C9C /* UIViewController+DCLibrarySupport.h */,
 				894DF6E819394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m */,
+				891F1F81196391F700796F46 /* UIColor+DCColorful.h */,
+				891F1F82196391F700796F46 /* UIColor+DCColorful.m */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -961,6 +966,7 @@
 				89E137C11925B24800A3EFB7 /* NSDictionary+DCSortable.m in Sources */,
 				89E138431925B25C00A3EFB7 /* DCWebUtility.m in Sources */,
 				89E138251925B25C00A3EFB7 /* DCRPNUtility.m in Sources */,
+				891F1F83196391F700796F46 /* UIColor+DCColorful.m in Sources */,
 				89E1384B1925B61000A3EFB7 /* UIColor+DCAdditions.m in Sources */,
 				89E138731925B94600A3EFB7 /* NSMutableData+GCDThreadSafe.m in Sources */,
 				89E138161925B25C00A3EFB7 /* DCCommonUtility.m in Sources */,
