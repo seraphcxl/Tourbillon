@@ -1,14 +1,14 @@
 //
-//  NSWindowController+CenterToScreen.m
+//  NSWindowController+DCCenterToScreen.m
 //  Tourbillon
 //
 //  Created by Derek Chen on 13-11-20.
 //  Copyright (c) 2013年 CaptainSolid Studio. All rights reserved.
 //
 
-#import "NSWindowController+CenterToScreen.h"
+#import "NSWindowController+DCCenterToScreen.h"
 
-@implementation NSWindowController (CenterToScreen)
+@implementation NSWindowController (DCCenterToScreen)
 
 - (void)centerToScreen {
     NSPoint theCoordinate = NSMakePoint(0, 0);

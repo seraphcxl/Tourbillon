@@ -1,5 +1,5 @@
 //
-//  NSMutableArray+GCDThreadSafe.h
+//  NSMutableArray+DCGCDThreadSafe.h
 //  Tourbillon
 //
 //  Created by Derek Chen on 5/7/14.
@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+GCDThreadSafe.h"
+#import "NSObject+DCGCDThreadSafe.h"
 
-@interface NSMutableArray (GCDThreadSafe)
+@interface NSMutableArray (DCGCDThreadSafe)
 
 #pragma mark NSArray
 - (NSUInteger)threadSafe_count;

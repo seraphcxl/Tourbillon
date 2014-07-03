@@ -1,14 +1,14 @@
 //
-//  NSURL+UTTypeSupport.m
+//  NSURL+DCUTTypeSupport.m
 //  Tourbillon
 //
 //  Created by Derek Chen on 7/1/14.
 //  Copyright (c) 2014 Derek Chen. All rights reserved.
 //
 
-#import "NSURL+UTTypeSupport.h"
+#import "NSURL+DCUTTypeSupport.h"
 
-@implementation NSURL (UTTypeSupport)
+@implementation NSURL (DCUTTypeSupport)
 
 - (NSString *)getUTType {
     CFStringRef fileExtension = (__bridge CFStringRef)(self.pathExtension);

@@ -70,4 +70,39 @@
 #define DC_RGB256(x) ((CGFloat)((x) / 255.0f))
 #endif
 /**** **** **** **** **** **** **** ****/
+
+#ifdef DEBUG
+#define DCFunctionPerformancePeriodTest(func, expectedLife, msg) \
+{ \
+    NSDate *start = [NSDate date]; \
+    { \
+        func; \
+    } \
+    NSDate *end = [NSDate date]; \
+    NSTimeInterval cost = [end timeIntervalSinceDate:start]; \
+    if (cost > expectedLife) { \
+        NSLog(@"%@ Cost: <%f>sec", msg, cost); \
+        NSAssert(0, @"DCFunctionPerformancePeriodTest failed!!!"); \
+    } \
+}
+
+#define DCFunctionPerformanceTimingBegin NSDate *start = [NSDate date];
+#define DCFunctionPerformanceTimingEnd(msg) \
+{ \
+    NSDate *end = [NSDate date]; \
+    NSTimeInterval cost = [end timeIntervalSinceDate:start]; \
+    NSLog(@"%@ Cost: <%f>sec", msg, cost); \
+}
+
+#else
+#define DCFunctionPerformancePeriodTest(func, expectedLife, msg) \
+{ \
+    func; \
+}
+#define DCFunctionPerformanceTimingBegin
+#define DCFunctionPerformanceTimingEnd(msg)
 #endif
+
+#endif
+
+

@@ -1,5 +1,5 @@
 //
-//  NSMutableString+GCDThreadSafe.h
+//  NSMutableString+DCGCDThreadSafe.h
 //  Tourbillon
 //
 //  Created by Derek Chen on 5/7/14.
@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+GCDThreadSafe.h"
+#import "NSObject+DCGCDThreadSafe.h"
 
-@interface NSMutableString (GCDThreadSafe)
+@interface NSMutableString (DCGCDThreadSafe)
 
 #pragma mark NSString
 - (NSUInteger)threadSafe_length;

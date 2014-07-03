@@ -1,5 +1,5 @@
 //
-//  NSURL+UTTypeSupport.h
+//  NSURL+DCUTTypeSupport.h
 //  Tourbillon
 //
 //  Created by Derek Chen on 7/1/14.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSURL (UTTypeSupport)
+@interface NSURL (DCUTTypeSupport)
 
 - (NSString *)getUTType;
 

@@ -1,14 +1,14 @@
 //
-//  NSMutableDictionary+GCDThreadSafe.m
+//  NSMutableDictionary+DCGCDThreadSafe.m
 //  Tourbillon
 //
 //  Created by Derek Chen on 5/7/14.
 //  Copyright (c) 2014 Derek Chen. All rights reserved.
 //
 
-#import "NSMutableDictionary+GCDThreadSafe.h"
+#import "NSMutableDictionary+DCGCDThreadSafe.h"
 
-@implementation NSMutableDictionary (GCDThreadSafe)
+@implementation NSMutableDictionary (DCGCDThreadSafe)
 
 #pragma mark NSDictionary
 - (NSUInteger)threadSafe_count {

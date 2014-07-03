@@ -1,19 +1,19 @@
 //
-//  NSObject+GCDThreadSafe.m
+//  NSObject+DCGCDThreadSafe.m
 //  Tourbillon
 //
 //  Created by Derek Chen on 5/8/14.
 //  Copyright (c) 2014 Derek Chen. All rights reserved.
 //
 
-#import "NSObject+GCDThreadSafe.h"
+#import "NSObject+DCGCDThreadSafe.h"
 #import <objc/runtime.h>
 //#import "DCSafeARC.h"
-#import "NSObject+Swizzle.h"
+#import "NSObject+DCSwizzle.h"
 
 static char NSObjectGCDThreadSafeQueueKey;
 
-@implementation NSObject (GCDThreadSafe)
+@implementation NSObject (DCGCDThreadSafe)
 
 - (instancetype)threadSafe_init {
     do {

@@ -1,12 +1,12 @@
 //
-//  NSObject+Swizzle.m
+//  NSObject+DCSwizzle.m
 //  Tourbillon
 //
 //  Created by Derek Chen on 13-7-16.
 //  Copyright (c) 2013年 CaptainSolid Studio. All rights reserved.
 //
 
-#import "NSObject+Swizzle.h"
+#import "NSObject+DCSwizzle.h"
 #import <objc/runtime.h>
 #import "DCLogger.h"
 
@@ -47,7 +47,7 @@ BOOL DCReplaceMethodWithBlock(Class c, SEL origSEL, SEL newSEL, id block) {
     return result;
 }
 
-@implementation NSObject (Swizzle)
+@implementation NSObject (DCSwizzle)
 
 + (void)swizzleInstanceSelector:(SEL)originalSelector withNewSelector:(SEL)newSelector {
     Method originalMethod = class_getInstanceMethod(self, originalSelector);

@@ -1,5 +1,5 @@
 //
-//  NSMutableData+GCDThreadSafe.h
+//  NSMutableData+DCGCDThreadSafe.h
 //  Tourbillon
 //
 //  Created by Derek Chen on 5/7/14.
@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+GCDThreadSafe.h"
+#import "NSObject+DCGCDThreadSafe.h"
 
-@interface NSMutableData (GCDThreadSafe)
+@interface NSMutableData (DCGCDThreadSafe)
 
 #pragma mark NSData
 - (NSUInteger)threadSafe_length;

@@ -1,5 +1,5 @@
 //
-//  NSObject+MainThreadAsyncReactive.h
+//  NSObject+DCMainThreadAsyncReactive.h
 //  Tourbillon
 //
 //  Created by Derek Chen on 5/16/14.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (MainThreadAsyncReactive) {
+@interface NSObject (DCMainThreadAsyncReactive) {
 }
 
 - (instancetype)mainThreadAsyncReactive_init;

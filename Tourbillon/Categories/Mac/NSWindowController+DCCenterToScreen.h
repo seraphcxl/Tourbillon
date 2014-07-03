@@ -1,5 +1,5 @@
 //
-//  NSWindowController+CenterToScreen.h
+//  NSWindowController+DCCenterToScreen.h
 //  Tourbillon
 //
 //  Created by Derek Chen on 13-11-20.
@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface NSWindowController (CenterToScreen)
+@interface NSWindowController (DCCenterToScreen)
 
 - (void)centerToScreen;
 

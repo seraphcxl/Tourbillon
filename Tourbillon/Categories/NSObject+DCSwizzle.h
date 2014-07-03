@@ -1,5 +1,5 @@
 //
-//  NSObject+Swizzle.h
+//  NSObject+DCSwizzle.h
 //  Tourbillon
 //
 //  Created by Derek Chen on 13-7-16.
@@ -10,7 +10,7 @@
 
 extern BOOL DCReplaceMethodWithBlock(Class c, SEL origSEL, SEL newSEL, id block);
 
-@interface NSObject (Swizzle)
+@interface NSObject (DCSwizzle)
 
 + (void)swizzleInstanceSelector:(SEL)originalSelector withNewSelector:(SEL)newSelector;
 

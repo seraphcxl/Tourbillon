@@ -1,14 +1,14 @@
 //
-//  NSViewController+ViewLogic.m
+//  NSViewController+DCViewLogic.m
 //  PCSuite
 //
 //  Created by Derek Chen on 13-12-8.
 //
 //
 
-#import "NSViewController+ViewLogic.h"
+#import "NSViewController+DCViewLogic.h"
 
-@implementation NSViewController (ViewLogic)
+@implementation NSViewController (DCViewLogic)
 
 - (void)viewCtrlWillAppear {
     do {

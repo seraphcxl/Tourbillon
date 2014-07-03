@@ -7,7 +7,7 @@
 //
 
 #import "NSBundle+DCLibrarySupport.h"
-#import "NSMutableDictionary+GCDThreadSafe.h"
+#import "NSMutableDictionary+DCGCDThreadSafe.h"
 
 static NSMutableDictionary *s_libraryResourcesBundleDict = nil;
 

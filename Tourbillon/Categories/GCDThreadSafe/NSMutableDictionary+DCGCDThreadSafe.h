@@ -1,5 +1,5 @@
 //
-//  NSMutableDictionary+GCDThreadSafe.h
+//  NSMutableDictionary+DCGCDThreadSafe.h
 //  Tourbillon
 //
 //  Created by Derek Chen on 5/7/14.
@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+GCDThreadSafe.h"
+#import "NSObject+DCGCDThreadSafe.h"
 
-@interface NSMutableDictionary (GCDThreadSafe)
+@interface NSMutableDictionary (DCGCDThreadSafe)
 
 #pragma mark NSDictionary
 - (NSUInteger)threadSafe_count;
