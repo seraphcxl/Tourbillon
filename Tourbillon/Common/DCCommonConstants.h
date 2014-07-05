@@ -120,6 +120,9 @@
 #define DCFunctionPerformanceTimingEnd(msg)
 #endif
 
+#define DCRoundingFloatToInt(x) ((int)((x) + 0.5f))
+#define DCMakeIntegerRect(x, y, w, h) (NSMakeRect(DCRoundingFloatToInt(x), DCRoundingFloatToInt(y), DCRoundingFloatToInt(w), DCRoundingFloatToInt(h)))
+
 #endif
 
 
