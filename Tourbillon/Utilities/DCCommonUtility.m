@@ -22,7 +22,7 @@
     // deal with edge case where scale returns 2.0 on a iPad running 3.2 with 2x
     // (which is not retina).
     return ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
-            ([UIScreen mainScreen].scale == 2.0));
+            (FloatingNumberEqual([UIScreen mainScreen].scale, 2.0));
 #else
     return ([NSScreen mainScreen].backingScaleFactor > 1.0);
 #endif

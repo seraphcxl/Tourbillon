@@ -71,6 +71,9 @@
 #endif
 /**** **** **** **** **** **** **** ****/
 
+#define FloatingNumberEqual(left, right) ((!(left < right)) && (!(right < left)))
+#define FloatingNumberEqualToZero(num) FloatingNumberEqual(num, 0.0f)
+
 #define DEGREES_TO_RADIANS(angle) (((angle) * M_PI) / 180.0f)
 #define RADIANS_TO_DEGREES(radian) (((radian) * 180.0f) / M_PI)
 
