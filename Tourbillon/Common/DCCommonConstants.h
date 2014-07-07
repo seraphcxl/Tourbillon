@@ -71,11 +71,11 @@
 #endif
 /**** **** **** **** **** **** **** ****/
 
-#define FloatingNumberEqual(left, right) ((!(left < right)) && (!(right < left)))
-#define FloatingNumberEqualToZero(num) FloatingNumberEqual(num, 0.0f)
+#define DCFloatingNumberEqual(left, right) ((!(left < right)) && (!(right < left)))
+#define DCFloatingNumberEqualToZero(num) DCFloatingNumberEqual(num, 0.0f)
 
-#define DEGREES_TO_RADIANS(angle) (((angle) * M_PI) / 180.0f)
-#define RADIANS_TO_DEGREES(radian) (((radian) * 180.0f) / M_PI)
+#define DCDegreesToRadians(angle) (((angle) * M_PI) / 180.0f)
+#define DCRadiansToDegrees(radian) (((radian) * 180.0f) / M_PI)
 
 #define M_E 2.71828182845904523536028747135266250  // e
 #define M_LOG2E 1.44269504088896340735992468100189214  // log 2e
