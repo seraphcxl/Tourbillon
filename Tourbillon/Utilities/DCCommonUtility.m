@@ -16,6 +16,20 @@
 
 @implementation DCCommonUtility
 
++ (NSString *)createUniqueStrByUUID {
+    NSString *result = nil;
+    CFUUIDRef uuidObj = NULL;
+    do {
+        uuidObj = CFUUIDCreate(nil);
+        result = (__bridge_transfer NSString *)CFUUIDCreateString(NULL, uuidObj);
+    } while (NO);
+    if (uuidObj) {
+        CFRelease(uuidObj);
+        uuidObj = NULL;
+    }
+    return result;
+}
+
 + (BOOL)isRetinaDisplay {
 #if TARGET_OS_IPHONE
     // Check for displayLinkWithTarget:selector: since that is only available on iOS 4.0+

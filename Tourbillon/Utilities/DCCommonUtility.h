@@ -24,4 +24,6 @@
 
 + (NSString *)localizedStringForKey:(NSString *)key withDefault:(NSString *)value inBundle:(NSBundle *)bundle;
 
++ (NSString *)createUniqueStrByUUID;
+
 @end
