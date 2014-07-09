@@ -15,14 +15,11 @@
 @interface DCCommonUtility : NSObject
 
 + (BOOL)isRetinaDisplay;
-+ (NSString *)newUUIDString;
 + (BOOL)isRegisteredURLScheme:(NSString *)urlScheme;
 
 + (unsigned long)currentTimeInMilliseconds;
 + (NSTimeInterval)randomTimeInterval:(NSTimeInterval)minValue withMaxValue:(NSTimeInterval)maxValue;
 
 + (NSString *)localizedStringForKey:(NSString *)key withDefault:(NSString *)value inBundle:(NSBundle *)bundle;
-
-+ (NSString *)createUniqueStrByUUID;
 
 @end

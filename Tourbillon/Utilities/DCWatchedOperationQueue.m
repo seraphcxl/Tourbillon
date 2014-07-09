@@ -8,12 +8,14 @@
 
 #import "DCWatchedOperationQueue.h"
 #import "DCLogger.h"
+#import "NSMutableDictionary+DCGCDThreadSafe.h"
+#import "NSObject+DCUUIDExtension.h"
 
 @interface DCWatchedOperationFinishedActionStub () {
 }
 
 @property (nonatomic, weak) id target;
-@property (nonatomic, strong) NSThread *thread;
+@property (nonatomic, weak) NSThread *thread;
 
 @end
 
@@ -63,7 +65,6 @@
 @property (nonatomic, strong) NSMutableDictionary *operationToTargetActionDict;
 @property (nonatomic, strong) NSThread *queueThread;
 
-- (NSString *)operationUUID:(NSOperation *)operation;
 - (void)didFinishOperation:(NSOperation *)operation;
 
 @end
@@ -83,7 +84,7 @@
             _uuid = (NSString *)CFBridgingRelease(CFUUIDCreateString(kCFAllocatorDefault, tmpUUID));
             CFRelease(tmpUUID);
             
-            self.operationToTargetActionDict = [NSMutableDictionary dictionary];
+            self.operationToTargetActionDict = [[NSMutableDictionary dictionary] threadSafe_init];
             self.queueThread = [NSThread currentThread];
         }
         return self;
@@ -92,13 +93,11 @@
 
 - (void)dealloc {
     do {
-        @synchronized(self) {
-            if (self.operationToTargetActionDict) {
-                DCAssert([self.operationToTargetActionDict count] == 0, @"self.operationToTargetActionDict not empty.");
-                self.operationToTargetActionDict = nil;
-            }
-            self.queueThread = nil;
+        if (self.operationToTargetActionDict) {
+            DCAssert([self.operationToTargetActionDict threadSafe_count] == 0, @"self.operationToTargetActionDict not empty.");
+            self.operationToTargetActionDict = nil;
         }
+        self.queueThread = nil;
     } while (NO);
 }
 
@@ -108,17 +107,15 @@
             break;
         }
         
-        NSString *opUUID = [self operationUUID:operation];
+        NSString *opUUID = [NSObject createMemoryID:operation];
         
-        @synchronized (self) {
-            if (target && (finishedAction || cancelAction)) {
-                if (!self.operationToTargetActionDict) {
-                    break;
-                }
-                DCAssert([self.operationToTargetActionDict objectForKey:opUUID] == nil, @"self.operationToTargetActionDict contained stub for op:%@", opUUID);
-                DCWatchedOperationFinishedActionStub *stub = [[DCWatchedOperationFinishedActionStub alloc] initWithOperation:operation forTarget:target withFinishedAction:finishedAction andCancelAction:cancelAction];
-                [self.operationToTargetActionDict setObject:stub forKey:opUUID];
+        if (target && (finishedAction || cancelAction)) {
+            if (!self.operationToTargetActionDict) {
+                break;
             }
+            DCAssert([self.operationToTargetActionDict threadSafe_objectForKey:opUUID] == nil, @"self.operationToTargetActionDict contained stub for op:%@", opUUID);
+            DCWatchedOperationFinishedActionStub *stub = [[DCWatchedOperationFinishedActionStub alloc] initWithOperation:operation forTarget:target withFinishedAction:finishedAction andCancelAction:cancelAction];
+            [self.operationToTargetActionDict threadSafe_setObject:stub forKey:opUUID];
         }
         
         [operation addObserver:self forKeyPath:@"isFinished" options:0 context:(__bridge void *)(self.uuid)];
@@ -132,12 +129,10 @@
         if ([NSThread currentThread] != self.queueThread) {
             break;
         }
-        @synchronized (self) {
-            if (!self.operationToTargetActionDict) {
-                break;
-            }
-            [self.operationToTargetActionDict removeAllObjects];
+        if (!self.operationToTargetActionDict) {
+            break;
         }
+        [self.operationToTargetActionDict threadSafe_removeAllObjects];
     } while (NO);
 }
 
@@ -148,17 +143,15 @@
         }
         if (context == (__bridge void *)(self.uuid)) {
             if ([keyPath isEqual:@"isFinished"]) {
-                NSString *opUUID = [self operationUUID:object];
+                NSString *opUUID = [NSObject createMemoryID:object];
                 BOOL gotStub = NO;
-                @synchronized (self) {
-                    if (!self.operationToTargetActionDict) {
-                        break;
-                    }
-                    if ([self.operationToTargetActionDict objectForKey:opUUID] != nil) {
-                        gotStub = YES;
-                    }
+                if (!self.operationToTargetActionDict) {
+                    break;
                 }
-                if (gotStub || [((NSOperation *) object) isFinished]) {
+                if ([self.operationToTargetActionDict threadSafe_objectForKey:opUUID] != nil) {
+                    gotStub = YES;
+                }
+                if (gotStub || [((NSOperation *)object) isFinished]) {
                     [self performSelector:@selector(didFinishOperation:) onThread:self.queueThread withObject:object waitUntilDone:NO];
                 }
             }
@@ -174,17 +167,15 @@
             break;
         }
         DCWatchedOperationFinishedActionStub *stub = nil;
-        NSString *opUUID = [self operationUUID:operation];
-        @synchronized (self) {
-            if (!self.operationToTargetActionDict) {
-                break;
-            }
-            stub = [self.operationToTargetActionDict objectForKey:opUUID];
-            if (!stub) {
-                break;
-            }
-            [self.operationToTargetActionDict removeObjectForKey:opUUID];
+        NSString *opUUID = [NSObject createMemoryID:operation];
+        if (!self.operationToTargetActionDict) {
+            break;
         }
+        stub = [self.operationToTargetActionDict threadSafe_objectForKey:opUUID];
+        if (!stub) {
+            break;
+        }
+        [self.operationToTargetActionDict threadSafe_removeObjectForKey:opUUID];
         
         [operation removeObserver:self forKeyPath:@"isFinished"];
         
@@ -199,15 +190,5 @@
 }
 
 #pragma mark - DCWatchedOperationQueue - Private method
-- (NSString *)operationUUID:(NSOperation *)operation {
-    NSString *result = nil;
-    do {
-        if (!operation) {
-            break;
-        }
-        result = [NSString stringWithFormat:@"%@", operation];
-    } while (NO);
-    return result;
-}
 
 @end

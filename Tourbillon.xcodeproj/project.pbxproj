@@ -57,6 +57,9 @@
 		8952D2F0196CE3410068CBCF /* NSArray+DCContentExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8952D2EE196CE3410068CBCF /* NSArray+DCContentExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8952D2F1196CE3410068CBCF /* NSArray+DCContentExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952D2EF196CE3410068CBCF /* NSArray+DCContentExtension.m */; };
 		8952D2F2196CE3410068CBCF /* NSArray+DCContentExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952D2EF196CE3410068CBCF /* NSArray+DCContentExtension.m */; };
+		8952D2F5196D07230068CBCF /* NSObject+DCUUIDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8952D2F3196D07230068CBCF /* NSObject+DCUUIDExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8952D2F6196D07230068CBCF /* NSObject+DCUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952D2F4196D07230068CBCF /* NSObject+DCUUIDExtension.m */; };
+		8952D2F7196D07230068CBCF /* NSObject+DCUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952D2F4196D07230068CBCF /* NSObject+DCUUIDExtension.m */; };
 		89CA258A1962FE1300471681 /* NSColor+DCColorful.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CA25881962FE1300471681 /* NSColor+DCColorful.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89CA258B1962FE1300471681 /* NSColor+DCColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CA25891962FE1300471681 /* NSColor+DCColorful.m */; };
 		89E137441925B11000A3EFB7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
@@ -291,6 +294,8 @@
 		8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		8952D2EE196CE3410068CBCF /* NSArray+DCContentExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DCContentExtension.h"; sourceTree = "<group>"; };
 		8952D2EF196CE3410068CBCF /* NSArray+DCContentExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DCContentExtension.m"; sourceTree = "<group>"; };
+		8952D2F3196D07230068CBCF /* NSObject+DCUUIDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCUUIDExtension.h"; sourceTree = "<group>"; };
+		8952D2F4196D07230068CBCF /* NSObject+DCUUIDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCUUIDExtension.m"; sourceTree = "<group>"; };
 		89CA25881962FE1300471681 /* NSColor+DCColorful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+DCColorful.h"; sourceTree = "<group>"; };
 		89CA25891962FE1300471681 /* NSColor+DCColorful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+DCColorful.m"; sourceTree = "<group>"; };
 		89E137401925B11000A3EFB7 /* Tourbillon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tourbillon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -558,6 +563,8 @@
 				89347B571964F84900BCD74C /* NSObject+DCMainThreadAsyncReactive.m */,
 				8952D2EE196CE3410068CBCF /* NSArray+DCContentExtension.h */,
 				8952D2EF196CE3410068CBCF /* NSArray+DCContentExtension.m */,
+				8952D2F3196D07230068CBCF /* NSObject+DCUUIDExtension.h */,
+				8952D2F4196D07230068CBCF /* NSObject+DCUUIDExtension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -704,6 +711,7 @@
 				89347B5E1964F84900BCD74C /* NSObject+DCMainThreadAsyncReactive.h in Headers */,
 				89CA258A1962FE1300471681 /* NSColor+DCColorful.h in Headers */,
 				8952D2F0196CE3410068CBCF /* NSArray+DCContentExtension.h in Headers */,
+				8952D2F5196D07230068CBCF /* NSObject+DCUUIDExtension.h in Headers */,
 				89E137F21925B24F00A3EFB7 /* DCSafeARC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -872,6 +880,7 @@
 				89347B401964F70100BCD74C /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */,
 				89347B5C1964F84900BCD74C /* NSObject+DCSwizzle.m in Sources */,
 				89E137CE1925B24800A3EFB7 /* NSString+DCBase64.m in Sources */,
+				8952D2F6196D07230068CBCF /* NSObject+DCUUIDExtension.m in Sources */,
 				892EE3BA1938C61200571890 /* NSData+DCLibrarySupport.m in Sources */,
 				89347B501964F77800BCD74C /* NSViewController+DCViewLogic.m in Sources */,
 				892EE3AB1938C36400571890 /* NSBundle+DCLibrarySupport.m in Sources */,
@@ -942,6 +951,7 @@
 				89E1382A1925B25C00A3EFB7 /* DCRunLoopOperation.m in Sources */,
 				89347B5D1964F84900BCD74C /* NSObject+DCSwizzle.m in Sources */,
 				89347B411964F70100BCD74C /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */,
+				8952D2F7196D07230068CBCF /* NSObject+DCUUIDExtension.m in Sources */,
 				89E137D01925B24800A3EFB7 /* NSString+DCBase64.m in Sources */,
 				892EE3B11938C4BB00571890 /* UIImage+DCLibrarySupport.m in Sources */,
 				89347B3B1964F70100BCD74C /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
@@ -1105,6 +1115,7 @@
 		89E137691925B11000A3EFB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1121,6 +1132,7 @@
 		89E1376A1925B11000A3EFB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

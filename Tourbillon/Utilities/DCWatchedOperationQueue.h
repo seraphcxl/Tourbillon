@@ -13,7 +13,7 @@
 
 @property (nonatomic, weak, readonly) NSOperation *operation;
 @property (nonatomic, weak, readonly) id target;
-@property (nonatomic, strong, readonly) NSThread *thread;
+@property (nonatomic, weak, readonly) NSThread *thread;
 @property (nonatomic, assign, readonly) SEL finishedAction;
 @property (nonatomic, assign, readonly) SEL cancelAction;
 

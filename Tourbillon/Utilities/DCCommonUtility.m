@@ -17,20 +17,6 @@
 
 @implementation DCCommonUtility
 
-+ (NSString *)createUniqueStrByUUID {
-    NSString *result = nil;
-    CFUUIDRef uuidObj = NULL;
-    do {
-        uuidObj = CFUUIDCreate(nil);
-        result = (__bridge_transfer NSString *)CFUUIDCreateString(NULL, uuidObj);
-    } while (NO);
-    if (uuidObj) {
-        CFRelease(uuidObj);
-        uuidObj = NULL;
-    }
-    return result;
-}
-
 + (BOOL)isRetinaDisplay {
 #if TARGET_OS_IPHONE
     // Check for displayLinkWithTarget:selector: since that is only available on iOS 4.0+
@@ -41,19 +27,6 @@
 #else
     return ([NSScreen mainScreen].backingScaleFactor > 1.0);
 #endif
-}
-
-+ (NSString *)newUUIDString {
-    // Create the unique action Id
-    CFUUIDRef uuid = CFUUIDCreate(kCFAllocatorDefault);
-    
-    // We will only hold on to the string representation and not the raw bytes
-    NSString *uuidString = (NSString *)CFBridgingRelease(CFUUIDCreateString(kCFAllocatorDefault, uuid));
-    
-    // release the UUID
-    CFRelease(uuid);
-    
-    return uuidString;
 }
 
 + (BOOL)isRegisteredURLScheme:(NSString *)urlScheme {

@@ -23,6 +23,7 @@
 #import "NSURL+DCUTTypeSupport.h"
 #import "NSBundle+DCLibrarySupport.h"
 #import "NSArray+DCContentExtension.h"
+#import "NSObject+DCUUIDExtension.h"
 
 #pragma mark - GCDThreadSafe
 #import "NSObject+DCGCDThreadSafe.h"
