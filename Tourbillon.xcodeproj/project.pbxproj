@@ -53,6 +53,7 @@
 		89347B611964F84900BCD74C /* NSObject+DCSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 89347B581964F84900BCD74C /* NSObject+DCSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		894DF6E919394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 894DF6E819394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m */; };
 		894DF6EA19394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 894DF6E819394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m */; };
+		8952D2ED196CDD260068CBCF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */; };
 		89CA258A1962FE1300471681 /* NSColor+DCColorful.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CA25881962FE1300471681 /* NSColor+DCColorful.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89CA258B1962FE1300471681 /* NSColor+DCColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CA25891962FE1300471681 /* NSColor+DCColorful.m */; };
 		89E137441925B11000A3EFB7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
@@ -284,6 +285,7 @@
 		89347B581964F84900BCD74C /* NSObject+DCSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCSwizzle.h"; sourceTree = "<group>"; };
 		894DF6E719394C0B00EF9C9C /* UIViewController+DCLibrarySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DCLibrarySupport.h"; sourceTree = "<group>"; };
 		894DF6E819394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DCLibrarySupport.m"; sourceTree = "<group>"; };
+		8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		89CA25881962FE1300471681 /* NSColor+DCColorful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+DCColorful.h"; sourceTree = "<group>"; };
 		89CA25891962FE1300471681 /* NSColor+DCColorful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+DCColorful.m"; sourceTree = "<group>"; };
 		89E137401925B11000A3EFB7 /* Tourbillon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tourbillon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -378,6 +380,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8952D2ED196CDD260068CBCF /* MobileCoreServices.framework in Frameworks */,
 				89E137741925B13D00A3EFB7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +425,7 @@
 		89E137421925B11000A3EFB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */,
 				89E137431925B11000A3EFB7 /* Cocoa.framework */,
 				89E137581925B11000A3EFB7 /* XCTest.framework */,
 				89E137731925B13D00A3EFB7 /* Foundation.framework */,

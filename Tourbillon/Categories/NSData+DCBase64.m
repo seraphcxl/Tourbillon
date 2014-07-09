@@ -8,7 +8,6 @@
 
 #import "NSData+DCBase64.h"
 #import "DCBase64Define.h"
-//#import "DCSafeARC.h"
 
 @implementation NSData (DCBase64)
 

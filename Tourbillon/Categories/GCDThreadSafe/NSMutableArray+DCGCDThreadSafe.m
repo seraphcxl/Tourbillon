@@ -53,6 +53,30 @@
     return result;
 }
 
+- (id)threadSafe_firstObject {
+    __block id result = nil;
+    do {
+        if (![self threadSafe_QueueSync:^{
+            result = [self firstObject];
+        }]) {
+            break;
+        }
+    } while (NO);
+    return result;
+}
+
+- (id)threadSafe_lastObject {
+    __block id result = nil;
+    do {
+        if (![self threadSafe_QueueSync:^{
+            result = [self lastObject];
+        }]) {
+            break;
+        }
+    } while (NO);
+    return result;
+}
+
 #if NS_BLOCKS_AVAILABLE
 - (NSArray *)threadSafe_sortedArrayUsingComparator:(NSComparator)cmptr {
     __block NSArray *result = nil;

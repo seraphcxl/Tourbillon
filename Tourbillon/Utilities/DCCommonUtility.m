@@ -8,6 +8,7 @@
 
 #import "DCCommonUtility.h"
 #include <sys/time.h>
+#import "DCCommonConstants.h"
 
 #if TARGET_OS_IPHONE
     #import <UIKit/UIKit.h>
@@ -36,7 +37,7 @@
     // deal with edge case where scale returns 2.0 on a iPad running 3.2 with 2x
     // (which is not retina).
     return ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
-            (DCFloatingNumberEqual([UIScreen mainScreen].scale, 2.0));
+            (DCFloatingNumberEqual([UIScreen mainScreen].scale, 2.0)));
 #else
     return ([NSScreen mainScreen].backingScaleFactor > 1.0);
 #endif

@@ -8,7 +8,6 @@
 
 #import "NSObject+DCGCDThreadSafe.h"
 #import <objc/runtime.h>
-//#import "DCSafeARC.h"
 #import "NSObject+DCSwizzle.h"
 
 static char NSObjectGCDThreadSafeQueueKey;

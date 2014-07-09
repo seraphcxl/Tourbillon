@@ -7,15 +7,26 @@
 //
 
 #import "DCStack.h"
+#import "NSMutableArray+DCGCDThreadSafe.h"
+
+const NSUInteger kDCStackDefaultCount = 128;
 
 @interface DCStack () {
 }
 
+@property (nonatomic, assign) NSUInteger maxCount;
 @property (nonatomic, strong) NSMutableArray *objects;
+
+- (void)removeFirstObject;
+- (void)removeObjectsInRange:(NSRange)range;
 
 @end
 
 @implementation DCStack
+
+@synthesize count = _count;
+@synthesize maxCount = _maxCount;
+@synthesize objects = _objects;
 
 - (id)init {
     @synchronized(self) {
@@ -28,17 +39,38 @@
     @synchronized(self) {
         self = [super init];
         if (self) {
-            self.objects = [NSMutableArray arrayWithArray:array];
+            self.maxCount = kDCStackDefaultCount;
+            self.objects = [[NSMutableArray arrayWithArray:array] threadSafe_init];
         }
         return self;
     }
 }
 
+- (void)setMaxCount:(NSUInteger)newMaxCount {
+    do {
+        if (newMaxCount <= 0) {
+            break;
+        }
+        NSInteger diff = _maxCount - newMaxCount;
+        if (diff > 0) {
+            NSRange removeRange = NSMakeRange(0, diff);
+            [self removeObjectsInRange:removeRange];
+        }
+        _maxCount = newMaxCount;
+    } while (NO);
+}
+
+- (void)resetStack {
+    do {
+        [self.objects threadSafe_removeAllObjects];
+    } while (NO);
+}
+
 - (void)dealloc {
     do {
-        @synchronized(self) {
-            self.objects = nil;
-        }
+        [self.objects threadSafe_removeAllObjects];
+        self.objects = nil;
+        self.maxCount = kDCStackDefaultCount;
     } while (NO);
 }
 
@@ -48,7 +80,7 @@
         if (!self.objects) {
             break;
         }
-        result = [self.objects count];
+        result = [self.objects threadSafe_count];
     } while (NO);
     return result;
 }
@@ -58,35 +90,35 @@
         if (!object || !self.objects) {
             break;
         }
-        @synchronized(self) {
-            [self.objects addObject:object];
+        if (self.count == self.maxCount) {
+            [self removeFirstObject];
         }
+        [self.objects threadSafe_addObject:object];
     } while (NO);
 }
 
 - (void)pushObjects:(NSArray *)objects {
     do {
-        if (!objects || ([objects count] == 0) || !self.objects) {
+        if (!objects || (objects.count == 0) || !self.objects) {
             break;
         }
-        @synchronized(self) {
-            for (id obj in objects) {
-                [self.objects addObject:obj];
-            }
+        NSInteger diff = self.count + objects.count - self.maxCount;
+        if (diff > 0) {
+            NSRange removeRange = NSMakeRange(0, diff);
+            [self removeObjectsInRange:removeRange];
         }
+        [self.objects threadSafe_addObjectsFromArray:objects];
     } while (NO);
 }
 
 - (id)popObject {
     id result = nil;
     do {
-        if (!self.objects || [self.objects count] == 0) {
+        if (!self.objects || self.count == 0) {
             break;
         }
-        @synchronized(self) {
-            result = [self peekObject];
-            [self.objects removeLastObject];
-        }
+        result = [self peekObject];
+        [self.objects threadSafe_removeLastObject];
     } while (NO);
     return result;
 }
@@ -94,12 +126,32 @@
 - (id)peekObject {
     id result = nil;
     do {
-        if (!self.objects || [self.objects count] == 0) {
+        if (!self.objects || self.count == 0) {
             break;
         }
-        @synchronized(self) {
-            result = [self.objects objectAtIndex:([self.objects count] - 1)];
+        result = [self.objects threadSafe_lastObject];
+    } while (NO);
+    return result;
+}
+
+- (id)firstObject {
+    id result = nil;
+    do {
+        if (!self.objects || self.count == 0) {
+            break;
         }
+        result = [self.objects threadSafe_firstObject];
+    } while (NO);
+    return result;
+}
+
+- (id)lastObject {
+    id result = nil;
+    do {
+        if (!self.objects || self.count == 0) {
+            break;
+        }
+        result = [self.objects threadSafe_lastObject];
     } while (NO);
     return result;
 }
@@ -107,6 +159,29 @@
 #pragma mark - DCStack - NSFastEnumeration
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id [])buffer count:(NSUInteger)len {
     return [self.objects countByEnumeratingWithState:state objects:buffer count:len];
+}
+
+#pragma mark - Private
+- (void)removeFirstObject {
+    do {
+        if (!self.objects || self.count == 0) {
+            break;
+        }
+        @synchronized (self) {
+            [self.objects threadSafe_removeObjectAtIndex:0];
+        }
+    } while (NO);
+}
+
+- (void)removeObjectsInRange:(NSRange)range {
+    do {
+        if (!self.objects || self.count < (range.location + range.length)) {
+            break;
+        }
+        @synchronized (self) {
+            [self.objects threadSafe_removeObjectsInRange:range];
+        }
+    } while (NO);
 }
 
 @end

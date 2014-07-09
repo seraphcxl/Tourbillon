@@ -9,6 +9,8 @@
 #import "DCUIMainThreadGuard.h"
 #import "DCLogger.h"
 #import "NSObject+DCSwizzle.h"
+#import <objc/message.h>
+
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
 #else

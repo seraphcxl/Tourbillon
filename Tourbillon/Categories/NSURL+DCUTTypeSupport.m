@@ -8,6 +8,11 @@
 
 #import "NSURL+DCUTTypeSupport.h"
 
+#if TARGET_OS_IPHONE
+#import <MobileCoreServices/MobileCoreServices.h>
+#else
+#endif
+
 @implementation NSURL (DCUTTypeSupport)
 
 - (NSString *)getUTType {

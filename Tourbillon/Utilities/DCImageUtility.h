@@ -13,7 +13,6 @@
 #else
 #endif
 
-//#import "DCSafeARC.h"
 #import "DCCommonConstants.h"
 
 @interface DCImageUtility : NSObject

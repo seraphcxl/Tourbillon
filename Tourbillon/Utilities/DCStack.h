@@ -7,18 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "DCSafeARC.h"
 
 @interface DCStack : NSObject <NSFastEnumeration> {
 }
 
 @property (nonatomic, assign, readonly) NSUInteger count;
+@property (nonatomic, assign, readonly) NSUInteger maxCount;
 
 - (id)initWithArray:(NSArray *)array;
+- (void)setMaxCount:(NSUInteger)newMaxCount;
+- (void)resetStack;
 
 - (void)pushObject:(id)object;
 - (void)pushObjects:(NSArray *)objects;
+
 - (id)popObject;
 - (id)peekObject;
+
+- (id)firstObject;
+- (id)lastObject;
 
 @end

@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 #import "DCCommonConstants.h"
-//#import "DCSafeARC.h"
 #import "DCSingletonTemplate.h"
 
 // A better assert. NSAssert is too runtime dependant, and assert() doesn't log.

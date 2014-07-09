@@ -15,6 +15,8 @@
 - (NSUInteger)threadSafe_count;
 - (id)threadSafe_objectAtIndex:(NSUInteger)index;
 - (NSUInteger)threadSafe_indexOfObject:(id)anObject;
+- (id)threadSafe_firstObject NS_AVAILABLE(10_6, 4_0);
+- (id)threadSafe_lastObject;
 #if NS_BLOCKS_AVAILABLE
 - (NSArray *)threadSafe_sortedArrayUsingComparator:(NSComparator)cmptr;
 - (NSArray *)threadSafe_sortedArrayWithOptions:(NSSortOptions)opts usingComparator:(NSComparator)cmptr;
