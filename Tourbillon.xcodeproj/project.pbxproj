@@ -54,7 +54,7 @@
 		894DF6E919394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 894DF6E819394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m */; };
 		894DF6EA19394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 894DF6E819394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m */; };
 		8952D2ED196CDD260068CBCF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */; };
-		8952D2F0196CE3410068CBCF /* NSArray+DCContentExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8952D2EE196CE3410068CBCF /* NSArray+DCContentExtension.h */; };
+		8952D2F0196CE3410068CBCF /* NSArray+DCContentExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8952D2EE196CE3410068CBCF /* NSArray+DCContentExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8952D2F1196CE3410068CBCF /* NSArray+DCContentExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952D2EF196CE3410068CBCF /* NSArray+DCContentExtension.m */; };
 		8952D2F2196CE3410068CBCF /* NSArray+DCContentExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952D2EF196CE3410068CBCF /* NSArray+DCContentExtension.m */; };
 		89CA258A1962FE1300471681 /* NSColor+DCColorful.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CA25881962FE1300471681 /* NSColor+DCColorful.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -685,7 +685,6 @@
 				89E138181925B25C00A3EFB7 /* DCHTTPOperation.h in Headers */,
 				89E137F71925B25600A3EFB7 /* DCTestBlocker.h in Headers */,
 				89E138271925B25C00A3EFB7 /* DCRunLoopOperation.h in Headers */,
-				8952D2F0196CE3410068CBCF /* NSArray+DCContentExtension.h in Headers */,
 				89E137D71925B24800A3EFB7 /* NSString+DCParseCSV.h in Headers */,
 				89E137ED1925B24F00A3EFB7 /* DCLogger.h in Headers */,
 				89E137EC1925B24F00A3EFB7 /* DCCommonConstants.h in Headers */,
@@ -704,6 +703,7 @@
 				89347B5B1964F84900BCD74C /* NSURL+DCUTTypeSupport.h in Headers */,
 				89347B5E1964F84900BCD74C /* NSObject+DCMainThreadAsyncReactive.h in Headers */,
 				89CA258A1962FE1300471681 /* NSColor+DCColorful.h in Headers */,
+				8952D2F0196CE3410068CBCF /* NSArray+DCContentExtension.h in Headers */,
 				89E137F21925B24F00A3EFB7 /* DCSafeARC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,6 +22,7 @@
 #import "NSObject+DCMainThreadAsyncReactive.h"
 #import "NSURL+DCUTTypeSupport.h"
 #import "NSBundle+DCLibrarySupport.h"
+#import "NSArray+DCContentExtension.h"
 
 #pragma mark - GCDThreadSafe
 #import "NSObject+DCGCDThreadSafe.h"
