@@ -22,6 +22,8 @@
 - (NSArray *)threadSafe_sortedArrayWithOptions:(NSSortOptions)opts usingComparator:(NSComparator)cmptr;
 #endif
 
+- (BOOL)threadSafe_contentEqualTo:(NSArray *)otherArray;
+
 #pragma mark NSMutableArray
 - (void)threadSafe_addObject:(id)anObject;
 - (void)threadSafe_insertObject:(id)anObject atIndex:(NSUInteger)index;

@@ -109,6 +109,36 @@
 }
 #endif
 
+- (BOOL)threadSafe_contentEqualTo:(NSArray *)otherArray {
+    __block BOOL result = NO;
+    do {
+        if (!otherArray) {
+            break;
+        }
+        if (![self threadSafe_QueueSync:^{
+            do {
+                if (self.count != otherArray.count) {
+                    break;
+                }
+                BOOL notFound = NO;
+                for (id obj in otherArray) {
+                    if ([self indexOfObject:obj] == NSNotFound) {
+                        notFound = YES;
+                        break;
+                    }
+                }
+                if (!notFound) {
+                    result = YES;
+                }
+            } while (NO);
+        }]) {
+            break;
+        }
+        
+    } while (NO);
+    return result;
+}
+
 #pragma mark NSMutableArray
 - (void)threadSafe_addObject:(id)anObject {
     do {
