@@ -11,12 +11,11 @@
 @implementation NSString (DCURLCoding)
 
 - (NSString *)urlDecodedString {
-    return [[self stringByReplacingOccurrencesOfString:@"+" withString:@" "] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    return [self stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 }
 
 - (NSString *)urlEncodedString {
-    NSString *result = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (__bridge CFStringRef)self, NULL, (CFStringRef)@":!*();@/&?#[]+$,='%’\"", kCFStringEncodingUTF8));
-    return result;
+    return (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)self, NULL, (CFStringRef)@"!*'\"();:@&=+$,/?%#[]% ", kCFStringEncodingUTF8);
 }
 
 - (NSDictionary *)dictionaryFromQueryString {

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8913D261196E201100F41267 /* DCComponentTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 8913D25D196E201100F41267 /* DCComponentTree.h */; };
+		8913D262196E201100F41267 /* DCComponentTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 8913D25E196E201100F41267 /* DCComponentTree.m */; };
+		8913D263196E201100F41267 /* DCComponentTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 8913D25E196E201100F41267 /* DCComponentTree.m */; };
+		8913D264196E201100F41267 /* DCComponentTreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 8913D25F196E201100F41267 /* DCComponentTreeNode.h */; };
+		8913D265196E201100F41267 /* DCComponentTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8913D260196E201100F41267 /* DCComponentTreeNode.m */; };
+		8913D266196E201100F41267 /* DCComponentTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8913D260196E201100F41267 /* DCComponentTreeNode.m */; };
 		891F1F83196391F700796F46 /* UIColor+DCColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 891F1F82196391F700796F46 /* UIColor+DCColorful.m */; };
 		892EE3AA1938C36400571890 /* NSBundle+DCLibrarySupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 892EE3A81938C36400571890 /* NSBundle+DCLibrarySupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		892EE3AB1938C36400571890 /* NSBundle+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 892EE3A91938C36400571890 /* NSBundle+DCLibrarySupport.m */; };
@@ -259,6 +265,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8913D25D196E201100F41267 /* DCComponentTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCComponentTree.h; sourceTree = "<group>"; };
+		8913D25E196E201100F41267 /* DCComponentTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCComponentTree.m; sourceTree = "<group>"; };
+		8913D25F196E201100F41267 /* DCComponentTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCComponentTreeNode.h; sourceTree = "<group>"; };
+		8913D260196E201100F41267 /* DCComponentTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCComponentTreeNode.m; sourceTree = "<group>"; };
 		891F1F81196391F700796F46 /* UIColor+DCColorful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DCColorful.h"; sourceTree = "<group>"; };
 		891F1F82196391F700796F46 /* UIColor+DCColorful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DCColorful.m"; sourceTree = "<group>"; };
 		892EE3A81938C36400571890 /* NSBundle+DCLibrarySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+DCLibrarySupport.h"; sourceTree = "<group>"; };
@@ -409,6 +419,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8913D25C196E201100F41267 /* ComponentTree */ = {
+			isa = PBXGroup;
+			children = (
+				8913D25D196E201100F41267 /* DCComponentTree.h */,
+				8913D25E196E201100F41267 /* DCComponentTree.m */,
+				8913D25F196E201100F41267 /* DCComponentTreeNode.h */,
+				8913D260196E201100F41267 /* DCComponentTreeNode.m */,
+			);
+			path = ComponentTree;
+			sourceTree = "<group>";
+		};
 		89E137361925B11000A3EFB7 = {
 			isa = PBXGroup;
 			children = (
@@ -593,6 +614,7 @@
 		89E137FC1925B25C00A3EFB7 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8913D25C196E201100F41267 /* ComponentTree */,
 				89E137FD1925B25C00A3EFB7 /* DCAtomicSetters.h */,
 				89E137FE1925B25C00A3EFB7 /* DCCommonUtility.h */,
 				89E137FF1925B25C00A3EFB7 /* DCCommonUtility.m */,
@@ -679,6 +701,7 @@
 				89E137CD1925B24800A3EFB7 /* NSString+DCBase64.h in Headers */,
 				89E138131925B25C00A3EFB7 /* DCCommonUtility.h in Headers */,
 				89E138401925B25C00A3EFB7 /* DCWebUtility.h in Headers */,
+				8913D261196E201100F41267 /* DCComponentTree.h in Headers */,
 				89E1383B1925B25C00A3EFB7 /* DCWatchedOperationQueue.h in Headers */,
 				89E138221925B25C00A3EFB7 /* DCRPNUtility.h in Headers */,
 				89E138361925B25C00A3EFB7 /* DCUIMainThreadGuard.h in Headers */,
@@ -710,6 +733,7 @@
 				89347B5B1964F84900BCD74C /* NSURL+DCUTTypeSupport.h in Headers */,
 				89347B5E1964F84900BCD74C /* NSObject+DCMainThreadAsyncReactive.h in Headers */,
 				89CA258A1962FE1300471681 /* NSColor+DCColorful.h in Headers */,
+				8913D264196E201100F41267 /* DCComponentTreeNode.h in Headers */,
 				8952D2F0196CE3410068CBCF /* NSArray+DCContentExtension.h in Headers */,
 				8952D2F5196D07230068CBCF /* NSObject+DCUUIDExtension.h in Headers */,
 				89E137F21925B24F00A3EFB7 /* DCSafeARC.h in Headers */,
@@ -861,6 +885,7 @@
 			files = (
 				89E1381E1925B25C00A3EFB7 /* DCImageUtility.m in Sources */,
 				89E137D81925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */,
+				8913D265196E201100F41267 /* DCComponentTreeNode.m in Sources */,
 				89347B5F1964F84900BCD74C /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
 				89E137EE1925B24F00A3EFB7 /* DCLogger.m in Sources */,
 				89E1383C1925B25C00A3EFB7 /* DCWatchedOperationQueue.m in Sources */,
@@ -869,6 +894,7 @@
 				89E137BF1925B24800A3EFB7 /* NSDictionary+DCSortable.m in Sources */,
 				89347B521964F77800BCD74C /* NSWindowController+DCCenterToScreen.m in Sources */,
 				89E138411925B25C00A3EFB7 /* DCWebUtility.m in Sources */,
+				8913D262196E201100F41267 /* DCComponentTree.m in Sources */,
 				89E138231925B25C00A3EFB7 /* DCRPNUtility.m in Sources */,
 				89E138511925B61900A3EFB7 /* NSColor+DCAdditions.m in Sources */,
 				89E138141925B25C00A3EFB7 /* DCCommonUtility.m in Sources */,
@@ -932,6 +958,7 @@
 			files = (
 				89E138201925B25C00A3EFB7 /* DCImageUtility.m in Sources */,
 				894DF6E919394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m in Sources */,
+				8913D266196E201100F41267 /* DCComponentTreeNode.m in Sources */,
 				89347B601964F84900BCD74C /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
 				89E137DA1925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */,
 				89E137F01925B24F00A3EFB7 /* DCLogger.m in Sources */,
@@ -940,6 +967,7 @@
 				89E1381B1925B25C00A3EFB7 /* DCHTTPOperation.m in Sources */,
 				89E137C11925B24800A3EFB7 /* NSDictionary+DCSortable.m in Sources */,
 				89E138431925B25C00A3EFB7 /* DCWebUtility.m in Sources */,
+				8913D263196E201100F41267 /* DCComponentTree.m in Sources */,
 				89E138251925B25C00A3EFB7 /* DCRPNUtility.m in Sources */,
 				891F1F83196391F700796F46 /* UIColor+DCColorful.m in Sources */,
 				89E1384B1925B61000A3EFB7 /* UIColor+DCAdditions.m in Sources */,

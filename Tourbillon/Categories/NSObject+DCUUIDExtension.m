@@ -16,7 +16,7 @@
         if (!object) {
             break;
         }
-        result = [NSString stringWithFormat:@"%@_%p", [object class], object];
+        result = [NSString stringWithFormat:@"%@_%p", NSStringFromClass([object class]), object];
     } while (NO);
     return result;
 }
