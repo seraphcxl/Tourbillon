@@ -74,6 +74,9 @@
     
     NSLog(@"%@", [leftBtn treeNodeDescription]);
     
+    [tree actionWithNodeByTreeNodeDescription:[leftView treeNodeDescription] andActionBlock:^BOOL(DCTree *tree, DCTreeNode *node) {
+        return YES;
+    }];
     
     NSLog(@"%@", NSStringFromSelector(_cmd));
 }

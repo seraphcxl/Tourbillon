@@ -46,7 +46,7 @@ NSString *kDCTreeNodeCodingChildren = @"DCTreeNodeCodingChildren";
         while(![scanner isAtEnd]) {
             [scanner scanUpToString:kDCTreeNodeSeparator intoString:&key];
             [scanner scanString:kDCTreeNodeSeparator intoString:NULL];
-            [result addObject:result];
+            [result addObject:key];
         }
     } while (NO);
     return result;
@@ -215,17 +215,7 @@ NSString *kDCTreeNodeCodingChildren = @"DCTreeNodeCodingChildren";
         if (!desc) {
             break;
         }
-        NSMutableArray *keyAry = [DCTreeNode treeNodeDescriptionToKeyArray:desc];
-        if (keyAry.count == 0) {
-            break;
-        }
-        NSString *key = [keyAry objectAtIndex:0];
-        DCTreeNode *node = [self getChildByKey:key];
-        if (!node) {
-            break;
-        }
-        [keyAry removeObjectAtIndex:0];
-        result = [node getChildByNodeKeyArray:keyAry];
+        result = [self getChildByNodeKeyArray:[DCTreeNode treeNodeDescriptionToKeyArray:desc]];
     } while (NO);
     return result;
 }
@@ -238,16 +228,20 @@ NSString *kDCTreeNodeCodingChildren = @"DCTreeNodeCodingChildren";
             break;
         }
         NSMutableArray *keyAry = [NSMutableArray arrayWithArray:keyArray];
-        if (keyAry.count == 0) {
-            break;
-        }
-        NSString *key = [keyAry objectAtIndex:0];
-        DCTreeNode *node = [self getChildByKey:key];
-        if (!node) {
+        if (keyAry.count == 0 || ![self.key isEqualToString:[keyAry objectAtIndex:0]]) {
             break;
         }
         [keyAry removeObjectAtIndex:0];
-        result = [node getChildByNodeKeyArray:keyAry];
+        if (keyAry.count == 0) {
+            result = self;
+        } else {
+            NSString *key = [keyAry objectAtIndex:0];
+            DCTreeNode *node = [self getChildByKey:key];
+            if (!node) {
+                break;
+            }
+            result = [node getChildByNodeKeyArray:keyAry];
+        }
     } while (NO);
     return result;
 }

@@ -27,7 +27,7 @@ NSString *kDCTreeCodingRoot = @"DCTreeCodingRoot";
 @synthesize delegate = _delegate;
 @synthesize root = _root;
 
-- (instancetype)initWithRootNodeKey:(NSString *)key andValue:(id)value {
+- (instancetype)initWithRootNodeKey:(NSString *)key andValue:(id<NSCoding>)value {
     self = [self init];
     if (self) {
         DCAssert(key != nil && [key length] != 0 && value != nil);
@@ -49,7 +49,7 @@ NSString *kDCTreeCodingRoot = @"DCTreeCodingRoot";
         if (!self.root || !actionBlock) {
             break;
         }
-        result = actionBlock(self, self.root);
+        result = [self actionWithNodeByTreeNodeDescription:[self.root treeNodeDescription] andActionBlock:actionBlock];
     } while (NO);
     return result;
 }

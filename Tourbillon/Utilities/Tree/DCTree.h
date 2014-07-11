@@ -28,7 +28,7 @@ typedef BOOL (^DCTreeActionBlock)(DCTree *tree, DCTreeNode *node);
 @property (weak, atomic) id<DCTreeDelegate> delegate;
 @property (strong, nonatomic, readonly) DCTreeNode *root;
 
-- (instancetype)initWithRootNodeKey:(NSString *)key andValue:(id)value;
+- (instancetype)initWithRootNodeKey:(NSString *)key andValue:(id<NSCoding>)value;
 - (BOOL)actionWithRoot:(DCTreeActionBlock)actionBlock;
 - (BOOL)actionWithNodeByTreeNodeDescription:(NSString *)desc andActionBlock:(DCTreeActionBlock)actionBlock;
 
