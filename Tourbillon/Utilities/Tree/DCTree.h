@@ -10,6 +10,8 @@
 
 extern NSString *kDCTreeLevelSeparator;
 
+extern NSString *kDCTreeCodingRoot;
+
 @class DCTreeNode;
 @class DCTree;
 
@@ -21,7 +23,7 @@ typedef BOOL (^DCTreeActionBlock)(DCTree *tree, DCTreeNode *node);
 
 @end
 
-@interface DCTree : NSObject
+@interface DCTree : NSObject <NSCoding>
 
 @property (weak, atomic) id<DCTreeDelegate> delegate;
 @property (strong, nonatomic, readonly) DCTreeNode *root;

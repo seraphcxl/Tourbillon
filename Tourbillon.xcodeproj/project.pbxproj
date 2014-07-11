@@ -60,12 +60,30 @@
 		8952D2F5196D07230068CBCF /* NSObject+DCUUIDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8952D2F3196D07230068CBCF /* NSObject+DCUUIDExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8952D2F6196D07230068CBCF /* NSObject+DCUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952D2F4196D07230068CBCF /* NSObject+DCUUIDExtension.m */; };
 		8952D2F7196D07230068CBCF /* NSObject+DCUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952D2F4196D07230068CBCF /* NSObject+DCUUIDExtension.m */; };
-		8987B4C1196F781500852C5D /* DCTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 8987B4BD196F781500852C5D /* DCTree.h */; };
+		8987B4C1196F781500852C5D /* DCTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 8987B4BD196F781500852C5D /* DCTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8987B4C2196F781500852C5D /* DCTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 8987B4BE196F781500852C5D /* DCTree.m */; };
 		8987B4C3196F781500852C5D /* DCTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 8987B4BE196F781500852C5D /* DCTree.m */; };
-		8987B4C4196F781500852C5D /* DCTreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 8987B4BF196F781500852C5D /* DCTreeNode.h */; };
+		8987B4C4196F781500852C5D /* DCTreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 8987B4BF196F781500852C5D /* DCTreeNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8987B4C5196F781500852C5D /* DCTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8987B4C0196F781500852C5D /* DCTreeNode.m */; };
 		8987B4C6196F781500852C5D /* DCTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8987B4C0196F781500852C5D /* DCTreeNode.m */; };
+		8987B4DD196F8DFD00852C5D /* NSMutableArray+DCGCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89347B2D1964F70100BCD74C /* NSMutableArray+DCGCDThreadSafe.h */; };
+		8987B4DE196F8DFD00852C5D /* NSMutableData+DCGCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89347B2F1964F70100BCD74C /* NSMutableData+DCGCDThreadSafe.h */; };
+		8987B4DF196F8DFD00852C5D /* NSMutableDictionary+DCGCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89347B311964F70100BCD74C /* NSMutableDictionary+DCGCDThreadSafe.h */; };
+		8987B4E0196F8DFD00852C5D /* NSMutableSet+DCGCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89347B331964F70100BCD74C /* NSMutableSet+DCGCDThreadSafe.h */; };
+		8987B4E1196F8DFD00852C5D /* NSMutableString+DCGCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89347B351964F70100BCD74C /* NSMutableString+DCGCDThreadSafe.h */; };
+		8987B4E2196F8DFD00852C5D /* NSObject+DCGCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89347B371964F70100BCD74C /* NSObject+DCGCDThreadSafe.h */; };
+		8987B4E3196F8DFD00852C5D /* UIImage+DCLibrarySupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 892EE3AF1938C4BB00571890 /* UIImage+DCLibrarySupport.h */; };
+		8987B4E4196F8DFD00852C5D /* UIViewController+DCLibrarySupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 894DF6E719394C0B00EF9C9C /* UIViewController+DCLibrarySupport.h */; };
+		8987B4E5196F8DFD00852C5D /* UIColor+DCColorful.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 891F1F81196391F700796F46 /* UIColor+DCColorful.h */; };
+		8987B4E6196F8DFD00852C5D /* NSBundle+DCLibrarySupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 892EE3A81938C36400571890 /* NSBundle+DCLibrarySupport.h */; };
+		8987B4E7196F8DFD00852C5D /* NSData+DCLibrarySupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 892EE3B71938C61200571890 /* NSData+DCLibrarySupport.h */; };
+		8987B4E8196F8DFD00852C5D /* NSURL+DCUTTypeSupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89347B541964F84900BCD74C /* NSURL+DCUTTypeSupport.h */; };
+		8987B4E9196F8DFD00852C5D /* NSObject+DCSwizzle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89347B581964F84900BCD74C /* NSObject+DCSwizzle.h */; };
+		8987B4EA196F8DFD00852C5D /* NSObject+DCMainThreadAsyncReactive.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89347B561964F84900BCD74C /* NSObject+DCMainThreadAsyncReactive.h */; };
+		8987B4EB196F8DFD00852C5D /* NSArray+DCContentExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8952D2EE196CE3410068CBCF /* NSArray+DCContentExtension.h */; };
+		8987B4EC196F8DFD00852C5D /* NSObject+DCUUIDExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8952D2F3196D07230068CBCF /* NSObject+DCUUIDExtension.h */; };
+		8987B4ED196F8DFD00852C5D /* DCTree.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8987B4BD196F781500852C5D /* DCTree.h */; };
+		8987B4EE196F8DFD00852C5D /* DCTreeNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8987B4BF196F781500852C5D /* DCTreeNode.h */; };
 		89CA258A1962FE1300471681 /* NSColor+DCColorful.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CA25881962FE1300471681 /* NSColor+DCColorful.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89CA258B1962FE1300471681 /* NSColor+DCColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CA25891962FE1300471681 /* NSColor+DCColorful.m */; };
 		89E137441925B11000A3EFB7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
@@ -234,6 +252,24 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				8987B4DD196F8DFD00852C5D /* NSMutableArray+DCGCDThreadSafe.h in CopyFiles */,
+				8987B4DE196F8DFD00852C5D /* NSMutableData+DCGCDThreadSafe.h in CopyFiles */,
+				8987B4DF196F8DFD00852C5D /* NSMutableDictionary+DCGCDThreadSafe.h in CopyFiles */,
+				8987B4E0196F8DFD00852C5D /* NSMutableSet+DCGCDThreadSafe.h in CopyFiles */,
+				8987B4E1196F8DFD00852C5D /* NSMutableString+DCGCDThreadSafe.h in CopyFiles */,
+				8987B4E2196F8DFD00852C5D /* NSObject+DCGCDThreadSafe.h in CopyFiles */,
+				8987B4E3196F8DFD00852C5D /* UIImage+DCLibrarySupport.h in CopyFiles */,
+				8987B4E4196F8DFD00852C5D /* UIViewController+DCLibrarySupport.h in CopyFiles */,
+				8987B4E5196F8DFD00852C5D /* UIColor+DCColorful.h in CopyFiles */,
+				8987B4E6196F8DFD00852C5D /* NSBundle+DCLibrarySupport.h in CopyFiles */,
+				8987B4E7196F8DFD00852C5D /* NSData+DCLibrarySupport.h in CopyFiles */,
+				8987B4E8196F8DFD00852C5D /* NSURL+DCUTTypeSupport.h in CopyFiles */,
+				8987B4E9196F8DFD00852C5D /* NSObject+DCSwizzle.h in CopyFiles */,
+				8987B4EA196F8DFD00852C5D /* NSObject+DCMainThreadAsyncReactive.h in CopyFiles */,
+				8987B4EB196F8DFD00852C5D /* NSArray+DCContentExtension.h in CopyFiles */,
+				8987B4EC196F8DFD00852C5D /* NSObject+DCUUIDExtension.h in CopyFiles */,
+				8987B4ED196F8DFD00852C5D /* DCTree.h in CopyFiles */,
+				8987B4EE196F8DFD00852C5D /* DCTreeNode.h in CopyFiles */,
 				89E138A41925BE8C00A3EFB7 /* DCTourbillon.h in CopyFiles */,
 				89E138A51925BE8C00A3EFB7 /* DCCommonConstants.h in CopyFiles */,
 				89E138A61925BE8C00A3EFB7 /* DCLogger.h in CopyFiles */,
@@ -701,7 +737,6 @@
 				89E137CD1925B24800A3EFB7 /* NSString+DCBase64.h in Headers */,
 				89E138131925B25C00A3EFB7 /* DCCommonUtility.h in Headers */,
 				89E138401925B25C00A3EFB7 /* DCWebUtility.h in Headers */,
-				8987B4C1196F781500852C5D /* DCTree.h in Headers */,
 				89E1383B1925B25C00A3EFB7 /* DCWatchedOperationQueue.h in Headers */,
 				89E138221925B25C00A3EFB7 /* DCRPNUtility.h in Headers */,
 				89E138361925B25C00A3EFB7 /* DCUIMainThreadGuard.h in Headers */,
@@ -726,7 +761,6 @@
 				89347B511964F77800BCD74C /* NSWindowController+DCCenterToScreen.h in Headers */,
 				89347B3F1964F70100BCD74C /* NSMutableDictionary+DCGCDThreadSafe.h in Headers */,
 				89347B4F1964F77800BCD74C /* NSViewController+DCViewLogic.h in Headers */,
-				8987B4C4196F781500852C5D /* DCTreeNode.h in Headers */,
 				89347B481964F70100BCD74C /* NSObject+DCGCDThreadSafe.h in Headers */,
 				892EE3AA1938C36400571890 /* NSBundle+DCLibrarySupport.h in Headers */,
 				89E137AE1925B24800A3EFB7 /* DCBase64Define.h in Headers */,
@@ -735,6 +769,8 @@
 				89347B5E1964F84900BCD74C /* NSObject+DCMainThreadAsyncReactive.h in Headers */,
 				89CA258A1962FE1300471681 /* NSColor+DCColorful.h in Headers */,
 				8952D2F0196CE3410068CBCF /* NSArray+DCContentExtension.h in Headers */,
+				8987B4C1196F781500852C5D /* DCTree.h in Headers */,
+				8987B4C4196F781500852C5D /* DCTreeNode.h in Headers */,
 				8952D2F5196D07230068CBCF /* NSObject+DCUUIDExtension.h in Headers */,
 				89E137F21925B24F00A3EFB7 /* DCSafeARC.h in Headers */,
 			);

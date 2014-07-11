@@ -10,17 +10,21 @@
 
 extern NSString *kDCTreeNodeSeparator;
 
-@interface DCTreeNode : NSObject
+extern NSString *kDCTreeNodeCodingKey;
+extern NSString *kDCTreeNodeCodingValue;
+extern NSString *kDCTreeNodeCodingChildren;
+
+@interface DCTreeNode : NSObject <NSCoding>
 
 + (NSMutableArray *)treeNodeDescriptionToKeyArray:(NSString *)desc;
 
 @property (strong, nonatomic, readonly) NSString *key;
-@property (strong, nonatomic, readonly) id value;
+@property (strong, nonatomic, readonly) id<NSCoding> value;
 
 @property (strong, nonatomic) DCTreeNode *parent;
 @property (strong, nonatomic, readonly) NSMutableArray *children;
 
-- (instancetype)initWithKey:(NSString *)key andValue:(id)value;
+- (instancetype)initWithKey:(NSString *)key andValue:(id<NSCoding>)value;
 
 - (NSUInteger)level;
 

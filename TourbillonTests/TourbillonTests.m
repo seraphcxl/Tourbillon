@@ -8,6 +8,9 @@
 
 #import <XCTest/XCTest.h>
 
+#import "DCTree.h"
+#import "DCTreeNode.h"
+
 @interface TourbillonTests : XCTestCase
 
 @end
@@ -28,7 +31,51 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+//    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+}
+
+- (void)testDCTree {
+    DCTree *tree = [[DCTree alloc] initWithRootNodeKey:@"Main" andValue:@"MainV"];
+    
+    DCTreeNode *naviBar = [[DCTreeNode alloc] initWithKey:@"Navi" andValue:@"NaviV"];
+    DCTreeNode *leftBtn = [[DCTreeNode alloc] initWithKey:@"LeftBtn" andValue:@"LeftBtnV"];
+    DCTreeNode *rightBtn = [[DCTreeNode alloc] initWithKey:@"RightBtn" andValue:@"RightBtnV"];
+    [naviBar addChild:leftBtn];
+    [naviBar addChild:rightBtn];
+    
+    DCTreeNode *view = [[DCTreeNode alloc] initWithKey:@"View" andValue:@"ViewV"];
+    DCTreeNode *leftView = [[DCTreeNode alloc] initWithKey:@"LeftView" andValue:@"LeftViewV"];
+    DCTreeNode *rightView = [[DCTreeNode alloc] initWithKey:@"RightView" andValue:@"RightViewV"];
+    [view addChild:leftView];
+    [view addChild:rightView];
+    
+    [tree actionWithRoot:^BOOL(DCTree *tree, DCTreeNode *node) {
+        [node addChild:naviBar];
+        [node addChild:view];
+        return YES;
+    }];
+    
+    NSLog(@"%@", [tree keyLevelTraversal:NO]);
+    NSLog(@"%@", [tree keyLevelTraversal:YES]);
+    
+    NSMutableData *data = [NSMutableData data];
+    NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
+    [archiver encodeObject:tree forKey:@"tree"];
+    [archiver finishEncoding];
+    
+    NSUInteger len = [data length];
+    
+    NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
+    DCTree *otherTree = [unarchiver decodeObjectForKey:@"tree"];
+    [unarchiver finishDecoding];
+    
+    NSLog(@"%@", [otherTree keyLevelTraversal:NO]);
+    NSLog(@"%@", [otherTree keyLevelTraversal:YES]);
+    
+    NSLog(@"%@", [leftBtn treeNodeDescription]);
+    
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
 }
 
 @end

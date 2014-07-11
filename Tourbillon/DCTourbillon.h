@@ -52,6 +52,8 @@
 #import "DCRunLoopOperation.h"
 #import "DCUIMainThreadGuard.h"
 #import "DCWatchedOperationQueue.h"
+#import "DCTree.h"
+#import "DCTreeNode.h"
 
 #if TARGET_OS_IPHONE
 // iOS

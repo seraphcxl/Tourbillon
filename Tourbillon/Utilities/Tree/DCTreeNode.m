@@ -14,10 +14,14 @@
 
 NSString *kDCTreeNodeSeparator = @",";
 
+NSString *kDCTreeNodeCodingKey = @"DCTreeNodeCodingKey";
+NSString *kDCTreeNodeCodingValue = @"DCTreeNodeCodingValue";
+NSString *kDCTreeNodeCodingChildren = @"DCTreeNodeCodingChildren";
+
 @interface DCTreeNode ()
 
 @property (strong, nonatomic) NSString *key;
-@property (strong, nonatomic) id value;
+@property (strong, nonatomic) id<NSCoding> value;
 @property (strong, nonatomic) NSMutableArray *children;
 @property (strong, nonatomic) NSMutableDictionary *childrenDict;
 
@@ -48,7 +52,7 @@ NSString *kDCTreeNodeSeparator = @",";
     return result;
 }
 
-- (instancetype)initWithKey:(NSString *)key andValue:(id)value {
+- (instancetype)initWithKey:(NSString *)key andValue:(id<NSCoding>)value {
     self = [self init];
     if (self) {
         DCAssert(key != nil && [key length] != 0 && value != nil);
@@ -191,12 +195,12 @@ NSString *kDCTreeNodeSeparator = @",";
 - (NSString *)treeNodeDescription {
     NSString *result = nil;
     do {
-        if (self.key) {
+        if (!self.key) {
             break;
         }
         if (self.parent) {
             NSString *parentDesc = [self.parent treeNodeDescription];
-            result = [NSString stringWithFormat:@"%@.%@", parentDesc, self.key];
+            result = [NSString stringWithFormat:@"%@%@%@", parentDesc, kDCTreeNodeSeparator, self.key];
         } else {
             result = [NSString stringWithFormat:@"%@", self.key];
         }
@@ -246,6 +250,34 @@ NSString *kDCTreeNodeSeparator = @",";
         result = [node getChildByNodeKeyArray:keyAry];
     } while (NO);
     return result;
+}
+
+#pragma mark - NSCoding
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    do {
+        if (!aCoder || ![aCoder allowsKeyedCoding]) {
+            break;
+        }
+        [aCoder encodeObject:self.key forKey:kDCTreeNodeCodingKey];
+        [aCoder encodeObject:self.value forKey:kDCTreeNodeCodingValue];
+        [aCoder encodeObject:self.children forKey:kDCTreeNodeCodingChildren];
+    } while (NO);
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [self init];
+    if (self) {
+        DCAssert(aDecoder != nil && [aDecoder allowsKeyedCoding]);
+        self.key = [aDecoder decodeObjectForKey:kDCTreeNodeCodingKey];
+        self.value = [aDecoder decodeObjectForKey:kDCTreeNodeCodingValue];
+        self.children = [[aDecoder decodeObjectForKey:kDCTreeNodeCodingChildren] threadSafe_init];
+        self.childrenDict = [[NSMutableDictionary dictionary] threadSafe_init];
+        for (DCTreeNode *node in self.children) {
+            node.parent = self;
+            [self.childrenDict threadSafe_setObject:node forKey:node.key];
+        }
+    }
+    return self;
 }
 
 @end
