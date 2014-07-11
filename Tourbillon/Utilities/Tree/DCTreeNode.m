@@ -1,18 +1,20 @@
 //
-//  DCComponentTreeNode.m
+//  DCTreeNode.m
 //  FoundingFather
 //
 //  Created by Derek Chen on 7/10/14.
 //  Copyright (c) 2014 CaptainSolid Studio. All rights reserved.
 //
 
-#import "DCComponentTreeNode.h"
+#import "DCTreeNode.h"
 #import "NSMutableArray+DCGCDThreadSafe.h"
 #import "NSMutableDictionary+DCGCDThreadSafe.h"
 #import "DCLogger.h"
 #import "NSString+DCURLCoding.h"
 
-@interface DCComponentTreeNode ()
+NSString *kDCTreeNodeSeparator = @",";
+
+@interface DCTreeNode ()
 
 @property (strong, nonatomic) NSString *key;
 @property (strong, nonatomic) id value;
@@ -21,14 +23,14 @@
 
 @end
 
-@implementation DCComponentTreeNode
+@implementation DCTreeNode
 
 @synthesize key = _key;
 @synthesize value = _value;
 @synthesize parent = _parent;
 @synthesize children = _children;
 
-+ (NSMutableArray *)componentTreeNodeDescriptionToKeyArray:(NSString *)desc {
++ (NSMutableArray *)treeNodeDescriptionToKeyArray:(NSString *)desc {
     NSMutableArray *result = nil;
     do {
         if (!desc) {
@@ -36,20 +38,20 @@
         }
         result = [NSMutableArray array];
         NSScanner *scanner = [NSScanner scannerWithString:desc];
-        NSString *separator = @",";
         NSString *key = nil;
         while(![scanner isAtEnd]) {
-            [scanner scanUpToString:separator intoString:&key];
-            [scanner scanString:separator intoString:NULL];
+            [scanner scanUpToString:kDCTreeNodeSeparator intoString:&key];
+            [scanner scanString:kDCTreeNodeSeparator intoString:NULL];
             [result addObject:result];
         }
     } while (NO);
     return result;
 }
 
-- (instancetype)initWithKey:(NSString *)key value:(id)value {
+- (instancetype)initWithKey:(NSString *)key andValue:(id)value {
     self = [self init];
     if (self) {
+        DCAssert(key != nil && [key length] != 0 && value != nil);
         self.key = [[key urlEncodedString] copy];
         self.value = value;
         
@@ -73,7 +75,18 @@
     } while (NO);
 }
 
-- (void)addChild:(DCComponentTreeNode *)child {
+- (NSUInteger)level {
+    NSUInteger result = 0;
+    do {
+        if (!self.parent) {
+            break;
+        }
+        result = 1 + [self.parent level];
+    } while (NO);
+    return result;
+}
+
+- (void)addChild:(DCTreeNode *)child {
     do {
         DCAssert(self.children != nil && self.childrenDict != nil);
         if (!child) {
@@ -94,7 +107,7 @@
         if (!children || children.count == 0) {
             break;
         }
-        for (DCComponentTreeNode *node in children) {
+        for (DCTreeNode *node in children) {
             [self addChild:node];
         }
     } while (NO);
@@ -114,7 +127,7 @@
         if (childIndex >= [self.children threadSafe_count]) {
             break;
         }
-        DCComponentTreeNode *node = [self.children threadSafe_objectAtIndex:childIndex];
+        DCTreeNode *node = [self.children threadSafe_objectAtIndex:childIndex];
         if (node) {
             [self.childrenDict removeObjectForKey:node.key];
         }
@@ -129,7 +142,7 @@
             break;
         }
         NSString *key = [childKey urlEncodedString];
-        DCComponentTreeNode *node = [self.childrenDict threadSafe_objectForKey:key];
+        DCTreeNode *node = [self.childrenDict threadSafe_objectForKey:key];
         if (node) {
             [self.children removeObject:node];
         }
@@ -150,8 +163,8 @@
     } while (NO);
 }
 
-- (DCComponentTreeNode *)getChildAtIndex:(NSUInteger)childIndex {
-    DCComponentTreeNode *result = nil;
+- (DCTreeNode *)getChildAtIndex:(NSUInteger)childIndex {
+    DCTreeNode *result = nil;
     do {
         DCAssert(self.children != nil && self.childrenDict != nil);
         if (childIndex >= [self.children threadSafe_count]) {
@@ -162,8 +175,8 @@
     return result;
 }
 
-- (DCComponentTreeNode *)getChildByKey:(NSString *)childKey {
-    DCComponentTreeNode *result = nil;
+- (DCTreeNode *)getChildByKey:(NSString *)childKey {
+    DCTreeNode *result = nil;
     do {
         DCAssert(self.children != nil && self.childrenDict != nil);
         if (!childKey) {
@@ -175,14 +188,14 @@
     return result;
 }
 
-- (NSString *)componentTreeNodeDescription {
+- (NSString *)treeNodeDescription {
     NSString *result = nil;
     do {
         if (self.key) {
             break;
         }
         if (self.parent) {
-            NSString *parentDesc = [self.parent componentTreeNodeDescription];
+            NSString *parentDesc = [self.parent treeNodeDescription];
             result = [NSString stringWithFormat:@"%@.%@", parentDesc, self.key];
         } else {
             result = [NSString stringWithFormat:@"%@", self.key];
@@ -191,19 +204,19 @@
     return result;
 }
 
-- (DCComponentTreeNode *)getChildByComponentTreeNodeDescription:(NSString *)desc {
-    DCComponentTreeNode *result = nil;
+- (DCTreeNode *)getChildByTreeNodeDescription:(NSString *)desc {
+    DCTreeNode *result = nil;
     do {
         DCAssert(self.children != nil && self.childrenDict != nil);
         if (!desc) {
             break;
         }
-        NSMutableArray *keyAry = [DCComponentTreeNode componentTreeNodeDescriptionToKeyArray:desc];
+        NSMutableArray *keyAry = [DCTreeNode treeNodeDescriptionToKeyArray:desc];
         if (keyAry.count == 0) {
             break;
         }
         NSString *key = [keyAry objectAtIndex:0];
-        DCComponentTreeNode *node = [self getChildByKey:key];
+        DCTreeNode *node = [self getChildByKey:key];
         if (!node) {
             break;
         }
@@ -213,8 +226,8 @@
     return result;
 }
 
-- (DCComponentTreeNode *)getChildByNodeKeyArray:(NSArray *)keyArray {
-    DCComponentTreeNode *result = nil;
+- (DCTreeNode *)getChildByNodeKeyArray:(NSArray *)keyArray {
+    DCTreeNode *result = nil;
     do {
         DCAssert(self.children != nil && self.childrenDict != nil);
         if (!keyArray || keyArray.count == 0) {
@@ -225,7 +238,7 @@
             break;
         }
         NSString *key = [keyAry objectAtIndex:0];
-        DCComponentTreeNode *node = [self getChildByKey:key];
+        DCTreeNode *node = [self getChildByKey:key];
         if (!node) {
             break;
         }
