@@ -24,6 +24,7 @@
 #import "NSBundle+DCLibrarySupport.h"
 #import "NSArray+DCContentExtension.h"
 #import "NSObject+DCUUIDExtension.h"
+#import "NSData+GZipExtension.h"
 
 #pragma mark - GCDThreadSafe
 #import "NSObject+DCGCDThreadSafe.h"
@@ -54,6 +55,8 @@
 #import "DCWatchedOperationQueue.h"
 #import "DCTree.h"
 #import "DCTreeNode.h"
+#import "DCGZipCompressor.h"
+#import "DCGZipDecompressor.h"
 
 #if TARGET_OS_IPHONE
 // iOS

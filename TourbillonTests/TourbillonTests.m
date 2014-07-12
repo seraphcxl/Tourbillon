@@ -11,6 +11,8 @@
 #import "DCTree.h"
 #import "DCTreeNode.h"
 
+#import "NSData+GZipExtension.h"
+
 @interface TourbillonTests : XCTestCase
 
 @end
@@ -64,6 +66,13 @@
     [archiver finishEncoding];
     
     NSUInteger len = [data length];
+    
+    NSError *err = nil;
+    NSData *compData = [data compressByGZipWithError:&err];
+    NSUInteger len1 = [compData length];
+    
+    NSData *rawData = [compData decompressByGZipWithError:&err];
+    NSUInteger len2 = [rawData length];
     
     NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
     DCTree *otherTree = [unarchiver decodeObjectForKey:@"tree"];

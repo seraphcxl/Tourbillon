@@ -60,6 +60,21 @@
 		8952D2F5196D07230068CBCF /* NSObject+DCUUIDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8952D2F3196D07230068CBCF /* NSObject+DCUUIDExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8952D2F6196D07230068CBCF /* NSObject+DCUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952D2F4196D07230068CBCF /* NSObject+DCUUIDExtension.m */; };
 		8952D2F7196D07230068CBCF /* NSObject+DCUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952D2F4196D07230068CBCF /* NSObject+DCUUIDExtension.m */; };
+		8955F7EF1970F12A00B390C6 /* DCGZipCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8955F7EB1970F12A00B390C6 /* DCGZipCompressor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8955F7F01970F12A00B390C6 /* DCGZipCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955F7EC1970F12A00B390C6 /* DCGZipCompressor.m */; };
+		8955F7F11970F12A00B390C6 /* DCGZipCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955F7EC1970F12A00B390C6 /* DCGZipCompressor.m */; };
+		8955F7F21970F12A00B390C6 /* DCGZipDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8955F7ED1970F12A00B390C6 /* DCGZipDecompressor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8955F7F31970F12A00B390C6 /* DCGZipDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955F7EE1970F12A00B390C6 /* DCGZipDecompressor.m */; };
+		8955F7F41970F12A00B390C6 /* DCGZipDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955F7EE1970F12A00B390C6 /* DCGZipDecompressor.m */; };
+		8955F7F6197135E500B390C6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8955F7F5197135E500B390C6 /* libz.dylib */; };
+		8955F7F8197135ED00B390C6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8955F7F7197135ED00B390C6 /* libz.dylib */; };
+		8955F7F9197135F800B390C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137461925B11000A3EFB7 /* Foundation.framework */; };
+		8955F7FC1971525400B390C6 /* NSData+GZipExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8955F7FA1971525400B390C6 /* NSData+GZipExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8955F7FD1971525400B390C6 /* NSData+GZipExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955F7FB1971525400B390C6 /* NSData+GZipExtension.m */; };
+		8955F7FE1971525400B390C6 /* NSData+GZipExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955F7FB1971525400B390C6 /* NSData+GZipExtension.m */; };
+		8955F7FF1971541100B390C6 /* NSData+GZipExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8955F7FA1971525400B390C6 /* NSData+GZipExtension.h */; };
+		8955F8001971541100B390C6 /* DCGZipCompressor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8955F7EB1970F12A00B390C6 /* DCGZipCompressor.h */; };
+		8955F8011971541100B390C6 /* DCGZipDecompressor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8955F7ED1970F12A00B390C6 /* DCGZipDecompressor.h */; };
 		8987B4C1196F781500852C5D /* DCTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 8987B4BD196F781500852C5D /* DCTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8987B4C2196F781500852C5D /* DCTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 8987B4BE196F781500852C5D /* DCTree.m */; };
 		8987B4C3196F781500852C5D /* DCTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 8987B4BE196F781500852C5D /* DCTree.m */; };
@@ -86,7 +101,6 @@
 		8987B4EE196F8DFD00852C5D /* DCTreeNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8987B4BF196F781500852C5D /* DCTreeNode.h */; };
 		89CA258A1962FE1300471681 /* NSColor+DCColorful.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CA25881962FE1300471681 /* NSColor+DCColorful.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89CA258B1962FE1300471681 /* NSColor+DCColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CA25891962FE1300471681 /* NSColor+DCColorful.m */; };
-		89E137441925B11000A3EFB7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
 		89E1374E1925B11000A3EFB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89E1374C1925B11000A3EFB7 /* InfoPlist.strings */; };
 		89E137591925B11000A3EFB7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137581925B11000A3EFB7 /* XCTest.framework */; };
 		89E1375A1925B11000A3EFB7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
@@ -252,6 +266,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				8955F7FF1971541100B390C6 /* NSData+GZipExtension.h in CopyFiles */,
+				8955F8001971541100B390C6 /* DCGZipCompressor.h in CopyFiles */,
+				8955F8011971541100B390C6 /* DCGZipDecompressor.h in CopyFiles */,
 				8987B4DD196F8DFD00852C5D /* NSMutableArray+DCGCDThreadSafe.h in CopyFiles */,
 				8987B4DE196F8DFD00852C5D /* NSMutableData+DCGCDThreadSafe.h in CopyFiles */,
 				8987B4DF196F8DFD00852C5D /* NSMutableDictionary+DCGCDThreadSafe.h in CopyFiles */,
@@ -338,6 +355,14 @@
 		8952D2EF196CE3410068CBCF /* NSArray+DCContentExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DCContentExtension.m"; sourceTree = "<group>"; };
 		8952D2F3196D07230068CBCF /* NSObject+DCUUIDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCUUIDExtension.h"; sourceTree = "<group>"; };
 		8952D2F4196D07230068CBCF /* NSObject+DCUUIDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCUUIDExtension.m"; sourceTree = "<group>"; };
+		8955F7EB1970F12A00B390C6 /* DCGZipCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCGZipCompressor.h; sourceTree = "<group>"; };
+		8955F7EC1970F12A00B390C6 /* DCGZipCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCGZipCompressor.m; sourceTree = "<group>"; };
+		8955F7ED1970F12A00B390C6 /* DCGZipDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCGZipDecompressor.h; sourceTree = "<group>"; };
+		8955F7EE1970F12A00B390C6 /* DCGZipDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCGZipDecompressor.m; sourceTree = "<group>"; };
+		8955F7F5197135E500B390C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8955F7F7197135ED00B390C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		8955F7FA1971525400B390C6 /* NSData+GZipExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GZipExtension.h"; sourceTree = "<group>"; };
+		8955F7FB1971525400B390C6 /* NSData+GZipExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GZipExtension.m"; sourceTree = "<group>"; };
 		8987B4BD196F781500852C5D /* DCTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTree.h; sourceTree = "<group>"; };
 		8987B4BE196F781500852C5D /* DCTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTree.m; sourceTree = "<group>"; };
 		8987B4BF196F781500852C5D /* DCTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTreeNode.h; sourceTree = "<group>"; };
@@ -418,7 +443,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89E137441925B11000A3EFB7 /* Cocoa.framework in Frameworks */,
+				8955F7F9197135F800B390C6 /* Foundation.framework in Frameworks */,
+				8955F7F6197135E500B390C6 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +462,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8955F7F8197135ED00B390C6 /* libz.dylib in Frameworks */,
 				8952D2ED196CDD260068CBCF /* MobileCoreServices.framework in Frameworks */,
 				89E137741925B13D00A3EFB7 /* Foundation.framework in Frameworks */,
 			);
@@ -492,6 +519,8 @@
 		89E137421925B11000A3EFB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8955F7F7197135ED00B390C6 /* libz.dylib */,
+				8955F7F5197135E500B390C6 /* libz.dylib */,
 				8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */,
 				89E137431925B11000A3EFB7 /* Cocoa.framework */,
 				89E137581925B11000A3EFB7 /* XCTest.framework */,
@@ -622,6 +651,8 @@
 				8952D2EF196CE3410068CBCF /* NSArray+DCContentExtension.m */,
 				8952D2F3196D07230068CBCF /* NSObject+DCUUIDExtension.h */,
 				8952D2F4196D07230068CBCF /* NSObject+DCUUIDExtension.m */,
+				8955F7FA1971525400B390C6 /* NSData+GZipExtension.h */,
+				8955F7FB1971525400B390C6 /* NSData+GZipExtension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -650,6 +681,10 @@
 		89E137FC1925B25C00A3EFB7 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8955F7EB1970F12A00B390C6 /* DCGZipCompressor.h */,
+				8955F7EC1970F12A00B390C6 /* DCGZipCompressor.m */,
+				8955F7ED1970F12A00B390C6 /* DCGZipDecompressor.h */,
+				8955F7EE1970F12A00B390C6 /* DCGZipDecompressor.m */,
 				8987B4BC196F781500852C5D /* Tree */,
 				89E137FD1925B25C00A3EFB7 /* DCAtomicSetters.h */,
 				89E137FE1925B25C00A3EFB7 /* DCCommonUtility.h */,
@@ -770,6 +805,9 @@
 				89CA258A1962FE1300471681 /* NSColor+DCColorful.h in Headers */,
 				8952D2F0196CE3410068CBCF /* NSArray+DCContentExtension.h in Headers */,
 				8987B4C1196F781500852C5D /* DCTree.h in Headers */,
+				8955F7F21970F12A00B390C6 /* DCGZipDecompressor.h in Headers */,
+				8955F7FC1971525400B390C6 /* NSData+GZipExtension.h in Headers */,
+				8955F7EF1970F12A00B390C6 /* DCGZipCompressor.h in Headers */,
 				8987B4C4196F781500852C5D /* DCTreeNode.h in Headers */,
 				8952D2F5196D07230068CBCF /* NSObject+DCUUIDExtension.h in Headers */,
 				89E137F21925B24F00A3EFB7 /* DCSafeARC.h in Headers */,
@@ -933,6 +971,7 @@
 				89E138231925B25C00A3EFB7 /* DCRPNUtility.m in Sources */,
 				89E138511925B61900A3EFB7 /* NSColor+DCAdditions.m in Sources */,
 				89E138141925B25C00A3EFB7 /* DCCommonUtility.m in Sources */,
+				8955F7FD1971525400B390C6 /* NSData+GZipExtension.m in Sources */,
 				89347B431964F70100BCD74C /* NSMutableSet+DCGCDThreadSafe.m in Sources */,
 				89E137B51925B24800A3EFB7 /* NSData+DCBase64.m in Sources */,
 				8952D2F1196CE3410068CBCF /* NSArray+DCContentExtension.m in Sources */,
@@ -948,12 +987,14 @@
 				892EE3AB1938C36400571890 /* NSBundle+DCLibrarySupport.m in Sources */,
 				89347B3A1964F70100BCD74C /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
 				89E138371925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */,
+				8955F7F01970F12A00B390C6 /* DCGZipCompressor.m in Sources */,
 				89347B491964F70100BCD74C /* NSObject+DCGCDThreadSafe.m in Sources */,
 				89E137D31925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */,
 				89E137DD1925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */,
 				89E137F81925B25600A3EFB7 /* DCTestBlocker.m in Sources */,
 				89E1382D1925B25C00A3EFB7 /* DCStack.m in Sources */,
 				89E137C41925B24800A3EFB7 /* NSNumber+DCRandom.m in Sources */,
+				8955F7F31970F12A00B390C6 /* DCGZipDecompressor.m in Sources */,
 				89347B591964F84900BCD74C /* NSURL+DCUTTypeSupport.m in Sources */,
 				89347B461964F70100BCD74C /* NSMutableString+DCGCDThreadSafe.m in Sources */,
 			);
@@ -1006,6 +1047,7 @@
 				89E138251925B25C00A3EFB7 /* DCRPNUtility.m in Sources */,
 				891F1F83196391F700796F46 /* UIColor+DCColorful.m in Sources */,
 				89E1384B1925B61000A3EFB7 /* UIColor+DCAdditions.m in Sources */,
+				8955F7FE1971525400B390C6 /* NSData+GZipExtension.m in Sources */,
 				89347B441964F70100BCD74C /* NSMutableSet+DCGCDThreadSafe.m in Sources */,
 				89E138161925B25C00A3EFB7 /* DCCommonUtility.m in Sources */,
 				8952D2F2196CE3410068CBCF /* NSArray+DCContentExtension.m in Sources */,
@@ -1021,12 +1063,14 @@
 				89347B3B1964F70100BCD74C /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
 				89E138391925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */,
 				892EE3AD1938C36400571890 /* NSBundle+DCLibrarySupport.m in Sources */,
+				8955F7F11970F12A00B390C6 /* DCGZipCompressor.m in Sources */,
 				89347B4A1964F70100BCD74C /* NSObject+DCGCDThreadSafe.m in Sources */,
 				89E137D51925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */,
 				89E137DF1925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */,
 				89E137FA1925B25600A3EFB7 /* DCTestBlocker.m in Sources */,
 				89E1382F1925B25C00A3EFB7 /* DCStack.m in Sources */,
 				89E137C61925B24800A3EFB7 /* NSNumber+DCRandom.m in Sources */,
+				8955F7F41970F12A00B390C6 /* DCGZipDecompressor.m in Sources */,
 				89347B5A1964F84900BCD74C /* NSURL+DCUTTypeSupport.m in Sources */,
 				89347B471964F70100BCD74C /* NSMutableString+DCGCDThreadSafe.m in Sources */,
 			);
