@@ -99,9 +99,57 @@
 		8987B4EC196F8DFD00852C5D /* NSObject+DCUUIDExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8952D2F3196D07230068CBCF /* NSObject+DCUUIDExtension.h */; };
 		8987B4ED196F8DFD00852C5D /* DCTree.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8987B4BD196F781500852C5D /* DCTree.h */; };
 		8987B4EE196F8DFD00852C5D /* DCTreeNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8987B4BF196F781500852C5D /* DCTreeNode.h */; };
-		89ADE82F198F2B1300DD27B2 /* DCHashUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89ADE82D198F2B1300DD27B2 /* DCHashUtility.h */; };
+		89ADE82F198F2B1300DD27B2 /* DCHashUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89ADE82D198F2B1300DD27B2 /* DCHashUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89ADE830198F2B1300DD27B2 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADE82E198F2B1300DD27B2 /* DCHashUtility.m */; };
 		89ADE831198F2B1300DD27B2 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADE82E198F2B1300DD27B2 /* DCHashUtility.m */; };
+		89ADE83B198F50A500DD27B2 /* NSData+DCHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 89ADE839198F50A500DD27B2 /* NSData+DCHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89ADE83C198F50A500DD27B2 /* NSData+DCHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADE83A198F50A500DD27B2 /* NSData+DCHex.m */; };
+		89ADE83D198F50A500DD27B2 /* NSData+DCHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADE83A198F50A500DD27B2 /* NSData+DCHex.m */; };
+		89ADE83E198F54E000DD27B2 /* NSData+DCHex.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89ADE839198F50A500DD27B2 /* NSData+DCHex.h */; };
+		89ADE83F198F54E000DD27B2 /* DCHashUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89ADE82D198F2B1300DD27B2 /* DCHashUtility.h */; };
+		89ADE840198F55AC00DD27B2 /* NSMutableArray+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B2E1964F70100BCD74C /* NSMutableArray+DCGCDThreadSafe.m */; };
+		89ADE841198F55AC00DD27B2 /* NSMutableData+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B301964F70100BCD74C /* NSMutableData+DCGCDThreadSafe.m */; };
+		89ADE842198F55AC00DD27B2 /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B321964F70100BCD74C /* NSMutableDictionary+DCGCDThreadSafe.m */; };
+		89ADE843198F55AC00DD27B2 /* NSMutableSet+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B341964F70100BCD74C /* NSMutableSet+DCGCDThreadSafe.m */; };
+		89ADE844198F55AC00DD27B2 /* NSMutableString+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B361964F70100BCD74C /* NSMutableString+DCGCDThreadSafe.m */; };
+		89ADE845198F55AC00DD27B2 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B381964F70100BCD74C /* NSObject+DCGCDThreadSafe.m */; };
+		89ADE846198F55C500DD27B2 /* NSViewController+DCViewLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B4C1964F77800BCD74C /* NSViewController+DCViewLogic.m */; };
+		89ADE847198F55C600DD27B2 /* NSWindowController+DCCenterToScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B4E1964F77800BCD74C /* NSWindowController+DCCenterToScreen.m */; };
+		89ADE848198F55C600DD27B2 /* NSColor+DCColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CA25891962FE1300471681 /* NSColor+DCColorful.m */; };
+		89ADE849198F55C600DD27B2 /* NSURL+DCUTTypeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B531964F84900BCD74C /* NSURL+DCUTTypeSupport.m */; };
+		89ADE84A198F55C600DD27B2 /* NSObject+DCSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B551964F84900BCD74C /* NSObject+DCSwizzle.m */; };
+		89ADE84B198F55C600DD27B2 /* NSObject+DCMainThreadAsyncReactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B571964F84900BCD74C /* NSObject+DCMainThreadAsyncReactive.m */; };
+		89ADE84C198F55C600DD27B2 /* NSArray+DCContentExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952D2EF196CE3410068CBCF /* NSArray+DCContentExtension.m */; };
+		89ADE84D198F55C600DD27B2 /* NSObject+DCUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952D2F4196D07230068CBCF /* NSObject+DCUUIDExtension.m */; };
+		89ADE84E198F55C600DD27B2 /* NSData+GZipExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955F7FB1971525400B390C6 /* NSData+GZipExtension.m */; };
+		89ADE84F198F55C600DD27B2 /* NSData+DCHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADE83A198F50A500DD27B2 /* NSData+DCHex.m */; };
+		89ADE850198F55C600DD27B2 /* DCGZipCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955F7EC1970F12A00B390C6 /* DCGZipCompressor.m */; };
+		89ADE851198F55C600DD27B2 /* DCGZipDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955F7EE1970F12A00B390C6 /* DCGZipDecompressor.m */; };
+		89ADE852198F55C600DD27B2 /* DCTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 8987B4BE196F781500852C5D /* DCTree.m */; };
+		89ADE853198F55C600DD27B2 /* DCTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8987B4C0196F781500852C5D /* DCTreeNode.m */; };
+		89ADE854198F55C600DD27B2 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADE82E198F2B1300DD27B2 /* DCHashUtility.m */; };
+		89ADE855198F564100DD27B2 /* NSMutableArray+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B2E1964F70100BCD74C /* NSMutableArray+DCGCDThreadSafe.m */; };
+		89ADE856198F564100DD27B2 /* NSMutableData+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B301964F70100BCD74C /* NSMutableData+DCGCDThreadSafe.m */; };
+		89ADE857198F564100DD27B2 /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B321964F70100BCD74C /* NSMutableDictionary+DCGCDThreadSafe.m */; };
+		89ADE858198F564100DD27B2 /* NSMutableSet+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B341964F70100BCD74C /* NSMutableSet+DCGCDThreadSafe.m */; };
+		89ADE859198F564100DD27B2 /* NSMutableString+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B361964F70100BCD74C /* NSMutableString+DCGCDThreadSafe.m */; };
+		89ADE85A198F564100DD27B2 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B381964F70100BCD74C /* NSObject+DCGCDThreadSafe.m */; };
+		89ADE85B198F564100DD27B2 /* UIColor+DCColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 891F1F82196391F700796F46 /* UIColor+DCColorful.m */; };
+		89ADE85C198F564100DD27B2 /* NSURL+DCUTTypeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B531964F84900BCD74C /* NSURL+DCUTTypeSupport.m */; };
+		89ADE85D198F564100DD27B2 /* NSObject+DCSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B551964F84900BCD74C /* NSObject+DCSwizzle.m */; };
+		89ADE85E198F564100DD27B2 /* NSObject+DCMainThreadAsyncReactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 89347B571964F84900BCD74C /* NSObject+DCMainThreadAsyncReactive.m */; };
+		89ADE85F198F564100DD27B2 /* NSArray+DCContentExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952D2EF196CE3410068CBCF /* NSArray+DCContentExtension.m */; };
+		89ADE860198F564100DD27B2 /* NSObject+DCUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952D2F4196D07230068CBCF /* NSObject+DCUUIDExtension.m */; };
+		89ADE861198F564100DD27B2 /* NSData+GZipExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955F7FB1971525400B390C6 /* NSData+GZipExtension.m */; };
+		89ADE862198F564100DD27B2 /* NSData+DCHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADE83A198F50A500DD27B2 /* NSData+DCHex.m */; };
+		89ADE863198F564100DD27B2 /* DCGZipCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955F7EC1970F12A00B390C6 /* DCGZipCompressor.m */; };
+		89ADE864198F564100DD27B2 /* DCGZipDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8955F7EE1970F12A00B390C6 /* DCGZipDecompressor.m */; };
+		89ADE865198F564100DD27B2 /* DCTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 8987B4BE196F781500852C5D /* DCTree.m */; };
+		89ADE866198F564100DD27B2 /* DCTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8987B4C0196F781500852C5D /* DCTreeNode.m */; };
+		89ADE867198F564100DD27B2 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADE82E198F2B1300DD27B2 /* DCHashUtility.m */; };
+		89ADE868198F5B2A00DD27B2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8955F7F7197135ED00B390C6 /* libz.dylib */; };
+		89ADE869198F5B3A00DD27B2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */; };
+		89ADE86A198F5B7400DD27B2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8955F7F5197135E500B390C6 /* libz.dylib */; };
 		89CA258A1962FE1300471681 /* NSColor+DCColorful.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CA25881962FE1300471681 /* NSColor+DCColorful.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89CA258B1962FE1300471681 /* NSColor+DCColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CA25891962FE1300471681 /* NSColor+DCColorful.m */; };
 		89E1374E1925B11000A3EFB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89E1374C1925B11000A3EFB7 /* InfoPlist.strings */; };
@@ -138,11 +186,6 @@
 		89E137CF1925B24800A3EFB7 /* NSString+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A51925B24800A3EFB7 /* NSString+DCBase64.m */; };
 		89E137D01925B24800A3EFB7 /* NSString+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A51925B24800A3EFB7 /* NSString+DCBase64.m */; };
 		89E137D11925B24800A3EFB7 /* NSString+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A51925B24800A3EFB7 /* NSString+DCBase64.m */; };
-		89E137D21925B24800A3EFB7 /* NSString+DCCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137A61925B24800A3EFB7 /* NSString+DCCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89E137D31925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A71925B24800A3EFB7 /* NSString+DCCrypto.m */; };
-		89E137D41925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A71925B24800A3EFB7 /* NSString+DCCrypto.m */; };
-		89E137D51925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A71925B24800A3EFB7 /* NSString+DCCrypto.m */; };
-		89E137D61925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A71925B24800A3EFB7 /* NSString+DCCrypto.m */; };
 		89E137D71925B24800A3EFB7 /* NSString+DCParseCSV.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E137A81925B24800A3EFB7 /* NSString+DCParseCSV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E137D81925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A91925B24800A3EFB7 /* NSString+DCParseCSV.m */; };
 		89E137D91925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E137A91925B24800A3EFB7 /* NSString+DCParseCSV.m */; };
@@ -229,7 +272,6 @@
 		89E138B21925BE8C00A3EFB7 /* NSDictionary+DCSortable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E1379E1925B24800A3EFB7 /* NSDictionary+DCSortable.h */; };
 		89E138B31925BE8C00A3EFB7 /* NSNumber+DCRandom.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137A01925B24800A3EFB7 /* NSNumber+DCRandom.h */; };
 		89E138B51925BE8C00A3EFB7 /* NSString+DCBase64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137A41925B24800A3EFB7 /* NSString+DCBase64.h */; };
-		89E138B61925BE8C00A3EFB7 /* NSString+DCCrypto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137A61925B24800A3EFB7 /* NSString+DCCrypto.h */; };
 		89E138B71925BE8C00A3EFB7 /* NSString+DCParseCSV.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137A81925B24800A3EFB7 /* NSString+DCParseCSV.h */; };
 		89E138B81925BE8C00A3EFB7 /* NSString+DCURLCoding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137AA1925B24800A3EFB7 /* NSString+DCURLCoding.h */; };
 		89E138B91925BE8C00A3EFB7 /* DCAtomicSetters.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E137FD1925B25C00A3EFB7 /* DCAtomicSetters.h */; };
@@ -269,6 +311,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				89ADE83E198F54E000DD27B2 /* NSData+DCHex.h in CopyFiles */,
+				89ADE83F198F54E000DD27B2 /* DCHashUtility.h in CopyFiles */,
 				8955F7FF1971541100B390C6 /* NSData+GZipExtension.h in CopyFiles */,
 				8955F8001971541100B390C6 /* DCGZipCompressor.h in CopyFiles */,
 				8955F8011971541100B390C6 /* DCGZipDecompressor.h in CopyFiles */,
@@ -301,7 +345,6 @@
 				89E138B21925BE8C00A3EFB7 /* NSDictionary+DCSortable.h in CopyFiles */,
 				89E138B31925BE8C00A3EFB7 /* NSNumber+DCRandom.h in CopyFiles */,
 				89E138B51925BE8C00A3EFB7 /* NSString+DCBase64.h in CopyFiles */,
-				89E138B61925BE8C00A3EFB7 /* NSString+DCCrypto.h in CopyFiles */,
 				89E138B71925BE8C00A3EFB7 /* NSString+DCParseCSV.h in CopyFiles */,
 				89E138B81925BE8C00A3EFB7 /* NSString+DCURLCoding.h in CopyFiles */,
 				89E138B91925BE8C00A3EFB7 /* DCAtomicSetters.h in CopyFiles */,
@@ -372,6 +415,11 @@
 		8987B4C0196F781500852C5D /* DCTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTreeNode.m; sourceTree = "<group>"; };
 		89ADE82D198F2B1300DD27B2 /* DCHashUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHashUtility.h; sourceTree = "<group>"; };
 		89ADE82E198F2B1300DD27B2 /* DCHashUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHashUtility.m; sourceTree = "<group>"; };
+		89ADE832198F4C2900DD27B2 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
+		89ADE834198F4C3200DD27B2 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib; sourceTree = DEVELOPER_DIR; };
+		89ADE836198F4C6B00DD27B2 /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = usr/lib/libSystem.dylib; sourceTree = SDKROOT; };
+		89ADE839198F50A500DD27B2 /* NSData+DCHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DCHex.h"; sourceTree = "<group>"; };
+		89ADE83A198F50A500DD27B2 /* NSData+DCHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DCHex.m"; sourceTree = "<group>"; };
 		89CA25881962FE1300471681 /* NSColor+DCColorful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+DCColorful.h"; sourceTree = "<group>"; };
 		89CA25891962FE1300471681 /* NSColor+DCColorful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+DCColorful.m"; sourceTree = "<group>"; };
 		89E137401925B11000A3EFB7 /* Tourbillon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tourbillon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -404,8 +452,6 @@
 		89E137A11925B24800A3EFB7 /* NSNumber+DCRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+DCRandom.m"; sourceTree = "<group>"; };
 		89E137A41925B24800A3EFB7 /* NSString+DCBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DCBase64.h"; sourceTree = "<group>"; };
 		89E137A51925B24800A3EFB7 /* NSString+DCBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DCBase64.m"; sourceTree = "<group>"; };
-		89E137A61925B24800A3EFB7 /* NSString+DCCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DCCrypto.h"; sourceTree = "<group>"; };
-		89E137A71925B24800A3EFB7 /* NSString+DCCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DCCrypto.m"; sourceTree = "<group>"; };
 		89E137A81925B24800A3EFB7 /* NSString+DCParseCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DCParseCSV.h"; sourceTree = "<group>"; };
 		89E137A91925B24800A3EFB7 /* NSString+DCParseCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DCParseCSV.m"; sourceTree = "<group>"; };
 		89E137AA1925B24800A3EFB7 /* NSString+DCURLCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DCURLCoding.h"; sourceTree = "<group>"; };
@@ -457,6 +503,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89ADE86A198F5B7400DD27B2 /* libz.dylib in Frameworks */,
 				89E1375A1925B11000A3EFB7 /* Cocoa.framework in Frameworks */,
 				89E137591925B11000A3EFB7 /* XCTest.framework in Frameworks */,
 				89E1375D1925B11000A3EFB7 /* Tourbillon.framework in Frameworks */,
@@ -477,6 +524,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89ADE869198F5B3A00DD27B2 /* MobileCoreServices.framework in Frameworks */,
+				89ADE868198F5B2A00DD27B2 /* libz.dylib in Frameworks */,
 				89E137811925B13D00A3EFB7 /* XCTest.framework in Frameworks */,
 				89E137841925B13D00A3EFB7 /* UIKit.framework in Frameworks */,
 				89E137821925B13D00A3EFB7 /* Foundation.framework in Frameworks */,
@@ -524,6 +573,9 @@
 		89E137421925B11000A3EFB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89ADE836198F4C6B00DD27B2 /* libSystem.dylib */,
+				89ADE834198F4C3200DD27B2 /* libcommonCrypto.dylib */,
+				89ADE832198F4C2900DD27B2 /* libcommonCrypto.dylib */,
 				8955F7F7197135ED00B390C6 /* libz.dylib */,
 				8955F7F5197135E500B390C6 /* libz.dylib */,
 				8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */,
@@ -630,14 +682,12 @@
 				89E137971925B24800A3EFB7 /* DCBase64Define.h */,
 				89E1379A1925B24800A3EFB7 /* NSData+DCBase64.h */,
 				89E1379B1925B24800A3EFB7 /* NSData+DCBase64.m */,
+				89E137A41925B24800A3EFB7 /* NSString+DCBase64.h */,
+				89E137A51925B24800A3EFB7 /* NSString+DCBase64.m */,
 				89E1379E1925B24800A3EFB7 /* NSDictionary+DCSortable.h */,
 				89E1379F1925B24800A3EFB7 /* NSDictionary+DCSortable.m */,
 				89E137A01925B24800A3EFB7 /* NSNumber+DCRandom.h */,
 				89E137A11925B24800A3EFB7 /* NSNumber+DCRandom.m */,
-				89E137A41925B24800A3EFB7 /* NSString+DCBase64.h */,
-				89E137A51925B24800A3EFB7 /* NSString+DCBase64.m */,
-				89E137A61925B24800A3EFB7 /* NSString+DCCrypto.h */,
-				89E137A71925B24800A3EFB7 /* NSString+DCCrypto.m */,
 				89E137A81925B24800A3EFB7 /* NSString+DCParseCSV.h */,
 				89E137A91925B24800A3EFB7 /* NSString+DCParseCSV.m */,
 				89E137AA1925B24800A3EFB7 /* NSString+DCURLCoding.h */,
@@ -658,6 +708,8 @@
 				8952D2F4196D07230068CBCF /* NSObject+DCUUIDExtension.m */,
 				8955F7FA1971525400B390C6 /* NSData+GZipExtension.h */,
 				8955F7FB1971525400B390C6 /* NSData+GZipExtension.m */,
+				89ADE839198F50A500DD27B2 /* NSData+DCHex.h */,
+				89ADE83A198F50A500DD27B2 /* NSData+DCHex.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -774,7 +826,6 @@
 			files = (
 				89E138501925B61900A3EFB7 /* NSColor+DCAdditions.h in Headers */,
 				89E1385D1925B71100A3EFB7 /* DCTourbillon.h in Headers */,
-				89E137D21925B24800A3EFB7 /* NSString+DCCrypto.h in Headers */,
 				89E137F31925B24F00A3EFB7 /* DCSingletonTemplate.h in Headers */,
 				89E137CD1925B24800A3EFB7 /* NSString+DCBase64.h in Headers */,
 				89E138131925B25C00A3EFB7 /* DCCommonUtility.h in Headers */,
@@ -813,10 +864,11 @@
 				8952D2F0196CE3410068CBCF /* NSArray+DCContentExtension.h in Headers */,
 				8987B4C1196F781500852C5D /* DCTree.h in Headers */,
 				8955F7F21970F12A00B390C6 /* DCGZipDecompressor.h in Headers */,
-				89ADE82F198F2B1300DD27B2 /* DCHashUtility.h in Headers */,
 				8955F7FC1971525400B390C6 /* NSData+GZipExtension.h in Headers */,
 				8955F7EF1970F12A00B390C6 /* DCGZipCompressor.h in Headers */,
 				8987B4C4196F781500852C5D /* DCTreeNode.h in Headers */,
+				89ADE83B198F50A500DD27B2 /* NSData+DCHex.h in Headers */,
+				89ADE82F198F2B1300DD27B2 /* DCHashUtility.h in Headers */,
 				8952D2F5196D07230068CBCF /* NSObject+DCUUIDExtension.h in Headers */,
 				89E137F21925B24F00A3EFB7 /* DCSafeARC.h in Headers */,
 			);
@@ -909,7 +961,7 @@
 						TestTargetID = 89E1373F1925B11000A3EFB7;
 					};
 					89E1377F1925B13D00A3EFB7 = {
-						TestTargetID = 89E1373F1925B11000A3EFB7;
+						TestTargetID = 89E137711925B13D00A3EFB7;
 					};
 				};
 			};
@@ -970,6 +1022,7 @@
 				8987B4C2196F781500852C5D /* DCTree.m in Sources */,
 				89347B5F1964F84900BCD74C /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
 				89E137EE1925B24F00A3EFB7 /* DCLogger.m in Sources */,
+				89ADE83C198F50A500DD27B2 /* NSData+DCHex.m in Sources */,
 				89E1383C1925B25C00A3EFB7 /* DCWatchedOperationQueue.m in Sources */,
 				89347B3D1964F70100BCD74C /* NSMutableData+DCGCDThreadSafe.m in Sources */,
 				89E138191925B25C00A3EFB7 /* DCHTTPOperation.m in Sources */,
@@ -998,7 +1051,6 @@
 				89E138371925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */,
 				8955F7F01970F12A00B390C6 /* DCGZipCompressor.m in Sources */,
 				89347B491964F70100BCD74C /* NSObject+DCGCDThreadSafe.m in Sources */,
-				89E137D31925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */,
 				89E137DD1925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */,
 				89E137F81925B25600A3EFB7 /* DCTestBlocker.m in Sources */,
 				89E1382D1925B25C00A3EFB7 /* DCStack.m in Sources */,
@@ -1013,6 +1065,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89ADE846198F55C500DD27B2 /* NSViewController+DCViewLogic.m in Sources */,
+				89ADE847198F55C600DD27B2 /* NSWindowController+DCCenterToScreen.m in Sources */,
+				89ADE848198F55C600DD27B2 /* NSColor+DCColorful.m in Sources */,
+				89ADE849198F55C600DD27B2 /* NSURL+DCUTTypeSupport.m in Sources */,
+				89ADE84A198F55C600DD27B2 /* NSObject+DCSwizzle.m in Sources */,
+				89ADE84B198F55C600DD27B2 /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
+				89ADE84C198F55C600DD27B2 /* NSArray+DCContentExtension.m in Sources */,
+				89ADE84D198F55C600DD27B2 /* NSObject+DCUUIDExtension.m in Sources */,
+				89ADE84E198F55C600DD27B2 /* NSData+GZipExtension.m in Sources */,
+				89ADE84F198F55C600DD27B2 /* NSData+DCHex.m in Sources */,
+				89ADE850198F55C600DD27B2 /* DCGZipCompressor.m in Sources */,
+				89ADE851198F55C600DD27B2 /* DCGZipDecompressor.m in Sources */,
+				89ADE852198F55C600DD27B2 /* DCTree.m in Sources */,
+				89ADE853198F55C600DD27B2 /* DCTreeNode.m in Sources */,
+				89ADE854198F55C600DD27B2 /* DCHashUtility.m in Sources */,
+				89ADE840198F55AC00DD27B2 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
+				89ADE841198F55AC00DD27B2 /* NSMutableData+DCGCDThreadSafe.m in Sources */,
+				89ADE842198F55AC00DD27B2 /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */,
+				89ADE843198F55AC00DD27B2 /* NSMutableSet+DCGCDThreadSafe.m in Sources */,
+				89ADE844198F55AC00DD27B2 /* NSMutableString+DCGCDThreadSafe.m in Sources */,
+				89ADE845198F55AC00DD27B2 /* NSObject+DCGCDThreadSafe.m in Sources */,
 				89E1381F1925B25C00A3EFB7 /* DCImageUtility.m in Sources */,
 				89E137D91925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */,
 				89E137EF1925B24F00A3EFB7 /* DCLogger.m in Sources */,
@@ -1030,7 +1103,6 @@
 				89E138291925B25C00A3EFB7 /* DCRunLoopOperation.m in Sources */,
 				89E137CF1925B24800A3EFB7 /* NSString+DCBase64.m in Sources */,
 				89E138381925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */,
-				89E137D41925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */,
 				89E137DE1925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */,
 				89E137F91925B25600A3EFB7 /* DCTestBlocker.m in Sources */,
 				89E1382E1925B25C00A3EFB7 /* DCStack.m in Sources */,
@@ -1047,6 +1119,7 @@
 				8987B4C3196F781500852C5D /* DCTree.m in Sources */,
 				89347B601964F84900BCD74C /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
 				89E137DA1925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */,
+				89ADE83D198F50A500DD27B2 /* NSData+DCHex.m in Sources */,
 				89E137F01925B24F00A3EFB7 /* DCLogger.m in Sources */,
 				89E1383E1925B25C00A3EFB7 /* DCWatchedOperationQueue.m in Sources */,
 				89347B3E1964F70100BCD74C /* NSMutableData+DCGCDThreadSafe.m in Sources */,
@@ -1075,7 +1148,6 @@
 				892EE3AD1938C36400571890 /* NSBundle+DCLibrarySupport.m in Sources */,
 				8955F7F11970F12A00B390C6 /* DCGZipCompressor.m in Sources */,
 				89347B4A1964F70100BCD74C /* NSObject+DCGCDThreadSafe.m in Sources */,
-				89E137D51925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */,
 				89E137DF1925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */,
 				89E137FA1925B25600A3EFB7 /* DCTestBlocker.m in Sources */,
 				89E1382F1925B25C00A3EFB7 /* DCStack.m in Sources */,
@@ -1090,6 +1162,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89ADE855198F564100DD27B2 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
+				89ADE856198F564100DD27B2 /* NSMutableData+DCGCDThreadSafe.m in Sources */,
+				89ADE857198F564100DD27B2 /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */,
+				89ADE858198F564100DD27B2 /* NSMutableSet+DCGCDThreadSafe.m in Sources */,
+				89ADE859198F564100DD27B2 /* NSMutableString+DCGCDThreadSafe.m in Sources */,
+				89ADE85A198F564100DD27B2 /* NSObject+DCGCDThreadSafe.m in Sources */,
+				89ADE85B198F564100DD27B2 /* UIColor+DCColorful.m in Sources */,
+				89ADE85C198F564100DD27B2 /* NSURL+DCUTTypeSupport.m in Sources */,
+				89ADE85D198F564100DD27B2 /* NSObject+DCSwizzle.m in Sources */,
+				89ADE85E198F564100DD27B2 /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
+				89ADE85F198F564100DD27B2 /* NSArray+DCContentExtension.m in Sources */,
+				89ADE860198F564100DD27B2 /* NSObject+DCUUIDExtension.m in Sources */,
+				89ADE861198F564100DD27B2 /* NSData+GZipExtension.m in Sources */,
+				89ADE862198F564100DD27B2 /* NSData+DCHex.m in Sources */,
+				89ADE863198F564100DD27B2 /* DCGZipCompressor.m in Sources */,
+				89ADE864198F564100DD27B2 /* DCGZipDecompressor.m in Sources */,
+				89ADE865198F564100DD27B2 /* DCTree.m in Sources */,
+				89ADE866198F564100DD27B2 /* DCTreeNode.m in Sources */,
+				89ADE867198F564100DD27B2 /* DCHashUtility.m in Sources */,
 				89E138211925B25C00A3EFB7 /* DCImageUtility.m in Sources */,
 				892EE3AE1938C36400571890 /* NSBundle+DCLibrarySupport.m in Sources */,
 				89E137DB1925B24800A3EFB7 /* NSString+DCParseCSV.m in Sources */,
@@ -1109,7 +1200,6 @@
 				89E137D11925B24800A3EFB7 /* NSString+DCBase64.m in Sources */,
 				894DF6EA19394C0B00EF9C9C /* UIViewController+DCLibrarySupport.m in Sources */,
 				89E1383A1925B25C00A3EFB7 /* DCUIMainThreadGuard.m in Sources */,
-				89E137D61925B24800A3EFB7 /* NSString+DCCrypto.m in Sources */,
 				89E137E01925B24800A3EFB7 /* NSString+DCURLCoding.m in Sources */,
 				89E137FB1925B25600A3EFB7 /* DCTestBlocker.m in Sources */,
 				89E138301925B25C00A3EFB7 /* DCStack.m in Sources */,
@@ -1241,7 +1331,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tourbillon/Tourbillon-Prefix.pch";
 				INFOPLIST_FILE = "Tourbillon/Tourbillon-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1258,7 +1353,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tourbillon/Tourbillon-Prefix.pch";
 				INFOPLIST_FILE = "Tourbillon/Tourbillon-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1267,7 +1367,6 @@
 		89E1376C1925B11000A3EFB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tourbillon.framework/Versions/A/Tourbillon";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -1280,8 +1379,13 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "TourbillonTests/TourbillonTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-lz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -1289,7 +1393,6 @@
 		89E1376D1925B11000A3EFB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tourbillon.framework/Versions/A/Tourbillon";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -1298,8 +1401,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tourbillon/Tourbillon-Prefix.pch";
 				INFOPLIST_FILE = "TourbillonTests/TourbillonTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-lz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -1315,6 +1423,10 @@
 					"$(inherited)",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1330,6 +1442,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tourbillon-iOS/Tourbillon-iOS-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1342,7 +1458,6 @@
 		89E137941925B13D00A3EFB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tourbillon.framework/Versions/A/Tourbillon";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1356,9 +1471,13 @@
 				);
 				INFOPLIST_FILE = "Tourbillon-iOSTests/Tourbillon-iOSTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -1366,7 +1485,6 @@
 		89E137951925B13D00A3EFB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tourbillon.framework/Versions/A/Tourbillon";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1376,9 +1494,13 @@
 				GCC_PREFIX_HEADER = "Tourbillon-iOS/Tourbillon-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Tourbillon-iOSTests/Tourbillon-iOSTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = xctest;
 			};

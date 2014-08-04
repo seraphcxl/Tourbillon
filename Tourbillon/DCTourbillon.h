@@ -11,7 +11,6 @@
 
 #pragma mark - Categories
 #import "NSString+DCURLCoding.h"
-#import "NSString+DCCrypto.h"
 #import "DCBase64Define.h"
 #import "NSString+DCBase64.h"
 #import "NSData+DCBase64.h"
@@ -25,6 +24,7 @@
 #import "NSArray+DCContentExtension.h"
 #import "NSObject+DCUUIDExtension.h"
 #import "NSData+GZipExtension.h"
+#import "NSData+DCHex.h"
 
 #pragma mark - GCDThreadSafe
 #import "NSObject+DCGCDThreadSafe.h"
@@ -57,6 +57,7 @@
 #import "DCTreeNode.h"
 #import "DCGZipCompressor.h"
 #import "DCGZipDecompressor.h"
+#import "DCHashUtility.h"
 
 #if TARGET_OS_IPHONE
 // iOS

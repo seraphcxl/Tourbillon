@@ -10,6 +10,7 @@
 #import <CommonCrypto/CommonHMAC.h>
 #import <CommonCrypto/CommonCryptor.h>
 #import "DCLogger.h"
+#import "NSData+DCHex.h"
 
 @implementation DCHashUtility
 
@@ -21,7 +22,7 @@
             break;
         }
         NSData *md5Data = [DCHashUtility md5DataForData:[string dataUsingEncoding:NSUTF8StringEncoding]];
-        result = [[NSString alloc] initWithData:md5Data encoding:NSUTF8StringEncoding];
+        result = [md5Data hex];
     } while (NO);
     return result;
 }
@@ -44,7 +45,7 @@
             break;
         }
         NSData *md5Data = [DCHashUtility md5DataForData:data];
-        result = [[NSString alloc] initWithData:md5Data encoding:NSUTF8StringEncoding];
+        result = [md5Data hex];
     } while (NO);
     return result;
 }
@@ -77,8 +78,8 @@
         if (!string || !key) {
             break;
         }
-        NSData *md5Data = [DCHashUtility hmacMd5DataForData:[string dataUsingEncoding:NSUTF8StringEncoding] withHmacKey:key];
-        result = [[NSString alloc] initWithData:md5Data encoding:NSUTF8StringEncoding];
+        NSData *hmacMd5Data = [DCHashUtility hmacMd5DataForData:[string dataUsingEncoding:NSUTF8StringEncoding] withHmacKey:key];
+        result = [hmacMd5Data hex];
     } while (NO);
     return result;
 }
@@ -100,8 +101,8 @@
         if (!data || !key) {
             break;
         }
-        NSData *md5Data = [DCHashUtility hmacMd5DataForData:data withHmacKey:key];
-        result = [[NSString alloc] initWithData:md5Data encoding:NSUTF8StringEncoding];
+        NSData *hmacMd5Data = [DCHashUtility hmacMd5DataForData:data withHmacKey:key];
+        result = [hmacMd5Data hex];
     } while (NO);
     return result;
 }
@@ -137,8 +138,8 @@
         if (!string) {
             break;
         }
-        NSData *md5Data = [DCHashUtility shaDataForData:[string dataUsingEncoding:NSUTF8StringEncoding] withSHAType:type];
-        result = [[NSString alloc] initWithData:md5Data encoding:NSUTF8StringEncoding];
+        NSData *shaData = [DCHashUtility shaDataForData:[string dataUsingEncoding:NSUTF8StringEncoding] withSHAType:type];
+        result = [shaData hexLower];
     } while (NO);
     return result;
 }
@@ -160,8 +161,8 @@
         if (!data) {
             break;
         }
-        NSData *md5Data = [DCHashUtility shaDataForData:data withSHAType:type];
-        result = [[NSString alloc] initWithData:md5Data encoding:NSUTF8StringEncoding];
+        NSData *shaData = [DCHashUtility shaDataForData:data withSHAType:type];
+        result = [shaData hexLower];
     } while (NO);
     return result;
 }
@@ -246,8 +247,8 @@
         if (!string || !key) {
             break;
         }
-        NSData *md5Data = [DCHashUtility hmacSHADataForData:[string dataUsingEncoding:NSUTF8StringEncoding] withSHAType:type andHmacKey:key];
-        result = [[NSString alloc] initWithData:md5Data encoding:NSUTF8StringEncoding];
+        NSData *hmacSHAData = [DCHashUtility hmacSHADataForData:[string dataUsingEncoding:NSUTF8StringEncoding] withSHAType:type andHmacKey:key];
+        result = [hmacSHAData hexLower];
     } while (NO);
     return result;
 }
@@ -269,8 +270,8 @@
         if (!data || !key) {
             break;
         }
-        NSData *md5Data = [DCHashUtility hmacSHADataForData:data withSHAType:type andHmacKey:key];
-        result = [[NSString alloc] initWithData:md5Data encoding:NSUTF8StringEncoding];
+        NSData *hmacSHAData = [DCHashUtility hmacSHADataForData:data withSHAType:type andHmacKey:key];
+        result = [hmacSHAData hexLower];
     } while (NO);
     return result;
 }

@@ -8,10 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import "DCTree.h"
-#import "DCTreeNode.h"
-
-#import "NSData+GZipExtension.h"
+#import "DCTourbillon.h"
 
 @interface TourbillonTests : XCTestCase
 
@@ -88,6 +85,20 @@
     }];
     
     NSLog(@"%@", NSStringFromSelector(_cmd));
+}
+
+- (void)testHash {
+    do {
+        NSString *str = @"Hello, world.";
+        NSString *md5Str = [DCHashUtility md5StringForString:str];
+        NSLog(@"%@", md5Str);
+        NSString *sha256Str = [DCHashUtility shaStringForString:str withSHAType:DCSHAType_SHA256];
+        NSLog(@"%@", sha256Str);
+        NSString *hmacMD5Str = [DCHashUtility hmacMd5StringForString:str withHmacKey:str];
+        NSLog(@"%@", hmacMD5Str);
+        NSString *hmacSHA512Str = [DCHashUtility hmacSHAStringForString:str withSHAType:DCSHAType_SHA512 andHmacKey:str];
+        NSLog(@"%@", hmacSHA512Str);
+    } while (NO);
 }
 
 @end
