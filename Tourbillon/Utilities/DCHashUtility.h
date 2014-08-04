@@ -32,16 +32,19 @@ typedef NS_ENUM(NSUInteger, DCSHAType) {
 + (NSData *)md5DataForString:(NSString *)string;
 + (NSString *)md5StringForData:(NSData *)data;
 + (NSData *)md5DataForData:(NSData *)data;
+
 #pragma mark HMAC-MD5
 + (NSString *)hmacMd5StringForString:(NSString *)string withHmacKey:(NSString *)key;
 + (NSData *)hmacMd5DataForString:(NSString *)string withHmacKey:(NSString *)key;
 + (NSString *)hmacMd5StringForData:(NSData *)data withHmacKey:(NSString *)key;
 + (NSData *)hmacMd5DataForData:(NSData *)data withHmacKey:(NSString *)key;
+
 #pragma mark - SHA
 + (NSString *)shaStringForString:(NSString *)string withSHAType:(DCSHAType)type;
 + (NSData *)shaDataForString:(NSString *)string withSHAType:(DCSHAType)type;
 + (NSString *)shaStringForData:(NSData *)data withSHAType:(DCSHAType)type;
 + (NSData *)shaDataForData:(NSData *)data withSHAType:(DCSHAType)type;
+
 #pragma mark - HMAC-SHA
 + (NSString *)hmacSHAStringForString:(NSString *)string withSHAType:(DCSHAType)type andHmacKey:(NSString *)key;
 + (NSData *)hmacSHADataForString:(NSString *)string withSHAType:(DCSHAType)type andHmacKey:(NSString *)key;

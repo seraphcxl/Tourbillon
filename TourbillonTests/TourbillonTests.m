@@ -98,6 +98,12 @@
         NSLog(@"%@", hmacMD5Str);
         NSString *hmacSHA512Str = [DCHashUtility hmacSHAStringForString:str withSHAType:DCSHAType_SHA512 andHmacKey:str];
         NSLog(@"%@", hmacSHA512Str);
+        
+        NSString *str1 = @"Hello, Objective-C.";
+        NSLog(@"%@", [str1 md5String]);
+        NSLog(@"%@", [str1 hmacMD5StringWithHmacKey:str]);
+        NSLog(@"%@", [str1 shaStringWithType:DCSHAType_SHA224]);
+        NSLog(@"%@", [str1 hmacSHAStringWithType:DCSHAType_SHA384 andHmacKey:str]);
     } while (NO);
 }
 

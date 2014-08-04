@@ -25,6 +25,8 @@
 #import "NSObject+DCUUIDExtension.h"
 #import "NSData+GZipExtension.h"
 #import "NSData+DCHex.h"
+#import "NSData+DCHash.h"
+#import "NSString+DCHash.h"
 
 #pragma mark - GCDThreadSafe
 #import "NSObject+DCGCDThreadSafe.h"
