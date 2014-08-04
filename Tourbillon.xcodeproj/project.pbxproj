@@ -99,6 +99,9 @@
 		8987B4EC196F8DFD00852C5D /* NSObject+DCUUIDExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8952D2F3196D07230068CBCF /* NSObject+DCUUIDExtension.h */; };
 		8987B4ED196F8DFD00852C5D /* DCTree.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8987B4BD196F781500852C5D /* DCTree.h */; };
 		8987B4EE196F8DFD00852C5D /* DCTreeNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8987B4BF196F781500852C5D /* DCTreeNode.h */; };
+		89ADE82F198F2B1300DD27B2 /* DCHashUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89ADE82D198F2B1300DD27B2 /* DCHashUtility.h */; };
+		89ADE830198F2B1300DD27B2 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADE82E198F2B1300DD27B2 /* DCHashUtility.m */; };
+		89ADE831198F2B1300DD27B2 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADE82E198F2B1300DD27B2 /* DCHashUtility.m */; };
 		89CA258A1962FE1300471681 /* NSColor+DCColorful.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CA25881962FE1300471681 /* NSColor+DCColorful.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89CA258B1962FE1300471681 /* NSColor+DCColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CA25891962FE1300471681 /* NSColor+DCColorful.m */; };
 		89E1374E1925B11000A3EFB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89E1374C1925B11000A3EFB7 /* InfoPlist.strings */; };
@@ -367,6 +370,8 @@
 		8987B4BE196F781500852C5D /* DCTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTree.m; sourceTree = "<group>"; };
 		8987B4BF196F781500852C5D /* DCTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTreeNode.h; sourceTree = "<group>"; };
 		8987B4C0196F781500852C5D /* DCTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTreeNode.m; sourceTree = "<group>"; };
+		89ADE82D198F2B1300DD27B2 /* DCHashUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHashUtility.h; sourceTree = "<group>"; };
+		89ADE82E198F2B1300DD27B2 /* DCHashUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHashUtility.m; sourceTree = "<group>"; };
 		89CA25881962FE1300471681 /* NSColor+DCColorful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+DCColorful.h"; sourceTree = "<group>"; };
 		89CA25891962FE1300471681 /* NSColor+DCColorful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+DCColorful.m"; sourceTree = "<group>"; };
 		89E137401925B11000A3EFB7 /* Tourbillon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tourbillon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -705,6 +710,8 @@
 				89E1380F1925B25C00A3EFB7 /* DCWatchedOperationQueue.m */,
 				89E138101925B25C00A3EFB7 /* DCWebUtility.h */,
 				89E138111925B25C00A3EFB7 /* DCWebUtility.m */,
+				89ADE82D198F2B1300DD27B2 /* DCHashUtility.h */,
+				89ADE82E198F2B1300DD27B2 /* DCHashUtility.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -806,6 +813,7 @@
 				8952D2F0196CE3410068CBCF /* NSArray+DCContentExtension.h in Headers */,
 				8987B4C1196F781500852C5D /* DCTree.h in Headers */,
 				8955F7F21970F12A00B390C6 /* DCGZipDecompressor.h in Headers */,
+				89ADE82F198F2B1300DD27B2 /* DCHashUtility.h in Headers */,
 				8955F7FC1971525400B390C6 /* NSData+GZipExtension.h in Headers */,
 				8955F7EF1970F12A00B390C6 /* DCGZipCompressor.h in Headers */,
 				8987B4C4196F781500852C5D /* DCTreeNode.h in Headers */,
@@ -966,6 +974,7 @@
 				89347B3D1964F70100BCD74C /* NSMutableData+DCGCDThreadSafe.m in Sources */,
 				89E138191925B25C00A3EFB7 /* DCHTTPOperation.m in Sources */,
 				89E137BF1925B24800A3EFB7 /* NSDictionary+DCSortable.m in Sources */,
+				89ADE830198F2B1300DD27B2 /* DCHashUtility.m in Sources */,
 				89347B521964F77800BCD74C /* NSWindowController+DCCenterToScreen.m in Sources */,
 				89E138411925B25C00A3EFB7 /* DCWebUtility.m in Sources */,
 				89E138231925B25C00A3EFB7 /* DCRPNUtility.m in Sources */,
@@ -1042,6 +1051,7 @@
 				89E1383E1925B25C00A3EFB7 /* DCWatchedOperationQueue.m in Sources */,
 				89347B3E1964F70100BCD74C /* NSMutableData+DCGCDThreadSafe.m in Sources */,
 				89E1381B1925B25C00A3EFB7 /* DCHTTPOperation.m in Sources */,
+				89ADE831198F2B1300DD27B2 /* DCHashUtility.m in Sources */,
 				89E137C11925B24800A3EFB7 /* NSDictionary+DCSortable.m in Sources */,
 				89E138431925B25C00A3EFB7 /* DCWebUtility.m in Sources */,
 				89E138251925B25C00A3EFB7 /* DCRPNUtility.m in Sources */,

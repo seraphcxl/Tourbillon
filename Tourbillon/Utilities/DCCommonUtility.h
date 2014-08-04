@@ -8,10 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define DC_GOODPOWER 7
-#define DC_GOODMASK ((1 << DC_GOODPOWER) - 1)
-#define DC_GOODHASH(x) (((long)x >> 5) & DC_GOODMASK)
-
 @interface DCCommonUtility : NSObject
 
 + (BOOL)isRetinaDisplay;
