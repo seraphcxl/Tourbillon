@@ -16,14 +16,14 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Tourbillon"
-  s.version      = “0.9.1”
+  s.version      = "0.9.1"
   s.summary      = "Code foundation for Objective-C."
 
   s.description  = <<-DESC
                    Code foundation for Objective-C. Both for OSX and iOS.
                    DESC
 
-  s.homepage     = "http://EXAMPLE/Tourbillon"
+  s.homepage     = "https://github.com/seraphcxl/Tourbillon"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
