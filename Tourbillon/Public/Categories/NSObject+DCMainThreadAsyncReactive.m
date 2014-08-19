@@ -7,11 +7,11 @@
 //
 
 #import "NSObject+DCMainThreadAsyncReactive.h"
-#import <objc/runtime.h>
-
-static char NSObjectMainThreadAsyncReactiveQueueKey;
+#import "NSObject+DCAssociatedObjectExtension.h"
 
 @implementation NSObject (DCMainThreadAsyncReactive)
+
+DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(MainThreadAsyncReactiveQueue, NSObject_DCMainThreadAsyncReactive_QueueKey, OBJC_ASSOCIATION_RETAIN);
 
 - (instancetype)mainThreadAsyncReactive_init {
     do {
@@ -38,14 +38,6 @@ static char NSObjectMainThreadAsyncReactiveQueueKey;
             }
         }
     } while (NO);
-}
-
-- (void)setMainThreadAsyncReactiveQueue:(NSOperationQueue *)concurrentQueue {
-    objc_setAssociatedObject(self, &NSObjectMainThreadAsyncReactiveQueueKey, concurrentQueue, OBJC_ASSOCIATION_RETAIN);
-}
-
-- (NSOperationQueue *)getMainThreadAsyncReactiveQueue {
-    return (NSOperationQueue *)objc_getAssociatedObject(self, &NSObjectMainThreadAsyncReactiveQueueKey);
 }
 
 - (void)addOperationForAsyncReactiveInMainThreadWithBlock:(void (^)(id strongSelf))block {

@@ -1,13 +1,13 @@
 //
 //  DCCommonConstants.h
-//  CodeGear_ObjC
+//  Tourbillon
 //
 //  Created by Derek Chen on 13-6-7.
 //  Copyright (c) 2013年 CaptainSolid Studio. All rights reserved.
 //
 
-#ifndef CodeGear_ObjC_DCCommonConstants_h
-#define CodeGear_ObjC_DCCommonConstants_h
+#ifndef Tourbillon_DCCommonConstants_h
+#define Tourbillon_DCCommonConstants_h
 
 /**** **** **** **** **** **** **** ****/
 //
@@ -68,7 +68,7 @@
 #ifndef DC_RGB256_DEFINE
 #define DC_RGB256_DEFINE
 #define DC_RGB256(x) ((CGFloat)((x) / 255.0f))
-#endif
+#endif  // DC_RGB256_DEFINE
 /**** **** **** **** **** **** **** ****/
 
 #define DCFloatingNumberEqual(left, right) ((!(left < right)) && (!(right < left)))
@@ -121,11 +121,11 @@
 }
 #define DCFunctionPerformanceTimingBegin
 #define DCFunctionPerformanceTimingEnd(msg)
-#endif
+#endif  // DEBUG
 
 #define DCRoundingFloatToInt(x) ((int)((x) + 0.5f))
 #define DCMakeIntegerRect(x, y, w, h) (NSMakeRect(DCRoundingFloatToInt(x), DCRoundingFloatToInt(y), DCRoundingFloatToInt(w), DCRoundingFloatToInt(h)))
 
-#endif
+#endif  // Tourbillon_DCCommonConstants_h
 
 

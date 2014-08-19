@@ -1,13 +1,13 @@
 //
 //  DCSafeARC.h
-//  CodeGear_ObjC
+//  Tourbillon
 //
 //  Created by Derek Chen on 13-6-7.
 //  Copyright (c) 2013年 CaptainSolid Studio. All rights reserved.
 //
 
-#ifndef CodeGear_ObjC_DCSafeARC_h
-#define CodeGear_ObjC_DCSafeARC_h
+#ifndef Tourbillon_DCSafeARC_h
+#define Tourbillon_DCSafeARC_h
 
 /**** **** **** **** **** **** **** ****/
 #if !defined(__clang__) || __clang_major__ < 3

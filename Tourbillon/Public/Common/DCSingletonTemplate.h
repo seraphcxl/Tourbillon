@@ -1,21 +1,19 @@
 //
 //  DCSingletonTemplate.h
-//  CodeGear_ObjC
+//  Tourbillon
 //
 //  Created by Derek Chen on 13-6-7.
 //  Copyright (c) 2013年 CaptainSolid Studio. All rights reserved.
 //
 
-#ifndef CodeGear_ObjC_DCSingletonTemplate_h
-#define CodeGear_ObjC_DCSingletonTemplate_h
+#ifndef Tourbillon_DCSingletonTemplate_h
+#define Tourbillon_DCSingletonTemplate_h
 
 /**** **** **** **** **** **** **** ****/
 #define DEFINE_SINGLETON_FOR_HEADER(className) \
 \
 + (className *)shared##className; \
-+ (void)staticRelease; \
-
-#endif
++ (void)staticRelease;
 
 /**** **** **** **** **** **** **** ****/
 #if __has_feature(objc_arc)
@@ -78,4 +76,6 @@ static className *shared##className = nil; \
 \
 - (id)autorelease { return self; }
 
-#endif
+#endif  // __has_feature(objc_arc)
+
+#endif  // Tourbillon_DCSingletonTemplate_h

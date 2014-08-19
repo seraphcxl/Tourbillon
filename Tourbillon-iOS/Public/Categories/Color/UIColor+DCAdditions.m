@@ -1,6 +1,6 @@
 //
 //  UIColor+DCAdditions.m
-//  CodeGear_ObjC_iOS
+//  Tourbillon_iOS
 //
 //  Created by Derek Chen on 13-7-15.
 //  Copyright (c) 2013年 CaptainSolid Studio. All rights reserved.

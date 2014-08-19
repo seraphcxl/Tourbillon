@@ -14,4 +14,6 @@
 - (BOOL)threadSafe_QueueSync:(dispatch_block_t) block;
 - (BOOL)threadSafe_QueueBarrierAsync:(dispatch_block_t) block;
 
+//DEFINE_ASSOCIATEDOBJECT_FOR_HEADER(GCDThreadSafeQueue)
+
 @end

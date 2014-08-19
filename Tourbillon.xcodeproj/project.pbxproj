@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		895AF1A51991AC9F00500A6F /* DCTourbillon.h in Headers */ = {isa = PBXBuildFile; fileRef = 895AF1A41991AC9F00500A6F /* DCTourbillon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		895AF1A61991ACAC00500A6F /* DCTourbillon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 895AF1A41991AC9F00500A6F /* DCTourbillon.h */; };
+		89B5E08B19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B5E08919A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h */; };
+		89B5E08C19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */; };
+		89B5E08D19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */; };
+		89B5E08E19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */; };
+		89B5E08F19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */; };
 		89B786B11990FB4400A726F1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
 		89B786BD1990FB4500A726F1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137581925B11000A3EFB7 /* XCTest.framework */; };
 		89B786BE1990FB4500A726F1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
@@ -378,6 +383,8 @@
 		89ADE832198F4C2900DD27B2 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
 		89ADE834198F4C3200DD27B2 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib; sourceTree = DEVELOPER_DIR; };
 		89ADE836198F4C6B00DD27B2 /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = usr/lib/libSystem.dylib; sourceTree = SDKROOT; };
+		89B5E08919A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCAssociatedObjectExtension.h"; sourceTree = "<group>"; };
+		89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCAssociatedObjectExtension.m"; sourceTree = "<group>"; };
 		89B786B01990FB4400A726F1 /* libTourbillon-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTourbillon-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B786B41990FB4400A726F1 /* Tourbillon-OSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tourbillon-OSX-Prefix.pch"; sourceTree = "<group>"; };
 		89B786BC1990FB4500A726F1 /* Tourbillon-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tourbillon-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -667,6 +674,8 @@
 				89B787291990FB6100A726F1 /* NSString+DCURLCoding.m */,
 				89B7872A1990FB6100A726F1 /* NSURL+DCUTTypeSupport.h */,
 				89B7872B1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m */,
+				89B5E08919A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h */,
+				89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1011,6 +1020,7 @@
 				89B7879B1990FB6100A726F1 /* NSBundle+DCLibrarySupport.h in Headers */,
 				89B787771990FB6100A726F1 /* NSData+GZipExtension.h in Headers */,
 				89B787721990FB6100A726F1 /* NSObject+DCGCDThreadSafe.h in Headers */,
+				89B5E08B19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h in Headers */,
 				89B787D61990FB6100A726F1 /* DCCommonUtility.h in Headers */,
 				89B787DB1990FB6100A726F1 /* DCImageUtility.h in Headers */,
 				89B7878C1990FB6100A726F1 /* NSString+DCBase64.h in Headers */,
@@ -1202,6 +1212,7 @@
 				89B787FF1990FB6100A726F1 /* DCLogger.m in Sources */,
 				89B788311990FB6E00A726F1 /* NSColor+DCAdditions.m in Sources */,
 				89B787B01990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
+				89B5E08C19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
 				89B787BF1990FB6100A726F1 /* NSString+DCParseCSV.m in Sources */,
 				89B7880E1990FB6100A726F1 /* DCWatchedOperationQueue.m in Sources */,
 				89B787831990FB6100A726F1 /* NSData+DCHash.m in Sources */,
@@ -1249,6 +1260,7 @@
 				89B788351990FB6E00A726F1 /* NSColor+DCColorful.m in Sources */,
 				89B7875B1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
 				89B788141990FB6100A726F1 /* DCStack.m in Sources */,
+				89B5E08D19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
 				89B788001990FB6100A726F1 /* DCLogger.m in Sources */,
 				89B788321990FB6E00A726F1 /* NSColor+DCAdditions.m in Sources */,
 				89B787B11990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
@@ -1303,6 +1315,7 @@
 				89B7881F1990FB6100A726F1 /* DCTreeNode.m in Sources */,
 				89B7875C1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
 				89B788151990FB6100A726F1 /* DCStack.m in Sources */,
+				89B5E08E19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
 				89B788011990FB6100A726F1 /* DCLogger.m in Sources */,
 				89B787B21990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
 				89B787C11990FB6100A726F1 /* NSString+DCParseCSV.m in Sources */,
@@ -1350,6 +1363,7 @@
 				89B787B81990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */,
 				89B787951990FB6100A726F1 /* NSString+DCHash.m in Sources */,
 				89B788521990FB7600A726F1 /* UIViewController+DCLibrarySupport.m in Sources */,
+				89B5E08F19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
 				89B788201990FB6100A726F1 /* DCTreeNode.m in Sources */,
 				89B7875D1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
 				89B788161990FB6100A726F1 /* DCStack.m in Sources */,
