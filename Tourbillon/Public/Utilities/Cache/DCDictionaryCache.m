@@ -8,6 +8,8 @@
 
 #import "DCDictionaryCache.h"
 
+static const NSUInteger DCDictionaryCache_DefaultCountLimit = 64;
+
 @interface DCDictionaryCache () <NSCacheDelegate> {
 }
 
@@ -26,6 +28,23 @@
     if (self) {
         self.cache = [[NSCache alloc] init];
         _cache.delegate = self;
+        [_cache setCountLimit:DCDictionaryCache_DefaultCountLimit];
+        
+        self.dict = [NSMutableDictionary dictionary];
+    }
+    return self;
+}
+
+- (instancetype)initWithCountLimit:(NSUInteger)lim {
+    if (lim == 0) {
+        return nil;
+    }
+    
+    self = [super init];
+    if (self) {
+        self.cache = [[NSCache alloc] init];
+        _cache.delegate = self;
+        [_cache setCountLimit:lim];
         
         self.dict = [NSMutableDictionary dictionary];
     }

@@ -10,6 +10,8 @@
 
 @interface DCDictionaryCache : NSObject
 
+- (instancetype)initWithCountLimit:(NSUInteger)lim;
+
 - (void)setCountLimit:(NSUInteger)lim;
 - (NSUInteger)countLimit;
 
