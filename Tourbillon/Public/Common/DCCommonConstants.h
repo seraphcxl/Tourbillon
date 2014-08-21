@@ -63,6 +63,11 @@
 /**** **** **** **** **** **** **** ****/
 #ifndef DC_CalcMemorySize_DEFINE
 #define DC_CalcMemorySize_DEFINE
+
+#define DC_MEMSIZE_KB(n) ((NSUInteger)(n * 1024))
+#define DC_MEMSIZE_MB(n) ((NSUInteger)(DC_MEMSIZE_KB(n) * 1024))
+#define DC_MEMSIZE_GB(n) ((NSUInteger)(DC_MEMSIZE_MB(n) * 1024))
+
 NSUInteger DCCalcMemorySizeFormKBToInt(NSUInteger numOfKB) {
     return numOfKB * 1024;
 }
@@ -74,10 +79,15 @@ NSUInteger DCCalcMemorySizeFormMBToInt(NSUInteger numOfMB) {
 NSUInteger DCCalcMemorySizeFormGBToInt(NSUInteger numOfGB) {
     return DCCalcMemorySizeFormMBToInt(numOfGB * 1024);
 }
+
 #endif  // DC_CalcMemorySize_DEFINE
 /**** **** **** **** **** **** **** ****/
 #ifndef DC_RGBAConvert_DEFINE
 #define DC_RGBAConvert_DEFINE
+
+#define DC_RGBA_256ToPer(x) ((CGFloat)((x) / 255.0f))
+#define DC_RGBA_PerTo256(x) ((NSUInteger)((x) * 255))
+
 double DCRGBAConvert256ToPercentage(NSUInteger numOfRGB256) {
     return (double)(numOfRGB256 / 255.0f);
 }
@@ -85,6 +95,7 @@ double DCRGBAConvert256ToPercentage(NSUInteger numOfRGB256) {
 NSUInteger DCRGBAConvertPercentageTo256(double numOfPercentage) {
     return (NSUInteger)(numOfPercentage * 255);
 }
+
 #endif  // DC_RGBAConvert_DEFINE
 /**** **** **** **** **** **** **** ****/
 #ifndef DC_FloatingNumberEqual_DEFINE
@@ -95,6 +106,10 @@ NSUInteger DCRGBAConvertPercentageTo256(double numOfPercentage) {
 /**** **** **** **** **** **** **** ****/
 #ifndef DC_DegreeRadianConvert_DEFINE
 #define DC_DegreeRadianConvert_DEFINE
+
+#define DCDegreesToRadians(angle) (((angle) * M_PI) / 180.0f)
+#define DCRadiansToDegrees(radian) (((radian) * 180.0f) / M_PI)
+
 float DCConvertDegreesToRadians(float angle) {
     return (float)((angle * M_PI) / 180.f);
 }
@@ -102,6 +117,7 @@ float DCConvertDegreesToRadians(float angle) {
 float DCConvertRadiansToDegrees(float radian) {
     return (float)((radian * 180.f) / M_PI);
 }
+
 #endif  // DC_DegreeRadianConvert_DEFINE
 /**** **** **** **** **** **** **** ****/
 #ifndef DC_FunctionPerformancePeriodTest_DEFINE
@@ -141,8 +157,10 @@ float DCConvertRadiansToDegrees(float radian) {
 /**** **** **** **** **** **** **** ****/
 #ifndef DC_IntFloatConvert_DEFINE
 #define DC_IntFloatConvert_DEFINE
+
 #define DCRoundingFloatToInt(x) ((int)((x) + 0.5f))
 #define DCMakeIntegerRect(x, y, w, h) (NSMakeRect(DCRoundingFloatToInt(x), DCRoundingFloatToInt(y), DCRoundingFloatToInt(w), DCRoundingFloatToInt(h)))
+
 #endif  // DC_IntFloatConvert_DEFINE
 /**** **** **** **** **** **** **** ****/
 #endif  // Tourbillon_DCCommonConstants_h
