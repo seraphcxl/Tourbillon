@@ -27,6 +27,7 @@
 #import "NSData+DCHex.h"
 #import "NSData+DCHash.h"
 #import "NSString+DCHash.h"
+#import "NSObject+DCAssociatedObjectExtension.h"
 
 #pragma mark - GCDThreadSafe
 #import "NSObject+DCGCDThreadSafe.h"
@@ -60,6 +61,8 @@
 #import "DCGZipCompressor.h"
 #import "DCGZipDecompressor.h"
 #import "DCHashUtility.h"
+#import "DCDictionaryCache.h"
+#import "DCComponentPathManager.h"
 
 #if TARGET_OS_IPHONE
 // iOS
@@ -68,6 +71,7 @@
 #import "UIImage+DCLibrarySupport.h"
 #import "UIViewController+DCLibrarySupport.h"
 #import "UIColor+DCColorful.h"
+#import "UIViewController+ComponentPathExtension.h"
 #pragma mark - Common
 #pragma mark - Testers
 #pragma mark - Utilities
@@ -78,6 +82,7 @@
 #import "NSViewController+DCViewLogic.h"
 #import "NSWindowController+DCCenterToScreen.h"
 #import "NSColor+DCColorful.h"
+#import "NSViewController+ComponentPathExtension.h"
 #pragma mark - Common
 #pragma mark - Testers
 #pragma mark - Utilities
