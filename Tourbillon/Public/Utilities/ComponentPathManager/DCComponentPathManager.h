@@ -26,7 +26,7 @@ extern NSString * const kDCComponentPathManagerArchiveTree;
 
 @interface DCComponentPathManager : NSObject
 
-@property (weak, atomic) id<DCComponentPathManagerDelegate> delegate;
+@property (weak, nonatomic) id<DCComponentPathManagerDelegate> delegate;
 @property (strong, nonatomic, readonly) NSURL *archiveURL;
 @property (strong, nonatomic, readonly) DCTree *tree;
 

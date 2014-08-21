@@ -24,7 +24,7 @@
 @interface DCWatchedOperationQueue : NSOperationQueue {
 }
 
-@property (atomic, strong, readonly) NSString *uuid;
+@property (nonatomic, strong, readonly) NSString *uuid;
 
 - (void)addOperation:(NSOperation *)operation forTarget:(id)target withFinishedAction:(SEL)finishedAction andCancelAction:(SEL)cancelAction;
 - (void)invalidate;

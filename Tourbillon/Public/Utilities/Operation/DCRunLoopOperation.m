@@ -27,7 +27,7 @@
 
 @interface DCRunLoopOperation (UnitTestSupportPrivate)
 
-@property (atomic, assign) NSArray *debugEventLog;
+@property (nonatomic, assign) NSArray *debugEventLog;
 
 - (void)debugLogEvent:(NSString *)event;
 

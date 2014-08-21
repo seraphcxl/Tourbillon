@@ -23,7 +23,7 @@ typedef BOOL (^DCTreeActionBlock)(DCTree *tree, DCTreeNode *node);
 
 @interface DCTree : NSObject <NSCoding>
 
-@property (weak, atomic) id<DCTreeDelegate> delegate;
+@property (weak, nonatomic) id<DCTreeDelegate> delegate;
 @property (strong, nonatomic, readonly) DCTreeNode *root;
 
 - (instancetype)initWithRootNodeKey:(NSString *)key andValue:(id<NSCoding>)value;

@@ -18,19 +18,19 @@ NSString * const kDCHTTPOperationErrorDomain = @"kDCHTTPOperationErrorDomain";
 }
 
 // Read/write versions of public properties
-@property (atomic, copy, readwrite)  NSURLRequest *request;
+@property (nonatomic, copy, readwrite)  NSURLRequest *request;
 
-@property (atomic, copy, readwrite) NSURLRequest *lastRequest;
-@property (atomic, copy, readwrite) NSHTTPURLResponse *lastResponse;
-@property (atomic, copy, readwrite) NSData *responseBody;
+@property (nonatomic, copy, readwrite) NSURLRequest *lastRequest;
+@property (nonatomic, copy, readwrite) NSHTTPURLResponse *lastResponse;
+@property (nonatomic, copy, readwrite) NSData *responseBody;
 // Internal properties
 
-@property (atomic, strong, readwrite) NSURLConnection *connection;
-@property (atomic, assign, readwrite) BOOL firstData;
-@property (atomic, strong, readwrite) NSMutableData *dataAccumulator;
+@property (nonatomic, strong, readwrite) NSURLConnection *connection;
+@property (nonatomic, assign, readwrite) BOOL firstData;
+@property (nonatomic, strong, readwrite) NSMutableData *dataAccumulator;
 
 #if !defined(NDEBUG)
-@property (atomic, strong, readwrite) NSTimer *debugDelayTimer;
+@property (nonatomic, strong, readwrite) NSTimer *debugDelayTimer;
 #endif
 
 @end

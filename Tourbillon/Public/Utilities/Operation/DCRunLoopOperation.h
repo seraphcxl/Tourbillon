@@ -24,20 +24,20 @@ typedef enum DCRunLoopOperationState {
 #endif
 }
 
-@property (atomic, copy, readwrite) NSString *debugName;
+@property (nonatomic, copy, readwrite) NSString *debugName;
 
 // IMPORTANT: Do not change these after queuing the operation; it's very likely that
 // bad things will happen if you do.
 
-@property (atomic, strong, readwrite) NSThread *runLoopThread;  // default is nil, implying main thread
-@property (atomic, copy, readwrite) NSSet *runLoopModes;  // default is nil, implying set containing NSDefaultRunLoopMode
+@property (nonatomic, strong, readwrite) NSThread *runLoopThread;  // default is nil, implying main thread
+@property (nonatomic, copy, readwrite) NSSet *runLoopModes;  // default is nil, implying set containing NSDefaultRunLoopMode
 
-@property (atomic, copy, readonly) NSError *error;
+@property (nonatomic, copy, readonly) NSError *error;
 
-@property (atomic, assign, readonly) DCRunLoopOperationState state;
-@property (atomic, strong, readonly) NSThread *actualRunLoopThread;  // main thread if runLoopThread is nil, runLoopThread otherwise
-@property (atomic, assign, readonly) BOOL isActualRunLoopThread;  // YES if the current thread is the actual run loop thread
-@property (atomic, copy, readonly) NSSet *actualRunLoopModes;  // set containing NSDefaultRunLoopMode if runLoopModes is nil or empty, runLoopModes otherwise
+@property (nonatomic, assign, readonly) DCRunLoopOperationState state;
+@property (nonatomic, strong, readonly) NSThread *actualRunLoopThread;  // main thread if runLoopThread is nil, runLoopThread otherwise
+@property (nonatomic, assign, readonly) BOOL isActualRunLoopThread;  // YES if the current thread is the actual run loop thread
+@property (nonatomic, copy, readonly) NSSet *actualRunLoopModes;  // set containing NSDefaultRunLoopMode if runLoopModes is nil or empty, runLoopModes otherwise
 
 @end
 
@@ -74,11 +74,11 @@ typedef enum DCRunLoopOperationState {
 
 @interface DCRunLoopOperation (UnitTestSupport)
 
-@property (atomic, assign, readwrite) BOOL debugCancelSelfBeforeSchedulingStart;
-@property (atomic, assign, readwrite) BOOL debugCancelSelfAfterSchedulingStart;
-@property (atomic, assign, readwrite) NSTimeInterval debugSecondaryThreadCancelDelay;
+@property (nonatomic, assign, readwrite) BOOL debugCancelSelfBeforeSchedulingStart;
+@property (nonatomic, assign, readwrite) BOOL debugCancelSelfAfterSchedulingStart;
+@property (nonatomic, assign, readwrite) NSTimeInterval debugSecondaryThreadCancelDelay;
 
-@property (atomic, assign, readonly) NSArray *debugEventLog;
+@property (nonatomic, assign, readonly) NSArray *debugEventLog;
 
 - (void)debugEnableEventLog;
 

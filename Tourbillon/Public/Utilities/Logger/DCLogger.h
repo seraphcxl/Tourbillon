@@ -35,13 +35,13 @@ typedef enum {
 @interface DCLogger : NSObject {
 }
 
-@property (atomic, assign) DCLogLevel logLevel;
-@property (atomic, assign) BOOL enableLogToFile;
-@property (atomic, assign) BOOL enableTimestamp;
-@property (atomic, assign) BOOL enableSourceCodeInfo;
-@property (atomic, assign) BOOL enableThreadInfo;
-@property (atomic, strong, readonly) NSFileHandle *fileHandle;
-@property (atomic, strong, readonly) NSDateFormatter *dateFormatter;
+@property (nonatomic, assign) DCLogLevel logLevel;
+@property (nonatomic, assign) BOOL enableLogToFile;
+@property (nonatomic, assign) BOOL enableTimestamp;
+@property (nonatomic, assign) BOOL enableSourceCodeInfo;
+@property (nonatomic, assign) BOOL enableThreadInfo;
+@property (nonatomic, strong, readonly) NSFileHandle *fileHandle;
+@property (nonatomic, strong, readonly) NSDateFormatter *dateFormatter;
 
 DEFINE_SINGLETON_FOR_HEADER(DCLogger)
 

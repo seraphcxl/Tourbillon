@@ -32,19 +32,19 @@ enum {
 
 // Things that are configured by the init method and can't be changed.
 
-@property (atomic, copy, readonly)  NSURLRequest *request;
-@property (atomic, copy, readonly)  NSURL *URL;
+@property (nonatomic, copy, readonly)  NSURLRequest *request;
+@property (nonatomic, copy, readonly)  NSURL *URL;
 
 // Things you can configure before queuing the operation.
 
 // runLoopThread and runLoopModes inherited from DCRunLoopOperation
-@property (atomic, copy, readwrite) NSIndexSet *acceptableStatusCodes; // default is nil, implying 200..299
-@property (atomic, copy, readwrite) NSSet *acceptableContentTypes; // default is nil, implying anything is acceptable
-@property (atomic, assign, readwrite) id<DCHTTPOperationAuthenticationDelegate> authenticationDelegate;
+@property (nonatomic, copy, readwrite) NSIndexSet *acceptableStatusCodes; // default is nil, implying 200..299
+@property (nonatomic, copy, readwrite) NSSet *acceptableContentTypes; // default is nil, implying anything is acceptable
+@property (nonatomic, assign, readwrite) id<DCHTTPOperationAuthenticationDelegate> authenticationDelegate;
 
 #if !defined(NDEBUG)
-@property (atomic, copy, readwrite) NSError *debugError; // default is nil
-@property (atomic, assign, readwrite) NSTimeInterval debugDelay; // default is none
+@property (nonatomic, copy, readwrite) NSError *debugError; // default is nil
+@property (nonatomic, assign, readwrite) NSTimeInterval debugDelay; // default is none
 #endif
 
 // Things you can configure up to the point where you start receiving data.
@@ -57,23 +57,23 @@ enum {
 // stream synchronously.  This is fine for file and memory streams, but it would
 // not work well for other types of streams (like a bound pair).
 
-@property (atomic, strong, readwrite) NSOutputStream *responseOutputStream; // defaults to nil, which puts response into responseBody
-@property (atomic, assign, readwrite) NSUInteger defaultResponseSize; // default is 1 MB, ignored if responseOutputStream is set
-@property (atomic, assign, readwrite) NSUInteger maximumResponseSize; // default is 4 MB, ignored if responseOutputStream is set
+@property (nonatomic, strong, readwrite) NSOutputStream *responseOutputStream; // defaults to nil, which puts response into responseBody
+@property (nonatomic, assign, readwrite) NSUInteger defaultResponseSize; // default is 1 MB, ignored if responseOutputStream is set
+@property (nonatomic, assign, readwrite) NSUInteger maximumResponseSize; // default is 4 MB, ignored if responseOutputStream is set
 // defaults are 1/4 of the above on iOS
 
 // Things that are only meaningful after a response has been received;
 
-@property (atomic, assign, readonly, getter=isStatusCodeAcceptable) BOOL statusCodeAcceptable;
-@property (atomic, assign, readonly, getter=isContentTypeAcceptable) BOOL contentTypeAcceptable;
+@property (nonatomic, assign, readonly, getter=isStatusCodeAcceptable) BOOL statusCodeAcceptable;
+@property (nonatomic, assign, readonly, getter=isContentTypeAcceptable) BOOL contentTypeAcceptable;
 
 // Things that are only meaningful after the operation is finished.
 
 // error property inherited from DCRunLoopOperation
-@property (atomic, copy, readonly) NSURLRequest *lastRequest;
-@property (atomic, copy, readonly) NSHTTPURLResponse *lastResponse;
+@property (nonatomic, copy, readonly) NSURLRequest *lastRequest;
+@property (nonatomic, copy, readonly) NSHTTPURLResponse *lastResponse;
 
-@property (atomic, copy, readonly) NSData *responseBody;
+@property (nonatomic, copy, readonly) NSData *responseBody;
 
 @end
 

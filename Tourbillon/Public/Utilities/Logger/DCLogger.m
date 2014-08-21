@@ -18,8 +18,8 @@ const NSString *DCLogger_OptionKey_EnableLogToFile = @"EnableLogToFile";
 @interface DCLogger () {
 }
 
-@property (atomic, strong) NSFileHandle *fileHandle;
-@property (atomic, strong) NSDateFormatter *dateFormatter;
+@property (nonatomic, strong) NSFileHandle *fileHandle;
+@property (nonatomic, strong) NSDateFormatter *dateFormatter;
 
 + (NSString *)levelToLog:(DCLogLevel)level;
 
