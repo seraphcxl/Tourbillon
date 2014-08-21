@@ -8,6 +8,7 @@
 
 #import "NSColor+DCAdditions.h"
 #import "DCCommonConstants.h"
+#import "DCCommonFuncations.h"
 #import <QuartzCore/QuartzCore.h>
 
 @implementation NSColor (DCAdditions)

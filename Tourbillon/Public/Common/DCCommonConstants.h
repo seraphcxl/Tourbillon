@@ -68,18 +68,6 @@
 #define DC_MEMSIZE_MB(n) ((NSUInteger)(DC_MEMSIZE_KB(n) * 1024))
 #define DC_MEMSIZE_GB(n) ((NSUInteger)(DC_MEMSIZE_MB(n) * 1024))
 
-NSUInteger DCCalcMemorySizeFormKBToInt(NSUInteger numOfKB) {
-    return numOfKB * 1024;
-}
-
-NSUInteger DCCalcMemorySizeFormMBToInt(NSUInteger numOfMB) {
-    return DCCalcMemorySizeFormKBToInt(numOfMB * 1024);
-}
-
-NSUInteger DCCalcMemorySizeFormGBToInt(NSUInteger numOfGB) {
-    return DCCalcMemorySizeFormMBToInt(numOfGB * 1024);
-}
-
 #endif  // DC_CalcMemorySize_DEFINE
 /**** **** **** **** **** **** **** ****/
 #ifndef DC_RGBAConvert_DEFINE
@@ -87,14 +75,6 @@ NSUInteger DCCalcMemorySizeFormGBToInt(NSUInteger numOfGB) {
 
 #define DC_RGBA_256ToPer(x) ((CGFloat)((x) / 255.0f))
 #define DC_RGBA_PerTo256(x) ((NSUInteger)((x) * 255))
-
-double DCRGBAConvert256ToPercentage(NSUInteger numOfRGB256) {
-    return (double)(numOfRGB256 / 255.0f);
-}
-
-NSUInteger DCRGBAConvertPercentageTo256(double numOfPercentage) {
-    return (NSUInteger)(numOfPercentage * 255);
-}
 
 #endif  // DC_RGBAConvert_DEFINE
 /**** **** **** **** **** **** **** ****/
@@ -109,14 +89,6 @@ NSUInteger DCRGBAConvertPercentageTo256(double numOfPercentage) {
 
 #define DCDegreesToRadians(angle) (((angle) * M_PI) / 180.0f)
 #define DCRadiansToDegrees(radian) (((radian) * 180.0f) / M_PI)
-
-float DCConvertDegreesToRadians(float angle) {
-    return (float)((angle * M_PI) / 180.f);
-}
-
-float DCConvertRadiansToDegrees(float radian) {
-    return (float)((radian * 180.f) / M_PI);
-}
 
 #endif  // DC_DegreeRadianConvert_DEFINE
 /**** **** **** **** **** **** **** ****/

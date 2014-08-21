@@ -8,6 +8,7 @@
 
 #import "DCHTTPOperation.h"
 #import "DCLogger.h"
+#import "DCCommonFuncations.h"
 
 static NSSet *sKeysImmutableWhileExecuting;
 static NSSet *sKeysImmutableOnceDataReceived;

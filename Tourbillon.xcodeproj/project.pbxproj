@@ -17,6 +17,10 @@
 		89009F1119A5CA9100F54598 /* DCDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0F19A5CA9100F54598 /* DCDictionaryCache.m */; };
 		89009F1219A5CA9100F54598 /* DCDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0F19A5CA9100F54598 /* DCDictionaryCache.m */; };
 		89009F1319A5CEE700F54598 /* DCDictionaryCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89009F0E19A5CA9100F54598 /* DCDictionaryCache.h */; };
+		895A6C5419A6314A00E56909 /* DCCommonFuncations.h in Headers */ = {isa = PBXBuildFile; fileRef = 895A6C5219A6314A00E56909 /* DCCommonFuncations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		895A6C5519A6314A00E56909 /* DCCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 895A6C5319A6314A00E56909 /* DCCommonFuncations.m */; };
+		895A6C5619A6314A00E56909 /* DCCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 895A6C5319A6314A00E56909 /* DCCommonFuncations.m */; };
+		895A6C5719A6324600E56909 /* DCCommonFuncations.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 895A6C5219A6314A00E56909 /* DCCommonFuncations.h */; };
 		895AF1A51991AC9F00500A6F /* DCTourbillon.h in Headers */ = {isa = PBXBuildFile; fileRef = 895AF1A41991AC9F00500A6F /* DCTourbillon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		895AF1A61991ACAC00500A6F /* DCTourbillon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 895AF1A41991AC9F00500A6F /* DCTourbillon.h */; };
 		897C1E6E19A4876F00C3B8A9 /* DCComponentPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 897C1E6C19A4876F00C3B8A9 /* DCComponentPathManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -334,6 +338,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				895A6C5719A6324600E56909 /* DCCommonFuncations.h in CopyFiles */,
 				89009F1319A5CEE700F54598 /* DCDictionaryCache.h in CopyFiles */,
 				89009F0A19A5903B00F54598 /* NSObject+DCAssociatedObjectExtension.h in CopyFiles */,
 				89009F0B19A5903B00F54598 /* DCComponentPathManager.h in CopyFiles */,
@@ -402,6 +407,8 @@
 		8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		8955F7F5197135E500B390C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		8955F7F7197135ED00B390C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		895A6C5219A6314A00E56909 /* DCCommonFuncations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCommonFuncations.h; sourceTree = "<group>"; };
+		895A6C5319A6314A00E56909 /* DCCommonFuncations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCommonFuncations.m; sourceTree = "<group>"; };
 		895AF1A41991AC9F00500A6F /* DCTourbillon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTourbillon.h; sourceTree = "<group>"; };
 		897C1E6C19A4876F00C3B8A9 /* DCComponentPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCComponentPathManager.h; sourceTree = "<group>"; };
 		897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCComponentPathManager.m; sourceTree = "<group>"; };
@@ -773,6 +780,8 @@
 			isa = PBXGroup;
 			children = (
 				89B7872D1990FB6100A726F1 /* DCCommonConstants.h */,
+				895A6C5219A6314A00E56909 /* DCCommonFuncations.h */,
+				895A6C5319A6314A00E56909 /* DCCommonFuncations.m */,
 				89B7872E1990FB6100A726F1 /* DCSafeARC.h */,
 				89B7872F1990FB6100A726F1 /* DCSingletonTemplate.h */,
 			);
@@ -1115,6 +1124,7 @@
 				895AF1A51991AC9F00500A6F /* DCTourbillon.h in Headers */,
 				89009F0519A58D4600F54598 /* NSViewController+ComponentPathExtension.h in Headers */,
 				89009F1019A5CA9100F54598 /* DCDictionaryCache.h in Headers */,
+				895A6C5419A6314A00E56909 /* DCCommonFuncations.h in Headers */,
 				89B787871990FB6100A726F1 /* NSData+DCHex.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1286,6 +1296,7 @@
 				89B787BA1990FB6100A726F1 /* NSObject+DCUUIDExtension.m in Sources */,
 				89B787C41990FB6100A726F1 /* NSString+DCURLCoding.m in Sources */,
 				89B787881990FB6100A726F1 /* NSData+DCHex.m in Sources */,
+				895A6C5519A6314A00E56909 /* DCCommonFuncations.m in Sources */,
 				89B787D11990FB6100A726F1 /* DCTestBlocker.m in Sources */,
 				897C1E6F19A4876F00C3B8A9 /* DCComponentPathManager.m in Sources */,
 				89B787A61990FB6100A726F1 /* NSDictionary+DCSortable.m in Sources */,
@@ -1392,6 +1403,7 @@
 				89B787C61990FB6100A726F1 /* NSString+DCURLCoding.m in Sources */,
 				89B7878A1990FB6100A726F1 /* NSData+DCHex.m in Sources */,
 				89B787D31990FB6100A726F1 /* DCTestBlocker.m in Sources */,
+				895A6C5619A6314A00E56909 /* DCCommonFuncations.m in Sources */,
 				897C1E7019A4876F00C3B8A9 /* DCComponentPathManager.m in Sources */,
 				89B787A81990FB6100A726F1 /* NSDictionary+DCSortable.m in Sources */,
 				89B787751990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */,
