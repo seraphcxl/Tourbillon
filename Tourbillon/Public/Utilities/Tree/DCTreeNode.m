@@ -12,11 +12,11 @@
 #import "DCLogger.h"
 #import "NSString+DCURLCoding.h"
 
-NSString *kDCTreeNodeSeparator = @",";
+NSString * const kDCTreeNodeSeparator = @",";
 
-NSString *kDCTreeNodeCodingKey = @"DCTreeNodeCodingKey";
-NSString *kDCTreeNodeCodingValue = @"DCTreeNodeCodingValue";
-NSString *kDCTreeNodeCodingChildren = @"DCTreeNodeCodingChildren";
+NSString * const kDCTreeNodeCodingKey = @"DCTreeNodeCodingKey";
+NSString * const kDCTreeNodeCodingValue = @"DCTreeNodeCodingValue";
+NSString * const kDCTreeNodeCodingChildren = @"DCTreeNodeCodingChildren";
 
 @interface DCTreeNode ()
 

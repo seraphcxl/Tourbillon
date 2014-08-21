@@ -8,11 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString *kDCTreeNodeSeparator;
-
-extern NSString *kDCTreeNodeCodingKey;
-extern NSString *kDCTreeNodeCodingValue;
-extern NSString *kDCTreeNodeCodingChildren;
+extern NSString * const kDCTreeNodeSeparator;
 
 @interface DCTreeNode : NSObject <NSCoding>
 

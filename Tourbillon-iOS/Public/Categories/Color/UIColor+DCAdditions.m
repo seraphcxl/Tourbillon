@@ -67,9 +67,9 @@
         
         if (r == g && g == b) {
             // Optimal case for grayscale
-            result = [UIColor colorWithWhite:DC_RGB256(r) alpha:DC_RGB256(a)];
+            result = [UIColor colorWithWhite:DCRGBAConvert256ToPercentage(r) alpha:DCRGBAConvert256ToPercentage(a)];
         } else {
-            result = [UIColor colorWithRed:DC_RGB256(r) green:DC_RGB256(g) blue:DC_RGB256(b) alpha:DC_RGB256(a)];
+            result = [UIColor colorWithRed:DCRGBAConvert256ToPercentage(r) green:DCRGBAConvert256ToPercentage(g) blue:DCRGBAConvert256ToPercentage(b) alpha:DCRGBAConvert256ToPercentage(a)];
         }
     } while (NO);
     return result;

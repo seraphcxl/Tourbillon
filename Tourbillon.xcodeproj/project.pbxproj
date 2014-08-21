@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89009F0519A58D4600F54598 /* NSViewController+ComponentPathExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 89009F0319A58D4600F54598 /* NSViewController+ComponentPathExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89009F0619A58D4600F54598 /* NSViewController+ComponentPathExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0419A58D4600F54598 /* NSViewController+ComponentPathExtension.m */; };
+		89009F0919A58F6E00F54598 /* UIViewController+ComponentPathExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0819A58F6E00F54598 /* UIViewController+ComponentPathExtension.m */; };
+		89009F0A19A5903B00F54598 /* NSObject+DCAssociatedObjectExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B5E08919A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h */; };
+		89009F0B19A5903B00F54598 /* DCComponentPathManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 897C1E6C19A4876F00C3B8A9 /* DCComponentPathManager.h */; };
+		89009F0C19A5903B00F54598 /* UIViewController+ComponentPathExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89009F0719A58F6E00F54598 /* UIViewController+ComponentPathExtension.h */; };
 		895AF1A51991AC9F00500A6F /* DCTourbillon.h in Headers */ = {isa = PBXBuildFile; fileRef = 895AF1A41991AC9F00500A6F /* DCTourbillon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		895AF1A61991ACAC00500A6F /* DCTourbillon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 895AF1A41991AC9F00500A6F /* DCTourbillon.h */; };
-		89B5E08B19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B5E08919A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h */; };
+		897C1E6E19A4876F00C3B8A9 /* DCComponentPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 897C1E6C19A4876F00C3B8A9 /* DCComponentPathManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		897C1E6F19A4876F00C3B8A9 /* DCComponentPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */; };
+		897C1E7019A4876F00C3B8A9 /* DCComponentPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */; };
+		89B5E08B19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B5E08919A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89B5E08C19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */; };
 		89B5E08D19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */; };
 		89B5E08E19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */; };
@@ -321,6 +330,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				89009F0A19A5903B00F54598 /* NSObject+DCAssociatedObjectExtension.h in CopyFiles */,
+				89009F0B19A5903B00F54598 /* DCComponentPathManager.h in CopyFiles */,
+				89009F0C19A5903B00F54598 /* UIViewController+ComponentPathExtension.h in CopyFiles */,
 				895AF1A61991ACAC00500A6F /* DCTourbillon.h in CopyFiles */,
 				89B788821990FC6600A726F1 /* UIColor+DCAdditions.h in CopyFiles */,
 				89B788831990FC6600A726F1 /* UIColor+DCColorful.h in CopyFiles */,
@@ -376,10 +388,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		89009F0319A58D4600F54598 /* NSViewController+ComponentPathExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSViewController+ComponentPathExtension.h"; sourceTree = "<group>"; };
+		89009F0419A58D4600F54598 /* NSViewController+ComponentPathExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSViewController+ComponentPathExtension.m"; sourceTree = "<group>"; };
+		89009F0719A58F6E00F54598 /* UIViewController+ComponentPathExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ComponentPathExtension.h"; sourceTree = "<group>"; };
+		89009F0819A58F6E00F54598 /* UIViewController+ComponentPathExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ComponentPathExtension.m"; sourceTree = "<group>"; };
 		8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		8955F7F5197135E500B390C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		8955F7F7197135ED00B390C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		895AF1A41991AC9F00500A6F /* DCTourbillon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTourbillon.h; sourceTree = "<group>"; };
+		897C1E6C19A4876F00C3B8A9 /* DCComponentPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCComponentPathManager.h; sourceTree = "<group>"; };
+		897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCComponentPathManager.m; sourceTree = "<group>"; };
 		89ADE832198F4C2900DD27B2 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
 		89ADE834198F4C3200DD27B2 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib; sourceTree = DEVELOPER_DIR; };
 		89ADE836198F4C6B00DD27B2 /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = usr/lib/libSystem.dylib; sourceTree = SDKROOT; };
@@ -546,6 +564,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		897C1E6B19A4876F00C3B8A9 /* ComponentPathManager */ = {
+			isa = PBXGroup;
+			children = (
+				897C1E6C19A4876F00C3B8A9 /* DCComponentPathManager.h */,
+				897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */,
+			);
+			path = ComponentPathManager;
+			sourceTree = "<group>";
+		};
 		89B786B21990FB4400A726F1 /* Tourbillon-OSX */ = {
 			isa = PBXGroup;
 			children = (
@@ -765,6 +792,7 @@
 				89B7874A1990FB6100A726F1 /* Operation */,
 				89B787511990FB6100A726F1 /* Stack */,
 				89B787541990FB6100A726F1 /* Tree */,
+				897C1E6B19A4876F00C3B8A9 /* ComponentPathManager */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -850,6 +878,8 @@
 				89B788291990FB6E00A726F1 /* NSViewController+DCViewLogic.m */,
 				89B7882A1990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.h */,
 				89B7882B1990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.m */,
+				89009F0319A58D4600F54598 /* NSViewController+ComponentPathExtension.h */,
+				89009F0419A58D4600F54598 /* NSViewController+ComponentPathExtension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -912,6 +942,8 @@
 				89B788441990FB7600A726F1 /* UIImage+DCLibrarySupport.m */,
 				89B788451990FB7600A726F1 /* UIViewController+DCLibrarySupport.h */,
 				89B788461990FB7600A726F1 /* UIViewController+DCLibrarySupport.m */,
+				89009F0719A58F6E00F54598 /* UIViewController+ComponentPathExtension.h */,
+				89009F0819A58F6E00F54598 /* UIViewController+ComponentPathExtension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1020,7 +1052,6 @@
 				89B7879B1990FB6100A726F1 /* NSBundle+DCLibrarySupport.h in Headers */,
 				89B787771990FB6100A726F1 /* NSData+GZipExtension.h in Headers */,
 				89B787721990FB6100A726F1 /* NSObject+DCGCDThreadSafe.h in Headers */,
-				89B5E08B19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h in Headers */,
 				89B787D61990FB6100A726F1 /* DCCommonUtility.h in Headers */,
 				89B787DB1990FB6100A726F1 /* DCImageUtility.h in Headers */,
 				89B7878C1990FB6100A726F1 /* NSString+DCBase64.h in Headers */,
@@ -1062,7 +1093,10 @@
 				89B787A51990FB6100A726F1 /* NSDictionary+DCSortable.h in Headers */,
 				89B787AF1990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.h in Headers */,
 				89B788171990FB6100A726F1 /* DCTree.h in Headers */,
+				89B5E08B19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h in Headers */,
+				897C1E6E19A4876F00C3B8A9 /* DCComponentPathManager.h in Headers */,
 				895AF1A51991AC9F00500A6F /* DCTourbillon.h in Headers */,
+				89009F0519A58D4600F54598 /* NSViewController+ComponentPathExtension.h in Headers */,
 				89B787871990FB6100A726F1 /* NSData+DCHex.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1213,6 +1247,7 @@
 				89B788311990FB6E00A726F1 /* NSColor+DCAdditions.m in Sources */,
 				89B787B01990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
 				89B5E08C19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
+				89009F0619A58D4600F54598 /* NSViewController+ComponentPathExtension.m in Sources */,
 				89B787BF1990FB6100A726F1 /* NSString+DCParseCSV.m in Sources */,
 				89B7880E1990FB6100A726F1 /* DCWatchedOperationQueue.m in Sources */,
 				89B787831990FB6100A726F1 /* NSData+DCHash.m in Sources */,
@@ -1233,6 +1268,7 @@
 				89B787C41990FB6100A726F1 /* NSString+DCURLCoding.m in Sources */,
 				89B787881990FB6100A726F1 /* NSData+DCHex.m in Sources */,
 				89B787D11990FB6100A726F1 /* DCTestBlocker.m in Sources */,
+				897C1E6F19A4876F00C3B8A9 /* DCComponentPathManager.m in Sources */,
 				89B787A61990FB6100A726F1 /* NSDictionary+DCSortable.m in Sources */,
 				89B787731990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */,
 				89B787781990FB6100A726F1 /* NSData+GZipExtension.m in Sources */,
@@ -1336,8 +1372,10 @@
 				89B787C61990FB6100A726F1 /* NSString+DCURLCoding.m in Sources */,
 				89B7878A1990FB6100A726F1 /* NSData+DCHex.m in Sources */,
 				89B787D31990FB6100A726F1 /* DCTestBlocker.m in Sources */,
+				897C1E7019A4876F00C3B8A9 /* DCComponentPathManager.m in Sources */,
 				89B787A81990FB6100A726F1 /* NSDictionary+DCSortable.m in Sources */,
 				89B787751990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */,
+				89009F0919A58F6E00F54598 /* UIViewController+ComponentPathExtension.m in Sources */,
 				89B7877A1990FB6100A726F1 /* NSData+GZipExtension.m in Sources */,
 				89B787611990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m in Sources */,
 			);

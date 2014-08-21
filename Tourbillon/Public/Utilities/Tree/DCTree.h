@@ -8,9 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString *kDCTreeLevelSeparator;
-
-extern NSString *kDCTreeCodingRoot;
+extern NSString * const kDCTreeLevelSeparator;
 
 @class DCTreeNode;
 @class DCTree;

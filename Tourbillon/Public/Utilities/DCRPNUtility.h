@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString *const DCRPNUtilityUnknownOperatorException;
-extern NSString *const DCRPNUtilityInvalidInstructionException;
-extern NSString *const DCRPNUtilityInstuctionUnderrunException;
+extern NSString * const DCRPNUtilityUnknownOperatorException;
+extern NSString * const DCRPNUtilityInvalidInstructionException;
+extern NSString * const DCRPNUtilityInstuctionUnderrunException;
 
 @interface DCRPNUtility : NSObject {
 }

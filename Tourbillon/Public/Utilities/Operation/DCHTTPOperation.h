@@ -8,7 +8,7 @@
 
 #import "DCRunLoopOperation.h"
 
-extern NSString *kDCHTTPOperationErrorDomain;
+extern NSString * const kDCHTTPOperationErrorDomain;
 
 // positive error codes are HTML status codes (when they are not allowed via acceptableStatusCodes)
 //

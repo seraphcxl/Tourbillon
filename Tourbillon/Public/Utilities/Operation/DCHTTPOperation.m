@@ -12,7 +12,7 @@
 static NSSet *sKeysImmutableWhileExecuting;
 static NSSet *sKeysImmutableOnceDataReceived;
 
-NSString * kDCHTTPOperationErrorDomain = @"kDCHTTPOperationErrorDomain";
+NSString * const kDCHTTPOperationErrorDomain = @"kDCHTTPOperationErrorDomain";
 
 @interface DCHTTPOperation () {
 }
@@ -85,8 +85,8 @@ NSString * kDCHTTPOperationErrorDomain = @"kDCHTTPOperationErrorDomain";
             static const NSUInteger kPlatformReductionFactor = 1;
 #endif
             self.request = [request copy];
-            self.defaultResponseSize = DC_MEMSIZE_MB(1) / kPlatformReductionFactor;
-            self.maximumResponseSize = DC_MEMSIZE_MB(4) / kPlatformReductionFactor;
+            self.defaultResponseSize = DCCalcMemorySizeFormMBToInt(1) / kPlatformReductionFactor;
+            self.maximumResponseSize = DCCalcMemorySizeFormMBToInt(4) / kPlatformReductionFactor;
             self.firstData = YES;
             
             // Add a set of KVO observers that watch for clients not playing by the rules.

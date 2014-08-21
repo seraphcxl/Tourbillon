@@ -9,9 +9,9 @@
 #import "DCRPNUtility.h"
 #import "DCStack.h"
 
-NSString *const DCRPNUtilityUnknownOperatorException = @"DCRPNUtilityUnknownOperatorException";
-NSString *const DCRPNUtilityInvalidInstructionException = @"DCRPNUtilityInvalidInstructionException";
-NSString *const DCRPNUtilityInstuctionUnderrunException = @"DCRPNUtilityInstuctionUnderrunException";
+NSString * const DCRPNUtilityUnknownOperatorException = @"DCRPNUtilityUnknownOperatorException";
+NSString * const DCRPNUtilityInvalidInstructionException = @"DCRPNUtilityInvalidInstructionException";
+NSString * const DCRPNUtilityInstuctionUnderrunException = @"DCRPNUtilityInstuctionUnderrunException";
 
 @interface DCRPNUtility () {
 }

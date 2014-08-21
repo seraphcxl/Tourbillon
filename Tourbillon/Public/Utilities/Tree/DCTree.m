@@ -10,9 +10,9 @@
 #import "DCTreeNode.h"
 #import "DCLogger.h"
 
-NSString *kDCTreeLevelSeparator = @"DCTreeLevel";
+NSString * const kDCTreeLevelSeparator = @"DCTreeLevel";
 
-NSString *kDCTreeCodingRoot = @"DCTreeCodingRoot";
+NSString * const kDCTreeCodingRoot = @"DCTreeCodingRoot";
 
 @interface DCTree ()
 
