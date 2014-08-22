@@ -40,6 +40,7 @@
 #pragma mark - Common
 #import "DCSafeARC.h"
 #import "DCCommonConstants.h"
+#import "DCCommonFuncations.h"
 #import "DCSingletonTemplate.h"
 #import "DCLogger.h"
 

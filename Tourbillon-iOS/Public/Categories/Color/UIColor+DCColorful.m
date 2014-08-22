@@ -8,6 +8,7 @@
 
 #import "UIColor+DCColorful.h"
 #import "DCCommonConstants.h"
+#import "DCCommonFuncations.h"
 
 @implementation UIColor (DCColorful)
 
