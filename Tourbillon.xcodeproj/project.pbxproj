@@ -71,9 +71,9 @@
 		89B787711990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787041990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m */; };
 		89B787721990FB6100A726F1 /* NSObject+DCGCDThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787051990FB6100A726F1 /* NSObject+DCGCDThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89B787731990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		89B787741990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; };
+		89B787741990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
 		89B787751990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		89B787761990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; };
+		89B787761990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
 		89B787771990FB6100A726F1 /* NSData+GZipExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787081990FB6100A726F1 /* NSData+GZipExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89B787781990FB6100A726F1 /* NSData+GZipExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787091990FB6100A726F1 /* NSData+GZipExtension.m */; };
 		89B787791990FB6100A726F1 /* NSData+GZipExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787091990FB6100A726F1 /* NSData+GZipExtension.m */; };
@@ -312,11 +312,24 @@
 		89B788831990FC6600A726F1 /* UIColor+DCColorful.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B788411990FB7600A726F1 /* UIColor+DCColorful.h */; };
 		89B788841990FC6600A726F1 /* UIImage+DCLibrarySupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B788431990FB7600A726F1 /* UIImage+DCLibrarySupport.h */; };
 		89B788851990FC6600A726F1 /* UIViewController+DCLibrarySupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B788451990FB7600A726F1 /* UIViewController+DCLibrarySupport.h */; };
-		89BC4D9F19CAB0570034179E /* DCMemoryUsageReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BC4D9D19CAB0570034179E /* DCMemoryUsageReporter.h */; };
+		89BC4D9F19CAB0570034179E /* DCMemoryUsageReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BC4D9D19CAB0570034179E /* DCMemoryUsageReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89BC4DA019CAB0570034179E /* DCMemoryUsageReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */; };
 		89BC4DA119CAB0570034179E /* DCMemoryUsageReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */; };
 		89BC4DA219CAB0570034179E /* DCMemoryUsageReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */; };
 		89BC4DA319CAB0570034179E /* DCMemoryUsageReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */; };
+		89BC4DBB19CAC9820034179E /* DCXOREncryptedOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BC4DB919CAC9820034179E /* DCXOREncryptedOutputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89BC4DBC19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DBA19CAC9820034179E /* DCXOREncryptedOutputStream.m */; };
+		89BC4DBD19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DBA19CAC9820034179E /* DCXOREncryptedOutputStream.m */; };
+		89BC4DBE19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DBA19CAC9820034179E /* DCXOREncryptedOutputStream.m */; };
+		89BC4DBF19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DBA19CAC9820034179E /* DCXOREncryptedOutputStream.m */; };
+		89BC4DC219CAC9A90034179E /* DCXOREncryptedInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BC4DC019CAC9A90034179E /* DCXOREncryptedInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89BC4DC319CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DC119CAC9A90034179E /* DCXOREncryptedInputStream.m */; };
+		89BC4DC419CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DC119CAC9A90034179E /* DCXOREncryptedInputStream.m */; };
+		89BC4DC519CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DC119CAC9A90034179E /* DCXOREncryptedInputStream.m */; };
+		89BC4DC619CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DC119CAC9A90034179E /* DCXOREncryptedInputStream.m */; };
+		89BC4DC719CAD3110034179E /* DCXOREncryptedInputStream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89BC4DC019CAC9A90034179E /* DCXOREncryptedInputStream.h */; };
+		89BC4DC819CAD3110034179E /* DCXOREncryptedOutputStream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89BC4DB919CAC9820034179E /* DCXOREncryptedOutputStream.h */; };
+		89BC4DC919CAD3110034179E /* DCMemoryUsageReporter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89BC4D9D19CAB0570034179E /* DCMemoryUsageReporter.h */; };
 		89C221FC19B6C12A007F5CF2 /* DCCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 895A6C5319A6314A00E56909 /* DCCommonFuncations.m */; };
 		89C221FD19B6C12A007F5CF2 /* DCDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0F19A5CA9100F54598 /* DCDictionaryCache.m */; };
 		89C221FE19B6C12A007F5CF2 /* DCComponentPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */; };
@@ -324,6 +337,13 @@
 		89C2220019B6C143007F5CF2 /* DCCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 895A6C5319A6314A00E56909 /* DCCommonFuncations.m */; };
 		89C2220119B6C143007F5CF2 /* DCComponentPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */; };
 		89C2220219B6C143007F5CF2 /* UIViewController+ComponentPathExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0819A58F6E00F54598 /* UIViewController+ComponentPathExtension.m */; };
+		89E833CB19CB001E00F26088 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8955F7F5197135E500B390C6 /* libz.dylib */; };
+		89E833CC19CB003D00F26088 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8955F7F7197135ED00B390C6 /* libz.dylib */; };
+		89E833CD19CB004500F26088 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */; };
+		89E833D519CB012500F26088 /* DCOSXCommonFuncations.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E833D319CB012500F26088 /* DCOSXCommonFuncations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E833D619CB012500F26088 /* DCOSXCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E833D419CB012500F26088 /* DCOSXCommonFuncations.m */; };
+		89E833D719CB012500F26088 /* DCOSXCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E833D419CB012500F26088 /* DCOSXCommonFuncations.m */; };
+		89E833D819CB01B800F26088 /* DCDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0F19A5CA9100F54598 /* DCDictionaryCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -350,6 +370,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				89BC4DC719CAD3110034179E /* DCXOREncryptedInputStream.h in CopyFiles */,
+				89BC4DC819CAD3110034179E /* DCXOREncryptedOutputStream.h in CopyFiles */,
+				89BC4DC919CAD3110034179E /* DCMemoryUsageReporter.h in CopyFiles */,
 				895A6C5719A6324600E56909 /* DCCommonFuncations.h in CopyFiles */,
 				89009F1319A5CEE700F54598 /* DCDictionaryCache.h in CopyFiles */,
 				89009F0A19A5903B00F54598 /* NSObject+DCAssociatedObjectExtension.h in CopyFiles */,
@@ -542,6 +565,10 @@
 		89B788461990FB7600A726F1 /* UIViewController+DCLibrarySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DCLibrarySupport.m"; sourceTree = "<group>"; };
 		89BC4D9D19CAB0570034179E /* DCMemoryUsageReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCMemoryUsageReporter.h; sourceTree = "<group>"; };
 		89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCMemoryUsageReporter.m; sourceTree = "<group>"; };
+		89BC4DB919CAC9820034179E /* DCXOREncryptedOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCXOREncryptedOutputStream.h; sourceTree = "<group>"; };
+		89BC4DBA19CAC9820034179E /* DCXOREncryptedOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCXOREncryptedOutputStream.m; sourceTree = "<group>"; };
+		89BC4DC019CAC9A90034179E /* DCXOREncryptedInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCXOREncryptedInputStream.h; sourceTree = "<group>"; };
+		89BC4DC119CAC9A90034179E /* DCXOREncryptedInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCXOREncryptedInputStream.m; sourceTree = "<group>"; };
 		89E137431925B11000A3EFB7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		89E137461925B11000A3EFB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89E137471925B11000A3EFB7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -549,6 +576,8 @@
 		89E137581925B11000A3EFB7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		89E137731925B13D00A3EFB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89E137831925B13D00A3EFB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		89E833D319CB012500F26088 /* DCOSXCommonFuncations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCOSXCommonFuncations.h; sourceTree = "<group>"; };
+		89E833D419CB012500F26088 /* DCOSXCommonFuncations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCOSXCommonFuncations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -564,6 +593,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E833CB19CB001E00F26088 /* libz.dylib in Frameworks */,
 				89B786BE1990FB4500A726F1 /* Cocoa.framework in Frameworks */,
 				89B786C11990FB4500A726F1 /* libTourbillon-OSX.a in Frameworks */,
 				89B786BD1990FB4500A726F1 /* XCTest.framework in Frameworks */,
@@ -582,6 +612,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E833CD19CB004500F26088 /* MobileCoreServices.framework in Frameworks */,
+				89E833CC19CB003D00F26088 /* libz.dylib in Frameworks */,
 				89B786E21990FB4F00A726F1 /* XCTest.framework in Frameworks */,
 				89B786E41990FB5000A726F1 /* UIKit.framework in Frameworks */,
 				89B786E31990FB5000A726F1 /* Foundation.framework in Frameworks */,
@@ -814,6 +846,7 @@
 		89B787331990FB6100A726F1 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				89BC4DAA19CAC0720034179E /* Encrypt */,
 				89009F0D19A5CA4800F54598 /* Cache */,
 				89B787341990FB6100A726F1 /* DCAtomicSetters.h */,
 				89B787351990FB6100A726F1 /* DCCommonUtility.h */,
@@ -940,6 +973,8 @@
 		89B7882C1990FB6E00A726F1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				89E833D319CB012500F26088 /* DCOSXCommonFuncations.h */,
+				89E833D419CB012500F26088 /* DCOSXCommonFuncations.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1027,6 +1062,17 @@
 			children = (
 			);
 			path = Private;
+			sourceTree = "<group>";
+		};
+		89BC4DAA19CAC0720034179E /* Encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				89BC4DC019CAC9A90034179E /* DCXOREncryptedInputStream.h */,
+				89BC4DC119CAC9A90034179E /* DCXOREncryptedInputStream.m */,
+				89BC4DB919CAC9820034179E /* DCXOREncryptedOutputStream.h */,
+				89BC4DBA19CAC9820034179E /* DCXOREncryptedOutputStream.m */,
+			);
+			path = Encrypt;
 			sourceTree = "<group>";
 		};
 		89E137361925B11000A3EFB7 = {
@@ -1127,7 +1173,6 @@
 				89B787D01990FB6100A726F1 /* DCTestBlocker.h in Headers */,
 				89B787AA1990FB6100A726F1 /* NSNumber+DCRandom.h in Headers */,
 				89B7880D1990FB6100A726F1 /* DCWatchedOperationQueue.h in Headers */,
-				89BC4D9F19CAB0570034179E /* DCMemoryUsageReporter.h in Headers */,
 				89B788031990FB6100A726F1 /* DCHTTPOperation.h in Headers */,
 				89B787FE1990FB6100A726F1 /* DCLogger.h in Headers */,
 				89B787A01990FB6100A726F1 /* NSData+DCLibrarySupport.h in Headers */,
@@ -1140,8 +1185,12 @@
 				897C1E6E19A4876F00C3B8A9 /* DCComponentPathManager.h in Headers */,
 				895AF1A51991AC9F00500A6F /* DCTourbillon.h in Headers */,
 				89009F0519A58D4600F54598 /* NSViewController+ComponentPathExtension.h in Headers */,
+				89BC4DC219CAC9A90034179E /* DCXOREncryptedInputStream.h in Headers */,
+				89BC4DBB19CAC9820034179E /* DCXOREncryptedOutputStream.h in Headers */,
+				89BC4D9F19CAB0570034179E /* DCMemoryUsageReporter.h in Headers */,
 				89009F1019A5CA9100F54598 /* DCDictionaryCache.h in Headers */,
 				895A6C5419A6314A00E56909 /* DCCommonFuncations.h in Headers */,
+				89E833D519CB012500F26088 /* DCOSXCommonFuncations.h in Headers */,
 				89B787871990FB6100A726F1 /* NSData+DCHex.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1293,6 +1342,7 @@
 				89B788311990FB6E00A726F1 /* NSColor+DCAdditions.m in Sources */,
 				89B787B01990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
 				89B5E08C19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
+				89BC4DBC19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */,
 				89009F0619A58D4600F54598 /* NSViewController+ComponentPathExtension.m in Sources */,
 				89009F1119A5CA9100F54598 /* DCDictionaryCache.m in Sources */,
 				89B787BF1990FB6100A726F1 /* NSString+DCParseCSV.m in Sources */,
@@ -1301,12 +1351,14 @@
 				89B787E11990FB6100A726F1 /* DCRPNUtility.m in Sources */,
 				89B787D71990FB6100A726F1 /* DCCommonUtility.m in Sources */,
 				89B787691990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m in Sources */,
+				89E833D619CB012500F26088 /* DCOSXCommonFuncations.m in Sources */,
 				89B787971990FB6100A726F1 /* NSArray+DCContentExtension.m in Sources */,
 				89B787E61990FB6100A726F1 /* DCUIMainThreadGuard.m in Sources */,
 				89B787DC1990FB6100A726F1 /* DCImageUtility.m in Sources */,
 				89B788371990FB6E00A726F1 /* NSViewController+DCViewLogic.m in Sources */,
 				89B787F01990FB6100A726F1 /* DCGZipCompressor.m in Sources */,
 				89B7877E1990FB6100A726F1 /* NSData+DCBase64.m in Sources */,
+				89BC4DC319CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */,
 				89B7883A1990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.m in Sources */,
 				89B787AB1990FB6100A726F1 /* NSNumber+DCRandom.m in Sources */,
 				89B788091990FB6100A726F1 /* DCRunLoopOperation.m in Sources */,
@@ -1338,6 +1390,7 @@
 				89B7878E1990FB6100A726F1 /* NSString+DCBase64.m in Sources */,
 				89B7879D1990FB6100A726F1 /* NSBundle+DCLibrarySupport.m in Sources */,
 				89B787EC1990FB6100A726F1 /* DCWebUtility.m in Sources */,
+				89BC4DC419CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */,
 				89B787A21990FB6100A726F1 /* NSData+DCLibrarySupport.m in Sources */,
 				89B788051990FB6100A726F1 /* DCHTTPOperation.m in Sources */,
 				89B787F61990FB6100A726F1 /* DCGZipDecompressor.m in Sources */,
@@ -1357,6 +1410,7 @@
 				89B7880F1990FB6100A726F1 /* DCWatchedOperationQueue.m in Sources */,
 				89B787841990FB6100A726F1 /* NSData+DCHash.m in Sources */,
 				89B787E21990FB6100A726F1 /* DCRPNUtility.m in Sources */,
+				89BC4DBD19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */,
 				89B787D81990FB6100A726F1 /* DCCommonUtility.m in Sources */,
 				89B7876A1990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m in Sources */,
 				89B787981990FB6100A726F1 /* NSArray+DCContentExtension.m in Sources */,
@@ -1369,6 +1423,7 @@
 				89B787AC1990FB6100A726F1 /* NSNumber+DCRandom.m in Sources */,
 				89B7880A1990FB6100A726F1 /* DCRunLoopOperation.m in Sources */,
 				89B788191990FB6100A726F1 /* DCTree.m in Sources */,
+				89E833D719CB012500F26088 /* DCOSXCommonFuncations.m in Sources */,
 				89B787BB1990FB6100A726F1 /* NSObject+DCUUIDExtension.m in Sources */,
 				89B786C91990FB4500A726F1 /* Tourbillon_OSXTests.m in Sources */,
 				89B787C51990FB6100A726F1 /* NSString+DCURLCoding.m in Sources */,
@@ -1406,6 +1461,7 @@
 				89B7875C1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
 				89B788151990FB6100A726F1 /* DCStack.m in Sources */,
 				89B5E08E19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
+				89BC4DBE19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */,
 				89B788011990FB6100A726F1 /* DCLogger.m in Sources */,
 				89009F1219A5CA9100F54598 /* DCDictionaryCache.m in Sources */,
 				89B787B21990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
@@ -1420,6 +1476,7 @@
 				89B787DE1990FB6100A726F1 /* DCImageUtility.m in Sources */,
 				89B787F21990FB6100A726F1 /* DCGZipCompressor.m in Sources */,
 				89B787801990FB6100A726F1 /* NSData+DCBase64.m in Sources */,
+				89BC4DC519CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */,
 				89B787AD1990FB6100A726F1 /* NSNumber+DCRandom.m in Sources */,
 				89B7880B1990FB6100A726F1 /* DCRunLoopOperation.m in Sources */,
 				89B7881A1990FB6100A726F1 /* DCTree.m in Sources */,
@@ -1441,6 +1498,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E833D819CB01B800F26088 /* DCDictionaryCache.m in Sources */,
 				89C2220019B6C143007F5CF2 /* DCCommonFuncations.m in Sources */,
 				89C2220119B6C143007F5CF2 /* DCComponentPathManager.m in Sources */,
 				89C2220219B6C143007F5CF2 /* UIViewController+ComponentPathExtension.m in Sources */,
@@ -1462,6 +1520,7 @@
 				89B787951990FB6100A726F1 /* NSString+DCHash.m in Sources */,
 				89B788521990FB7600A726F1 /* UIViewController+DCLibrarySupport.m in Sources */,
 				89B5E08F19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
+				89BC4DBF19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */,
 				89B788201990FB6100A726F1 /* DCTreeNode.m in Sources */,
 				89B7875D1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
 				89B788161990FB6100A726F1 /* DCStack.m in Sources */,
@@ -1476,6 +1535,7 @@
 				89B7879A1990FB6100A726F1 /* NSArray+DCContentExtension.m in Sources */,
 				89B787E91990FB6100A726F1 /* DCUIMainThreadGuard.m in Sources */,
 				89B787DF1990FB6100A726F1 /* DCImageUtility.m in Sources */,
+				89BC4DC619CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */,
 				89B787F31990FB6100A726F1 /* DCGZipCompressor.m in Sources */,
 				89B787811990FB6100A726F1 /* NSData+DCBase64.m in Sources */,
 				89B787AE1990FB6100A726F1 /* NSNumber+DCRandom.m in Sources */,
@@ -1555,6 +1615,8 @@
 		89B786CE1990FB4500A726F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_LINK_OBJC_RUNTIME = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -1575,6 +1637,8 @@
 		89B786CF1990FB4500A726F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_LINK_OBJC_RUNTIME = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -1624,6 +1688,7 @@
 		89B786F41990FB5000A726F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1646,6 +1711,7 @@
 		89B786F51990FB5000A726F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -42,7 +42,6 @@
 #import "DCCommonConstants.h"
 #import "DCCommonFuncations.h"
 #import "DCSingletonTemplate.h"
-#import "DCLogger.h"
 
 #pragma mark - Testers
 #import "DCTestBlocker.h"
@@ -64,6 +63,10 @@
 #import "DCHashUtility.h"
 #import "DCDictionaryCache.h"
 #import "DCComponentPathManager.h"
+#import "DCMemoryUsageReporter.h"
+#import "DCLogger.h"
+#import "DCXOREncryptedInputStream.h"
+#import "DCXOREncryptedOutputStream.h"
 
 #if TARGET_OS_IPHONE
 // iOS
@@ -85,6 +88,7 @@
 #import "NSColor+DCColorful.h"
 #import "NSViewController+ComponentPathExtension.h"
 #pragma mark - Common
+#import "DCOSXCommonFuncations.h"
 #pragma mark - Testers
 #pragma mark - Utilities
 #endif

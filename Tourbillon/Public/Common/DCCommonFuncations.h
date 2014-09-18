@@ -27,6 +27,4 @@ extern float DCConvertRadiansToDegrees(float radian);
 
 @interface DCCommonFuncations : NSObject
 
-+ (NSArray *)getProcessStatusWith:(NSArray *)keywords andPID:(NSUInteger)pid;
-
 @end

@@ -26,11 +26,4 @@
     [super tearDown];
 }
 
-- (void)testEncryptionAndDecryption {
-    do {
-//        NSString *str = [NSObject createUniqueStrByUUID];
-//        NSUInteger len = [str lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
-    } while (NO);
-}
-
 @end
