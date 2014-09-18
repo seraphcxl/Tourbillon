@@ -344,6 +344,7 @@
 		89E833D619CB012500F26088 /* DCOSXCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E833D419CB012500F26088 /* DCOSXCommonFuncations.m */; };
 		89E833D719CB012500F26088 /* DCOSXCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E833D419CB012500F26088 /* DCOSXCommonFuncations.m */; };
 		89E833D819CB01B800F26088 /* DCDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0F19A5CA9100F54598 /* DCDictionaryCache.m */; };
+		89E833DB19CB037800F26088 /* DCEncryptTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E833DA19CB037800F26088 /* DCEncryptTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -578,6 +579,8 @@
 		89E137831925B13D00A3EFB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		89E833D319CB012500F26088 /* DCOSXCommonFuncations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCOSXCommonFuncations.h; sourceTree = "<group>"; };
 		89E833D419CB012500F26088 /* DCOSXCommonFuncations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCOSXCommonFuncations.m; sourceTree = "<group>"; };
+		89E833D919CB037800F26088 /* DCEncryptTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCEncryptTestCase.h; sourceTree = "<group>"; };
+		89E833DA19CB037800F26088 /* DCEncryptTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCEncryptTestCase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -663,8 +666,10 @@
 		89B786C21990FB4500A726F1 /* Tourbillon-OSXTests */ = {
 			isa = PBXGroup;
 			children = (
-				89B786C81990FB4500A726F1 /* Tourbillon_OSXTests.m */,
 				89B786C31990FB4500A726F1 /* Supporting Files */,
+				89B786C81990FB4500A726F1 /* Tourbillon_OSXTests.m */,
+				89E833D919CB037800F26088 /* DCEncryptTestCase.h */,
+				89E833DA19CB037800F26088 /* DCEncryptTestCase.m */,
 			);
 			path = "Tourbillon-OSXTests";
 			sourceTree = "<group>";
@@ -1410,6 +1415,7 @@
 				89B7880F1990FB6100A726F1 /* DCWatchedOperationQueue.m in Sources */,
 				89B787841990FB6100A726F1 /* NSData+DCHash.m in Sources */,
 				89B787E21990FB6100A726F1 /* DCRPNUtility.m in Sources */,
+				89E833DB19CB037800F26088 /* DCEncryptTestCase.m in Sources */,
 				89BC4DBD19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */,
 				89B787D81990FB6100A726F1 /* DCCommonUtility.m in Sources */,
 				89B7876A1990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m in Sources */,

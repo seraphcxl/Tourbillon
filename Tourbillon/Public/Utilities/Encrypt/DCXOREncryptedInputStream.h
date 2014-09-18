@@ -8,10 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DCXOREncryptedInputStream : NSInputStream
+@interface DCXOREncryptedInputStream : NSObject
 
 @property (nonatomic, strong, readonly) NSString *password;
 
+- (id)initWithData:(NSData *)data;
+- (id)initWithFileAtPath:(NSString *)path;
+
+- (void)open;
+- (void)close;
+
 - (NSInteger)read:(uint8_t *)buffer maxLength:(NSUInteger)len;
+- (BOOL)hasBytesAvailable;
 
 @end

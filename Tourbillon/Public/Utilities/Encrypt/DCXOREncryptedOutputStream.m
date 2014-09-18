@@ -13,6 +13,7 @@
 @interface DCXOREncryptedOutputStream () {
 }
 
+@property (nonatomic, strong) NSOutputStream *stream;
 @property (nonatomic, strong) NSString *password;
 @property (nonatomic, strong) NSData *passwordData;
 
@@ -20,6 +21,7 @@
 
 @implementation DCXOREncryptedOutputStream
 
+@synthesize stream = _stream;
 @synthesize password = _password;
 @synthesize passwordData = _passwordData;
 
@@ -28,26 +30,67 @@
     if (self) {
         _password = [NSObject createUniqueStrByUUID];
         _passwordData = [_password dataUsingEncoding:NSUTF8StringEncoding];
+        self.stream = [[NSOutputStream alloc] initToMemory];
     }
     return self;
 }
 
 - (void)dealloc {
     do {
+        self.stream = nil;
         self.passwordData = nil;
         self.password = nil;
     } while (NO);
 }
 
+- (id)initToMemory {
+    self = [self init];
+    if (self) {
+        ;
+    }
+    return self;
+}
+
+- (id)initToBuffer:(uint8_t *)buffer capacity:(NSUInteger)capacity {
+    self = [self init];
+    if (self) {
+        self.stream = [[NSOutputStream alloc] initToBuffer:buffer capacity:capacity];
+    }
+    return self;
+}
+
+- (id)initToFileAtPath:(NSString *)path append:(BOOL)shouldAppend {
+    self = [self init];
+    if (self) {
+        self.stream = [[NSOutputStream alloc] initToFileAtPath:path append:shouldAppend];
+    }
+    return self;
+}
+
 - (void)open {
     do {
-        [super open];
         @synchronized (self) {
-            if (_passwordData) {
-                NSUInteger len = [_passwordData length];
-                NSInteger writtenLen = [super write:[_passwordData bytes] maxLength:len];
-                DCAssert(writtenLen == len, @"Write password error!");
+            if (!_stream || !_passwordData) {
+                break;
             }
+            
+            [_stream open];
+            
+            NSUInteger len = [_passwordData length];
+            NSInteger writtenLen = [_stream write:[_passwordData bytes] maxLength:len];
+            DCAssert(writtenLen == len, @"Write password error!");
+        }
+    } while (NO);
+}
+
+- (void)close {
+    do {
+        @synchronized (self) {
+            if (!_stream) {
+                break;
+            }
+            
+            [_stream close];
         }
     } while (NO);
 }
@@ -58,7 +101,12 @@
         if (!buffer || len == 0) {
             break;
         }
+        
         @synchronized (self) {
+            if (!_stream || !_passwordData) {
+                break;
+            }
+            
             uint8_t encryptedData[len];
             
             uint8_t *pw = (uint8_t *)[_passwordData bytes];
@@ -69,7 +117,21 @@
                 encryptedData[idx] = buffer[idx] ^ pw[pwIdx];
             }
             
-            result = [super write:encryptedData maxLength:len];
+            result = [_stream write:encryptedData maxLength:len];
+        }
+    } while (NO);
+    return result;
+}
+
+- (BOOL)hasSpaceAvailable {
+    BOOL result = NO;
+    do {
+        @synchronized (self) {
+            if (!_stream) {
+                break;
+            }
+            
+            result = [_stream hasSpaceAvailable];
         }
     } while (NO);
     return result;
