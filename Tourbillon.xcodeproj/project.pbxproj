@@ -312,6 +312,18 @@
 		89B788831990FC6600A726F1 /* UIColor+DCColorful.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B788411990FB7600A726F1 /* UIColor+DCColorful.h */; };
 		89B788841990FC6600A726F1 /* UIImage+DCLibrarySupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B788431990FB7600A726F1 /* UIImage+DCLibrarySupport.h */; };
 		89B788851990FC6600A726F1 /* UIViewController+DCLibrarySupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B788451990FB7600A726F1 /* UIViewController+DCLibrarySupport.h */; };
+		89BC4D9F19CAB0570034179E /* DCMemoryUsageReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BC4D9D19CAB0570034179E /* DCMemoryUsageReporter.h */; };
+		89BC4DA019CAB0570034179E /* DCMemoryUsageReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */; };
+		89BC4DA119CAB0570034179E /* DCMemoryUsageReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */; };
+		89BC4DA219CAB0570034179E /* DCMemoryUsageReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */; };
+		89BC4DA319CAB0570034179E /* DCMemoryUsageReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */; };
+		89C221FC19B6C12A007F5CF2 /* DCCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 895A6C5319A6314A00E56909 /* DCCommonFuncations.m */; };
+		89C221FD19B6C12A007F5CF2 /* DCDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0F19A5CA9100F54598 /* DCDictionaryCache.m */; };
+		89C221FE19B6C12A007F5CF2 /* DCComponentPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */; };
+		89C221FF19B6C12A007F5CF2 /* NSViewController+ComponentPathExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0419A58D4600F54598 /* NSViewController+ComponentPathExtension.m */; };
+		89C2220019B6C143007F5CF2 /* DCCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 895A6C5319A6314A00E56909 /* DCCommonFuncations.m */; };
+		89C2220119B6C143007F5CF2 /* DCComponentPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */; };
+		89C2220219B6C143007F5CF2 /* UIViewController+ComponentPathExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0819A58F6E00F54598 /* UIViewController+ComponentPathExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -528,6 +540,8 @@
 		89B788441990FB7600A726F1 /* UIImage+DCLibrarySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DCLibrarySupport.m"; sourceTree = "<group>"; };
 		89B788451990FB7600A726F1 /* UIViewController+DCLibrarySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DCLibrarySupport.h"; sourceTree = "<group>"; };
 		89B788461990FB7600A726F1 /* UIViewController+DCLibrarySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DCLibrarySupport.m"; sourceTree = "<group>"; };
+		89BC4D9D19CAB0570034179E /* DCMemoryUsageReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCMemoryUsageReporter.h; sourceTree = "<group>"; };
+		89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCMemoryUsageReporter.m; sourceTree = "<group>"; };
 		89E137431925B11000A3EFB7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		89E137461925B11000A3EFB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89E137471925B11000A3EFB7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -846,6 +860,8 @@
 		89B787471990FB6100A726F1 /* Logger */ = {
 			isa = PBXGroup;
 			children = (
+				89BC4D9D19CAB0570034179E /* DCMemoryUsageReporter.h */,
+				89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */,
 				89B787481990FB6100A726F1 /* DCLogger.h */,
 				89B787491990FB6100A726F1 /* DCLogger.m */,
 			);
@@ -1111,6 +1127,7 @@
 				89B787D01990FB6100A726F1 /* DCTestBlocker.h in Headers */,
 				89B787AA1990FB6100A726F1 /* NSNumber+DCRandom.h in Headers */,
 				89B7880D1990FB6100A726F1 /* DCWatchedOperationQueue.h in Headers */,
+				89BC4D9F19CAB0570034179E /* DCMemoryUsageReporter.h in Headers */,
 				89B788031990FB6100A726F1 /* DCHTTPOperation.h in Headers */,
 				89B787FE1990FB6100A726F1 /* DCLogger.h in Headers */,
 				89B787A01990FB6100A726F1 /* NSData+DCLibrarySupport.h in Headers */,
@@ -1272,6 +1289,7 @@
 				89B7875A1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
 				89B788131990FB6100A726F1 /* DCStack.m in Sources */,
 				89B787FF1990FB6100A726F1 /* DCLogger.m in Sources */,
+				89BC4DA019CAB0570034179E /* DCMemoryUsageReporter.m in Sources */,
 				89B788311990FB6E00A726F1 /* NSColor+DCAdditions.m in Sources */,
 				89B787B01990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
 				89B5E08C19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
@@ -1310,6 +1328,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C221FC19B6C12A007F5CF2 /* DCCommonFuncations.m in Sources */,
+				89C221FD19B6C12A007F5CF2 /* DCDictionaryCache.m in Sources */,
+				89C221FE19B6C12A007F5CF2 /* DCComponentPathManager.m in Sources */,
+				89C221FF19B6C12A007F5CF2 /* NSViewController+ComponentPathExtension.m in Sources */,
+				89BC4DA119CAB0570034179E /* DCMemoryUsageReporter.m in Sources */,
 				89B787CA1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m in Sources */,
 				89B787651990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */,
 				89B7878E1990FB6100A726F1 /* NSString+DCBase64.m in Sources */,
@@ -1379,6 +1402,7 @@
 				89B787941990FB6100A726F1 /* NSString+DCHash.m in Sources */,
 				89B788511990FB7600A726F1 /* UIViewController+DCLibrarySupport.m in Sources */,
 				89B7881F1990FB6100A726F1 /* DCTreeNode.m in Sources */,
+				89BC4DA219CAB0570034179E /* DCMemoryUsageReporter.m in Sources */,
 				89B7875C1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
 				89B788151990FB6100A726F1 /* DCStack.m in Sources */,
 				89B5E08E19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
@@ -1417,6 +1441,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C2220019B6C143007F5CF2 /* DCCommonFuncations.m in Sources */,
+				89C2220119B6C143007F5CF2 /* DCComponentPathManager.m in Sources */,
+				89C2220219B6C143007F5CF2 /* UIViewController+ComponentPathExtension.m in Sources */,
 				89B787CC1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m in Sources */,
 				89B787671990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */,
 				89B787901990FB6100A726F1 /* NSString+DCBase64.m in Sources */,
@@ -1431,6 +1458,7 @@
 				89B787711990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */,
 				89B787FD1990FB6100A726F1 /* DCHashUtility.m in Sources */,
 				89B787B81990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */,
+				89BC4DA319CAB0570034179E /* DCMemoryUsageReporter.m in Sources */,
 				89B787951990FB6100A726F1 /* NSString+DCHash.m in Sources */,
 				89B788521990FB7600A726F1 /* UIViewController+DCLibrarySupport.m in Sources */,
 				89B5E08F19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
@@ -1509,6 +1537,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1518,6 +1547,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tourbillon-OSX/Tourbillon-OSX-Prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

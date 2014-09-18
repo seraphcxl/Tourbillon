@@ -13,6 +13,10 @@ extern NSUInteger DCCalcMemorySizeFormKBToInt(NSUInteger numOfKB);
 extern NSUInteger DCCalcMemorySizeFormMBToInt(NSUInteger numOfMB);
 extern NSUInteger DCCalcMemorySizeFormGBToInt(NSUInteger numOfGB);
 
+extern double DCCalcMemorySizeFormIntToKB(NSUInteger num);
+extern double DCCalcMemorySizeFormIntToMB(NSUInteger num);
+extern double DCCalcMemorySizeFormIntToGB(NSUInteger num);
+
 #pragma mark - DCRGBAConvert
 extern double DCRGBAConvert256ToPercentage(NSUInteger numOfRGB256);
 extern NSUInteger DCRGBAConvertPercentageTo256(double numOfPercentage);
@@ -22,5 +26,7 @@ extern float DCConvertDegreesToRadians(float angle);
 extern float DCConvertRadiansToDegrees(float radian);
 
 @interface DCCommonFuncations : NSObject
+
++ (NSArray *)getProcessStatusWith:(NSArray *)keywords andPID:(NSUInteger)pid;
 
 @end
