@@ -26,6 +26,15 @@
 		897C1E6E19A4876F00C3B8A9 /* DCComponentPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 897C1E6C19A4876F00C3B8A9 /* DCComponentPathManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		897C1E6F19A4876F00C3B8A9 /* DCComponentPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */; };
 		897C1E7019A4876F00C3B8A9 /* DCComponentPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */; };
+		89B4FCA319CBAE42004F99C1 /* DCHashUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B4FCA119CBAE42004F99C1 /* DCHashUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89B4FCA419CBAE42004F99C1 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCA219CBAE42004F99C1 /* DCHashUtility.m */; };
+		89B4FCA519CBAE42004F99C1 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCA219CBAE42004F99C1 /* DCHashUtility.m */; };
+		89B4FCA619CBAE42004F99C1 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCA219CBAE42004F99C1 /* DCHashUtility.m */; };
+		89B4FCA719CBAE42004F99C1 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCA219CBAE42004F99C1 /* DCHashUtility.m */; };
+		89B4FCA819CBAE5C004F99C1 /* DCHashUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B4FCA119CBAE42004F99C1 /* DCHashUtility.h */; };
+		89B4FCAB19CBAEB0004F99C1 /* DCCompressorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCAA19CBAEB0004F99C1 /* DCCompressorTestCase.m */; };
+		89B4FCAD19CBB3E9004F99C1 /* Apple think different.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 89B4FCAC19CBB3E9004F99C1 /* Apple think different.rtf */; };
+		89B4FCAE19CBB3E9004F99C1 /* Apple think different.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 89B4FCAC19CBB3E9004F99C1 /* Apple think different.rtf */; };
 		89B5E08B19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B5E08919A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89B5E08C19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */; };
 		89B5E08D19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */; };
@@ -204,11 +213,6 @@
 		89B787F61990FB6100A726F1 /* DCGZipDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787431990FB6100A726F1 /* DCGZipDecompressor.m */; };
 		89B787F71990FB6100A726F1 /* DCGZipDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787431990FB6100A726F1 /* DCGZipDecompressor.m */; };
 		89B787F81990FB6100A726F1 /* DCGZipDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787431990FB6100A726F1 /* DCGZipDecompressor.m */; };
-		89B787F91990FB6100A726F1 /* DCHashUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787441990FB6100A726F1 /* DCHashUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787FA1990FB6100A726F1 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787451990FB6100A726F1 /* DCHashUtility.m */; };
-		89B787FB1990FB6100A726F1 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787451990FB6100A726F1 /* DCHashUtility.m */; };
-		89B787FC1990FB6100A726F1 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787451990FB6100A726F1 /* DCHashUtility.m */; };
-		89B787FD1990FB6100A726F1 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787451990FB6100A726F1 /* DCHashUtility.m */; };
 		89B787FE1990FB6100A726F1 /* DCLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787481990FB6100A726F1 /* DCLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89B787FF1990FB6100A726F1 /* DCLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787491990FB6100A726F1 /* DCLogger.m */; };
 		89B788001990FB6100A726F1 /* DCLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787491990FB6100A726F1 /* DCLogger.m */; };
@@ -300,7 +304,6 @@
 		89B788771990FC5600A726F1 /* DCWebUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7873D1990FB6100A726F1 /* DCWebUtility.h */; };
 		89B788781990FC5600A726F1 /* DCGZipCompressor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787401990FB6100A726F1 /* DCGZipCompressor.h */; };
 		89B788791990FC5600A726F1 /* DCGZipDecompressor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787421990FB6100A726F1 /* DCGZipDecompressor.h */; };
-		89B7887A1990FC5600A726F1 /* DCHashUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787441990FB6100A726F1 /* DCHashUtility.h */; };
 		89B7887B1990FC5600A726F1 /* DCLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787481990FB6100A726F1 /* DCLogger.h */; };
 		89B7887C1990FC5600A726F1 /* DCHTTPOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7874B1990FB6100A726F1 /* DCHTTPOperation.h */; };
 		89B7887D1990FC5600A726F1 /* DCRunLoopOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7874D1990FB6100A726F1 /* DCRunLoopOperation.h */; };
@@ -371,6 +374,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				89B4FCA819CBAE5C004F99C1 /* DCHashUtility.h in CopyFiles */,
 				89BC4DC719CAD3110034179E /* DCXOREncryptedInputStream.h in CopyFiles */,
 				89BC4DC819CAD3110034179E /* DCXOREncryptedOutputStream.h in CopyFiles */,
 				89BC4DC919CAD3110034179E /* DCMemoryUsageReporter.h in CopyFiles */,
@@ -420,7 +424,6 @@
 				89B788771990FC5600A726F1 /* DCWebUtility.h in CopyFiles */,
 				89B788781990FC5600A726F1 /* DCGZipCompressor.h in CopyFiles */,
 				89B788791990FC5600A726F1 /* DCGZipDecompressor.h in CopyFiles */,
-				89B7887A1990FC5600A726F1 /* DCHashUtility.h in CopyFiles */,
 				89B7887B1990FC5600A726F1 /* DCLogger.h in CopyFiles */,
 				89B7887C1990FC5600A726F1 /* DCHTTPOperation.h in CopyFiles */,
 				89B7887D1990FC5600A726F1 /* DCRunLoopOperation.h in CopyFiles */,
@@ -451,6 +454,11 @@
 		89ADE832198F4C2900DD27B2 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
 		89ADE834198F4C3200DD27B2 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib; sourceTree = DEVELOPER_DIR; };
 		89ADE836198F4C6B00DD27B2 /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = usr/lib/libSystem.dylib; sourceTree = SDKROOT; };
+		89B4FCA119CBAE42004F99C1 /* DCHashUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHashUtility.h; sourceTree = "<group>"; };
+		89B4FCA219CBAE42004F99C1 /* DCHashUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHashUtility.m; sourceTree = "<group>"; };
+		89B4FCA919CBAEB0004F99C1 /* DCCompressorTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCompressorTestCase.h; sourceTree = "<group>"; };
+		89B4FCAA19CBAEB0004F99C1 /* DCCompressorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCompressorTestCase.m; sourceTree = "<group>"; };
+		89B4FCAC19CBB3E9004F99C1 /* Apple think different.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Apple think different.rtf"; sourceTree = "<group>"; };
 		89B5E08919A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCAssociatedObjectExtension.h"; sourceTree = "<group>"; };
 		89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCAssociatedObjectExtension.m"; sourceTree = "<group>"; };
 		89B786B01990FB4400A726F1 /* libTourbillon-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTourbillon-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -532,8 +540,6 @@
 		89B787411990FB6100A726F1 /* DCGZipCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCGZipCompressor.m; sourceTree = "<group>"; };
 		89B787421990FB6100A726F1 /* DCGZipDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCGZipDecompressor.h; sourceTree = "<group>"; };
 		89B787431990FB6100A726F1 /* DCGZipDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCGZipDecompressor.m; sourceTree = "<group>"; };
-		89B787441990FB6100A726F1 /* DCHashUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHashUtility.h; sourceTree = "<group>"; };
-		89B787451990FB6100A726F1 /* DCHashUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHashUtility.m; sourceTree = "<group>"; };
 		89B787481990FB6100A726F1 /* DCLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCLogger.h; sourceTree = "<group>"; };
 		89B787491990FB6100A726F1 /* DCLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCLogger.m; sourceTree = "<group>"; };
 		89B7874B1990FB6100A726F1 /* DCHTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHTTPOperation.h; sourceTree = "<group>"; };
@@ -670,6 +676,8 @@
 				89B786C81990FB4500A726F1 /* Tourbillon_OSXTests.m */,
 				89E833D919CB037800F26088 /* DCEncryptTestCase.h */,
 				89E833DA19CB037800F26088 /* DCEncryptTestCase.m */,
+				89B4FCA919CBAEB0004F99C1 /* DCCompressorTestCase.h */,
+				89B4FCAA19CBAEB0004F99C1 /* DCCompressorTestCase.m */,
 			);
 			path = "Tourbillon-OSXTests";
 			sourceTree = "<group>";
@@ -722,6 +730,7 @@
 		89B786F61990FB6100A726F1 /* Tourbillon */ = {
 			isa = PBXGroup;
 			children = (
+				89B4FCAC19CBB3E9004F99C1 /* Apple think different.rtf */,
 				89B786F71990FB6100A726F1 /* Private */,
 				89B786F81990FB6100A726F1 /* Public */,
 			);
@@ -882,8 +891,6 @@
 				89B787411990FB6100A726F1 /* DCGZipCompressor.m */,
 				89B787421990FB6100A726F1 /* DCGZipDecompressor.h */,
 				89B787431990FB6100A726F1 /* DCGZipDecompressor.m */,
-				89B787441990FB6100A726F1 /* DCHashUtility.h */,
-				89B787451990FB6100A726F1 /* DCHashUtility.m */,
 			);
 			path = GZip;
 			sourceTree = "<group>";
@@ -891,6 +898,8 @@
 		89B787461990FB6100A726F1 /* Hash */ = {
 			isa = PBXGroup;
 			children = (
+				89B4FCA119CBAE42004F99C1 /* DCHashUtility.h */,
+				89B4FCA219CBAE42004F99C1 /* DCHashUtility.m */,
 			);
 			path = Hash;
 			sourceTree = "<group>";
@@ -1161,7 +1170,6 @@
 				89B787EA1990FB6100A726F1 /* DCWebUtility.h in Headers */,
 				89B788301990FB6E00A726F1 /* NSColor+DCAdditions.h in Headers */,
 				89B788361990FB6E00A726F1 /* NSViewController+DCViewLogic.h in Headers */,
-				89B787F91990FB6100A726F1 /* DCHashUtility.h in Headers */,
 				89B787B41990FB6100A726F1 /* NSObject+DCSwizzle.h in Headers */,
 				89B787631990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.h in Headers */,
 				89B787EF1990FB6100A726F1 /* DCGZipCompressor.h in Headers */,
@@ -1196,6 +1204,7 @@
 				89009F1019A5CA9100F54598 /* DCDictionaryCache.h in Headers */,
 				895A6C5419A6314A00E56909 /* DCCommonFuncations.h in Headers */,
 				89E833D519CB012500F26088 /* DCOSXCommonFuncations.h in Headers */,
+				89B4FCA319CBAE42004F99C1 /* DCHashUtility.h in Headers */,
 				89B787871990FB6100A726F1 /* NSData+DCHex.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1307,6 +1316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B4FCAD19CBB3E9004F99C1 /* Apple think different.rtf in Resources */,
 				89B786C71990FB4500A726F1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1315,6 +1325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B4FCAE19CBB3E9004F99C1 /* Apple think different.rtf in Resources */,
 				89B786ED1990FB5000A726F1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1335,7 +1346,6 @@
 				89B788041990FB6100A726F1 /* DCHTTPOperation.m in Sources */,
 				89B787F51990FB6100A726F1 /* DCGZipDecompressor.m in Sources */,
 				89B7876E1990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */,
-				89B787FA1990FB6100A726F1 /* DCHashUtility.m in Sources */,
 				89B787B51990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */,
 				89B787921990FB6100A726F1 /* NSString+DCHash.m in Sources */,
 				89B7881D1990FB6100A726F1 /* DCTreeNode.m in Sources */,
@@ -1348,6 +1358,7 @@
 				89B787B01990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
 				89B5E08C19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
 				89BC4DBC19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */,
+				89B4FCA419CBAE42004F99C1 /* DCHashUtility.m in Sources */,
 				89009F0619A58D4600F54598 /* NSViewController+ComponentPathExtension.m in Sources */,
 				89009F1119A5CA9100F54598 /* DCDictionaryCache.m in Sources */,
 				89B787BF1990FB6100A726F1 /* NSString+DCParseCSV.m in Sources */,
@@ -1400,7 +1411,6 @@
 				89B788051990FB6100A726F1 /* DCHTTPOperation.m in Sources */,
 				89B787F61990FB6100A726F1 /* DCGZipDecompressor.m in Sources */,
 				89B7876F1990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */,
-				89B787FB1990FB6100A726F1 /* DCHashUtility.m in Sources */,
 				89B787B61990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */,
 				89B787931990FB6100A726F1 /* NSString+DCHash.m in Sources */,
 				89B7881E1990FB6100A726F1 /* DCTreeNode.m in Sources */,
@@ -1431,6 +1441,7 @@
 				89B788191990FB6100A726F1 /* DCTree.m in Sources */,
 				89E833D719CB012500F26088 /* DCOSXCommonFuncations.m in Sources */,
 				89B787BB1990FB6100A726F1 /* NSObject+DCUUIDExtension.m in Sources */,
+				89B4FCAB19CBAEB0004F99C1 /* DCCompressorTestCase.m in Sources */,
 				89B786C91990FB4500A726F1 /* Tourbillon_OSXTests.m in Sources */,
 				89B787C51990FB6100A726F1 /* NSString+DCURLCoding.m in Sources */,
 				89B787891990FB6100A726F1 /* NSData+DCHex.m in Sources */,
@@ -1439,6 +1450,7 @@
 				89B787741990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */,
 				89B787791990FB6100A726F1 /* NSData+GZipExtension.m in Sources */,
 				89B787601990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m in Sources */,
+				89B4FCA519CBAE42004F99C1 /* DCHashUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1448,6 +1460,7 @@
 			files = (
 				89B787CB1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m in Sources */,
 				89B787661990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */,
+				89B4FCA619CBAE42004F99C1 /* DCHashUtility.m in Sources */,
 				89B7878F1990FB6100A726F1 /* NSString+DCBase64.m in Sources */,
 				89B7884B1990FB7600A726F1 /* UIColor+DCAdditions.m in Sources */,
 				89B7879E1990FB6100A726F1 /* NSBundle+DCLibrarySupport.m in Sources */,
@@ -1458,7 +1471,6 @@
 				89B787F71990FB6100A726F1 /* DCGZipDecompressor.m in Sources */,
 				89B7884F1990FB7600A726F1 /* UIImage+DCLibrarySupport.m in Sources */,
 				89B787701990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */,
-				89B787FC1990FB6100A726F1 /* DCHashUtility.m in Sources */,
 				89B787B71990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */,
 				89B787941990FB6100A726F1 /* NSString+DCHash.m in Sources */,
 				89B788511990FB7600A726F1 /* UIViewController+DCLibrarySupport.m in Sources */,
@@ -1520,12 +1532,12 @@
 				89B787F81990FB6100A726F1 /* DCGZipDecompressor.m in Sources */,
 				89B788501990FB7600A726F1 /* UIImage+DCLibrarySupport.m in Sources */,
 				89B787711990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */,
-				89B787FD1990FB6100A726F1 /* DCHashUtility.m in Sources */,
 				89B787B81990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */,
 				89BC4DA319CAB0570034179E /* DCMemoryUsageReporter.m in Sources */,
 				89B787951990FB6100A726F1 /* NSString+DCHash.m in Sources */,
 				89B788521990FB7600A726F1 /* UIViewController+DCLibrarySupport.m in Sources */,
 				89B5E08F19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
+				89B4FCA719CBAE42004F99C1 /* DCHashUtility.m in Sources */,
 				89BC4DBF19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */,
 				89B788201990FB6100A726F1 /* DCTreeNode.m in Sources */,
 				89B7875D1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
