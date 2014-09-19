@@ -85,10 +85,10 @@
 		89B787701990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787041990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m */; };
 		89B787711990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787041990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m */; };
 		89B787721990FB6100A726F1 /* NSObject+DCGCDThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787051990FB6100A726F1 /* NSObject+DCGCDThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787731990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		89B787741990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		89B787751990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		89B787761990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		89B787731990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc "; }; };
+		89B787741990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc "; }; };
+		89B787751990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc "; }; };
+		89B787761990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc "; }; };
 		89B787771990FB6100A726F1 /* NSData+GZipExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787081990FB6100A726F1 /* NSData+GZipExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89B787781990FB6100A726F1 /* NSData+GZipExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787091990FB6100A726F1 /* NSData+GZipExtension.m */; };
 		89B787791990FB6100A726F1 /* NSData+GZipExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787091990FB6100A726F1 /* NSData+GZipExtension.m */; };

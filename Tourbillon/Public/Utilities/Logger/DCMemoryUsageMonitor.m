@@ -97,10 +97,6 @@
             break;
         }
         @synchronized (self) {
-            if (![timer isEqualTo:_timer]) {
-                break;
-            }
-            
             if (_memUsageReporter) {
                 [_memUsageReporter log];
             }

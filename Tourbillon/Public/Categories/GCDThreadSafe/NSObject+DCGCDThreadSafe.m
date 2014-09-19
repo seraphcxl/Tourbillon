@@ -22,7 +22,7 @@ DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(GCDThreadSafeQueue, NSObject_DCGCDThreadSafe_Q
             }
             NSString *uuid = [NSString stringWithFormat:@"%@_GCDThreadSafeQueue_%p", [[self class] description], self];
             dispatch_queue_t concurrentQueue = dispatch_queue_create([uuid UTF8String], DISPATCH_QUEUE_CONCURRENT);
-            [self setGCDThreadSafeQueue:(__bridge id)(concurrentQueue)];
+            [self setGCDThreadSafeQueue:concurrentQueue];
         }
     } while (NO);
     return self;
@@ -42,7 +42,7 @@ DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(GCDThreadSafeQueue, NSObject_DCGCDThreadSafe_Q
         if (!block) {
             break;
         }
-        dispatch_queue_t concurrentQueue = (__bridge dispatch_queue_t)([self getGCDThreadSafeQueue]);
+        dispatch_queue_t concurrentQueue = [self getGCDThreadSafeQueue];
         if (!concurrentQueue) {
             break;
         }
@@ -58,7 +58,7 @@ DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(GCDThreadSafeQueue, NSObject_DCGCDThreadSafe_Q
         if (!block) {
             break;
         }
-        dispatch_queue_t concurrentQueue = (__bridge dispatch_queue_t)([self getGCDThreadSafeQueue]);
+        dispatch_queue_t concurrentQueue = [self getGCDThreadSafeQueue];
         if (!concurrentQueue) {
             break;
         }
