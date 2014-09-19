@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Tourbillon"
-  s.version      = "0.9.6"
+  s.version      = "0.9.7"
   s.summary      = "Code foundation for Objective-C."
 
   s.description  = <<-DESC
@@ -63,8 +63,8 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "5.0"
-  s.osx.deployment_target = "10.7"
+  s.ios.deployment_target = "7.0"
+  s.osx.deployment_target = "10.9"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
