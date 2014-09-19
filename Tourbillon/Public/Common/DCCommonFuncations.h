@@ -27,4 +27,6 @@ extern float DCConvertRadiansToDegrees(float radian);
 
 @interface DCCommonFuncations : NSObject
 
++ (void)actionInMainThread:(void (^)(void)) block;
+
 @end

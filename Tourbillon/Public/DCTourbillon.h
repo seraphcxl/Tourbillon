@@ -64,6 +64,7 @@
 #import "DCDictionaryCache.h"
 #import "DCComponentPathManager.h"
 #import "DCMemoryUsageReporter.h"
+#import "DCMemoryUsageMonitor.h"
 #import "DCLogger.h"
 #import "DCXOREncryptedInputStream.h"
 #import "DCXOREncryptedOutputStream.h"

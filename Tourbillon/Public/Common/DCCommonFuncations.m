@@ -53,4 +53,20 @@ float DCConvertRadiansToDegrees(float radian) {
 
 @implementation DCCommonFuncations
 
++ (void)actionInMainThread:(void (^)(void))block {
+    do {
+        if (!block) {
+            break;
+        }
+        
+        if ([NSThread isMainThread]) {
+            block();
+        } else {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                block();
+            });
+        }
+    } while (NO);
+}
+
 @end
