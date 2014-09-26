@@ -104,7 +104,7 @@
             NSUInteger pwLen = [_passwordData length];
             
             for (NSInteger idx = 0; idx < tmpReadCount; ++idx) {
-                NSInteger pwIdx = ((idx >= pwLen) ? (idx - pwLen) : idx);
+                NSInteger pwIdx = ((idx >= pwLen) ? (idx % pwLen) : idx);
                 buffer[idx] = tmpBuffer[idx] ^ pw[pwIdx];
             }
             

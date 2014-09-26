@@ -113,7 +113,7 @@
             NSUInteger pwLen = [_passwordData length];
             
             for (NSInteger idx = 0; idx < len; ++idx) {
-                NSInteger pwIdx = ((idx >= pwLen) ? (idx - pwLen) : idx);
+                NSInteger pwIdx = ((idx >= pwLen) ? (idx % pwLen) : idx);
                 encryptedData[idx] = buffer[idx] ^ pw[pwIdx];
             }
             
