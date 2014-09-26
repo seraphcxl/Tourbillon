@@ -45,11 +45,13 @@
         [eOutput open];
         
         BOOL succ = YES;
+        uint8_t readData[len];
+        NSUInteger readLen = 0;
+        NSUInteger writenLen = 0;
         while ([input hasBytesAvailable]) {
-            uint8_t readData[len];
-            NSUInteger readLen = [input read:readData maxLength:len];
+            readLen = [input read:readData maxLength:len];
             if (readLen > 0) {
-                NSUInteger writenLen = [eOutput write:readData maxLength:readLen];
+                writenLen = [eOutput write:readData maxLength:readLen];
                 if (writenLen != readLen) {
                     succ = NO;
                     break;
@@ -116,11 +118,13 @@
         [output open];
         
         BOOL succ = YES;
+        uint8_t readData[len];
+        NSUInteger readLen = 0;
+        NSUInteger writenLen = 0;
         while ([eInput hasBytesAvailable]) {
-            uint8_t readData[len];
-            NSUInteger readLen = [eInput read:readData maxLength:len];
+            readLen = [eInput read:readData maxLength:len];
             if (readLen > 0) {
-                NSUInteger writenLen =  [output write:readData maxLength:readLen];
+                writenLen = [output write:readData maxLength:readLen];
                 if (writenLen != readLen) {
                     succ = NO;
                     break;
