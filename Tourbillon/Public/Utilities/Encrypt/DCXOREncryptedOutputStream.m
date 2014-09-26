@@ -112,6 +112,10 @@
             uint8_t *pw = (uint8_t *)[_passwordData bytes];
             NSUInteger pwLen = [_passwordData length];
             
+            if (pw == NULL || pwLen == 0) {
+                break;
+            }
+            
             for (NSInteger idx = 0; idx < len; ++idx) {
                 NSInteger pwIdx = ((idx >= pwLen) ? (idx % pwLen) : idx);
                 encryptedData[idx] = buffer[idx] ^ pw[pwIdx];
