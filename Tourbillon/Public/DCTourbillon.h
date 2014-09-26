@@ -68,6 +68,7 @@
 #import "DCLogger.h"
 #import "DCXOREncryptedInputStream.h"
 #import "DCXOREncryptedOutputStream.h"
+#import "DCXOREncryptUtility.h"
 
 #if TARGET_OS_IPHONE
 // iOS

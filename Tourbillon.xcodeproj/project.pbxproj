@@ -36,7 +36,7 @@
 		89B4FCAD19CBB3E9004F99C1 /* Apple think different.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 89B4FCAC19CBB3E9004F99C1 /* Apple think different.rtf */; };
 		89B4FCAE19CBB3E9004F99C1 /* Apple think different.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 89B4FCAC19CBB3E9004F99C1 /* Apple think different.rtf */; };
 		89B4FCB119CBBEAA004F99C1 /* DCloggerTastCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCB019CBBEAA004F99C1 /* DCloggerTastCase.m */; };
-		89B4FCB419CBC3AE004F99C1 /* DCMemoryUsageMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B4FCB219CBC3AE004F99C1 /* DCMemoryUsageMonitor.h */; };
+		89B4FCB419CBC3AE004F99C1 /* DCMemoryUsageMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B4FCB219CBC3AE004F99C1 /* DCMemoryUsageMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89B4FCB519CBC3AE004F99C1 /* DCMemoryUsageMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCB319CBC3AE004F99C1 /* DCMemoryUsageMonitor.m */; };
 		89B4FCB619CBC3AE004F99C1 /* DCMemoryUsageMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCB319CBC3AE004F99C1 /* DCMemoryUsageMonitor.m */; };
 		89B4FCB719CBC3AE004F99C1 /* DCMemoryUsageMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCB319CBC3AE004F99C1 /* DCMemoryUsageMonitor.m */; };
@@ -346,6 +346,13 @@
 		89C2220019B6C143007F5CF2 /* DCCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 895A6C5319A6314A00E56909 /* DCCommonFuncations.m */; };
 		89C2220119B6C143007F5CF2 /* DCComponentPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */; };
 		89C2220219B6C143007F5CF2 /* UIViewController+ComponentPathExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0819A58F6E00F54598 /* UIViewController+ComponentPathExtension.m */; };
+		89C5B1EB19D53335008BA398 /* DCXOREncryptUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C5B1E919D53335008BA398 /* DCXOREncryptUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C5B1EC19D53335008BA398 /* DCXOREncryptUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C5B1EA19D53335008BA398 /* DCXOREncryptUtility.m */; };
+		89C5B1ED19D53335008BA398 /* DCXOREncryptUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C5B1EA19D53335008BA398 /* DCXOREncryptUtility.m */; };
+		89C5B1EE19D53335008BA398 /* DCXOREncryptUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C5B1EA19D53335008BA398 /* DCXOREncryptUtility.m */; };
+		89C5B1EF19D53335008BA398 /* DCXOREncryptUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C5B1EA19D53335008BA398 /* DCXOREncryptUtility.m */; };
+		89C5B1F019D533F4008BA398 /* DCXOREncryptUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C5B1E919D53335008BA398 /* DCXOREncryptUtility.h */; };
+		89C5B1F119D533F4008BA398 /* DCMemoryUsageMonitor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B4FCB219CBC3AE004F99C1 /* DCMemoryUsageMonitor.h */; };
 		89E833CB19CB001E00F26088 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8955F7F5197135E500B390C6 /* libz.dylib */; };
 		89E833CC19CB003D00F26088 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8955F7F7197135ED00B390C6 /* libz.dylib */; };
 		89E833CD19CB004500F26088 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */; };
@@ -380,6 +387,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				89C5B1F019D533F4008BA398 /* DCXOREncryptUtility.h in CopyFiles */,
+				89C5B1F119D533F4008BA398 /* DCMemoryUsageMonitor.h in CopyFiles */,
 				89B4FCA819CBAE5C004F99C1 /* DCHashUtility.h in CopyFiles */,
 				89BC4DC719CAD3110034179E /* DCXOREncryptedInputStream.h in CopyFiles */,
 				89BC4DC819CAD3110034179E /* DCXOREncryptedOutputStream.h in CopyFiles */,
@@ -586,6 +595,8 @@
 		89BC4DBA19CAC9820034179E /* DCXOREncryptedOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCXOREncryptedOutputStream.m; sourceTree = "<group>"; };
 		89BC4DC019CAC9A90034179E /* DCXOREncryptedInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCXOREncryptedInputStream.h; sourceTree = "<group>"; };
 		89BC4DC119CAC9A90034179E /* DCXOREncryptedInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCXOREncryptedInputStream.m; sourceTree = "<group>"; };
+		89C5B1E919D53335008BA398 /* DCXOREncryptUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCXOREncryptUtility.h; sourceTree = "<group>"; };
+		89C5B1EA19D53335008BA398 /* DCXOREncryptUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCXOREncryptUtility.m; sourceTree = "<group>"; };
 		89E137431925B11000A3EFB7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		89E137461925B11000A3EFB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89E137471925B11000A3EFB7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -1099,6 +1110,8 @@
 				89BC4DC119CAC9A90034179E /* DCXOREncryptedInputStream.m */,
 				89BC4DB919CAC9820034179E /* DCXOREncryptedOutputStream.h */,
 				89BC4DBA19CAC9820034179E /* DCXOREncryptedOutputStream.m */,
+				89C5B1E919D53335008BA398 /* DCXOREncryptUtility.h */,
+				89C5B1EA19D53335008BA398 /* DCXOREncryptUtility.m */,
 			);
 			path = Encrypt;
 			sourceTree = "<group>";
@@ -1180,7 +1193,6 @@
 				89B787E01990FB6100A726F1 /* DCRPNUtility.h in Headers */,
 				89B7876D1990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.h in Headers */,
 				89B787B91990FB6100A726F1 /* NSObject+DCUUIDExtension.h in Headers */,
-				89B4FCB419CBC3AE004F99C1 /* DCMemoryUsageMonitor.h in Headers */,
 				89B787911990FB6100A726F1 /* NSString+DCHash.h in Headers */,
 				89B787EA1990FB6100A726F1 /* DCWebUtility.h in Headers */,
 				89B788301990FB6E00A726F1 /* NSColor+DCAdditions.h in Headers */,
@@ -1219,6 +1231,8 @@
 				89009F1019A5CA9100F54598 /* DCDictionaryCache.h in Headers */,
 				895A6C5419A6314A00E56909 /* DCCommonFuncations.h in Headers */,
 				89E833D519CB012500F26088 /* DCOSXCommonFuncations.h in Headers */,
+				89B4FCB419CBC3AE004F99C1 /* DCMemoryUsageMonitor.h in Headers */,
+				89C5B1EB19D53335008BA398 /* DCXOREncryptUtility.h in Headers */,
 				89B4FCA319CBAE42004F99C1 /* DCHashUtility.h in Headers */,
 				89B787871990FB6100A726F1 /* NSData+DCHex.h in Headers */,
 			);
@@ -1367,6 +1381,7 @@
 				89B7881D1990FB6100A726F1 /* DCTreeNode.m in Sources */,
 				89B788341990FB6E00A726F1 /* NSColor+DCColorful.m in Sources */,
 				89B7875A1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
+				89C5B1EC19D53335008BA398 /* DCXOREncryptUtility.m in Sources */,
 				89B788131990FB6100A726F1 /* DCStack.m in Sources */,
 				89B787FF1990FB6100A726F1 /* DCLogger.m in Sources */,
 				89BC4DA019CAB0570034179E /* DCMemoryUsageReporter.m in Sources */,
@@ -1423,6 +1438,7 @@
 				89B7879D1990FB6100A726F1 /* NSBundle+DCLibrarySupport.m in Sources */,
 				89B787EC1990FB6100A726F1 /* DCWebUtility.m in Sources */,
 				89BC4DC419CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */,
+				89C5B1ED19D53335008BA398 /* DCXOREncryptUtility.m in Sources */,
 				89B787A21990FB6100A726F1 /* NSData+DCLibrarySupport.m in Sources */,
 				89B788051990FB6100A726F1 /* DCHTTPOperation.m in Sources */,
 				89B787F61990FB6100A726F1 /* DCGZipDecompressor.m in Sources */,
@@ -1483,6 +1499,7 @@
 				89B7884B1990FB7600A726F1 /* UIColor+DCAdditions.m in Sources */,
 				89B7879E1990FB6100A726F1 /* NSBundle+DCLibrarySupport.m in Sources */,
 				89B787ED1990FB6100A726F1 /* DCWebUtility.m in Sources */,
+				89C5B1EE19D53335008BA398 /* DCXOREncryptUtility.m in Sources */,
 				89B787A31990FB6100A726F1 /* NSData+DCLibrarySupport.m in Sources */,
 				89B788061990FB6100A726F1 /* DCHTTPOperation.m in Sources */,
 				89B7884D1990FB7600A726F1 /* UIColor+DCColorful.m in Sources */,
@@ -1550,6 +1567,7 @@
 				89B788071990FB6100A726F1 /* DCHTTPOperation.m in Sources */,
 				89B7884E1990FB7600A726F1 /* UIColor+DCColorful.m in Sources */,
 				89B787F81990FB6100A726F1 /* DCGZipDecompressor.m in Sources */,
+				89C5B1EF19D53335008BA398 /* DCXOREncryptUtility.m in Sources */,
 				89B788501990FB7600A726F1 /* UIImage+DCLibrarySupport.m in Sources */,
 				89B787711990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */,
 				89B787B81990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */,
