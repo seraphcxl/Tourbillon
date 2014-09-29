@@ -9,12 +9,13 @@
 #import "DCXOREncryptedOutputStream.h"
 #import "NSObject+DCUUIDExtension.h"
 #import "DCLogger.h"
+#import "NSString+DCHash.h"
 
 @interface DCXOREncryptedOutputStream () {
 }
 
 @property (nonatomic, strong) NSOutputStream *stream;
-@property (nonatomic, strong) NSString *password;
+@property (nonatomic, strong) NSString *pwSHA1;
 @property (nonatomic, strong) NSData *passwordData;
 @property (nonatomic, assign) NSUInteger pwIndex;
 
@@ -23,14 +24,15 @@
 @implementation DCXOREncryptedOutputStream
 
 @synthesize stream = _stream;
-@synthesize password = _password;
+@synthesize pwSHA1 = _pwSHA1;
 @synthesize passwordData = _passwordData;
+@synthesize pwIndex = _pwIndex;
 
 - (id)init {
     self = [super init];
     if (self) {
-        _password = [NSObject createUniqueStrByUUID];
-        _passwordData = [_password dataUsingEncoding:NSUTF8StringEncoding];
+        _pwSHA1 = [[NSObject createUniqueStrByUUID] shaStringWithType:DCSHAType_SHA1];
+        _passwordData = [[_pwSHA1 shaStringWithType:DCSHAType_SHA1] dataUsingEncoding:NSUTF8StringEncoding];
         self.stream = [[NSOutputStream alloc] initToMemory];
     }
     return self;
@@ -41,7 +43,7 @@
         _pwIndex = 0;
         self.stream = nil;
         self.passwordData = nil;
-        self.password = nil;
+        self.pwSHA1 = nil;
     } while (NO);
 }
 
@@ -78,9 +80,24 @@
             
             [_stream open];
             
-            NSUInteger len = [_passwordData length];
-            NSInteger writtenLen = [_stream write:[_passwordData bytes] maxLength:len];
-            DCAssert(writtenLen == len, @"Write password error!");
+            NSData *pwSHA1Data = [_pwSHA1 dataUsingEncoding:NSUTF8StringEncoding];
+            NSUInteger pwSHA1len = [pwSHA1Data length];
+            uint8_t *pwSHA1 = [pwSHA1Data bytes];
+            
+            NSUInteger blockCount = 8;
+            NSUInteger lapCount = blockCount / 2;
+            NSUInteger sha1BlockLen = pwSHA1len / blockCount;
+            
+            NSInteger writtenLen = 0;
+            NSUInteger cursor = sha1BlockLen * lapCount;
+            for (NSUInteger idx = 0; idx < lapCount; ++idx) {
+                writtenLen = [_stream write:&pwSHA1[idx * sha1BlockLen] maxLength:sha1BlockLen];
+                DCAssert(writtenLen == sha1BlockLen, @"Write password error!");
+                
+                writtenLen = [_stream write:&pwSHA1[idx * sha1BlockLen + cursor] maxLength:sha1BlockLen];
+                DCAssert(writtenLen == sha1BlockLen, @"Write password error!");
+            }
+            
             _pwIndex = 0;
         }
     } while (NO);

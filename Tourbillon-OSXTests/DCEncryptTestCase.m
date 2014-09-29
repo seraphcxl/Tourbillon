@@ -17,8 +17,8 @@
         
         NSString *str = @"Hello, world.";
         NSData *rawData = [str dataUsingEncoding:NSUTF8StringEncoding];
-        
-        NSMutableData *store = [NSMutableData dataWithLength:[rawData length] + 36];
+        NSUInteger len = [[[[NSObject createUniqueStrByUUID] shaStringWithType:DCSHAType_SHA1] dataUsingEncoding:NSUTF8StringEncoding] length];
+        NSMutableData *store = [NSMutableData dataWithLength:[rawData length] + len];
         
         DCXOREncryptedOutputStream *output = [[DCXOREncryptedOutputStream alloc] initToBuffer:[store bytes] capacity:[store length]];
         [output open];
@@ -39,17 +39,18 @@
 
 - (void)test4EncryptFile {
     do {
+        NSUInteger len = [[[[NSObject createUniqueStrByUUID] shaStringWithType:DCSHAType_SHA1] dataUsingEncoding:NSUTF8StringEncoding] length];
         NSBundle *bundle = [NSBundle bundleForClass:[self class]];
         NSURL *fileURL = [bundle URLForResource:@"Apple think different" withExtension:@"rtf"];
         NSData *fileData = [NSData dataWithContentsOfURL:fileURL];
         NSInputStream *input = [NSInputStream inputStreamWithData:fileData];
         [input open];
         
-        NSMutableData *eData = [NSMutableData dataWithLength:[fileData length] + 36];
+        NSMutableData *eData = [NSMutableData dataWithLength:[fileData length] + len];
         DCXOREncryptedOutputStream *eOutput = [[DCXOREncryptedOutputStream alloc] initToBuffer:[eData bytes] capacity:[eData length]];
         [eOutput open];
         
-        NSUInteger count = 16;
+        NSUInteger count = 33;
         while ([input hasBytesAvailable]) {
             uint8_t readData[count];
             NSUInteger readLen = [input read:readData maxLength:count];
@@ -65,11 +66,14 @@
         [input close];
         [eOutput close];
         
+        NSString *estr = [NSString stringWithUTF8String:[eData bytes]];
+        NSLog(@"%@", estr);
+        
         DCXOREncryptedInputStream *eInput = [[DCXOREncryptedInputStream alloc] initWithData:eData];
         [eInput open];
         
         NSMutableData *rawData = [NSMutableData data];
-        count = 16;
+        count = 32;
         while ([eInput hasBytesAvailable]) {
             uint8_t readData[count];
             NSUInteger readLen = [eInput read:readData maxLength:count];
@@ -79,9 +83,9 @@
             ++count;
         }
         NSString *str = [NSString stringWithUTF8String:[fileData bytes]];
-        NSLog(@"%@",str);
+        NSLog(@"%@", str);
         NSString *str1 = [NSString stringWithUTF8String:[rawData bytes]];
-        NSLog(@"%@",str1);
+        NSLog(@"%@", str1);
         XCTAssertEqualObjects(rawData, fileData, @"[fileData isEqualToData:rawData]");
         int i = 0;
     } while (NO);

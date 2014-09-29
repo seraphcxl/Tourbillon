@@ -9,12 +9,13 @@
 #import "DCXOREncryptedInputStream.h"
 #import "NSObject+DCUUIDExtension.h"
 #import "DCLogger.h"
+#import "NSString+DCHash.h"
 
 @interface DCXOREncryptedInputStream () {
 }
 
 @property (nonatomic, strong) NSInputStream *stream;
-@property (nonatomic, strong) NSString *password;
+@property (nonatomic, strong) NSString *pwSHA1;
 @property (nonatomic, strong) NSData *passwordData;
 @property (nonatomic, assign) NSUInteger pwIndex;
 
@@ -23,7 +24,7 @@
 @implementation DCXOREncryptedInputStream
 
 @synthesize stream = _stream;
-@synthesize password = _password;
+@synthesize pwSHA1 = _pwSHA1;
 @synthesize passwordData = _passwordData;
 @synthesize pwIndex = _pwIndex;
 
@@ -48,7 +49,7 @@
         _pwIndex = 0;
         self.stream = nil;
         self.passwordData = nil;
-        self.password = nil;
+        self.pwSHA1 = nil;
     } while (NO);
 }
 
@@ -62,15 +63,33 @@
             [_stream open];
             
             self.passwordData = nil;
-            self.password = nil;
+            self.pwSHA1 = nil;
             
-            NSUInteger len = [[[NSObject createUniqueStrByUUID] dataUsingEncoding:NSUTF8StringEncoding] length];
-            uint8_t pwData[len];
-            NSUInteger resultLen = [_stream read:pwData maxLength:len];
-            DCAssert(resultLen == len, @"Read password error!");
+            NSUInteger pwSHA1len = [[[[NSObject createUniqueStrByUUID] shaStringWithType:DCSHAType_SHA1] dataUsingEncoding:NSUTF8StringEncoding] length];
+            NSMutableData *pwSHA1DataLeft = [NSMutableData data];
+            NSMutableData *pwSHA1DataRight = [NSMutableData data];
             
-            _passwordData = [NSData dataWithBytes:pwData length:len];
-            _password = [[NSString alloc] initWithData:_passwordData encoding:NSUTF8StringEncoding];
+            NSUInteger blockCount = 8;
+            NSUInteger lapCount = blockCount / 2;
+            NSUInteger sha1BlockLen = pwSHA1len / blockCount;
+            uint8_t pwSHA1DataAry[sha1BlockLen];
+            
+            NSUInteger readLen = 0;
+            for (NSUInteger idx = 0; idx < lapCount; ++idx) {
+                readLen = [_stream read:pwSHA1DataAry maxLength:sha1BlockLen];
+                DCAssert(readLen == sha1BlockLen, @"Read password error!");
+                [pwSHA1DataLeft appendBytes:pwSHA1DataAry length:sha1BlockLen];
+                
+                readLen = [_stream read:pwSHA1DataAry maxLength:sha1BlockLen];
+                DCAssert(readLen == sha1BlockLen, @"Read password error!");
+                [pwSHA1DataRight appendBytes:pwSHA1DataAry length:sha1BlockLen];
+            }
+            
+            NSMutableData *pwSHA1Data = [NSMutableData dataWithData:pwSHA1DataLeft];
+            [pwSHA1Data appendData:pwSHA1DataRight];
+            
+            _pwSHA1 = [[NSString alloc] initWithData:pwSHA1Data encoding:NSUTF8StringEncoding];
+            _passwordData = [[_pwSHA1 shaStringWithType:DCSHAType_SHA1] dataUsingEncoding:NSUTF8StringEncoding];
             _pwIndex = 0;
         }
     } while (NO);

@@ -10,8 +10,6 @@
 
 @interface DCXOREncryptedInputStream : NSObject
 
-@property (nonatomic, strong, readonly) NSString *password;
-
 - (id)initWithData:(NSData *)data;
 - (id)initWithFileAtPath:(NSString *)path;
 

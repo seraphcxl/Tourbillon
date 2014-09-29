@@ -10,8 +10,6 @@
 
 @interface DCXOREncryptedOutputStream : NSObject
 
-@property (nonatomic, strong, readonly) NSString *password;
-
 - (id)initToMemory;
 - (id)initToBuffer:(uint8_t *)buffer capacity:(NSUInteger)capacity;
 - (id)initToFileAtPath:(NSString *)path append:(BOOL)shouldAppend;
