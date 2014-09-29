@@ -16,6 +16,7 @@
 @property (nonatomic, strong) NSOutputStream *stream;
 @property (nonatomic, strong) NSString *password;
 @property (nonatomic, strong) NSData *passwordData;
+@property (nonatomic, assign) NSUInteger pwIndex;
 
 @end
 
@@ -37,6 +38,7 @@
 
 - (void)dealloc {
     do {
+        _pwIndex = 0;
         self.stream = nil;
         self.passwordData = nil;
         self.password = nil;
@@ -79,6 +81,7 @@
             NSUInteger len = [_passwordData length];
             NSInteger writtenLen = [_stream write:[_passwordData bytes] maxLength:len];
             DCAssert(writtenLen == len, @"Write password error!");
+            _pwIndex = 0;
         }
     } while (NO);
 }
@@ -91,6 +94,8 @@
             }
             
             [_stream close];
+            
+            _pwIndex = 0;
         }
     } while (NO);
 }
@@ -116,11 +121,15 @@
                 break;
             }
             
+            NSUInteger pwStartIdx = _pwIndex;
             for (NSInteger idx = 0; idx < len; ++idx) {
-                NSInteger pwIdx = ((idx >= pwLen) ? (idx % pwLen) : idx);
-                encryptedData[idx] = buffer[idx] ^ pw[pwIdx];
+                _pwIndex = idx + pwStartIdx;
+                if (_pwIndex >= pwLen) {
+                    _pwIndex %= pwLen;
+                }
+                encryptedData[idx] = buffer[idx] ^ pw[_pwIndex];
             }
-            
+            ++_pwIndex;
             result = [_stream write:encryptedData maxLength:len];
         }
     } while (NO);

@@ -16,6 +16,7 @@
 @property (nonatomic, strong) NSInputStream *stream;
 @property (nonatomic, strong) NSString *password;
 @property (nonatomic, strong) NSData *passwordData;
+@property (nonatomic, assign) NSUInteger pwIndex;
 
 @end
 
@@ -24,6 +25,7 @@
 @synthesize stream = _stream;
 @synthesize password = _password;
 @synthesize passwordData = _passwordData;
+@synthesize pwIndex = _pwIndex;
 
 - (id)initWithData:(NSData *)data {
     self = [self init];
@@ -43,6 +45,7 @@
 
 - (void)dealloc {
     do {
+        _pwIndex = 0;
         self.stream = nil;
         self.passwordData = nil;
         self.password = nil;
@@ -68,6 +71,7 @@
             
             _passwordData = [NSData dataWithBytes:pwData length:len];
             _password = [[NSString alloc] initWithData:_passwordData encoding:NSUTF8StringEncoding];
+            _pwIndex = 0;
         }
     } while (NO);
 }
@@ -80,6 +84,8 @@
             }
             
             [_stream close];
+            
+            _pwIndex = 0;
         }
     } while (NO);
 }
@@ -107,11 +113,15 @@
                 break;
             }
             
+            NSUInteger pwStartIdx = _pwIndex;
             for (NSInteger idx = 0; idx < tmpReadCount; ++idx) {
-                NSInteger pwIdx = ((idx >= pwLen) ? (idx % pwLen) : idx);
-                buffer[idx] = tmpBuffer[idx] ^ pw[pwIdx];
+                _pwIndex = idx + pwStartIdx;
+                if (_pwIndex >= pwLen) {
+                    _pwIndex %= pwLen;
+                }
+                buffer[idx] = tmpBuffer[idx] ^ pw[_pwIndex];
             }
-            
+            ++_pwIndex;
             result = tmpReadCount;
         }
     } while (NO);
