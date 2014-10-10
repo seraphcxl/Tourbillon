@@ -80,6 +80,7 @@
 #import "UIViewController+ComponentPathExtension.h"
 #pragma mark - Common
 #pragma mark - Testers
+#import "DCColorEnumerator.h"
 #pragma mark - Utilities
 #import "DCGradientView.h"
 #else
@@ -93,6 +94,7 @@
 #pragma mark - Common
 #import "DCOSXCommonFuncations.h"
 #pragma mark - Testers
+#import "DCColorEnumerator.h"
 #pragma mark - Utilities
 #endif
 
