@@ -81,6 +81,7 @@
 #pragma mark - Common
 #pragma mark - Testers
 #pragma mark - Utilities
+#import "DCGradientView.h"
 #else
 // Mac OS X
 #pragma mark - Categories

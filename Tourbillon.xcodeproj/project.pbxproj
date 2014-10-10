@@ -17,6 +17,9 @@
 		89009F1119A5CA9100F54598 /* DCDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0F19A5CA9100F54598 /* DCDictionaryCache.m */; };
 		89009F1219A5CA9100F54598 /* DCDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0F19A5CA9100F54598 /* DCDictionaryCache.m */; };
 		89009F1319A5CEE700F54598 /* DCDictionaryCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89009F0E19A5CA9100F54598 /* DCDictionaryCache.h */; };
+		893F66B319E7BDE000F92B1A /* DCGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 893F66B219E7BDE000F92B1A /* DCGradientView.m */; };
+		893F66B419E7BDE000F92B1A /* DCGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 893F66B219E7BDE000F92B1A /* DCGradientView.m */; };
+		893F66B519E7BE9500F92B1A /* DCGradientView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 893F66B119E7BDE000F92B1A /* DCGradientView.h */; };
 		895A6C5419A6314A00E56909 /* DCCommonFuncations.h in Headers */ = {isa = PBXBuildFile; fileRef = 895A6C5219A6314A00E56909 /* DCCommonFuncations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		895A6C5519A6314A00E56909 /* DCCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 895A6C5319A6314A00E56909 /* DCCommonFuncations.m */; };
 		895A6C5619A6314A00E56909 /* DCCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 895A6C5319A6314A00E56909 /* DCCommonFuncations.m */; };
@@ -387,6 +390,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				893F66B519E7BE9500F92B1A /* DCGradientView.h in CopyFiles */,
 				89C5B1F019D533F4008BA398 /* DCXOREncryptUtility.h in CopyFiles */,
 				89C5B1F119D533F4008BA398 /* DCMemoryUsageMonitor.h in CopyFiles */,
 				89B4FCA819CBAE5C004F99C1 /* DCHashUtility.h in CopyFiles */,
@@ -458,6 +462,8 @@
 		89009F0819A58F6E00F54598 /* UIViewController+ComponentPathExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ComponentPathExtension.m"; sourceTree = "<group>"; };
 		89009F0E19A5CA9100F54598 /* DCDictionaryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCDictionaryCache.h; sourceTree = "<group>"; };
 		89009F0F19A5CA9100F54598 /* DCDictionaryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCDictionaryCache.m; sourceTree = "<group>"; };
+		893F66B119E7BDE000F92B1A /* DCGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCGradientView.h; sourceTree = "<group>"; };
+		893F66B219E7BDE000F92B1A /* DCGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCGradientView.m; sourceTree = "<group>"; };
 		8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		8955F7F5197135E500B390C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		8955F7F7197135ED00B390C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
@@ -1092,6 +1098,8 @@
 		89B788491990FB7600A726F1 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				893F66B119E7BDE000F92B1A /* DCGradientView.h */,
+				893F66B219E7BDE000F92B1A /* DCGradientView.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1509,6 +1517,7 @@
 				89B787B71990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */,
 				89B787941990FB6100A726F1 /* NSString+DCHash.m in Sources */,
 				89B788511990FB7600A726F1 /* UIViewController+DCLibrarySupport.m in Sources */,
+				893F66B319E7BDE000F92B1A /* DCGradientView.m in Sources */,
 				89B7881F1990FB6100A726F1 /* DCTreeNode.m in Sources */,
 				89BC4DA219CAB0570034179E /* DCMemoryUsageReporter.m in Sources */,
 				89B7875C1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
@@ -1564,6 +1573,7 @@
 				89B4FCB819CBC3AE004F99C1 /* DCMemoryUsageMonitor.m in Sources */,
 				89B787EE1990FB6100A726F1 /* DCWebUtility.m in Sources */,
 				89B787A41990FB6100A726F1 /* NSData+DCLibrarySupport.m in Sources */,
+				893F66B419E7BDE000F92B1A /* DCGradientView.m in Sources */,
 				89B788071990FB6100A726F1 /* DCHTTPOperation.m in Sources */,
 				89B7884E1990FB7600A726F1 /* UIColor+DCColorful.m in Sources */,
 				89B787F81990FB6100A726F1 /* DCGZipDecompressor.m in Sources */,
