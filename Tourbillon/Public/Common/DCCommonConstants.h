@@ -168,12 +168,36 @@
 /**** **** **** **** **** **** **** ****/
 #ifndef DC_SetCurrentThreadName_DEFINE
 #define DC_SetCurrentThreadName_DEFINE
+#define DC_SetCurrentThreadName_ThreadNameLength (32)
 #ifdef DEBUG
-#define DCSetCurrentThreadName(...) \
-    [[NSThread currentThread] setName:[NSString stringWithFormat: @"%@ (set in %s on line %s:%d)", [NSString stringWithFormat:@"" __VA_ARGS__], __PRETTY_FUNCTION__, __FILE__, __LINE__]];
+// threadNameStr.length < 32
+#define DCSetCurrentThreadName(threadNameStr) \
+{ \
+NSString *tmpThdName = threadNameStr; \
+if (tmpThdName.length > DC_SetCurrentThreadName_ThreadNameLength) { \
+tmpThdName = [tmpThdName substringToIndex:DC_SetCurrentThreadName_ThreadNameLength]; \
+} \
+NSUInteger maxLen = 56 - tmpThdName.length; \
+NSString *fpStr = [[[NSString stringWithFormat:@"%s", __FILE__] pathComponents] lastObject]; \
+if (fpStr.length > maxLen) { \
+fpStr = [fpStr substringFromIndex:(fpStr.length - maxLen)]; \
+} \
+[[NSThread currentThread] setName:[NSString stringWithFormat: @"%@<%@:%d>", tmpThdName, fpStr, __LINE__]]; \
+}
+
+#define DCSetCurrentThreadDebugName DCSetCurrentThreadName(NSStringFromSelector(_cmd))
 #else
-#define DCSetCurrentThreadName(...) \
-    [[NSThread currentThread] setName:[NSString stringWithFormat:@"" __VA_ARGS__]];
+// threadNameStr.length < 32
+#define DCSetCurrentThreadName(threadNameStr) \
+{ \
+NSString *tmpThdName = threadNameStr; \
+if (tmpThdName.length > DC_SetCurrentThreadName_ThreadNameLength) { \
+tmpThdName = [tmpThdName substringToIndex:DC_SetCurrentThreadName_ThreadNameLength]; \
+} \
+[[NSThread currentThread] setName:[NSString stringWithFormat: @"%@", tmpThdName]]; \
+}
+
+#define DCSetCurrentThreadDebugName DCSetCurrentThreadName(NSStringFromSelector(_cmd))
 #endif  // DEBUG
 #endif  // DC_SetCurrentThreadName_DEFINE
 /**** **** **** **** **** **** **** ****/
