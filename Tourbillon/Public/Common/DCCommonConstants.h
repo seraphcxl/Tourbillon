@@ -166,6 +166,17 @@
 
 #endif  // DC_AntiARC_DEFINE
 /**** **** **** **** **** **** **** ****/
+#ifndef DC_SetCurrentThreadName_DEFINE
+#define DC_SetCurrentThreadName_DEFINE
+#ifdef DEBUG
+#define DCSetCurrentThreadName(...) \
+    [[NSThread currentThread] setName:[NSString stringWithFormat: @"%@ (set in %s on line %s:%d)", [NSString stringWithFormat:@"" __VA_ARGS__], __PRETTY_FUNCTION__, __FILE__, __LINE__]];
+#else
+#define DCSetCurrentThreadName(...) \
+    [[NSThread currentThread] setName:[NSString stringWithFormat:@"" __VA_ARGS__]];
+#endif  // DEBUG
+#endif  // DC_SetCurrentThreadName_DEFINE
+/**** **** **** **** **** **** **** ****/
 #endif  // Tourbillon_DCCommonConstants_h
 
 
