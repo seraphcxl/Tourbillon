@@ -101,33 +101,47 @@
 #ifdef DEBUG
 #define DCFunctionPerformancePeriodTest(func, expectedLife, msg) \
 { \
-    NSDate *start = [NSDate date]; \
+    NSDate *start4DCFunctionPerformancePeriodTest = [NSDate date]; \
     { \
         func; \
     } \
-    NSDate *end = [NSDate date]; \
-    NSTimeInterval cost = [end timeIntervalSinceDate:start]; \
-    if (cost > expectedLife) { \
-        NSLog(@"%@ Cost: <%f>sec", msg, cost); \
+    NSDate *end4DCFunctionPerformancePeriodTest = [NSDate date]; \
+    NSTimeInterval cost4DCFunctionPerformancePeriodTest = [end4DCFunctionPerformancePeriodTest timeIntervalSinceDate:start4DCFunctionPerformancePeriodTest]; \
+    if (cost4DCFunctionPerformancePeriodTest > expectedLife) { \
+        NSLog(@"%@ Cost: <%f>sec", msg, cost4DCFunctionPerformancePeriodTest); \
         NSAssert(0, @"DCFunctionPerformancePeriodTest failed!!!"); \
     } \
 }
 
-#define DCFunctionPerformanceTimingBegin NSDate *start = [NSDate date];
+#define DCFunctionPerformanceTimingLaunch \
+NSDate *start4DCFunctionPerformanceTiming = nil; \
+NSDate *end4DCFunctionPerformanceTiming = nil; \
+NSTimeInterval cost4DCFunctionPerformanceTiming = 0;
+#define DCFunctionPerformanceTimingBegin start4DCFunctionPerformanceTiming = [NSDate date];
 #define DCFunctionPerformanceTimingEnd(msg) \
-{ \
-    NSDate *end = [NSDate date]; \
-    NSTimeInterval cost = [end timeIntervalSinceDate:start]; \
-    NSLog(@"%@ Cost: <%f>sec", msg, cost); \
-}
+end4DCFunctionPerformanceTiming = [NSDate date]; \
+cost4DCFunctionPerformanceTiming = [end4DCFunctionPerformanceTiming timeIntervalSinceDate:start4DCFunctionPerformanceTiming]; \
+NSLog(@"%@ Cost: <%f>sec", msg, cost4DCFunctionPerformanceTiming); \
+
+#define DCFunctionPerformanceTimingBlockBegin(identifier) NSDate *start##identifier = [NSDate date];
+#define DCFunctionPerformanceTimingBlockEnd(identifier, msg) \
+NSDate *end##identifier = [NSDate date]; \
+NSTimeInterval cost##identifier = [end##identifier timeIntervalSinceDate:start##identifier]; \
+NSLog(@"%@ Cost: <%f>sec", msg, cost##identifier); \
 
 #else
 #define DCFunctionPerformancePeriodTest(func, expectedLife, msg) \
 { \
     func; \
 }
+
+#define DCFunctionPerformanceTimingLaunch
 #define DCFunctionPerformanceTimingBegin
 #define DCFunctionPerformanceTimingEnd(msg)
+
+#define DCFunctionPerformanceTimingBlockBegin(identifier)
+#define DCFunctionPerformanceTimingBlockEnd(identifier, msg)
+
 #endif  // DEBUG
 #endif  // DC_FunctionPerformancePeriodTest_DEFINE
 /**** **** **** **** **** **** **** ****/
