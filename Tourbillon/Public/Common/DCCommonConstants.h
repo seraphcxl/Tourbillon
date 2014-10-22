@@ -96,54 +96,63 @@
 
 #endif  // DC_DegreeRadianConvert_DEFINE
 /**** **** **** **** **** **** **** ****/
-#ifndef DC_FunctionPerformancePeriodTest_DEFINE
-#define DC_FunctionPerformancePeriodTest_DEFINE
+#ifndef DC_Chronograph_DEFINE
+#define DC_Chronograph_DEFINE
 #ifdef DEBUG
-#define DCFunctionPerformancePeriodTest(func, expectedLife, msg) \
+#define DCFunctionPerformanceTest(func, expectedLife, msg) \
 { \
-    NSDate *start4DCFunctionPerformancePeriodTest = [NSDate date]; \
+    NSDate *start4DCFunctionPerformanceTest = [NSDate date]; \
     { \
         func; \
     } \
-    NSDate *end4DCFunctionPerformancePeriodTest = [NSDate date]; \
-    NSTimeInterval cost4DCFunctionPerformancePeriodTest = [end4DCFunctionPerformancePeriodTest timeIntervalSinceDate:start4DCFunctionPerformancePeriodTest]; \
-    if (cost4DCFunctionPerformancePeriodTest > expectedLife) { \
-        NSLog(@"%@ Cost: <%f>sec", msg, cost4DCFunctionPerformancePeriodTest); \
+    NSDate *end4DCFunctionPerformanceTest = [NSDate date]; \
+    NSTimeInterval cost4DCFunctionPerformanceTest = [end4DCFunctionPerformanceTest timeIntervalSinceDate:start4DCFunctionPerformanceTest]; \
+    if (cost4DCFunctionPerformanceTest > expectedLife) { \
+        NSLog(@"%@ Cost: <%f>sec", msg, cost4DCFunctionPerformanceTest); \
         NSAssert(0, @"DCFunctionPerformancePeriodTest failed!!!"); \
     } \
 }
 
-#define DCFunctionPerformanceTimingLaunch \
-NSDate *start4DCFunctionPerformanceTiming = nil; \
-NSDate *end4DCFunctionPerformanceTiming = nil; \
-NSTimeInterval cost4DCFunctionPerformanceTiming = 0;
-#define DCFunctionPerformanceTimingBegin start4DCFunctionPerformanceTiming = [NSDate date];
-#define DCFunctionPerformanceTimingEnd(msg) \
-end4DCFunctionPerformanceTiming = [NSDate date]; \
-cost4DCFunctionPerformanceTiming = [end4DCFunctionPerformanceTiming timeIntervalSinceDate:start4DCFunctionPerformanceTiming]; \
-NSLog(@"%@ Cost: <%f>sec", msg, cost4DCFunctionPerformanceTiming); \
+#define DCChronographSet \
+NSDate *start4DCChronograph = nil; \
+NSDate *end4DCChronograph = nil; \
+NSTimeInterval cost4DCChronograph = 0; \
 
-#define DCFunctionPerformanceTimingBlockBegin(identifier) NSDate *start##identifier = [NSDate date];
-#define DCFunctionPerformanceTimingBlockEnd(identifier, msg) \
+#define DCChronographReset \
+start4DCChronograph = nil; \
+end4DCChronograph = nil; \
+cost4DCChronograph = 0; \
+
+#define DCChronographStart start4DCChronograph = [NSDate date];
+
+#define DCChronographStop(msg) \
+end4DCChronograph = [NSDate date]; \
+cost4DCChronograph = [end4DCChronograph timeIntervalSinceDate:start4DCChronograph]; \
+NSLog(@"%@ Cost: <%f>sec", msg, cost4DCChronograph); \
+
+#define DCChronographBlockStart(identifier) NSDate *start##identifier = [NSDate date];
+
+#define DCChronographBlockStop(identifier, msg) \
 NSDate *end##identifier = [NSDate date]; \
 NSTimeInterval cost##identifier = [end##identifier timeIntervalSinceDate:start##identifier]; \
 NSLog(@"%@ Cost: <%f>sec", msg, cost##identifier); \
 
 #else
-#define DCFunctionPerformancePeriodTest(func, expectedLife, msg) \
+#define DCFunctionPerformanceTest(func, expectedLife, msg) \
 { \
     func; \
 }
 
-#define DCFunctionPerformanceTimingLaunch
-#define DCFunctionPerformanceTimingBegin
-#define DCFunctionPerformanceTimingEnd(msg)
+#define DCChronographSet
+#define DCChronographReset
+#define DCChronographStart
+#define DCChronographStop(msg)
 
-#define DCFunctionPerformanceTimingBlockBegin(identifier)
-#define DCFunctionPerformanceTimingBlockEnd(identifier, msg)
+#define DCChronographBlockStart(identifier)
+#define DCChronographBlockStop(identifier, msg)
 
 #endif  // DEBUG
-#endif  // DC_FunctionPerformancePeriodTest_DEFINE
+#endif  // DC_Chronograph_DEFINE
 /**** **** **** **** **** **** **** ****/
 #ifndef DC_IntFloatConvert_DEFINE
 #define DC_IntFloatConvert_DEFINE
