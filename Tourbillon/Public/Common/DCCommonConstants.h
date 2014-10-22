@@ -108,8 +108,8 @@
     NSDate *end4DCFunctionPerformanceTest = [NSDate date]; \
     NSTimeInterval cost4DCFunctionPerformanceTest = [end4DCFunctionPerformanceTest timeIntervalSinceDate:start4DCFunctionPerformanceTest]; \
     if (cost4DCFunctionPerformanceTest > expectedLife) { \
-        NSLog(@"%@ Cost: <%f>sec", msg, cost4DCFunctionPerformanceTest); \
-        NSAssert(0, @"DCFunctionPerformancePeriodTest failed!!!"); \
+        NSLog(@"DCFunctionPerformanceTest <%@> Cost: (%f)sec", msg, cost4DCFunctionPerformanceTest); \
+        NSAssert(0, @"DCFunctionPerformanceTest failed!!!"); \
     } \
 }
 
@@ -128,14 +128,14 @@ cost4DCChronograph = 0; \
 #define DCChronographStop(msg) \
 end4DCChronograph = [NSDate date]; \
 cost4DCChronograph = [end4DCChronograph timeIntervalSinceDate:start4DCChronograph]; \
-NSLog(@"%@ Cost: <%f>sec", msg, cost4DCChronograph); \
+NSLog(@"DCChronograph <%@> Cost: (%f)sec", msg, cost4DCChronograph); \
 
 #define DCChronographBlockStart(identifier) NSDate *start##identifier = [NSDate date];
 
 #define DCChronographBlockStop(identifier, msg) \
 NSDate *end##identifier = [NSDate date]; \
 NSTimeInterval cost##identifier = [end##identifier timeIntervalSinceDate:start##identifier]; \
-NSLog(@"%@ Cost: <%f>sec", msg, cost##identifier); \
+NSLog(@"DCChronographBlock <%@> Cost: (%f)sec", msg, cost##identifier); \
 
 #else
 #define DCFunctionPerformanceTest(func, expectedLife, msg) \
