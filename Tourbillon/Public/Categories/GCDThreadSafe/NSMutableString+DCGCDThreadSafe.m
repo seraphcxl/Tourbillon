@@ -7,6 +7,8 @@
 //
 
 #import "NSMutableString+DCGCDThreadSafe.h"
+#import "NSString+DCSafeCRUD.h"
+#import "NSMutableString+DCSafeCRUD.h"
 
 @implementation NSMutableString (DCGCDThreadSafe)
 
@@ -30,7 +32,7 @@
             break;
         }
         if (![self threadSafe_QueueSync:^{
-            result = [self characterAtIndex:index];
+            DCStringSafeCharacterAtIndex(self, index, result);
         }]) {
             break;
         }
@@ -45,7 +47,7 @@
             break;
         }
         if (![self threadSafe_QueueSync:^{
-            result = [self substringFromIndex:from];
+            DCStringSafeSubstringFromIndex(self, from, result);
         }]) {
             break;
         }
@@ -60,7 +62,7 @@
             break;
         }
         if (![self threadSafe_QueueSync:^{
-            result = [self substringToIndex:to];
+            DCStringSafeSubstringToIndex(self, to, result);
         }]) {
             break;
         }
@@ -75,7 +77,7 @@
             break;
         }
         if (![self threadSafe_QueueSync:^{
-            result = [self substringWithRange:range];
+            DCStringSafeSubstringWithRange(self, range, result);
         }]) {
             break;
         }
@@ -165,7 +167,7 @@
             break;
         }
         if (![self threadSafe_QueueSync:^{
-            result = [self hasPrefix:aString];
+            DCStringSafeHasPrefix(self, aString, result);
         }]) {
             break;
         }
@@ -180,7 +182,7 @@
             break;
         }
         if (![self threadSafe_QueueSync:^{
-            result = [self hasSuffix:aString];
+            DCStringSafeHasSuffix(self, aString, result);
         }]) {
             break;
         }
@@ -195,7 +197,7 @@
             break;
         }
         if (![self threadSafe_QueueSync:^{
-            result = [self rangeOfString:aString];
+            DCStringSafeRangeOfString(self, aString, result);
         }]) {
             break;
         }
@@ -210,7 +212,7 @@
             break;
         }
         if (![self threadSafe_QueueSync:^{
-            result = [self stringByAppendingString:aString];
+            DCStringSafeStringByAppendingString(self, aString, result);
         }]) {
             break;
         }
@@ -292,7 +294,7 @@
             break;
         }
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self replaceCharactersInRange:range withString:aString];
+            DCMutableSetSafeReplaceCharactersInRange(self, range, aString);
         }]) {
             break;
         }
@@ -305,7 +307,7 @@
             break;
         }
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self insertString:aString atIndex:loc];
+            DCMutableStringSafeInsert(self, aString, loc);
         }]) {
             break;
         }
@@ -318,7 +320,7 @@
             break;
         }
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self deleteCharactersInRange:range];
+            DCMutableSetSafeDeleteInRange(self, range);
         }]) {
             break;
         }
@@ -331,7 +333,7 @@
             break;
         }
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self appendString:aString];
+            DCMutableStringSafeAppend(self, aString);
         }]) {
             break;
         }
@@ -358,7 +360,7 @@
 - (void)threadSafe_setString:(NSString *)aString {
     do {
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self setString:aString];
+            DCMutableStringSafeSet(self, aString);
         }]) {
             break;
         }

@@ -7,6 +7,7 @@
 //
 
 #import "NSMutableSet+DCGCDThreadSafe.h"
+#import "NSMutableSet+DCSafeCRUD.h"
 
 @implementation NSMutableSet (DCGCDThreadSafe)
 
@@ -188,7 +189,7 @@
             break;
         }
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self addObject:object];
+            DCMutableSetSafeAdd(self, object);
         }]) {
             break;
         }
@@ -201,7 +202,7 @@
             break;
         }
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self removeObject:object];
+            DCMutableSetSafeRemove(self, object);
         }]) {
             break;
         }

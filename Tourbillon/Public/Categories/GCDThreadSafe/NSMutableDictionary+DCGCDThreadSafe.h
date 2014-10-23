@@ -15,6 +15,7 @@
 - (NSUInteger)threadSafe_count;
 - (id)threadSafe_objectForKey:(id)aKey;
 - (NSArray *)threadSafe_allKeys;
+- (NSArray *)threadSafe_allKeysForObject:(id)anObject;
 - (NSArray *)threadSafe_allValues;
 
 #pragma mark NSMutableDictionary

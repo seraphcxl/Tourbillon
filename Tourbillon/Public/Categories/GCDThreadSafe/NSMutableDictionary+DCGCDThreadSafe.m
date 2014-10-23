@@ -7,6 +7,8 @@
 //
 
 #import "NSMutableDictionary+DCGCDThreadSafe.h"
+#import "NSDictionary+DCSafeCRUD.h"
+#import "NSMutableDictionary+DCSafeCRUD.h"
 
 @implementation NSMutableDictionary (DCGCDThreadSafe)
 
@@ -30,7 +32,7 @@
             break;
         }
         if (![self threadSafe_QueueSync:^{
-            result = [self objectForKey:aKey];
+            DCDictionarySafeRead(self, aKey, result);
         }]) {
             break;
         }
@@ -43,6 +45,21 @@
     do {
         if (![self threadSafe_QueueSync:^{
             result = [self allKeys];
+        }]) {
+            break;
+        }
+    } while (NO);
+    return result;
+}
+
+- (NSArray *)threadSafe_allKeysForObject:(id)anObject {
+    __block NSArray *result = nil;
+    do {
+        if (!anObject) {
+            break;
+        }
+        if (![self threadSafe_QueueSync:^{
+            DCDictionarySafeAllKeysForObject(self, anObject, result);
         }]) {
             break;
         }
@@ -69,7 +86,7 @@
             break;
         }
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self removeObjectForKey:aKey];
+            DCMutableDictionarySafeRemove(self, aKey);
         }]) {
             break;
         }
@@ -82,7 +99,7 @@
             break;
         }
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self setObject:anObject forKey:aKey];
+            DCMutableDictionarySafeSet(self, aKey, anObject);
         }]) {
             break;
         }

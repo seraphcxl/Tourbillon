@@ -7,6 +7,8 @@
 //
 
 #import "NSMutableArray+DCGCDThreadSafe.h"
+#import "NSArray+DCSafeCRUD.h"
+#import "NSMutableArray+DCSafeCRUD.h"
 
 @implementation NSMutableArray (DCGCDThreadSafe)
 
@@ -30,7 +32,7 @@
             break;
         }
         if (![self threadSafe_QueueSync:^{
-            result = [self objectAtIndex:index];
+            DCArraySafeRead(self, index, result);
         }]) {
             break;
         }
@@ -45,7 +47,7 @@
             break;
         }
         if (![self threadSafe_QueueSync:^{
-            result = [self indexOfObject:anObject];
+            DCArraySafeIndexOfObject(self, anObject, result);
         }]) {
             break;
         }
@@ -146,7 +148,7 @@
             break;
         }
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self addObject:anObject];
+            DCMutableArraySafeAdd(self, anObject);
         }]) {
             break;
         }
@@ -159,7 +161,7 @@
             break;
         }
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self insertObject:anObject atIndex:index];
+            DCMutableArraySafeInsert(self, index, anObject);
         }]) {
             break;
         }
@@ -182,7 +184,7 @@
             break;
         }
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self removeObjectAtIndex:index];
+            DCMutableArraySafeRemoveIndex(self, index);
         }]) {
             break;
         }
@@ -195,7 +197,7 @@
             break;
         }
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self replaceObjectAtIndex:index withObject:anObject];
+            DCMutableArraySafeReplace(self, index, anObject);
         }]) {
             break;
         }
@@ -231,7 +233,7 @@
             break;
         }
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self removeObject:anObject inRange:range];
+            DCMutableArraySafeRemoveObjectInRange(self, anObject, range);
         }]) {
             break;
         }
@@ -244,7 +246,7 @@
             break;
         }
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self removeObject:anObject];
+            DCMutableArraySafeRemoveObject(self, anObject);
         }]) {
             break;
         }
@@ -267,7 +269,7 @@
 - (void)threadSafe_removeObjectsInRange:(NSRange)range {
     do {
         if (![self threadSafe_QueueBarrierAsync:^{
-            [self removeObjectsInRange:range];
+            DCMutableArraySafeRemoveObjectsInRange(self, range);
         }]) {
             break;
         }
