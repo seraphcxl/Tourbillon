@@ -224,6 +224,47 @@ tmpThdName = [tmpThdName substringToIndex:DC_SetCurrentThreadName_ThreadNameLeng
 #endif  // DEBUG
 #endif  // DC_SetCurrentThreadName_DEFINE
 /**** **** **** **** **** **** **** ****/
+#ifndef DC_Assert_DEFINE
+#define DC_Assert_DEFINE
+// A better assert. NSAssert is too runtime dependant, and assert() doesn't log.
+// http://www.mikeash.com/pyblog/friday-qa-2013-05-03-proper-use-of-asserts.html
+// Accepts both:
+// - DCAssert(x > 0);
+// - DCAssert(y > 3, @"Bad value for y");
+#define DCAssert(expression, ...) \
+do { \
+if (!(expression)) { \
+NSLog(@"%@", [NSString stringWithFormat: @"Assertion failure: %s in %s on line %s:%d. %@", #expression, __PRETTY_FUNCTION__, __FILE__, __LINE__, [NSString stringWithFormat:@"" __VA_ARGS__]]); \
+abort(); \
+} \
+} while(NO)
+#endif  // DC_Assert_DEFINE
+/**** **** **** **** **** **** **** ****/
+#ifndef DC_DebugLog_DEFINE
+#define DC_DebugLog_DEFINE
+#ifdef DEBUG
+#define DCDebugLog(...) NSLog(__VA_ARGS__)
+#else
+#define DCDebugLog(...)
+#endif  // DEBUG
+#endif  // DC_DebugLog_DEFINE
+/**** **** **** **** **** **** **** ****/
+#ifndef DC_DebugAssert_DEFINE
+#define DC_DebugAssert_DEFINE
+#ifdef DEBUG
+#define DCDebugAssert(expression, ...) DCAssert(expression, __VA_ARGS__)
+#else
+#define DCDebugAssert(expression, ...)
+#endif  // DEBUG
+#endif  // DC_DebugAssert_DEFINE
+/**** **** **** **** **** **** **** ****/
+#ifndef DC_ConditionalRunBlock_DEFINE
+#define DC_ConditionalRunBlock_DEFINE
+
+#define DCConditionalRunBlock(conditional, runBlock) if (conditional) { runBlock } else { DCDebugAssert((conditional)); }
+
+#endif  // DC_ConditionalRunBlock_DEFINE
+/**** **** **** **** **** **** **** ****/
 #endif  // Tourbillon_DCCommonConstants_h
 
 

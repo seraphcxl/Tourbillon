@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DCCommonConstants.h"
 
 #ifndef DC_NSDictionary_DCSafeCRUD_DEFINE
 #define DC_NSDictionary_DCSafeCRUD_DEFINE
-#define DCDictionarySafeRead(dictionary, key, value) if (dictionary && key) { value = [dictionary objectForKey:key]; }
-#define DCDictionarySafeAllKeysForObject(dictionary, object, result) if (dictionary && object) { result = [dictionary allKeysForObject:object]; }
+
+#define DCDictionarySafeRead(dict, key, var) DCConditionalRunBlock((dict && key), {var = [dict objectForKey:key];})
+
+#define DCDictionarySafeAllKeysForObject(dict, obj, rs) DCConditionalRunBlock((dict && obj), {rs = [dict allKeysForObject:obj];})
+
 #endif  // DC_NSDictionary_DCSafeCRUD_DEFINE
 
 @interface NSDictionary (DCSafeCRUD)

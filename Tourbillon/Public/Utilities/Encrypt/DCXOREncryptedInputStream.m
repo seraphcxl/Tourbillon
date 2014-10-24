@@ -7,8 +7,8 @@
 //
 
 #import "DCXOREncryptedInputStream.h"
+#import "DCCommonConstants.h"
 #import "NSObject+DCUUIDExtension.h"
-#import "DCLogger.h"
 #import "NSString+DCHash.h"
 
 @interface DCXOREncryptedInputStream () {

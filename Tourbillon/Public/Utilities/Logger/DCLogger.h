@@ -11,19 +11,6 @@
 #import "DCCommonConstants.h"
 #import "DCSingletonTemplate.h"
 
-// A better assert. NSAssert is too runtime dependant, and assert() doesn't log.
-// http://www.mikeash.com/pyblog/friday-qa-2013-05-03-proper-use-of-asserts.html
-// Accepts both:
-// - DCAssert(x > 0);
-// - DCAssert(y > 3, @"Bad value for y");
-#define DCAssert(expression, ...) \
-    do { \
-        if (!(expression)) { \
-            NSLog(@"%@", [NSString stringWithFormat: @"Assertion failure: %s in %s on line %s:%d. %@", #expression, __PRETTY_FUNCTION__, __FILE__, __LINE__, [NSString stringWithFormat:@"" __VA_ARGS__]]); \
-            abort(); \
-        } \
-    } while(NO)
-
 typedef enum {
     DCLL_DEBUG = 0,
     DCLL_INFO,

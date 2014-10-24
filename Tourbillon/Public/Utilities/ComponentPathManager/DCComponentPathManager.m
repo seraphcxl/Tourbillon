@@ -7,7 +7,7 @@
 //
 
 #import "DCComponentPathManager.h"
-#import "DCLogger.h"
+#import "DCCommonConstants.h"
 #import "DCStack.h"
 #import "NSData+GZipExtension.h"
 

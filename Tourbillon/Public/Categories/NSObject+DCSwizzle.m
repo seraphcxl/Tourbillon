@@ -8,7 +8,7 @@
 
 #import "NSObject+DCSwizzle.h"
 #import <objc/runtime.h>
-#import "DCLogger.h"
+#import "DCCommonConstants.h"
 
 BOOL DCReplaceMethodWithBlock(Class c, SEL origSEL, SEL newSEL, id block) {
     BOOL result = NO;

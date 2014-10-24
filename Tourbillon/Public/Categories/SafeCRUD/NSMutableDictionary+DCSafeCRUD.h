@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DCCommonConstants.h"
 
 #ifndef DC_NSMutableDictionary_DCSafeCRUD_DEFINE
 #define DC_NSMutableDictionary_DCSafeCRUD_DEFINE
-#define DCMutableDictionarySafeRemove(mutableDictionary, key) if (mutableDictionary && key) { [mutableDictionary removeObjectForKey:key]; }
-#define DCMutableDictionarySafeSet(mutableDictionary, key, value) if (mutableDictionary && key && value) { [mutableDictionary setObject:value forKey:key]; }
+
+#define DCMutableDictionarySafeRemove(mDict, key) DCConditionalRunBlock((mDict && key), {[mDict removeObjectForKey:key];})
+
+#define DCMutableDictionarySafeSet(mDict, key, var) DCConditionalRunBlock((mDict && key && var), {[mDict setObject:var forKey:key];})
+
 #endif  // DC_NSMutableDictionary_DCSafeCRUD_DEFINE
 
 @interface NSMutableDictionary (DCSafeCRUD)

@@ -7,7 +7,7 @@
 //
 
 #import "DCHTTPOperation.h"
-#import "DCLogger.h"
+#import "DCCommonConstants.h"
 #import "DCCommonFuncations.h"
 
 static NSSet *sKeysImmutableWhileExecuting;

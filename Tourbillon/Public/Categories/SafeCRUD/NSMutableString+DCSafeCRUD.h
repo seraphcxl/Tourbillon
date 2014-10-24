@@ -7,14 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DCCommonConstants.h"
 
 #ifndef DC_NSMutableString_DCSafeCRUD_DEFINE
 #define DC_NSMutableString_DCSafeCRUD_DEFINE
-#define DCMutableSetSafeReplaceCharactersInRange(mutableString, range, anotherString) if (mutableString && anotherString && range.location <= mutableString.length && (range.location + range.length) <= mutableString.length) { [mutableString replaceCharactersInRange:range withString:anotherString]; }
-#define DCMutableStringSafeInsert(mutableString, string, loc) if (mutableString && string && loc <= mutableString.length) { [mutableString insertString:string atIndex:loc]; }
-#define DCMutableSetSafeDeleteInRange(mutableString, range) if (mutableString && range.length != 0 && range.location <= mutableString.length && (range.location + range.length) <= mutableString.length) { [mutableString deleteCharactersInRange:range]; }
-#define DCMutableStringSafeAppend(mutableString, string) if (mutableString && string) { [mutableString appendString:string]; }
-#define DCMutableStringSafeSet(mutableString, string) if (mutableString && string) { [mutableString setString:string]; }
+
+#define DCMutableSetSafeReplaceCharactersInRange(src, range, str) DCConditionalRunBlock((src && str && range.location <= src.length && (range.location + range.length) <= src.length), {[src replaceCharactersInRange:range withString:str];})
+
+#define DCMutableStringSafeInsert(src, str, loc) DCConditionalRunBlock((src && str && loc <= src.length), {[src insertString:str atIndex:loc];})
+
+#define DCMutableSetSafeDeleteInRange(src, range) DCConditionalRunBlock((src && range.length != 0 && range.location <= src.length && (range.location + range.length) <= src.length), {[src deleteCharactersInRange:range];})
+
+#define DCMutableStringSafeAppend(src, str) DCConditionalRunBlock((src && str), {[src appendString:str];})
+
+#define DCMutableStringSafeSet(src, str) DCConditionalRunBlock((src && str), {[src setString:str];})
+
 #endif  // DC_NSMutableString_DCSafeCRUD_DEFINE
 
 @interface NSMutableString (DCSafeCRUD)

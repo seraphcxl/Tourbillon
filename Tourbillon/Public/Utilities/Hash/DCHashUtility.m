@@ -9,7 +9,7 @@
 #import "DCHashUtility.h"
 #import <CommonCrypto/CommonHMAC.h>
 #import <CommonCrypto/CommonCryptor.h>
-#import "DCLogger.h"
+#import "DCCommonConstants.h"
 #import "NSData+DCHex.h"
 
 @implementation DCHashUtility

@@ -37,6 +37,15 @@
 #import "NSMutableSet+DCGCDThreadSafe.h"
 #import "NSMutableString+DCGCDThreadSafe.h"
 
+#pragma mark - SafeCRUD
+#import "NSArray+DCSafeCRUD.h"
+#import "NSDictionary+DCSafeCRUD.h"
+#import "NSString+DCSafeCRUD.h"
+#import "NSMutableArray+DCSafeCRUD.h"
+#import "NSMutableDictionary+DCSafeCRUD.h"
+#import "NSMutableSet+DCSafeCRUD.h"
+#import "NSMutableString+DCSafeCRUD.h"
+
 #pragma mark - Common
 #import "DCSafeARC.h"
 #import "DCCommonConstants.h"

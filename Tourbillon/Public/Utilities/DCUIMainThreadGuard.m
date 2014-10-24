@@ -7,7 +7,7 @@
 //
 
 #import "DCUIMainThreadGuard.h"
-#import "DCLogger.h"
+#import "DCCommonConstants.h"
 #import "NSObject+DCSwizzle.h"
 #import <objc/message.h>
 

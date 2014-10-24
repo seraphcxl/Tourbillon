@@ -7,7 +7,7 @@
 //
 
 #import "DCWatchedOperationQueue.h"
-#import "DCLogger.h"
+#import "DCCommonConstants.h"
 #import "NSMutableDictionary+DCGCDThreadSafe.h"
 #import "NSObject+DCUUIDExtension.h"
 

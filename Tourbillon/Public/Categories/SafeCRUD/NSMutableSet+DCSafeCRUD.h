@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DCCommonConstants.h"
 
 #ifndef DC_NSMutableSet_DCSafeCRUD_DEFINE
 #define DC_NSMutableSet_DCSafeCRUD_DEFINE
-#define DCMutableSetSafeAdd(mutableSet, object) if (mutableSet && object) { [mutableSet addObject:object]; }
-#define DCMutableSetSafeRemove(mutableSet, object) if (mutableSet && object) { [mutableSet removeObject:object]; }
+
+#define DCMutableSetSafeAdd(mSet, obj) DCConditionalRunBlock((mSet && obj), {[mSet addObject:obj];})
+
+#define DCMutableSetSafeRemove(mSet, obj) DCConditionalRunBlock((mSet && obj), {[mSet removeObject:obj];})
+
 #endif  // DC_NSMutableSet_DCSafeCRUD_DEFINE
 
 @interface NSMutableSet (DCSafeCRUD)

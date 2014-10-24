@@ -7,14 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DCCommonConstants.h"
 
 #ifndef DC_NSArray_DCSafeCRUD_DEFINE
 #define DC_NSArray_DCSafeCRUD_DEFINE
-#define DCArraySafeRead(array, index, result) if (array && index < array.count) { result = [array objectAtIndex:index]; }
-#define DCArraySafeIndexOfObject(array, object, result) if (array && object) { result = [array indexOfObject:object]; }
-#define DCArraySafeIndexOfObjectInRange(array, object, range, result) if (array && object && range.length != 0 && range.location <= array.count && (range.location + range.length) <= array.count) { result = [array indexOfObject:object inRange:range]; }
-#define DCArraySafeIndexOfObjectIdenticalTo(array, object, result) if (array && object) { result = [array indexOfObjectIdenticalTo:object]; }
-#define DCArraySafeIndexOfObjectIdenticalToInRange(array, object, range, result) if (array && object && range.length != 0 && range.location <= array.count && (range.location + range.length) <= array.count) { result = [array indexOfObjectIdenticalTo:object inRange:range]; }
+
+#define DCArraySafeRead(ary, idx, rs) DCConditionalRunBlock((ary && idx < ary.count), {rs = [ary objectAtIndex:idx];})
+
+#define DCArraySafeIndexOfObject(ary, obj, rs) DCConditionalRunBlock((ary && obj), {rs = [ary indexOfObject:obj];})
+
+#define DCArraySafeIndexOfObjectInRange(ary, obj, range, rs) DCConditionalRunBlock((ary && obj && range.length != 0 && range.location <= ary.count && (range.location + range.length) <= ary.count), {rs = [ary indexOfObject:obj inRange:range];})
+
+#define DCArraySafeIndexOfObjectIdenticalTo(ary, obj, rs) DCConditionalRunBlock((ary && obj), {rs = [ary indexOfObjectIdenticalTo:obj];})
+
+#define DCArraySafeIndexOfObjectIdenticalToInRange(ary, obj, range, rs) DCConditionalRunBlock((ary && obj && range.length != 0 && range.location <= ary.count && (range.location + range.length) <= ary.count), {rs = [ary indexOfObjectIdenticalTo:obj inRange:range];})
+
 #endif  // DC_NSArray_DCSafeCRUD_DEFINE
 
 @interface NSArray (DCSafeCRUD)

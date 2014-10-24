@@ -7,8 +7,8 @@
 //
 
 #import "DCTree.h"
+#import "DCCommonConstants.h"
 #import "DCTreeNode.h"
-#import "DCLogger.h"
 
 NSString * const kDCTreeLevelSeparator = @"DCTreeLevel";
 

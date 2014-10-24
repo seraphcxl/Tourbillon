@@ -7,17 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DCCommonConstants.h"
 
 #ifndef DC_NSString_DCSafeCRUD_DEFINE
 #define DC_NSString_DCSafeCRUD_DEFINE
-#define DCStringSafeCharacterAtIndex(string, index, result) if (string && index < string.length) { result = [string characterAtIndex:index]; }
-#define DCStringSafeSubstringFromIndex(string, index, result) if (string && index < string.length) { result = [string substringFromIndex:index]; }
-#define DCStringSafeSubstringToIndex(string, index, result) if (string && index < string.length) { result = [string substringToIndex:index]; }
-#define DCStringSafeSubstringWithRange(string, range, result) if (string && range.location <= string.length && (range.location + range.length) <= string.length) { result = [string substringWithRange:range]; }
-#define DCStringSafeHasPrefix(string, prefix, result) if (string && prefix) { result = [string hasPrefix:prefix]; }
-#define DCStringSafeHasSuffix(string, suffix, result) if (string && suffix) { result = [string hasSuffix:suffix]; }
-#define DCStringSafeRangeOfString(string, paramString, result) if (string && paramString) { result = [string rangeOfString:paramString]; }
-#define DCStringSafeStringByAppendingString(string, anotherString, result) if (string && anotherString) { result = [string stringByAppendingString:anotherString]; }
+
+#define DCStringSafeCharacterAtIndex(src, idx, rs) DCConditionalRunBlock((src && idx < src.length), {rs = [src characterAtIndex:idx];})
+
+#define DCStringSafeSubstringFromIndex(src, idx, rs) DCConditionalRunBlock((src && idx < src.length), {rs = [src substringFromIndex:idx];})
+
+#define DCStringSafeSubstringToIndex(src, idx, rs) DCConditionalRunBlock((src && idx < src.length), {rs = [src substringToIndex:idx];})
+
+#define DCStringSafeSubstringWithRange(src, range, rs) DCConditionalRunBlock((src && range.location <= src.length && (range.location + range.length) <= src.length), {rs = [src substringWithRange:range];})
+
+#define DCStringSafeHasPrefix(src, prefix, rs) DCConditionalRunBlock((src && prefix), {rs = [src hasPrefix:prefix];})
+
+#define DCStringSafeHasSuffix(src, suffix, rs) DCConditionalRunBlock((src && suffix), {rs = [src hasSuffix:suffix];})
+
+#define DCStringSafeRangeOfString(src, str, rs) DCConditionalRunBlock((src && str), {rs = [src rangeOfString:str];})
+
+#define DCStringSafeStringByAppendingString(src, str, rs) DCConditionalRunBlock((src && str), {rs = [src stringByAppendingString:str];})
+
 #endif  // DC_NSString_DCSafeCRUD_DEFINE
 
 @interface NSString (DCSafeCRUD)
