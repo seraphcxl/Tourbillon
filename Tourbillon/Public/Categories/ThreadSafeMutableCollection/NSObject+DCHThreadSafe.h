@@ -11,6 +11,7 @@
 @interface NSObject (DCHThreadSafe)
 
 - (instancetype)threadSafe_init:(BOOL)isSyncSetting;
+- (void)threadSafe_uninit;
 - (BOOL)isSyncSetting;
 - (BOOL)threafSafe_Setting:(dispatch_block_t) block;
 

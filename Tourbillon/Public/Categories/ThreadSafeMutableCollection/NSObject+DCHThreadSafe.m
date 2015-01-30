@@ -12,9 +12,9 @@
 
 @implementation NSObject (DCHThreadSafe)
 
-DCH_DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(GCDThreadSafeQueue, NSObject_DCHGCDThreadSafeQueue_Key, OBJC_ASSOCIATION_RETAIN);
+DCH_DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(GCDThreadSafeQueue, NSObject_DCHGCDThreadSafeQueue_Key, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
-DCH_DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(SyncSetting, NSObject_DCHSyncSetting_Key, OBJC_ASSOCIATION_ASSIGN);
+DCH_DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(SyncSetting, NSObject_DCHSyncSetting_Key, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
 - (instancetype)threadSafe_init:(BOOL)isSyncSetting {
     do {
@@ -29,6 +29,15 @@ DCH_DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(SyncSetting, NSObject_DCHSyncSetting_Key, 
         }
     } while (NO);
     return self;
+}
+
+- (void)threadSafe_uninit {
+    do {
+        @synchronized(self) {
+            [self setSyncSetting:nil];
+            [self setGCDThreadSafeQueue:nil];
+        }
+    } while (NO);
 }
 
 - (BOOL)isSyncSetting {
