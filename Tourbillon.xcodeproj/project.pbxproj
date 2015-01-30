@@ -7,96 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89009F0519A58D4600F54598 /* NSViewController+ComponentPathExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 89009F0319A58D4600F54598 /* NSViewController+ComponentPathExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89009F0619A58D4600F54598 /* NSViewController+ComponentPathExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0419A58D4600F54598 /* NSViewController+ComponentPathExtension.m */; };
-		89009F0919A58F6E00F54598 /* UIViewController+ComponentPathExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0819A58F6E00F54598 /* UIViewController+ComponentPathExtension.m */; };
-		89009F0A19A5903B00F54598 /* NSObject+DCAssociatedObjectExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B5E08919A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h */; };
-		89009F0B19A5903B00F54598 /* DCComponentPathManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 897C1E6C19A4876F00C3B8A9 /* DCComponentPathManager.h */; };
-		89009F0C19A5903B00F54598 /* UIViewController+ComponentPathExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89009F0719A58F6E00F54598 /* UIViewController+ComponentPathExtension.h */; };
-		89009F1019A5CA9100F54598 /* DCDictionaryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 89009F0E19A5CA9100F54598 /* DCDictionaryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89009F1119A5CA9100F54598 /* DCDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0F19A5CA9100F54598 /* DCDictionaryCache.m */; };
-		89009F1219A5CA9100F54598 /* DCDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0F19A5CA9100F54598 /* DCDictionaryCache.m */; };
-		89009F1319A5CEE700F54598 /* DCDictionaryCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89009F0E19A5CA9100F54598 /* DCDictionaryCache.h */; };
-		893F66B319E7BDE000F92B1A /* DCGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 893F66B219E7BDE000F92B1A /* DCGradientView.m */; };
-		893F66B419E7BDE000F92B1A /* DCGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 893F66B219E7BDE000F92B1A /* DCGradientView.m */; };
-		893F66B519E7BE9500F92B1A /* DCGradientView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 893F66B119E7BDE000F92B1A /* DCGradientView.h */; };
-		893F66E719E7CEF500F92B1A /* DCColorEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 893F66E619E7CEF500F92B1A /* DCColorEnumerator.m */; };
-		893F66E819E7CEF500F92B1A /* DCColorEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 893F66E619E7CEF500F92B1A /* DCColorEnumerator.m */; };
-		893F66EE19E7D2D000F92B1A /* DCColorEnumerator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 893F66E519E7CEF500F92B1A /* DCColorEnumerator.h */; };
-		893F66F119E7DBB700F92B1A /* DCColorEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 893F66EF19E7DBB700F92B1A /* DCColorEnumerator.m */; };
-		893F66F219E7DBB700F92B1A /* DCColorEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 893F66EF19E7DBB700F92B1A /* DCColorEnumerator.m */; };
-		893F66F319E7DBB700F92B1A /* DCColorEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 893F66F019E7DBB700F92B1A /* DCColorEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		895A6C5419A6314A00E56909 /* DCCommonFuncations.h in Headers */ = {isa = PBXBuildFile; fileRef = 895A6C5219A6314A00E56909 /* DCCommonFuncations.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		895A6C5519A6314A00E56909 /* DCCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 895A6C5319A6314A00E56909 /* DCCommonFuncations.m */; };
-		895A6C5619A6314A00E56909 /* DCCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 895A6C5319A6314A00E56909 /* DCCommonFuncations.m */; };
-		895A6C5719A6324600E56909 /* DCCommonFuncations.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 895A6C5219A6314A00E56909 /* DCCommonFuncations.h */; };
-		895AF1A51991AC9F00500A6F /* DCTourbillon.h in Headers */ = {isa = PBXBuildFile; fileRef = 895AF1A41991AC9F00500A6F /* DCTourbillon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		895AF1A61991ACAC00500A6F /* DCTourbillon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 895AF1A41991AC9F00500A6F /* DCTourbillon.h */; };
-		8964B52619F8D97500E15B35 /* NSArray+DCSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 8964B51E19F8D97500E15B35 /* NSArray+DCSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8964B52719F8D97500E15B35 /* NSArray+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B51F19F8D97500E15B35 /* NSArray+DCSafeCRUD.m */; };
-		8964B52819F8D97500E15B35 /* NSArray+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B51F19F8D97500E15B35 /* NSArray+DCSafeCRUD.m */; };
-		8964B52919F8D97500E15B35 /* NSArray+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B51F19F8D97500E15B35 /* NSArray+DCSafeCRUD.m */; };
-		8964B52A19F8D97500E15B35 /* NSArray+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B51F19F8D97500E15B35 /* NSArray+DCSafeCRUD.m */; };
-		8964B52B19F8D97500E15B35 /* NSDictionary+DCSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 8964B52019F8D97500E15B35 /* NSDictionary+DCSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8964B52C19F8D97500E15B35 /* NSDictionary+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B52119F8D97500E15B35 /* NSDictionary+DCSafeCRUD.m */; };
-		8964B52D19F8D97500E15B35 /* NSDictionary+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B52119F8D97500E15B35 /* NSDictionary+DCSafeCRUD.m */; };
-		8964B52E19F8D97500E15B35 /* NSDictionary+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B52119F8D97500E15B35 /* NSDictionary+DCSafeCRUD.m */; };
-		8964B52F19F8D97500E15B35 /* NSDictionary+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B52119F8D97500E15B35 /* NSDictionary+DCSafeCRUD.m */; };
-		8964B53019F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 8964B52219F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8964B53119F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B52319F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.m */; };
-		8964B53219F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B52319F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.m */; };
-		8964B53319F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B52319F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.m */; };
-		8964B53419F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B52319F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.m */; };
-		8964B53519F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 8964B52419F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8964B53619F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B52519F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.m */; };
-		8964B53719F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B52519F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.m */; };
-		8964B53819F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B52519F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.m */; };
-		8964B53919F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B52519F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.m */; };
-		8964B53C19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 8964B53A19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8964B53D19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B53B19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.m */; };
-		8964B53E19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B53B19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.m */; };
-		8964B53F19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B53B19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.m */; };
-		8964B54019F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B53B19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.m */; };
-		8964B54319F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 8964B54119F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8964B54419F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B54219F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.m */; };
-		8964B54519F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B54219F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.m */; };
-		8964B54619F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B54219F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.m */; };
-		8964B54719F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B54219F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.m */; };
-		8964B54A19F8EEA300E15B35 /* NSString+DCSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 8964B54819F8EEA300E15B35 /* NSString+DCSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8964B54B19F8EEA300E15B35 /* NSString+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B54919F8EEA300E15B35 /* NSString+DCSafeCRUD.m */; };
-		8964B54C19F8EEA300E15B35 /* NSString+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B54919F8EEA300E15B35 /* NSString+DCSafeCRUD.m */; };
-		8964B54D19F8EEA300E15B35 /* NSString+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B54919F8EEA300E15B35 /* NSString+DCSafeCRUD.m */; };
-		8964B54E19F8EEA300E15B35 /* NSString+DCSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964B54919F8EEA300E15B35 /* NSString+DCSafeCRUD.m */; };
-		8964B54F19F8F51600E15B35 /* NSArray+DCSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8964B51E19F8D97500E15B35 /* NSArray+DCSafeCRUD.h */; };
-		8964B55019F8F51600E15B35 /* NSDictionary+DCSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8964B52019F8D97500E15B35 /* NSDictionary+DCSafeCRUD.h */; };
-		8964B55119F8F51600E15B35 /* NSString+DCSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8964B54819F8EEA300E15B35 /* NSString+DCSafeCRUD.h */; };
-		8964B55219F8F51600E15B35 /* NSMutableArray+DCSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8964B52219F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.h */; };
-		8964B55319F8F51600E15B35 /* NSMutableDictionary+DCSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8964B52419F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.h */; };
-		8964B55419F8F51600E15B35 /* NSMutableSet+DCSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8964B53A19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.h */; };
-		8964B55519F8F51600E15B35 /* NSMutableString+DCSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8964B54119F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.h */; };
-		897C1E6E19A4876F00C3B8A9 /* DCComponentPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 897C1E6C19A4876F00C3B8A9 /* DCComponentPathManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		897C1E6F19A4876F00C3B8A9 /* DCComponentPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */; };
-		897C1E7019A4876F00C3B8A9 /* DCComponentPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */; };
-		89B4FCA319CBAE42004F99C1 /* DCHashUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B4FCA119CBAE42004F99C1 /* DCHashUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B4FCA419CBAE42004F99C1 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCA219CBAE42004F99C1 /* DCHashUtility.m */; };
-		89B4FCA519CBAE42004F99C1 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCA219CBAE42004F99C1 /* DCHashUtility.m */; };
-		89B4FCA619CBAE42004F99C1 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCA219CBAE42004F99C1 /* DCHashUtility.m */; };
-		89B4FCA719CBAE42004F99C1 /* DCHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCA219CBAE42004F99C1 /* DCHashUtility.m */; };
-		89B4FCA819CBAE5C004F99C1 /* DCHashUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B4FCA119CBAE42004F99C1 /* DCHashUtility.h */; };
 		89B4FCAB19CBAEB0004F99C1 /* DCCompressorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCAA19CBAEB0004F99C1 /* DCCompressorTestCase.m */; };
 		89B4FCAD19CBB3E9004F99C1 /* Apple think different.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 89B4FCAC19CBB3E9004F99C1 /* Apple think different.rtf */; };
 		89B4FCAE19CBB3E9004F99C1 /* Apple think different.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 89B4FCAC19CBB3E9004F99C1 /* Apple think different.rtf */; };
 		89B4FCB119CBBEAA004F99C1 /* DCloggerTastCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCB019CBBEAA004F99C1 /* DCloggerTastCase.m */; };
-		89B4FCB419CBC3AE004F99C1 /* DCMemoryUsageMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B4FCB219CBC3AE004F99C1 /* DCMemoryUsageMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B4FCB519CBC3AE004F99C1 /* DCMemoryUsageMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCB319CBC3AE004F99C1 /* DCMemoryUsageMonitor.m */; };
-		89B4FCB619CBC3AE004F99C1 /* DCMemoryUsageMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCB319CBC3AE004F99C1 /* DCMemoryUsageMonitor.m */; };
-		89B4FCB719CBC3AE004F99C1 /* DCMemoryUsageMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCB319CBC3AE004F99C1 /* DCMemoryUsageMonitor.m */; };
-		89B4FCB819CBC3AE004F99C1 /* DCMemoryUsageMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCB319CBC3AE004F99C1 /* DCMemoryUsageMonitor.m */; };
-		89B5E08B19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B5E08919A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B5E08C19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */; };
-		89B5E08D19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */; };
-		89B5E08E19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */; };
-		89B5E08F19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */; };
 		89B786B11990FB4400A726F1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
 		89B786BD1990FB4500A726F1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137581925B11000A3EFB7 /* XCTest.framework */; };
 		89B786BE1990FB4500A726F1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
@@ -110,308 +24,114 @@
 		89B786E71990FB5000A726F1 /* libTourbillon-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B786D41990FB4F00A726F1 /* libTourbillon-iOS.a */; };
 		89B786ED1990FB5000A726F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89B786EB1990FB5000A726F1 /* InfoPlist.strings */; };
 		89B786EF1990FB5000A726F1 /* Tourbillon_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B786EE1990FB5000A726F1 /* Tourbillon_iOSTests.m */; };
-		89B787591990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B786FB1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B7875A1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B786FC1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m */; };
-		89B7875B1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B786FC1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m */; };
-		89B7875C1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B786FC1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m */; };
-		89B7875D1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B786FC1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m */; };
-		89B7875E1990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B786FD1990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B7875F1990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B786FE1990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m */; };
-		89B787601990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B786FE1990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m */; };
-		89B787611990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B786FE1990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m */; };
-		89B787621990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B786FE1990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m */; };
-		89B787631990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B786FF1990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787641990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787001990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m */; };
-		89B787651990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787001990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m */; };
-		89B787661990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787001990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m */; };
-		89B787671990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787001990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m */; };
-		89B787681990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787011990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787691990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787021990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m */; };
-		89B7876A1990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787021990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m */; };
-		89B7876B1990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787021990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m */; };
-		89B7876C1990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787021990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m */; };
-		89B7876D1990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787031990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B7876E1990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787041990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m */; };
-		89B7876F1990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787041990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m */; };
-		89B787701990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787041990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m */; };
-		89B787711990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787041990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m */; };
-		89B787721990FB6100A726F1 /* NSObject+DCGCDThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787051990FB6100A726F1 /* NSObject+DCGCDThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787731990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc "; }; };
-		89B787741990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc "; }; };
-		89B787751990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc "; }; };
-		89B787761990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */; settings = {COMPILER_FLAGS = "-fobjc-arc "; }; };
-		89B787771990FB6100A726F1 /* NSData+GZipExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787081990FB6100A726F1 /* NSData+GZipExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787781990FB6100A726F1 /* NSData+GZipExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787091990FB6100A726F1 /* NSData+GZipExtension.m */; };
-		89B787791990FB6100A726F1 /* NSData+GZipExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787091990FB6100A726F1 /* NSData+GZipExtension.m */; };
-		89B7877A1990FB6100A726F1 /* NSData+GZipExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787091990FB6100A726F1 /* NSData+GZipExtension.m */; };
-		89B7877B1990FB6100A726F1 /* NSData+GZipExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787091990FB6100A726F1 /* NSData+GZipExtension.m */; };
-		89B7877C1990FB6100A726F1 /* DCBase64Define.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7870B1990FB6100A726F1 /* DCBase64Define.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B7877D1990FB6100A726F1 /* NSData+DCBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7870C1990FB6100A726F1 /* NSData+DCBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B7877E1990FB6100A726F1 /* NSData+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7870D1990FB6100A726F1 /* NSData+DCBase64.m */; };
-		89B7877F1990FB6100A726F1 /* NSData+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7870D1990FB6100A726F1 /* NSData+DCBase64.m */; };
-		89B787801990FB6100A726F1 /* NSData+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7870D1990FB6100A726F1 /* NSData+DCBase64.m */; };
-		89B787811990FB6100A726F1 /* NSData+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7870D1990FB6100A726F1 /* NSData+DCBase64.m */; };
-		89B787821990FB6100A726F1 /* NSData+DCHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7870E1990FB6100A726F1 /* NSData+DCHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787831990FB6100A726F1 /* NSData+DCHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7870F1990FB6100A726F1 /* NSData+DCHash.m */; };
-		89B787841990FB6100A726F1 /* NSData+DCHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7870F1990FB6100A726F1 /* NSData+DCHash.m */; };
-		89B787851990FB6100A726F1 /* NSData+DCHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7870F1990FB6100A726F1 /* NSData+DCHash.m */; };
-		89B787861990FB6100A726F1 /* NSData+DCHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7870F1990FB6100A726F1 /* NSData+DCHash.m */; };
-		89B787871990FB6100A726F1 /* NSData+DCHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787101990FB6100A726F1 /* NSData+DCHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787881990FB6100A726F1 /* NSData+DCHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787111990FB6100A726F1 /* NSData+DCHex.m */; };
-		89B787891990FB6100A726F1 /* NSData+DCHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787111990FB6100A726F1 /* NSData+DCHex.m */; };
-		89B7878A1990FB6100A726F1 /* NSData+DCHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787111990FB6100A726F1 /* NSData+DCHex.m */; };
-		89B7878B1990FB6100A726F1 /* NSData+DCHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787111990FB6100A726F1 /* NSData+DCHex.m */; };
-		89B7878C1990FB6100A726F1 /* NSString+DCBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787121990FB6100A726F1 /* NSString+DCBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B7878D1990FB6100A726F1 /* NSString+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787131990FB6100A726F1 /* NSString+DCBase64.m */; };
-		89B7878E1990FB6100A726F1 /* NSString+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787131990FB6100A726F1 /* NSString+DCBase64.m */; };
-		89B7878F1990FB6100A726F1 /* NSString+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787131990FB6100A726F1 /* NSString+DCBase64.m */; };
-		89B787901990FB6100A726F1 /* NSString+DCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787131990FB6100A726F1 /* NSString+DCBase64.m */; };
-		89B787911990FB6100A726F1 /* NSString+DCHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787141990FB6100A726F1 /* NSString+DCHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787921990FB6100A726F1 /* NSString+DCHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787151990FB6100A726F1 /* NSString+DCHash.m */; };
-		89B787931990FB6100A726F1 /* NSString+DCHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787151990FB6100A726F1 /* NSString+DCHash.m */; };
-		89B787941990FB6100A726F1 /* NSString+DCHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787151990FB6100A726F1 /* NSString+DCHash.m */; };
-		89B787951990FB6100A726F1 /* NSString+DCHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787151990FB6100A726F1 /* NSString+DCHash.m */; };
-		89B787961990FB6100A726F1 /* NSArray+DCContentExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787161990FB6100A726F1 /* NSArray+DCContentExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787971990FB6100A726F1 /* NSArray+DCContentExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787171990FB6100A726F1 /* NSArray+DCContentExtension.m */; };
-		89B787981990FB6100A726F1 /* NSArray+DCContentExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787171990FB6100A726F1 /* NSArray+DCContentExtension.m */; };
-		89B787991990FB6100A726F1 /* NSArray+DCContentExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787171990FB6100A726F1 /* NSArray+DCContentExtension.m */; };
-		89B7879A1990FB6100A726F1 /* NSArray+DCContentExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787171990FB6100A726F1 /* NSArray+DCContentExtension.m */; };
-		89B7879B1990FB6100A726F1 /* NSBundle+DCLibrarySupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787181990FB6100A726F1 /* NSBundle+DCLibrarySupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B7879C1990FB6100A726F1 /* NSBundle+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787191990FB6100A726F1 /* NSBundle+DCLibrarySupport.m */; };
-		89B7879D1990FB6100A726F1 /* NSBundle+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787191990FB6100A726F1 /* NSBundle+DCLibrarySupport.m */; };
-		89B7879E1990FB6100A726F1 /* NSBundle+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787191990FB6100A726F1 /* NSBundle+DCLibrarySupport.m */; };
-		89B7879F1990FB6100A726F1 /* NSBundle+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787191990FB6100A726F1 /* NSBundle+DCLibrarySupport.m */; };
-		89B787A01990FB6100A726F1 /* NSData+DCLibrarySupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7871A1990FB6100A726F1 /* NSData+DCLibrarySupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787A11990FB6100A726F1 /* NSData+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7871B1990FB6100A726F1 /* NSData+DCLibrarySupport.m */; };
-		89B787A21990FB6100A726F1 /* NSData+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7871B1990FB6100A726F1 /* NSData+DCLibrarySupport.m */; };
-		89B787A31990FB6100A726F1 /* NSData+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7871B1990FB6100A726F1 /* NSData+DCLibrarySupport.m */; };
-		89B787A41990FB6100A726F1 /* NSData+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7871B1990FB6100A726F1 /* NSData+DCLibrarySupport.m */; };
-		89B787A51990FB6100A726F1 /* NSDictionary+DCSortable.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7871C1990FB6100A726F1 /* NSDictionary+DCSortable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787A61990FB6100A726F1 /* NSDictionary+DCSortable.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7871D1990FB6100A726F1 /* NSDictionary+DCSortable.m */; };
-		89B787A71990FB6100A726F1 /* NSDictionary+DCSortable.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7871D1990FB6100A726F1 /* NSDictionary+DCSortable.m */; };
-		89B787A81990FB6100A726F1 /* NSDictionary+DCSortable.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7871D1990FB6100A726F1 /* NSDictionary+DCSortable.m */; };
-		89B787A91990FB6100A726F1 /* NSDictionary+DCSortable.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7871D1990FB6100A726F1 /* NSDictionary+DCSortable.m */; };
-		89B787AA1990FB6100A726F1 /* NSNumber+DCRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7871E1990FB6100A726F1 /* NSNumber+DCRandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787AB1990FB6100A726F1 /* NSNumber+DCRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7871F1990FB6100A726F1 /* NSNumber+DCRandom.m */; };
-		89B787AC1990FB6100A726F1 /* NSNumber+DCRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7871F1990FB6100A726F1 /* NSNumber+DCRandom.m */; };
-		89B787AD1990FB6100A726F1 /* NSNumber+DCRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7871F1990FB6100A726F1 /* NSNumber+DCRandom.m */; };
-		89B787AE1990FB6100A726F1 /* NSNumber+DCRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7871F1990FB6100A726F1 /* NSNumber+DCRandom.m */; };
-		89B787AF1990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787201990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787B01990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787211990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m */; };
-		89B787B11990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787211990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m */; };
-		89B787B21990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787211990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m */; };
-		89B787B31990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787211990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m */; };
-		89B787B41990FB6100A726F1 /* NSObject+DCSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787221990FB6100A726F1 /* NSObject+DCSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787B51990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787231990FB6100A726F1 /* NSObject+DCSwizzle.m */; };
-		89B787B61990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787231990FB6100A726F1 /* NSObject+DCSwizzle.m */; };
-		89B787B71990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787231990FB6100A726F1 /* NSObject+DCSwizzle.m */; };
-		89B787B81990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787231990FB6100A726F1 /* NSObject+DCSwizzle.m */; };
-		89B787B91990FB6100A726F1 /* NSObject+DCUUIDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787241990FB6100A726F1 /* NSObject+DCUUIDExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787BA1990FB6100A726F1 /* NSObject+DCUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787251990FB6100A726F1 /* NSObject+DCUUIDExtension.m */; };
-		89B787BB1990FB6100A726F1 /* NSObject+DCUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787251990FB6100A726F1 /* NSObject+DCUUIDExtension.m */; };
-		89B787BC1990FB6100A726F1 /* NSObject+DCUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787251990FB6100A726F1 /* NSObject+DCUUIDExtension.m */; };
-		89B787BD1990FB6100A726F1 /* NSObject+DCUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787251990FB6100A726F1 /* NSObject+DCUUIDExtension.m */; };
-		89B787BE1990FB6100A726F1 /* NSString+DCParseCSV.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787261990FB6100A726F1 /* NSString+DCParseCSV.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787BF1990FB6100A726F1 /* NSString+DCParseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787271990FB6100A726F1 /* NSString+DCParseCSV.m */; };
-		89B787C01990FB6100A726F1 /* NSString+DCParseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787271990FB6100A726F1 /* NSString+DCParseCSV.m */; };
-		89B787C11990FB6100A726F1 /* NSString+DCParseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787271990FB6100A726F1 /* NSString+DCParseCSV.m */; };
-		89B787C21990FB6100A726F1 /* NSString+DCParseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787271990FB6100A726F1 /* NSString+DCParseCSV.m */; };
-		89B787C31990FB6100A726F1 /* NSString+DCURLCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787281990FB6100A726F1 /* NSString+DCURLCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787C41990FB6100A726F1 /* NSString+DCURLCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787291990FB6100A726F1 /* NSString+DCURLCoding.m */; };
-		89B787C51990FB6100A726F1 /* NSString+DCURLCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787291990FB6100A726F1 /* NSString+DCURLCoding.m */; };
-		89B787C61990FB6100A726F1 /* NSString+DCURLCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787291990FB6100A726F1 /* NSString+DCURLCoding.m */; };
-		89B787C71990FB6100A726F1 /* NSString+DCURLCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787291990FB6100A726F1 /* NSString+DCURLCoding.m */; };
-		89B787C81990FB6100A726F1 /* NSURL+DCUTTypeSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7872A1990FB6100A726F1 /* NSURL+DCUTTypeSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787C91990FB6100A726F1 /* NSURL+DCUTTypeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7872B1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m */; };
-		89B787CA1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7872B1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m */; };
-		89B787CB1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7872B1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m */; };
-		89B787CC1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7872B1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m */; };
-		89B787CD1990FB6100A726F1 /* DCCommonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7872D1990FB6100A726F1 /* DCCommonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787CE1990FB6100A726F1 /* DCSafeARC.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7872E1990FB6100A726F1 /* DCSafeARC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787CF1990FB6100A726F1 /* DCSingletonTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7872F1990FB6100A726F1 /* DCSingletonTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787D01990FB6100A726F1 /* DCTestBlocker.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787311990FB6100A726F1 /* DCTestBlocker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787D11990FB6100A726F1 /* DCTestBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787321990FB6100A726F1 /* DCTestBlocker.m */; };
-		89B787D21990FB6100A726F1 /* DCTestBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787321990FB6100A726F1 /* DCTestBlocker.m */; };
-		89B787D31990FB6100A726F1 /* DCTestBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787321990FB6100A726F1 /* DCTestBlocker.m */; };
-		89B787D41990FB6100A726F1 /* DCTestBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787321990FB6100A726F1 /* DCTestBlocker.m */; };
-		89B787D51990FB6100A726F1 /* DCAtomicSetters.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787341990FB6100A726F1 /* DCAtomicSetters.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787D61990FB6100A726F1 /* DCCommonUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787351990FB6100A726F1 /* DCCommonUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787D71990FB6100A726F1 /* DCCommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787361990FB6100A726F1 /* DCCommonUtility.m */; };
-		89B787D81990FB6100A726F1 /* DCCommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787361990FB6100A726F1 /* DCCommonUtility.m */; };
-		89B787D91990FB6100A726F1 /* DCCommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787361990FB6100A726F1 /* DCCommonUtility.m */; };
-		89B787DA1990FB6100A726F1 /* DCCommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787361990FB6100A726F1 /* DCCommonUtility.m */; };
-		89B787DB1990FB6100A726F1 /* DCImageUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787371990FB6100A726F1 /* DCImageUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787DC1990FB6100A726F1 /* DCImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787381990FB6100A726F1 /* DCImageUtility.m */; };
-		89B787DD1990FB6100A726F1 /* DCImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787381990FB6100A726F1 /* DCImageUtility.m */; };
-		89B787DE1990FB6100A726F1 /* DCImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787381990FB6100A726F1 /* DCImageUtility.m */; };
-		89B787DF1990FB6100A726F1 /* DCImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787381990FB6100A726F1 /* DCImageUtility.m */; };
-		89B787E01990FB6100A726F1 /* DCRPNUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787391990FB6100A726F1 /* DCRPNUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787E11990FB6100A726F1 /* DCRPNUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7873A1990FB6100A726F1 /* DCRPNUtility.m */; };
-		89B787E21990FB6100A726F1 /* DCRPNUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7873A1990FB6100A726F1 /* DCRPNUtility.m */; };
-		89B787E31990FB6100A726F1 /* DCRPNUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7873A1990FB6100A726F1 /* DCRPNUtility.m */; };
-		89B787E41990FB6100A726F1 /* DCRPNUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7873A1990FB6100A726F1 /* DCRPNUtility.m */; };
-		89B787E51990FB6100A726F1 /* DCUIMainThreadGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7873B1990FB6100A726F1 /* DCUIMainThreadGuard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787E61990FB6100A726F1 /* DCUIMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7873C1990FB6100A726F1 /* DCUIMainThreadGuard.m */; };
-		89B787E71990FB6100A726F1 /* DCUIMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7873C1990FB6100A726F1 /* DCUIMainThreadGuard.m */; };
-		89B787E81990FB6100A726F1 /* DCUIMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7873C1990FB6100A726F1 /* DCUIMainThreadGuard.m */; };
-		89B787E91990FB6100A726F1 /* DCUIMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7873C1990FB6100A726F1 /* DCUIMainThreadGuard.m */; };
-		89B787EA1990FB6100A726F1 /* DCWebUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7873D1990FB6100A726F1 /* DCWebUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787EB1990FB6100A726F1 /* DCWebUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7873E1990FB6100A726F1 /* DCWebUtility.m */; };
-		89B787EC1990FB6100A726F1 /* DCWebUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7873E1990FB6100A726F1 /* DCWebUtility.m */; };
-		89B787ED1990FB6100A726F1 /* DCWebUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7873E1990FB6100A726F1 /* DCWebUtility.m */; };
-		89B787EE1990FB6100A726F1 /* DCWebUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7873E1990FB6100A726F1 /* DCWebUtility.m */; };
-		89B787EF1990FB6100A726F1 /* DCGZipCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787401990FB6100A726F1 /* DCGZipCompressor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787F01990FB6100A726F1 /* DCGZipCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787411990FB6100A726F1 /* DCGZipCompressor.m */; };
-		89B787F11990FB6100A726F1 /* DCGZipCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787411990FB6100A726F1 /* DCGZipCompressor.m */; };
-		89B787F21990FB6100A726F1 /* DCGZipCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787411990FB6100A726F1 /* DCGZipCompressor.m */; };
-		89B787F31990FB6100A726F1 /* DCGZipCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787411990FB6100A726F1 /* DCGZipCompressor.m */; };
-		89B787F41990FB6100A726F1 /* DCGZipDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787421990FB6100A726F1 /* DCGZipDecompressor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787F51990FB6100A726F1 /* DCGZipDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787431990FB6100A726F1 /* DCGZipDecompressor.m */; };
-		89B787F61990FB6100A726F1 /* DCGZipDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787431990FB6100A726F1 /* DCGZipDecompressor.m */; };
-		89B787F71990FB6100A726F1 /* DCGZipDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787431990FB6100A726F1 /* DCGZipDecompressor.m */; };
-		89B787F81990FB6100A726F1 /* DCGZipDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787431990FB6100A726F1 /* DCGZipDecompressor.m */; };
-		89B787FE1990FB6100A726F1 /* DCLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787481990FB6100A726F1 /* DCLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B787FF1990FB6100A726F1 /* DCLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787491990FB6100A726F1 /* DCLogger.m */; };
-		89B788001990FB6100A726F1 /* DCLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787491990FB6100A726F1 /* DCLogger.m */; };
-		89B788011990FB6100A726F1 /* DCLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787491990FB6100A726F1 /* DCLogger.m */; };
-		89B788021990FB6100A726F1 /* DCLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787491990FB6100A726F1 /* DCLogger.m */; };
-		89B788031990FB6100A726F1 /* DCHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7874B1990FB6100A726F1 /* DCHTTPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B788041990FB6100A726F1 /* DCHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7874C1990FB6100A726F1 /* DCHTTPOperation.m */; };
-		89B788051990FB6100A726F1 /* DCHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7874C1990FB6100A726F1 /* DCHTTPOperation.m */; };
-		89B788061990FB6100A726F1 /* DCHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7874C1990FB6100A726F1 /* DCHTTPOperation.m */; };
-		89B788071990FB6100A726F1 /* DCHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7874C1990FB6100A726F1 /* DCHTTPOperation.m */; };
-		89B788081990FB6100A726F1 /* DCRunLoopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7874D1990FB6100A726F1 /* DCRunLoopOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B788091990FB6100A726F1 /* DCRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7874E1990FB6100A726F1 /* DCRunLoopOperation.m */; };
-		89B7880A1990FB6100A726F1 /* DCRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7874E1990FB6100A726F1 /* DCRunLoopOperation.m */; };
-		89B7880B1990FB6100A726F1 /* DCRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7874E1990FB6100A726F1 /* DCRunLoopOperation.m */; };
-		89B7880C1990FB6100A726F1 /* DCRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7874E1990FB6100A726F1 /* DCRunLoopOperation.m */; };
-		89B7880D1990FB6100A726F1 /* DCWatchedOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7874F1990FB6100A726F1 /* DCWatchedOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B7880E1990FB6100A726F1 /* DCWatchedOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787501990FB6100A726F1 /* DCWatchedOperationQueue.m */; };
-		89B7880F1990FB6100A726F1 /* DCWatchedOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787501990FB6100A726F1 /* DCWatchedOperationQueue.m */; };
-		89B788101990FB6100A726F1 /* DCWatchedOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787501990FB6100A726F1 /* DCWatchedOperationQueue.m */; };
-		89B788111990FB6100A726F1 /* DCWatchedOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787501990FB6100A726F1 /* DCWatchedOperationQueue.m */; };
-		89B788121990FB6100A726F1 /* DCStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787521990FB6100A726F1 /* DCStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B788131990FB6100A726F1 /* DCStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787531990FB6100A726F1 /* DCStack.m */; };
-		89B788141990FB6100A726F1 /* DCStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787531990FB6100A726F1 /* DCStack.m */; };
-		89B788151990FB6100A726F1 /* DCStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787531990FB6100A726F1 /* DCStack.m */; };
-		89B788161990FB6100A726F1 /* DCStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787531990FB6100A726F1 /* DCStack.m */; };
-		89B788171990FB6100A726F1 /* DCTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787551990FB6100A726F1 /* DCTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B788181990FB6100A726F1 /* DCTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787561990FB6100A726F1 /* DCTree.m */; };
-		89B788191990FB6100A726F1 /* DCTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787561990FB6100A726F1 /* DCTree.m */; };
-		89B7881A1990FB6100A726F1 /* DCTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787561990FB6100A726F1 /* DCTree.m */; };
-		89B7881B1990FB6100A726F1 /* DCTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787561990FB6100A726F1 /* DCTree.m */; };
-		89B7881C1990FB6100A726F1 /* DCTreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B787571990FB6100A726F1 /* DCTreeNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B7881D1990FB6100A726F1 /* DCTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787581990FB6100A726F1 /* DCTreeNode.m */; };
-		89B7881E1990FB6100A726F1 /* DCTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787581990FB6100A726F1 /* DCTreeNode.m */; };
-		89B7881F1990FB6100A726F1 /* DCTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787581990FB6100A726F1 /* DCTreeNode.m */; };
-		89B788201990FB6100A726F1 /* DCTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B787581990FB6100A726F1 /* DCTreeNode.m */; };
-		89B788301990FB6E00A726F1 /* NSColor+DCAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B788241990FB6E00A726F1 /* NSColor+DCAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B788311990FB6E00A726F1 /* NSColor+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B788251990FB6E00A726F1 /* NSColor+DCAdditions.m */; };
-		89B788321990FB6E00A726F1 /* NSColor+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B788251990FB6E00A726F1 /* NSColor+DCAdditions.m */; };
-		89B788331990FB6E00A726F1 /* NSColor+DCColorful.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B788261990FB6E00A726F1 /* NSColor+DCColorful.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B788341990FB6E00A726F1 /* NSColor+DCColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B788271990FB6E00A726F1 /* NSColor+DCColorful.m */; };
-		89B788351990FB6E00A726F1 /* NSColor+DCColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B788271990FB6E00A726F1 /* NSColor+DCColorful.m */; };
-		89B788361990FB6E00A726F1 /* NSViewController+DCViewLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B788281990FB6E00A726F1 /* NSViewController+DCViewLogic.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B788371990FB6E00A726F1 /* NSViewController+DCViewLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B788291990FB6E00A726F1 /* NSViewController+DCViewLogic.m */; };
-		89B788381990FB6E00A726F1 /* NSViewController+DCViewLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B788291990FB6E00A726F1 /* NSViewController+DCViewLogic.m */; };
-		89B788391990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B7882A1990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B7883A1990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7882B1990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.m */; };
-		89B7883B1990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7882B1990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.m */; };
-		89B7884B1990FB7600A726F1 /* UIColor+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B788401990FB7600A726F1 /* UIColor+DCAdditions.m */; };
-		89B7884C1990FB7600A726F1 /* UIColor+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B788401990FB7600A726F1 /* UIColor+DCAdditions.m */; };
-		89B7884D1990FB7600A726F1 /* UIColor+DCColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B788421990FB7600A726F1 /* UIColor+DCColorful.m */; };
-		89B7884E1990FB7600A726F1 /* UIColor+DCColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B788421990FB7600A726F1 /* UIColor+DCColorful.m */; };
-		89B7884F1990FB7600A726F1 /* UIImage+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B788441990FB7600A726F1 /* UIImage+DCLibrarySupport.m */; };
-		89B788501990FB7600A726F1 /* UIImage+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B788441990FB7600A726F1 /* UIImage+DCLibrarySupport.m */; };
-		89B788511990FB7600A726F1 /* UIViewController+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B788461990FB7600A726F1 /* UIViewController+DCLibrarySupport.m */; };
-		89B788521990FB7600A726F1 /* UIViewController+DCLibrarySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B788461990FB7600A726F1 /* UIViewController+DCLibrarySupport.m */; };
-		89B788561990FC5600A726F1 /* NSMutableArray+DCGCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B786FB1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.h */; };
-		89B788571990FC5600A726F1 /* NSMutableData+DCGCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B786FD1990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.h */; };
-		89B788581990FC5600A726F1 /* NSMutableDictionary+DCGCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B786FF1990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.h */; };
-		89B788591990FC5600A726F1 /* NSMutableSet+DCGCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787011990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.h */; };
-		89B7885A1990FC5600A726F1 /* NSMutableString+DCGCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787031990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.h */; };
-		89B7885B1990FC5600A726F1 /* NSObject+DCGCDThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787051990FB6100A726F1 /* NSObject+DCGCDThreadSafe.h */; };
-		89B7885C1990FC5600A726F1 /* NSData+GZipExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787081990FB6100A726F1 /* NSData+GZipExtension.h */; };
-		89B7885D1990FC5600A726F1 /* DCBase64Define.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7870B1990FB6100A726F1 /* DCBase64Define.h */; };
-		89B7885E1990FC5600A726F1 /* NSData+DCBase64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7870C1990FB6100A726F1 /* NSData+DCBase64.h */; };
-		89B7885F1990FC5600A726F1 /* NSData+DCHash.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7870E1990FB6100A726F1 /* NSData+DCHash.h */; };
-		89B788601990FC5600A726F1 /* NSData+DCHex.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787101990FB6100A726F1 /* NSData+DCHex.h */; };
-		89B788611990FC5600A726F1 /* NSString+DCBase64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787121990FB6100A726F1 /* NSString+DCBase64.h */; };
-		89B788621990FC5600A726F1 /* NSString+DCHash.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787141990FB6100A726F1 /* NSString+DCHash.h */; };
-		89B788631990FC5600A726F1 /* NSArray+DCContentExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787161990FB6100A726F1 /* NSArray+DCContentExtension.h */; };
-		89B788641990FC5600A726F1 /* NSBundle+DCLibrarySupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787181990FB6100A726F1 /* NSBundle+DCLibrarySupport.h */; };
-		89B788651990FC5600A726F1 /* NSData+DCLibrarySupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7871A1990FB6100A726F1 /* NSData+DCLibrarySupport.h */; };
-		89B788661990FC5600A726F1 /* NSDictionary+DCSortable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7871C1990FB6100A726F1 /* NSDictionary+DCSortable.h */; };
-		89B788671990FC5600A726F1 /* NSNumber+DCRandom.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7871E1990FB6100A726F1 /* NSNumber+DCRandom.h */; };
-		89B788681990FC5600A726F1 /* NSObject+DCMainThreadAsyncReactive.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787201990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.h */; };
-		89B788691990FC5600A726F1 /* NSObject+DCSwizzle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787221990FB6100A726F1 /* NSObject+DCSwizzle.h */; };
-		89B7886A1990FC5600A726F1 /* NSObject+DCUUIDExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787241990FB6100A726F1 /* NSObject+DCUUIDExtension.h */; };
-		89B7886B1990FC5600A726F1 /* NSString+DCParseCSV.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787261990FB6100A726F1 /* NSString+DCParseCSV.h */; };
-		89B7886C1990FC5600A726F1 /* NSString+DCURLCoding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787281990FB6100A726F1 /* NSString+DCURLCoding.h */; };
-		89B7886D1990FC5600A726F1 /* NSURL+DCUTTypeSupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7872A1990FB6100A726F1 /* NSURL+DCUTTypeSupport.h */; };
-		89B7886E1990FC5600A726F1 /* DCCommonConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7872D1990FB6100A726F1 /* DCCommonConstants.h */; };
-		89B7886F1990FC5600A726F1 /* DCSafeARC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7872E1990FB6100A726F1 /* DCSafeARC.h */; };
-		89B788701990FC5600A726F1 /* DCSingletonTemplate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7872F1990FB6100A726F1 /* DCSingletonTemplate.h */; };
-		89B788711990FC5600A726F1 /* DCTestBlocker.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787311990FB6100A726F1 /* DCTestBlocker.h */; };
-		89B788721990FC5600A726F1 /* DCAtomicSetters.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787341990FB6100A726F1 /* DCAtomicSetters.h */; };
-		89B788731990FC5600A726F1 /* DCCommonUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787351990FB6100A726F1 /* DCCommonUtility.h */; };
-		89B788741990FC5600A726F1 /* DCImageUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787371990FB6100A726F1 /* DCImageUtility.h */; };
-		89B788751990FC5600A726F1 /* DCRPNUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787391990FB6100A726F1 /* DCRPNUtility.h */; };
-		89B788761990FC5600A726F1 /* DCUIMainThreadGuard.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7873B1990FB6100A726F1 /* DCUIMainThreadGuard.h */; };
-		89B788771990FC5600A726F1 /* DCWebUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7873D1990FB6100A726F1 /* DCWebUtility.h */; };
-		89B788781990FC5600A726F1 /* DCGZipCompressor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787401990FB6100A726F1 /* DCGZipCompressor.h */; };
-		89B788791990FC5600A726F1 /* DCGZipDecompressor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787421990FB6100A726F1 /* DCGZipDecompressor.h */; };
-		89B7887B1990FC5600A726F1 /* DCLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787481990FB6100A726F1 /* DCLogger.h */; };
-		89B7887C1990FC5600A726F1 /* DCHTTPOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7874B1990FB6100A726F1 /* DCHTTPOperation.h */; };
-		89B7887D1990FC5600A726F1 /* DCRunLoopOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7874D1990FB6100A726F1 /* DCRunLoopOperation.h */; };
-		89B7887E1990FC5600A726F1 /* DCWatchedOperationQueue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7874F1990FB6100A726F1 /* DCWatchedOperationQueue.h */; };
-		89B7887F1990FC5600A726F1 /* DCStack.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787521990FB6100A726F1 /* DCStack.h */; };
-		89B788801990FC5600A726F1 /* DCTree.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787551990FB6100A726F1 /* DCTree.h */; };
-		89B788811990FC5600A726F1 /* DCTreeNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B787571990FB6100A726F1 /* DCTreeNode.h */; };
-		89B788821990FC6600A726F1 /* UIColor+DCAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B7883F1990FB7600A726F1 /* UIColor+DCAdditions.h */; };
-		89B788831990FC6600A726F1 /* UIColor+DCColorful.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B788411990FB7600A726F1 /* UIColor+DCColorful.h */; };
-		89B788841990FC6600A726F1 /* UIImage+DCLibrarySupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B788431990FB7600A726F1 /* UIImage+DCLibrarySupport.h */; };
-		89B788851990FC6600A726F1 /* UIViewController+DCLibrarySupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B788451990FB7600A726F1 /* UIViewController+DCLibrarySupport.h */; };
-		89BC4D9F19CAB0570034179E /* DCMemoryUsageReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BC4D9D19CAB0570034179E /* DCMemoryUsageReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89BC4DA019CAB0570034179E /* DCMemoryUsageReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */; };
-		89BC4DA119CAB0570034179E /* DCMemoryUsageReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */; };
-		89BC4DA219CAB0570034179E /* DCMemoryUsageReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */; };
-		89BC4DA319CAB0570034179E /* DCMemoryUsageReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */; };
-		89BC4DBB19CAC9820034179E /* DCXOREncryptedOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BC4DB919CAC9820034179E /* DCXOREncryptedOutputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89BC4DBC19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DBA19CAC9820034179E /* DCXOREncryptedOutputStream.m */; };
-		89BC4DBD19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DBA19CAC9820034179E /* DCXOREncryptedOutputStream.m */; };
-		89BC4DBE19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DBA19CAC9820034179E /* DCXOREncryptedOutputStream.m */; };
-		89BC4DBF19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DBA19CAC9820034179E /* DCXOREncryptedOutputStream.m */; };
-		89BC4DC219CAC9A90034179E /* DCXOREncryptedInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BC4DC019CAC9A90034179E /* DCXOREncryptedInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89BC4DC319CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DC119CAC9A90034179E /* DCXOREncryptedInputStream.m */; };
-		89BC4DC419CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DC119CAC9A90034179E /* DCXOREncryptedInputStream.m */; };
-		89BC4DC519CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DC119CAC9A90034179E /* DCXOREncryptedInputStream.m */; };
-		89BC4DC619CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC4DC119CAC9A90034179E /* DCXOREncryptedInputStream.m */; };
-		89BC4DC719CAD3110034179E /* DCXOREncryptedInputStream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89BC4DC019CAC9A90034179E /* DCXOREncryptedInputStream.h */; };
-		89BC4DC819CAD3110034179E /* DCXOREncryptedOutputStream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89BC4DB919CAC9820034179E /* DCXOREncryptedOutputStream.h */; };
-		89BC4DC919CAD3110034179E /* DCMemoryUsageReporter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89BC4D9D19CAB0570034179E /* DCMemoryUsageReporter.h */; };
-		89C221FC19B6C12A007F5CF2 /* DCCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 895A6C5319A6314A00E56909 /* DCCommonFuncations.m */; };
-		89C221FD19B6C12A007F5CF2 /* DCDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0F19A5CA9100F54598 /* DCDictionaryCache.m */; };
-		89C221FE19B6C12A007F5CF2 /* DCComponentPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */; };
-		89C221FF19B6C12A007F5CF2 /* NSViewController+ComponentPathExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0419A58D4600F54598 /* NSViewController+ComponentPathExtension.m */; };
-		89C2220019B6C143007F5CF2 /* DCCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 895A6C5319A6314A00E56909 /* DCCommonFuncations.m */; };
-		89C2220119B6C143007F5CF2 /* DCComponentPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */; };
-		89C2220219B6C143007F5CF2 /* UIViewController+ComponentPathExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0819A58F6E00F54598 /* UIViewController+ComponentPathExtension.m */; };
-		89C5B1EB19D53335008BA398 /* DCXOREncryptUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C5B1E919D53335008BA398 /* DCXOREncryptUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89C5B1EC19D53335008BA398 /* DCXOREncryptUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C5B1EA19D53335008BA398 /* DCXOREncryptUtility.m */; };
-		89C5B1ED19D53335008BA398 /* DCXOREncryptUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C5B1EA19D53335008BA398 /* DCXOREncryptUtility.m */; };
-		89C5B1EE19D53335008BA398 /* DCXOREncryptUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C5B1EA19D53335008BA398 /* DCXOREncryptUtility.m */; };
-		89C5B1EF19D53335008BA398 /* DCXOREncryptUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C5B1EA19D53335008BA398 /* DCXOREncryptUtility.m */; };
-		89C5B1F019D533F4008BA398 /* DCXOREncryptUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C5B1E919D53335008BA398 /* DCXOREncryptUtility.h */; };
-		89C5B1F119D533F4008BA398 /* DCMemoryUsageMonitor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89B4FCB219CBC3AE004F99C1 /* DCMemoryUsageMonitor.h */; };
+		89C94D2B1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D291A7B04D300BCC65C /* NSArray+DCHSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C94D2C1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D2A1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m */; };
+		89C94D2D1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D2A1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m */; };
+		89C94D2E1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D2A1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m */; };
+		89C94D2F1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D2A1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m */; };
+		89C94D321A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D301A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C94D331A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D311A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m */; };
+		89C94D341A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D311A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m */; };
+		89C94D351A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D311A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m */; };
+		89C94D361A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D311A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m */; };
+		89C94D391A7B05B000BCC65C /* NSString+DCHSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D371A7B05B000BCC65C /* NSString+DCHSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C94D3A1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D381A7B05B000BCC65C /* NSString+DCHSafeCRUD.m */; };
+		89C94D3B1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D381A7B05B000BCC65C /* NSString+DCHSafeCRUD.m */; };
+		89C94D3C1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D381A7B05B000BCC65C /* NSString+DCHSafeCRUD.m */; };
+		89C94D3D1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D381A7B05B000BCC65C /* NSString+DCHSafeCRUD.m */; };
+		89C94D401A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D3E1A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C94D411A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D3F1A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m */; };
+		89C94D421A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D3F1A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m */; };
+		89C94D431A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D3F1A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m */; };
+		89C94D441A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D3F1A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m */; };
+		89C94D471A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D451A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C94D481A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D461A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m */; };
+		89C94D491A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D461A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m */; };
+		89C94D4A1A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D461A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m */; };
+		89C94D4B1A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D461A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m */; };
+		89C94D4E1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D4C1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C94D4F1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D4D1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m */; };
+		89C94D501A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D4D1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m */; };
+		89C94D511A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D4D1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m */; };
+		89C94D521A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D4D1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m */; };
+		89C94D551A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D531A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C94D561A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D541A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m */; };
+		89C94D571A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D541A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m */; };
+		89C94D581A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D541A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m */; };
+		89C94D591A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D541A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m */; };
+		89C94D5C1A7B180000BCC65C /* NSObject+DCHThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D5A1A7B180000BCC65C /* NSObject+DCHThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C94D5D1A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D5B1A7B180000BCC65C /* NSObject+DCHThreadSafe.m */; };
+		89C94D5E1A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D5B1A7B180000BCC65C /* NSObject+DCHThreadSafe.m */; };
+		89C94D5F1A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D5B1A7B180000BCC65C /* NSObject+DCHThreadSafe.m */; };
+		89C94D601A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D5B1A7B180000BCC65C /* NSObject+DCHThreadSafe.m */; };
+		89C94D631A7B193B00BCC65C /* NSObject+DCHSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D611A7B193B00BCC65C /* NSObject+DCHSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C94D641A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D621A7B193B00BCC65C /* NSObject+DCHSwizzle.m */; };
+		89C94D651A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D621A7B193B00BCC65C /* NSObject+DCHSwizzle.m */; };
+		89C94D661A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D621A7B193B00BCC65C /* NSObject+DCHSwizzle.m */; };
+		89C94D671A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D621A7B193B00BCC65C /* NSObject+DCHSwizzle.m */; };
+		89C94D6A1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D681A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C94D6B1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D691A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m */; };
+		89C94D6C1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D691A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m */; };
+		89C94D6D1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D691A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m */; };
+		89C94D6E1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D691A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m */; };
+		89C94D711A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D6F1A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C94D721A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D701A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m */; };
+		89C94D731A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D701A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m */; };
+		89C94D741A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D701A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m */; };
+		89C94D751A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D701A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m */; };
+		89C94D781A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D761A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C94D791A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D771A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m */; };
+		89C94D7A1A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D771A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m */; };
+		89C94D7B1A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D771A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m */; };
+		89C94D7C1A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D771A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m */; };
+		89C94D7F1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D7D1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C94D801A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D7E1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m */; };
+		89C94D811A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D7E1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m */; };
+		89C94D821A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D7E1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m */; };
+		89C94D831A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D7E1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m */; };
+		89C94D861A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D841A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C94D871A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D851A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m */; };
+		89C94D881A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D851A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m */; };
+		89C94D891A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D851A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m */; };
+		89C94D8A1A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D851A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m */; };
+		89C94D8D1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D8B1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C94D8E1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D8C1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m */; };
+		89C94D8F1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D8C1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m */; };
+		89C94D901A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D8C1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m */; };
+		89C94D911A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D8C1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m */; };
+		89C94D921A7B2E3F00BCC65C /* DCHTourbillon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89F9D6DF1A7A37C200A5528A /* DCHTourbillon.h */; };
+		89C94D931A7B2E3F00BCC65C /* NSArray+DCHSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D291A7B04D300BCC65C /* NSArray+DCHSafeCRUD.h */; };
+		89C94D941A7B2E3F00BCC65C /* NSDictionary+DCHSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D301A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.h */; };
+		89C94D951A7B2E3F00BCC65C /* NSString+DCHSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D371A7B05B000BCC65C /* NSString+DCHSafeCRUD.h */; };
+		89C94D961A7B2E3F00BCC65C /* NSMutableArray+DCHSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D3E1A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.h */; };
+		89C94D971A7B2E3F00BCC65C /* NSMutableDictionary+DCHSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D451A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.h */; };
+		89C94D981A7B2E3F00BCC65C /* NSMutableSet+DCHSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D4C1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.h */; };
+		89C94D991A7B2E3F00BCC65C /* NSMutableString+DCHSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D531A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.h */; };
+		89C94D9A1A7B2E3F00BCC65C /* NSObject+DCHThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D5A1A7B180000BCC65C /* NSObject+DCHThreadSafe.h */; };
+		89C94D9B1A7B2E3F00BCC65C /* NSMutableArray+DCHThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D6F1A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.h */; };
+		89C94D9C1A7B2E3F00BCC65C /* NSMutableData+DCHThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D761A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.h */; };
+		89C94D9D1A7B2E3F00BCC65C /* NSMutableDictionary+DCHThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D7D1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.h */; };
+		89C94D9E1A7B2E3F00BCC65C /* NSMutableSet+DCHThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D841A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.h */; };
+		89C94D9F1A7B2E3F00BCC65C /* NSMutableString+DCHThreadSafe.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D8B1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.h */; };
+		89C94DA01A7B2E3F00BCC65C /* NSObject+DCHSwizzle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D611A7B193B00BCC65C /* NSObject+DCHSwizzle.h */; };
+		89C94DA11A7B2E3F00BCC65C /* NSObject+DCHAssociatedObjectExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D681A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.h */; };
+		89C94DA21A7B2E3F00BCC65C /* DCHCommonConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89F9D6E11A7A381B00A5528A /* DCHCommonConstants.h */; };
+		89C94DA31A7B2E3F00BCC65C /* DCHCommonFuncations.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89F9D6E31A7A470800A5528A /* DCHCommonFuncations.h */; };
+		89C94DA41A7B2E3F00BCC65C /* DCHSafeARC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89F9D6EA1A7A492400A5528A /* DCHSafeARC.h */; };
+		89C94DA51A7B2E3F00BCC65C /* DCHSingletonTemplate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89F9D6EC1A7A49BF00A5528A /* DCHSingletonTemplate.h */; };
 		89E833CB19CB001E00F26088 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8955F7F5197135E500B390C6 /* libz.dylib */; };
 		89E833CC19CB003D00F26088 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8955F7F7197135ED00B390C6 /* libz.dylib */; };
 		89E833CD19CB004500F26088 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */; };
-		89E833D519CB012500F26088 /* DCOSXCommonFuncations.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E833D319CB012500F26088 /* DCOSXCommonFuncations.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89E833D619CB012500F26088 /* DCOSXCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E833D419CB012500F26088 /* DCOSXCommonFuncations.m */; };
-		89E833D719CB012500F26088 /* DCOSXCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E833D419CB012500F26088 /* DCOSXCommonFuncations.m */; };
-		89E833D819CB01B800F26088 /* DCDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009F0F19A5CA9100F54598 /* DCDictionaryCache.m */; };
 		89E833DB19CB037800F26088 /* DCEncryptTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E833DA19CB037800F26088 /* DCEncryptTestCase.m */; };
+		89F9D6E01A7A37C200A5528A /* DCHTourbillon.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6DF1A7A37C200A5528A /* DCHTourbillon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89F9D6E21A7A381B00A5528A /* DCHCommonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6E11A7A381B00A5528A /* DCHCommonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89F9D6E51A7A470800A5528A /* DCHCommonFuncations.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6E31A7A470800A5528A /* DCHCommonFuncations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89F9D6E61A7A470800A5528A /* DCHCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */; };
+		89F9D6E71A7A470800A5528A /* DCHCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */; };
+		89F9D6E81A7A470800A5528A /* DCHCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */; };
+		89F9D6E91A7A470800A5528A /* DCHCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */; };
+		89F9D6EB1A7A492400A5528A /* DCHSafeARC.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6EA1A7A492400A5528A /* DCHSafeARC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89F9D6ED1A7A49BF00A5528A /* DCHSingletonTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6EC1A7A49BF00A5528A /* DCHSingletonTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -438,128 +158,43 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				8964B54F19F8F51600E15B35 /* NSArray+DCSafeCRUD.h in CopyFiles */,
-				8964B55019F8F51600E15B35 /* NSDictionary+DCSafeCRUD.h in CopyFiles */,
-				8964B55119F8F51600E15B35 /* NSString+DCSafeCRUD.h in CopyFiles */,
-				8964B55219F8F51600E15B35 /* NSMutableArray+DCSafeCRUD.h in CopyFiles */,
-				8964B55319F8F51600E15B35 /* NSMutableDictionary+DCSafeCRUD.h in CopyFiles */,
-				8964B55419F8F51600E15B35 /* NSMutableSet+DCSafeCRUD.h in CopyFiles */,
-				8964B55519F8F51600E15B35 /* NSMutableString+DCSafeCRUD.h in CopyFiles */,
-				893F66EE19E7D2D000F92B1A /* DCColorEnumerator.h in CopyFiles */,
-				893F66B519E7BE9500F92B1A /* DCGradientView.h in CopyFiles */,
-				89C5B1F019D533F4008BA398 /* DCXOREncryptUtility.h in CopyFiles */,
-				89C5B1F119D533F4008BA398 /* DCMemoryUsageMonitor.h in CopyFiles */,
-				89B4FCA819CBAE5C004F99C1 /* DCHashUtility.h in CopyFiles */,
-				89BC4DC719CAD3110034179E /* DCXOREncryptedInputStream.h in CopyFiles */,
-				89BC4DC819CAD3110034179E /* DCXOREncryptedOutputStream.h in CopyFiles */,
-				89BC4DC919CAD3110034179E /* DCMemoryUsageReporter.h in CopyFiles */,
-				895A6C5719A6324600E56909 /* DCCommonFuncations.h in CopyFiles */,
-				89009F1319A5CEE700F54598 /* DCDictionaryCache.h in CopyFiles */,
-				89009F0A19A5903B00F54598 /* NSObject+DCAssociatedObjectExtension.h in CopyFiles */,
-				89009F0B19A5903B00F54598 /* DCComponentPathManager.h in CopyFiles */,
-				89009F0C19A5903B00F54598 /* UIViewController+ComponentPathExtension.h in CopyFiles */,
-				895AF1A61991ACAC00500A6F /* DCTourbillon.h in CopyFiles */,
-				89B788821990FC6600A726F1 /* UIColor+DCAdditions.h in CopyFiles */,
-				89B788831990FC6600A726F1 /* UIColor+DCColorful.h in CopyFiles */,
-				89B788841990FC6600A726F1 /* UIImage+DCLibrarySupport.h in CopyFiles */,
-				89B788851990FC6600A726F1 /* UIViewController+DCLibrarySupport.h in CopyFiles */,
-				89B788561990FC5600A726F1 /* NSMutableArray+DCGCDThreadSafe.h in CopyFiles */,
-				89B788571990FC5600A726F1 /* NSMutableData+DCGCDThreadSafe.h in CopyFiles */,
-				89B788581990FC5600A726F1 /* NSMutableDictionary+DCGCDThreadSafe.h in CopyFiles */,
-				89B788591990FC5600A726F1 /* NSMutableSet+DCGCDThreadSafe.h in CopyFiles */,
-				89B7885A1990FC5600A726F1 /* NSMutableString+DCGCDThreadSafe.h in CopyFiles */,
-				89B7885B1990FC5600A726F1 /* NSObject+DCGCDThreadSafe.h in CopyFiles */,
-				89B7885C1990FC5600A726F1 /* NSData+GZipExtension.h in CopyFiles */,
-				89B7885D1990FC5600A726F1 /* DCBase64Define.h in CopyFiles */,
-				89B7885E1990FC5600A726F1 /* NSData+DCBase64.h in CopyFiles */,
-				89B7885F1990FC5600A726F1 /* NSData+DCHash.h in CopyFiles */,
-				89B788601990FC5600A726F1 /* NSData+DCHex.h in CopyFiles */,
-				89B788611990FC5600A726F1 /* NSString+DCBase64.h in CopyFiles */,
-				89B788621990FC5600A726F1 /* NSString+DCHash.h in CopyFiles */,
-				89B788631990FC5600A726F1 /* NSArray+DCContentExtension.h in CopyFiles */,
-				89B788641990FC5600A726F1 /* NSBundle+DCLibrarySupport.h in CopyFiles */,
-				89B788651990FC5600A726F1 /* NSData+DCLibrarySupport.h in CopyFiles */,
-				89B788661990FC5600A726F1 /* NSDictionary+DCSortable.h in CopyFiles */,
-				89B788671990FC5600A726F1 /* NSNumber+DCRandom.h in CopyFiles */,
-				89B788681990FC5600A726F1 /* NSObject+DCMainThreadAsyncReactive.h in CopyFiles */,
-				89B788691990FC5600A726F1 /* NSObject+DCSwizzle.h in CopyFiles */,
-				89B7886A1990FC5600A726F1 /* NSObject+DCUUIDExtension.h in CopyFiles */,
-				89B7886B1990FC5600A726F1 /* NSString+DCParseCSV.h in CopyFiles */,
-				89B7886C1990FC5600A726F1 /* NSString+DCURLCoding.h in CopyFiles */,
-				89B7886D1990FC5600A726F1 /* NSURL+DCUTTypeSupport.h in CopyFiles */,
-				89B7886E1990FC5600A726F1 /* DCCommonConstants.h in CopyFiles */,
-				89B7886F1990FC5600A726F1 /* DCSafeARC.h in CopyFiles */,
-				89B788701990FC5600A726F1 /* DCSingletonTemplate.h in CopyFiles */,
-				89B788711990FC5600A726F1 /* DCTestBlocker.h in CopyFiles */,
-				89B788721990FC5600A726F1 /* DCAtomicSetters.h in CopyFiles */,
-				89B788731990FC5600A726F1 /* DCCommonUtility.h in CopyFiles */,
-				89B788741990FC5600A726F1 /* DCImageUtility.h in CopyFiles */,
-				89B788751990FC5600A726F1 /* DCRPNUtility.h in CopyFiles */,
-				89B788761990FC5600A726F1 /* DCUIMainThreadGuard.h in CopyFiles */,
-				89B788771990FC5600A726F1 /* DCWebUtility.h in CopyFiles */,
-				89B788781990FC5600A726F1 /* DCGZipCompressor.h in CopyFiles */,
-				89B788791990FC5600A726F1 /* DCGZipDecompressor.h in CopyFiles */,
-				89B7887B1990FC5600A726F1 /* DCLogger.h in CopyFiles */,
-				89B7887C1990FC5600A726F1 /* DCHTTPOperation.h in CopyFiles */,
-				89B7887D1990FC5600A726F1 /* DCRunLoopOperation.h in CopyFiles */,
-				89B7887E1990FC5600A726F1 /* DCWatchedOperationQueue.h in CopyFiles */,
-				89B7887F1990FC5600A726F1 /* DCStack.h in CopyFiles */,
-				89B788801990FC5600A726F1 /* DCTree.h in CopyFiles */,
-				89B788811990FC5600A726F1 /* DCTreeNode.h in CopyFiles */,
+				89C94D921A7B2E3F00BCC65C /* DCHTourbillon.h in CopyFiles */,
+				89C94D931A7B2E3F00BCC65C /* NSArray+DCHSafeCRUD.h in CopyFiles */,
+				89C94D941A7B2E3F00BCC65C /* NSDictionary+DCHSafeCRUD.h in CopyFiles */,
+				89C94D951A7B2E3F00BCC65C /* NSString+DCHSafeCRUD.h in CopyFiles */,
+				89C94D961A7B2E3F00BCC65C /* NSMutableArray+DCHSafeCRUD.h in CopyFiles */,
+				89C94D971A7B2E3F00BCC65C /* NSMutableDictionary+DCHSafeCRUD.h in CopyFiles */,
+				89C94D981A7B2E3F00BCC65C /* NSMutableSet+DCHSafeCRUD.h in CopyFiles */,
+				89C94D991A7B2E3F00BCC65C /* NSMutableString+DCHSafeCRUD.h in CopyFiles */,
+				89C94D9A1A7B2E3F00BCC65C /* NSObject+DCHThreadSafe.h in CopyFiles */,
+				89C94D9B1A7B2E3F00BCC65C /* NSMutableArray+DCHThreadSafe.h in CopyFiles */,
+				89C94D9C1A7B2E3F00BCC65C /* NSMutableData+DCHThreadSafe.h in CopyFiles */,
+				89C94D9D1A7B2E3F00BCC65C /* NSMutableDictionary+DCHThreadSafe.h in CopyFiles */,
+				89C94D9E1A7B2E3F00BCC65C /* NSMutableSet+DCHThreadSafe.h in CopyFiles */,
+				89C94D9F1A7B2E3F00BCC65C /* NSMutableString+DCHThreadSafe.h in CopyFiles */,
+				89C94DA01A7B2E3F00BCC65C /* NSObject+DCHSwizzle.h in CopyFiles */,
+				89C94DA11A7B2E3F00BCC65C /* NSObject+DCHAssociatedObjectExtension.h in CopyFiles */,
+				89C94DA21A7B2E3F00BCC65C /* DCHCommonConstants.h in CopyFiles */,
+				89C94DA31A7B2E3F00BCC65C /* DCHCommonFuncations.h in CopyFiles */,
+				89C94DA41A7B2E3F00BCC65C /* DCHSafeARC.h in CopyFiles */,
+				89C94DA51A7B2E3F00BCC65C /* DCHSingletonTemplate.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		89009F0319A58D4600F54598 /* NSViewController+ComponentPathExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSViewController+ComponentPathExtension.h"; sourceTree = "<group>"; };
-		89009F0419A58D4600F54598 /* NSViewController+ComponentPathExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSViewController+ComponentPathExtension.m"; sourceTree = "<group>"; };
-		89009F0719A58F6E00F54598 /* UIViewController+ComponentPathExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ComponentPathExtension.h"; sourceTree = "<group>"; };
-		89009F0819A58F6E00F54598 /* UIViewController+ComponentPathExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ComponentPathExtension.m"; sourceTree = "<group>"; };
-		89009F0E19A5CA9100F54598 /* DCDictionaryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCDictionaryCache.h; sourceTree = "<group>"; };
-		89009F0F19A5CA9100F54598 /* DCDictionaryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCDictionaryCache.m; sourceTree = "<group>"; };
-		893F66B119E7BDE000F92B1A /* DCGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCGradientView.h; sourceTree = "<group>"; };
-		893F66B219E7BDE000F92B1A /* DCGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCGradientView.m; sourceTree = "<group>"; };
-		893F66E519E7CEF500F92B1A /* DCColorEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCColorEnumerator.h; sourceTree = "<group>"; };
-		893F66E619E7CEF500F92B1A /* DCColorEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCColorEnumerator.m; sourceTree = "<group>"; };
-		893F66EF19E7DBB700F92B1A /* DCColorEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCColorEnumerator.m; sourceTree = "<group>"; };
-		893F66F019E7DBB700F92B1A /* DCColorEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCColorEnumerator.h; sourceTree = "<group>"; };
 		8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		8955F7F5197135E500B390C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		8955F7F7197135ED00B390C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
-		895A6C5219A6314A00E56909 /* DCCommonFuncations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCommonFuncations.h; sourceTree = "<group>"; };
-		895A6C5319A6314A00E56909 /* DCCommonFuncations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCommonFuncations.m; sourceTree = "<group>"; };
-		895AF1A41991AC9F00500A6F /* DCTourbillon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTourbillon.h; sourceTree = "<group>"; };
-		8964B51E19F8D97500E15B35 /* NSArray+DCSafeCRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DCSafeCRUD.h"; sourceTree = "<group>"; };
-		8964B51F19F8D97500E15B35 /* NSArray+DCSafeCRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DCSafeCRUD.m"; sourceTree = "<group>"; };
-		8964B52019F8D97500E15B35 /* NSDictionary+DCSafeCRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DCSafeCRUD.h"; sourceTree = "<group>"; };
-		8964B52119F8D97500E15B35 /* NSDictionary+DCSafeCRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DCSafeCRUD.m"; sourceTree = "<group>"; };
-		8964B52219F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+DCSafeCRUD.h"; sourceTree = "<group>"; };
-		8964B52319F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+DCSafeCRUD.m"; sourceTree = "<group>"; };
-		8964B52419F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+DCSafeCRUD.h"; sourceTree = "<group>"; };
-		8964B52519F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+DCSafeCRUD.m"; sourceTree = "<group>"; };
-		8964B53A19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+DCSafeCRUD.h"; sourceTree = "<group>"; };
-		8964B53B19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+DCSafeCRUD.m"; sourceTree = "<group>"; };
-		8964B54119F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+DCSafeCRUD.h"; sourceTree = "<group>"; };
-		8964B54219F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+DCSafeCRUD.m"; sourceTree = "<group>"; };
-		8964B54819F8EEA300E15B35 /* NSString+DCSafeCRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DCSafeCRUD.h"; sourceTree = "<group>"; };
-		8964B54919F8EEA300E15B35 /* NSString+DCSafeCRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DCSafeCRUD.m"; sourceTree = "<group>"; };
-		897C1E6C19A4876F00C3B8A9 /* DCComponentPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCComponentPathManager.h; sourceTree = "<group>"; };
-		897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCComponentPathManager.m; sourceTree = "<group>"; };
 		89ADE832198F4C2900DD27B2 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
 		89ADE834198F4C3200DD27B2 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib; sourceTree = DEVELOPER_DIR; };
 		89ADE836198F4C6B00DD27B2 /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = usr/lib/libSystem.dylib; sourceTree = SDKROOT; };
-		89B4FCA119CBAE42004F99C1 /* DCHashUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHashUtility.h; sourceTree = "<group>"; };
-		89B4FCA219CBAE42004F99C1 /* DCHashUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHashUtility.m; sourceTree = "<group>"; };
 		89B4FCA919CBAEB0004F99C1 /* DCCompressorTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCompressorTestCase.h; sourceTree = "<group>"; };
 		89B4FCAA19CBAEB0004F99C1 /* DCCompressorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCompressorTestCase.m; sourceTree = "<group>"; };
 		89B4FCAC19CBB3E9004F99C1 /* Apple think different.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Apple think different.rtf"; sourceTree = "<group>"; };
 		89B4FCAF19CBBEAA004F99C1 /* DCloggerTastCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCloggerTastCase.h; sourceTree = "<group>"; };
 		89B4FCB019CBBEAA004F99C1 /* DCloggerTastCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCloggerTastCase.m; sourceTree = "<group>"; };
-		89B4FCB219CBC3AE004F99C1 /* DCMemoryUsageMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCMemoryUsageMonitor.h; sourceTree = "<group>"; };
-		89B4FCB319CBC3AE004F99C1 /* DCMemoryUsageMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCMemoryUsageMonitor.m; sourceTree = "<group>"; };
-		89B5E08919A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCAssociatedObjectExtension.h"; sourceTree = "<group>"; };
-		89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCAssociatedObjectExtension.m"; sourceTree = "<group>"; };
 		89B786B01990FB4400A726F1 /* libTourbillon-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTourbillon-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B786B41990FB4400A726F1 /* Tourbillon-OSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tourbillon-OSX-Prefix.pch"; sourceTree = "<group>"; };
 		89B786BC1990FB4500A726F1 /* Tourbillon-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tourbillon-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -572,111 +207,36 @@
 		89B786EA1990FB5000A726F1 /* Tourbillon-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tourbillon-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		89B786EC1990FB5000A726F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		89B786EE1990FB5000A726F1 /* Tourbillon_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tourbillon_iOSTests.m; sourceTree = "<group>"; };
-		89B786FB1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+DCGCDThreadSafe.h"; sourceTree = "<group>"; };
-		89B786FC1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+DCGCDThreadSafe.m"; sourceTree = "<group>"; };
-		89B786FD1990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+DCGCDThreadSafe.h"; sourceTree = "<group>"; };
-		89B786FE1990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+DCGCDThreadSafe.m"; sourceTree = "<group>"; };
-		89B786FF1990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+DCGCDThreadSafe.h"; sourceTree = "<group>"; };
-		89B787001990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+DCGCDThreadSafe.m"; sourceTree = "<group>"; };
-		89B787011990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+DCGCDThreadSafe.h"; sourceTree = "<group>"; };
-		89B787021990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+DCGCDThreadSafe.m"; sourceTree = "<group>"; };
-		89B787031990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+DCGCDThreadSafe.h"; sourceTree = "<group>"; };
-		89B787041990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+DCGCDThreadSafe.m"; sourceTree = "<group>"; };
-		89B787051990FB6100A726F1 /* NSObject+DCGCDThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCGCDThreadSafe.h"; sourceTree = "<group>"; };
-		89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCGCDThreadSafe.m"; sourceTree = "<group>"; };
-		89B787081990FB6100A726F1 /* NSData+GZipExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GZipExtension.h"; sourceTree = "<group>"; };
-		89B787091990FB6100A726F1 /* NSData+GZipExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GZipExtension.m"; sourceTree = "<group>"; };
-		89B7870B1990FB6100A726F1 /* DCBase64Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCBase64Define.h; sourceTree = "<group>"; };
-		89B7870C1990FB6100A726F1 /* NSData+DCBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DCBase64.h"; sourceTree = "<group>"; };
-		89B7870D1990FB6100A726F1 /* NSData+DCBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DCBase64.m"; sourceTree = "<group>"; };
-		89B7870E1990FB6100A726F1 /* NSData+DCHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DCHash.h"; sourceTree = "<group>"; };
-		89B7870F1990FB6100A726F1 /* NSData+DCHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DCHash.m"; sourceTree = "<group>"; };
-		89B787101990FB6100A726F1 /* NSData+DCHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DCHex.h"; sourceTree = "<group>"; };
-		89B787111990FB6100A726F1 /* NSData+DCHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DCHex.m"; sourceTree = "<group>"; };
-		89B787121990FB6100A726F1 /* NSString+DCBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DCBase64.h"; sourceTree = "<group>"; };
-		89B787131990FB6100A726F1 /* NSString+DCBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DCBase64.m"; sourceTree = "<group>"; };
-		89B787141990FB6100A726F1 /* NSString+DCHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DCHash.h"; sourceTree = "<group>"; };
-		89B787151990FB6100A726F1 /* NSString+DCHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DCHash.m"; sourceTree = "<group>"; };
-		89B787161990FB6100A726F1 /* NSArray+DCContentExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DCContentExtension.h"; sourceTree = "<group>"; };
-		89B787171990FB6100A726F1 /* NSArray+DCContentExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DCContentExtension.m"; sourceTree = "<group>"; };
-		89B787181990FB6100A726F1 /* NSBundle+DCLibrarySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+DCLibrarySupport.h"; sourceTree = "<group>"; };
-		89B787191990FB6100A726F1 /* NSBundle+DCLibrarySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+DCLibrarySupport.m"; sourceTree = "<group>"; };
-		89B7871A1990FB6100A726F1 /* NSData+DCLibrarySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DCLibrarySupport.h"; sourceTree = "<group>"; };
-		89B7871B1990FB6100A726F1 /* NSData+DCLibrarySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DCLibrarySupport.m"; sourceTree = "<group>"; };
-		89B7871C1990FB6100A726F1 /* NSDictionary+DCSortable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DCSortable.h"; sourceTree = "<group>"; };
-		89B7871D1990FB6100A726F1 /* NSDictionary+DCSortable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DCSortable.m"; sourceTree = "<group>"; };
-		89B7871E1990FB6100A726F1 /* NSNumber+DCRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+DCRandom.h"; sourceTree = "<group>"; };
-		89B7871F1990FB6100A726F1 /* NSNumber+DCRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+DCRandom.m"; sourceTree = "<group>"; };
-		89B787201990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCMainThreadAsyncReactive.h"; sourceTree = "<group>"; };
-		89B787211990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCMainThreadAsyncReactive.m"; sourceTree = "<group>"; };
-		89B787221990FB6100A726F1 /* NSObject+DCSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCSwizzle.h"; sourceTree = "<group>"; };
-		89B787231990FB6100A726F1 /* NSObject+DCSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCSwizzle.m"; sourceTree = "<group>"; };
-		89B787241990FB6100A726F1 /* NSObject+DCUUIDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCUUIDExtension.h"; sourceTree = "<group>"; };
-		89B787251990FB6100A726F1 /* NSObject+DCUUIDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCUUIDExtension.m"; sourceTree = "<group>"; };
-		89B787261990FB6100A726F1 /* NSString+DCParseCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DCParseCSV.h"; sourceTree = "<group>"; };
-		89B787271990FB6100A726F1 /* NSString+DCParseCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DCParseCSV.m"; sourceTree = "<group>"; };
-		89B787281990FB6100A726F1 /* NSString+DCURLCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DCURLCoding.h"; sourceTree = "<group>"; };
-		89B787291990FB6100A726F1 /* NSString+DCURLCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DCURLCoding.m"; sourceTree = "<group>"; };
-		89B7872A1990FB6100A726F1 /* NSURL+DCUTTypeSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+DCUTTypeSupport.h"; sourceTree = "<group>"; };
-		89B7872B1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+DCUTTypeSupport.m"; sourceTree = "<group>"; };
-		89B7872D1990FB6100A726F1 /* DCCommonConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCommonConstants.h; sourceTree = "<group>"; };
-		89B7872E1990FB6100A726F1 /* DCSafeARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSafeARC.h; sourceTree = "<group>"; };
-		89B7872F1990FB6100A726F1 /* DCSingletonTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSingletonTemplate.h; sourceTree = "<group>"; };
-		89B787311990FB6100A726F1 /* DCTestBlocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTestBlocker.h; sourceTree = "<group>"; };
-		89B787321990FB6100A726F1 /* DCTestBlocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTestBlocker.m; sourceTree = "<group>"; };
-		89B787341990FB6100A726F1 /* DCAtomicSetters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCAtomicSetters.h; sourceTree = "<group>"; };
-		89B787351990FB6100A726F1 /* DCCommonUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCommonUtility.h; sourceTree = "<group>"; };
-		89B787361990FB6100A726F1 /* DCCommonUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCommonUtility.m; sourceTree = "<group>"; };
-		89B787371990FB6100A726F1 /* DCImageUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCImageUtility.h; sourceTree = "<group>"; };
-		89B787381990FB6100A726F1 /* DCImageUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCImageUtility.m; sourceTree = "<group>"; };
-		89B787391990FB6100A726F1 /* DCRPNUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCRPNUtility.h; sourceTree = "<group>"; };
-		89B7873A1990FB6100A726F1 /* DCRPNUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRPNUtility.m; sourceTree = "<group>"; };
-		89B7873B1990FB6100A726F1 /* DCUIMainThreadGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUIMainThreadGuard.h; sourceTree = "<group>"; };
-		89B7873C1990FB6100A726F1 /* DCUIMainThreadGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCUIMainThreadGuard.m; sourceTree = "<group>"; };
-		89B7873D1990FB6100A726F1 /* DCWebUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCWebUtility.h; sourceTree = "<group>"; };
-		89B7873E1990FB6100A726F1 /* DCWebUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCWebUtility.m; sourceTree = "<group>"; };
-		89B787401990FB6100A726F1 /* DCGZipCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCGZipCompressor.h; sourceTree = "<group>"; };
-		89B787411990FB6100A726F1 /* DCGZipCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCGZipCompressor.m; sourceTree = "<group>"; };
-		89B787421990FB6100A726F1 /* DCGZipDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCGZipDecompressor.h; sourceTree = "<group>"; };
-		89B787431990FB6100A726F1 /* DCGZipDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCGZipDecompressor.m; sourceTree = "<group>"; };
-		89B787481990FB6100A726F1 /* DCLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCLogger.h; sourceTree = "<group>"; };
-		89B787491990FB6100A726F1 /* DCLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCLogger.m; sourceTree = "<group>"; };
-		89B7874B1990FB6100A726F1 /* DCHTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHTTPOperation.h; sourceTree = "<group>"; };
-		89B7874C1990FB6100A726F1 /* DCHTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHTTPOperation.m; sourceTree = "<group>"; };
-		89B7874D1990FB6100A726F1 /* DCRunLoopOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCRunLoopOperation.h; sourceTree = "<group>"; };
-		89B7874E1990FB6100A726F1 /* DCRunLoopOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRunLoopOperation.m; sourceTree = "<group>"; };
-		89B7874F1990FB6100A726F1 /* DCWatchedOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCWatchedOperationQueue.h; sourceTree = "<group>"; };
-		89B787501990FB6100A726F1 /* DCWatchedOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCWatchedOperationQueue.m; sourceTree = "<group>"; };
-		89B787521990FB6100A726F1 /* DCStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStack.h; sourceTree = "<group>"; };
-		89B787531990FB6100A726F1 /* DCStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStack.m; sourceTree = "<group>"; };
-		89B787551990FB6100A726F1 /* DCTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTree.h; sourceTree = "<group>"; };
-		89B787561990FB6100A726F1 /* DCTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTree.m; sourceTree = "<group>"; };
-		89B787571990FB6100A726F1 /* DCTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTreeNode.h; sourceTree = "<group>"; };
-		89B787581990FB6100A726F1 /* DCTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTreeNode.m; sourceTree = "<group>"; };
-		89B788241990FB6E00A726F1 /* NSColor+DCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+DCAdditions.h"; sourceTree = "<group>"; };
-		89B788251990FB6E00A726F1 /* NSColor+DCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+DCAdditions.m"; sourceTree = "<group>"; };
-		89B788261990FB6E00A726F1 /* NSColor+DCColorful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+DCColorful.h"; sourceTree = "<group>"; };
-		89B788271990FB6E00A726F1 /* NSColor+DCColorful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+DCColorful.m"; sourceTree = "<group>"; };
-		89B788281990FB6E00A726F1 /* NSViewController+DCViewLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSViewController+DCViewLogic.h"; sourceTree = "<group>"; };
-		89B788291990FB6E00A726F1 /* NSViewController+DCViewLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSViewController+DCViewLogic.m"; sourceTree = "<group>"; };
-		89B7882A1990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindowController+DCCenterToScreen.h"; sourceTree = "<group>"; };
-		89B7882B1990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindowController+DCCenterToScreen.m"; sourceTree = "<group>"; };
-		89B7883F1990FB7600A726F1 /* UIColor+DCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DCAdditions.h"; sourceTree = "<group>"; };
-		89B788401990FB7600A726F1 /* UIColor+DCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DCAdditions.m"; sourceTree = "<group>"; };
-		89B788411990FB7600A726F1 /* UIColor+DCColorful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DCColorful.h"; sourceTree = "<group>"; };
-		89B788421990FB7600A726F1 /* UIColor+DCColorful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DCColorful.m"; sourceTree = "<group>"; };
-		89B788431990FB7600A726F1 /* UIImage+DCLibrarySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DCLibrarySupport.h"; sourceTree = "<group>"; };
-		89B788441990FB7600A726F1 /* UIImage+DCLibrarySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DCLibrarySupport.m"; sourceTree = "<group>"; };
-		89B788451990FB7600A726F1 /* UIViewController+DCLibrarySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DCLibrarySupport.h"; sourceTree = "<group>"; };
-		89B788461990FB7600A726F1 /* UIViewController+DCLibrarySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DCLibrarySupport.m"; sourceTree = "<group>"; };
-		89BC4D9D19CAB0570034179E /* DCMemoryUsageReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCMemoryUsageReporter.h; sourceTree = "<group>"; };
-		89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCMemoryUsageReporter.m; sourceTree = "<group>"; };
-		89BC4DB919CAC9820034179E /* DCXOREncryptedOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCXOREncryptedOutputStream.h; sourceTree = "<group>"; };
-		89BC4DBA19CAC9820034179E /* DCXOREncryptedOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCXOREncryptedOutputStream.m; sourceTree = "<group>"; };
-		89BC4DC019CAC9A90034179E /* DCXOREncryptedInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCXOREncryptedInputStream.h; sourceTree = "<group>"; };
-		89BC4DC119CAC9A90034179E /* DCXOREncryptedInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCXOREncryptedInputStream.m; sourceTree = "<group>"; };
-		89C5B1E919D53335008BA398 /* DCXOREncryptUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCXOREncryptUtility.h; sourceTree = "<group>"; };
-		89C5B1EA19D53335008BA398 /* DCXOREncryptUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCXOREncryptUtility.m; sourceTree = "<group>"; };
+		89C94D291A7B04D300BCC65C /* NSArray+DCHSafeCRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DCHSafeCRUD.h"; sourceTree = "<group>"; };
+		89C94D2A1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DCHSafeCRUD.m"; sourceTree = "<group>"; };
+		89C94D301A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DCHSafeCRUD.h"; sourceTree = "<group>"; };
+		89C94D311A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DCHSafeCRUD.m"; sourceTree = "<group>"; };
+		89C94D371A7B05B000BCC65C /* NSString+DCHSafeCRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DCHSafeCRUD.h"; sourceTree = "<group>"; };
+		89C94D381A7B05B000BCC65C /* NSString+DCHSafeCRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DCHSafeCRUD.m"; sourceTree = "<group>"; };
+		89C94D3E1A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+DCHSafeCRUD.h"; sourceTree = "<group>"; };
+		89C94D3F1A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+DCHSafeCRUD.m"; sourceTree = "<group>"; };
+		89C94D451A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+DCHSafeCRUD.h"; sourceTree = "<group>"; };
+		89C94D461A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+DCHSafeCRUD.m"; sourceTree = "<group>"; };
+		89C94D4C1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+DCHSafeCRUD.h"; sourceTree = "<group>"; };
+		89C94D4D1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+DCHSafeCRUD.m"; sourceTree = "<group>"; };
+		89C94D531A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+DCHSafeCRUD.h"; sourceTree = "<group>"; };
+		89C94D541A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+DCHSafeCRUD.m"; sourceTree = "<group>"; };
+		89C94D5A1A7B180000BCC65C /* NSObject+DCHThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCHThreadSafe.h"; sourceTree = "<group>"; };
+		89C94D5B1A7B180000BCC65C /* NSObject+DCHThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCHThreadSafe.m"; sourceTree = "<group>"; };
+		89C94D611A7B193B00BCC65C /* NSObject+DCHSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCHSwizzle.h"; sourceTree = "<group>"; };
+		89C94D621A7B193B00BCC65C /* NSObject+DCHSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCHSwizzle.m"; sourceTree = "<group>"; };
+		89C94D681A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCHAssociatedObjectExtension.h"; sourceTree = "<group>"; };
+		89C94D691A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCHAssociatedObjectExtension.m"; sourceTree = "<group>"; };
+		89C94D6F1A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+DCHThreadSafe.h"; sourceTree = "<group>"; };
+		89C94D701A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+DCHThreadSafe.m"; sourceTree = "<group>"; };
+		89C94D761A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+DCHThreadSafe.h"; sourceTree = "<group>"; };
+		89C94D771A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+DCHThreadSafe.m"; sourceTree = "<group>"; };
+		89C94D7D1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+DCHThreadSafe.h"; sourceTree = "<group>"; };
+		89C94D7E1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+DCHThreadSafe.m"; sourceTree = "<group>"; };
+		89C94D841A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+DCHThreadSafe.h"; sourceTree = "<group>"; };
+		89C94D851A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+DCHThreadSafe.m"; sourceTree = "<group>"; };
+		89C94D8B1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+DCHThreadSafe.h"; sourceTree = "<group>"; };
+		89C94D8C1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+DCHThreadSafe.m"; sourceTree = "<group>"; };
 		89E137431925B11000A3EFB7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		89E137461925B11000A3EFB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89E137471925B11000A3EFB7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -684,10 +244,14 @@
 		89E137581925B11000A3EFB7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		89E137731925B13D00A3EFB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89E137831925B13D00A3EFB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		89E833D319CB012500F26088 /* DCOSXCommonFuncations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCOSXCommonFuncations.h; sourceTree = "<group>"; };
-		89E833D419CB012500F26088 /* DCOSXCommonFuncations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCOSXCommonFuncations.m; sourceTree = "<group>"; };
 		89E833D919CB037800F26088 /* DCEncryptTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCEncryptTestCase.h; sourceTree = "<group>"; };
 		89E833DA19CB037800F26088 /* DCEncryptTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCEncryptTestCase.m; sourceTree = "<group>"; };
+		89F9D6DF1A7A37C200A5528A /* DCHTourbillon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHTourbillon.h; sourceTree = "<group>"; };
+		89F9D6E11A7A381B00A5528A /* DCHCommonConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHCommonConstants.h; sourceTree = "<group>"; };
+		89F9D6E31A7A470800A5528A /* DCHCommonFuncations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHCommonFuncations.h; sourceTree = "<group>"; };
+		89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHCommonFuncations.m; sourceTree = "<group>"; };
+		89F9D6EA1A7A492400A5528A /* DCHSafeARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHSafeARC.h; sourceTree = "<group>"; };
+		89F9D6EC1A7A49BF00A5528A /* DCHSingletonTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHSingletonTemplate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -737,38 +301,13 @@
 		89009F0D19A5CA4800F54598 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
-				89009F0E19A5CA9100F54598 /* DCDictionaryCache.h */,
-				89009F0F19A5CA9100F54598 /* DCDictionaryCache.m */,
 			);
 			path = Cache;
-			sourceTree = "<group>";
-		};
-		8964B51D19F8D97500E15B35 /* SafeCRUD */ = {
-			isa = PBXGroup;
-			children = (
-				8964B51E19F8D97500E15B35 /* NSArray+DCSafeCRUD.h */,
-				8964B51F19F8D97500E15B35 /* NSArray+DCSafeCRUD.m */,
-				8964B52019F8D97500E15B35 /* NSDictionary+DCSafeCRUD.h */,
-				8964B52119F8D97500E15B35 /* NSDictionary+DCSafeCRUD.m */,
-				8964B54819F8EEA300E15B35 /* NSString+DCSafeCRUD.h */,
-				8964B54919F8EEA300E15B35 /* NSString+DCSafeCRUD.m */,
-				8964B52219F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.h */,
-				8964B52319F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.m */,
-				8964B52419F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.h */,
-				8964B52519F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.m */,
-				8964B53A19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.h */,
-				8964B53B19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.m */,
-				8964B54119F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.h */,
-				8964B54219F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.m */,
-			);
-			path = SafeCRUD;
 			sourceTree = "<group>";
 		};
 		897C1E6B19A4876F00C3B8A9 /* ComponentPathManager */ = {
 			isa = PBXGroup;
 			children = (
-				897C1E6C19A4876F00C3B8A9 /* DCComponentPathManager.h */,
-				897C1E6D19A4876F00C3B8A9 /* DCComponentPathManager.m */,
 			);
 			path = ComponentPathManager;
 			sourceTree = "<group>";
@@ -871,7 +410,7 @@
 		89B786F81990FB6100A726F1 /* Public */ = {
 			isa = PBXGroup;
 			children = (
-				895AF1A41991AC9F00500A6F /* DCTourbillon.h */,
+				89F9D6DF1A7A37C200A5528A /* DCHTourbillon.h */,
 				89B786F91990FB6100A726F1 /* Categories */,
 				89B7872C1990FB6100A726F1 /* Common */,
 				89B787301990FB6100A726F1 /* Testers */,
@@ -883,92 +422,24 @@
 		89B786F91990FB6100A726F1 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				8964B51D19F8D97500E15B35 /* SafeCRUD */,
-				89B786FA1990FB6100A726F1 /* GCDThreadSafe */,
-				89B787071990FB6100A726F1 /* GZip */,
-				89B7870A1990FB6100A726F1 /* Hash */,
-				89B787161990FB6100A726F1 /* NSArray+DCContentExtension.h */,
-				89B787171990FB6100A726F1 /* NSArray+DCContentExtension.m */,
-				89B787181990FB6100A726F1 /* NSBundle+DCLibrarySupport.h */,
-				89B787191990FB6100A726F1 /* NSBundle+DCLibrarySupport.m */,
-				89B7871A1990FB6100A726F1 /* NSData+DCLibrarySupport.h */,
-				89B7871B1990FB6100A726F1 /* NSData+DCLibrarySupport.m */,
-				89B7871C1990FB6100A726F1 /* NSDictionary+DCSortable.h */,
-				89B7871D1990FB6100A726F1 /* NSDictionary+DCSortable.m */,
-				89B7871E1990FB6100A726F1 /* NSNumber+DCRandom.h */,
-				89B7871F1990FB6100A726F1 /* NSNumber+DCRandom.m */,
-				89B787201990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.h */,
-				89B787211990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m */,
-				89B787221990FB6100A726F1 /* NSObject+DCSwizzle.h */,
-				89B787231990FB6100A726F1 /* NSObject+DCSwizzle.m */,
-				89B787241990FB6100A726F1 /* NSObject+DCUUIDExtension.h */,
-				89B787251990FB6100A726F1 /* NSObject+DCUUIDExtension.m */,
-				89B787261990FB6100A726F1 /* NSString+DCParseCSV.h */,
-				89B787271990FB6100A726F1 /* NSString+DCParseCSV.m */,
-				89B787281990FB6100A726F1 /* NSString+DCURLCoding.h */,
-				89B787291990FB6100A726F1 /* NSString+DCURLCoding.m */,
-				89B7872A1990FB6100A726F1 /* NSURL+DCUTTypeSupport.h */,
-				89B7872B1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m */,
-				89B5E08919A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h */,
-				89B5E08A19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m */,
+				89C94D271A7B04B200BCC65C /* SafeCRUD */,
+				89C94D281A7B04B200BCC65C /* ThreadSafeMutableCollection */,
+				89C94D611A7B193B00BCC65C /* NSObject+DCHSwizzle.h */,
+				89C94D621A7B193B00BCC65C /* NSObject+DCHSwizzle.m */,
+				89C94D681A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.h */,
+				89C94D691A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m */,
 			);
 			path = Categories;
-			sourceTree = "<group>";
-		};
-		89B786FA1990FB6100A726F1 /* GCDThreadSafe */ = {
-			isa = PBXGroup;
-			children = (
-				89B786FB1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.h */,
-				89B786FC1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m */,
-				89B786FD1990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.h */,
-				89B786FE1990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m */,
-				89B786FF1990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.h */,
-				89B787001990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m */,
-				89B787011990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.h */,
-				89B787021990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m */,
-				89B787031990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.h */,
-				89B787041990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m */,
-				89B787051990FB6100A726F1 /* NSObject+DCGCDThreadSafe.h */,
-				89B787061990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m */,
-			);
-			path = GCDThreadSafe;
-			sourceTree = "<group>";
-		};
-		89B787071990FB6100A726F1 /* GZip */ = {
-			isa = PBXGroup;
-			children = (
-				89B787081990FB6100A726F1 /* NSData+GZipExtension.h */,
-				89B787091990FB6100A726F1 /* NSData+GZipExtension.m */,
-			);
-			path = GZip;
-			sourceTree = "<group>";
-		};
-		89B7870A1990FB6100A726F1 /* Hash */ = {
-			isa = PBXGroup;
-			children = (
-				89B7870B1990FB6100A726F1 /* DCBase64Define.h */,
-				89B7870C1990FB6100A726F1 /* NSData+DCBase64.h */,
-				89B7870D1990FB6100A726F1 /* NSData+DCBase64.m */,
-				89B7870E1990FB6100A726F1 /* NSData+DCHash.h */,
-				89B7870F1990FB6100A726F1 /* NSData+DCHash.m */,
-				89B787101990FB6100A726F1 /* NSData+DCHex.h */,
-				89B787111990FB6100A726F1 /* NSData+DCHex.m */,
-				89B787121990FB6100A726F1 /* NSString+DCBase64.h */,
-				89B787131990FB6100A726F1 /* NSString+DCBase64.m */,
-				89B787141990FB6100A726F1 /* NSString+DCHash.h */,
-				89B787151990FB6100A726F1 /* NSString+DCHash.m */,
-			);
-			path = Hash;
 			sourceTree = "<group>";
 		};
 		89B7872C1990FB6100A726F1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				89B7872D1990FB6100A726F1 /* DCCommonConstants.h */,
-				895A6C5219A6314A00E56909 /* DCCommonFuncations.h */,
-				895A6C5319A6314A00E56909 /* DCCommonFuncations.m */,
-				89B7872E1990FB6100A726F1 /* DCSafeARC.h */,
-				89B7872F1990FB6100A726F1 /* DCSingletonTemplate.h */,
+				89F9D6E11A7A381B00A5528A /* DCHCommonConstants.h */,
+				89F9D6E31A7A470800A5528A /* DCHCommonFuncations.h */,
+				89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */,
+				89F9D6EA1A7A492400A5528A /* DCHSafeARC.h */,
+				89F9D6EC1A7A49BF00A5528A /* DCHSingletonTemplate.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -976,8 +447,6 @@
 		89B787301990FB6100A726F1 /* Testers */ = {
 			isa = PBXGroup;
 			children = (
-				89B787311990FB6100A726F1 /* DCTestBlocker.h */,
-				89B787321990FB6100A726F1 /* DCTestBlocker.m */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -987,17 +456,6 @@
 			children = (
 				89BC4DAA19CAC0720034179E /* Encrypt */,
 				89009F0D19A5CA4800F54598 /* Cache */,
-				89B787341990FB6100A726F1 /* DCAtomicSetters.h */,
-				89B787351990FB6100A726F1 /* DCCommonUtility.h */,
-				89B787361990FB6100A726F1 /* DCCommonUtility.m */,
-				89B787371990FB6100A726F1 /* DCImageUtility.h */,
-				89B787381990FB6100A726F1 /* DCImageUtility.m */,
-				89B787391990FB6100A726F1 /* DCRPNUtility.h */,
-				89B7873A1990FB6100A726F1 /* DCRPNUtility.m */,
-				89B7873B1990FB6100A726F1 /* DCUIMainThreadGuard.h */,
-				89B7873C1990FB6100A726F1 /* DCUIMainThreadGuard.m */,
-				89B7873D1990FB6100A726F1 /* DCWebUtility.h */,
-				89B7873E1990FB6100A726F1 /* DCWebUtility.m */,
 				89B7873F1990FB6100A726F1 /* GZip */,
 				89B787461990FB6100A726F1 /* Hash */,
 				89B787471990FB6100A726F1 /* Logger */,
@@ -1012,10 +470,6 @@
 		89B7873F1990FB6100A726F1 /* GZip */ = {
 			isa = PBXGroup;
 			children = (
-				89B787401990FB6100A726F1 /* DCGZipCompressor.h */,
-				89B787411990FB6100A726F1 /* DCGZipCompressor.m */,
-				89B787421990FB6100A726F1 /* DCGZipDecompressor.h */,
-				89B787431990FB6100A726F1 /* DCGZipDecompressor.m */,
 			);
 			path = GZip;
 			sourceTree = "<group>";
@@ -1023,8 +477,6 @@
 		89B787461990FB6100A726F1 /* Hash */ = {
 			isa = PBXGroup;
 			children = (
-				89B4FCA119CBAE42004F99C1 /* DCHashUtility.h */,
-				89B4FCA219CBAE42004F99C1 /* DCHashUtility.m */,
 			);
 			path = Hash;
 			sourceTree = "<group>";
@@ -1032,12 +484,6 @@
 		89B787471990FB6100A726F1 /* Logger */ = {
 			isa = PBXGroup;
 			children = (
-				89B4FCB219CBC3AE004F99C1 /* DCMemoryUsageMonitor.h */,
-				89B4FCB319CBC3AE004F99C1 /* DCMemoryUsageMonitor.m */,
-				89BC4D9D19CAB0570034179E /* DCMemoryUsageReporter.h */,
-				89BC4D9E19CAB0570034179E /* DCMemoryUsageReporter.m */,
-				89B787481990FB6100A726F1 /* DCLogger.h */,
-				89B787491990FB6100A726F1 /* DCLogger.m */,
 			);
 			path = Logger;
 			sourceTree = "<group>";
@@ -1045,12 +491,6 @@
 		89B7874A1990FB6100A726F1 /* Operation */ = {
 			isa = PBXGroup;
 			children = (
-				89B7874B1990FB6100A726F1 /* DCHTTPOperation.h */,
-				89B7874C1990FB6100A726F1 /* DCHTTPOperation.m */,
-				89B7874D1990FB6100A726F1 /* DCRunLoopOperation.h */,
-				89B7874E1990FB6100A726F1 /* DCRunLoopOperation.m */,
-				89B7874F1990FB6100A726F1 /* DCWatchedOperationQueue.h */,
-				89B787501990FB6100A726F1 /* DCWatchedOperationQueue.m */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -1058,8 +498,6 @@
 		89B787511990FB6100A726F1 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
-				89B787521990FB6100A726F1 /* DCStack.h */,
-				89B787531990FB6100A726F1 /* DCStack.m */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -1067,10 +505,6 @@
 		89B787541990FB6100A726F1 /* Tree */ = {
 			isa = PBXGroup;
 			children = (
-				89B787551990FB6100A726F1 /* DCTree.h */,
-				89B787561990FB6100A726F1 /* DCTree.m */,
-				89B787571990FB6100A726F1 /* DCTreeNode.h */,
-				89B787581990FB6100A726F1 /* DCTreeNode.m */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -1090,12 +524,6 @@
 			isa = PBXGroup;
 			children = (
 				89B788231990FB6E00A726F1 /* Color */,
-				89B788281990FB6E00A726F1 /* NSViewController+DCViewLogic.h */,
-				89B788291990FB6E00A726F1 /* NSViewController+DCViewLogic.m */,
-				89B7882A1990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.h */,
-				89B7882B1990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.m */,
-				89009F0319A58D4600F54598 /* NSViewController+ComponentPathExtension.h */,
-				89009F0419A58D4600F54598 /* NSViewController+ComponentPathExtension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1103,10 +531,6 @@
 		89B788231990FB6E00A726F1 /* Color */ = {
 			isa = PBXGroup;
 			children = (
-				89B788241990FB6E00A726F1 /* NSColor+DCAdditions.h */,
-				89B788251990FB6E00A726F1 /* NSColor+DCAdditions.m */,
-				89B788261990FB6E00A726F1 /* NSColor+DCColorful.h */,
-				89B788271990FB6E00A726F1 /* NSColor+DCColorful.m */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -1114,8 +538,6 @@
 		89B7882C1990FB6E00A726F1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				89E833D319CB012500F26088 /* DCOSXCommonFuncations.h */,
-				89E833D419CB012500F26088 /* DCOSXCommonFuncations.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1123,8 +545,6 @@
 		89B7882D1990FB6E00A726F1 /* Testers */ = {
 			isa = PBXGroup;
 			children = (
-				893F66EF19E7DBB700F92B1A /* DCColorEnumerator.m */,
-				893F66F019E7DBB700F92B1A /* DCColorEnumerator.h */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -1158,12 +578,6 @@
 			isa = PBXGroup;
 			children = (
 				89B7883E1990FB7600A726F1 /* Color */,
-				89B788431990FB7600A726F1 /* UIImage+DCLibrarySupport.h */,
-				89B788441990FB7600A726F1 /* UIImage+DCLibrarySupport.m */,
-				89B788451990FB7600A726F1 /* UIViewController+DCLibrarySupport.h */,
-				89B788461990FB7600A726F1 /* UIViewController+DCLibrarySupport.m */,
-				89009F0719A58F6E00F54598 /* UIViewController+ComponentPathExtension.h */,
-				89009F0819A58F6E00F54598 /* UIViewController+ComponentPathExtension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1171,10 +585,6 @@
 		89B7883E1990FB7600A726F1 /* Color */ = {
 			isa = PBXGroup;
 			children = (
-				89B7883F1990FB7600A726F1 /* UIColor+DCAdditions.h */,
-				89B788401990FB7600A726F1 /* UIColor+DCAdditions.m */,
-				89B788411990FB7600A726F1 /* UIColor+DCColorful.h */,
-				89B788421990FB7600A726F1 /* UIColor+DCColorful.m */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -1189,8 +599,6 @@
 		89B788481990FB7600A726F1 /* Testers */ = {
 			isa = PBXGroup;
 			children = (
-				893F66E519E7CEF500F92B1A /* DCColorEnumerator.h */,
-				893F66E619E7CEF500F92B1A /* DCColorEnumerator.m */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -1198,8 +606,6 @@
 		89B788491990FB7600A726F1 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				893F66B119E7BDE000F92B1A /* DCGradientView.h */,
-				893F66B219E7BDE000F92B1A /* DCGradientView.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1214,14 +620,48 @@
 		89BC4DAA19CAC0720034179E /* Encrypt */ = {
 			isa = PBXGroup;
 			children = (
-				89BC4DC019CAC9A90034179E /* DCXOREncryptedInputStream.h */,
-				89BC4DC119CAC9A90034179E /* DCXOREncryptedInputStream.m */,
-				89BC4DB919CAC9820034179E /* DCXOREncryptedOutputStream.h */,
-				89BC4DBA19CAC9820034179E /* DCXOREncryptedOutputStream.m */,
-				89C5B1E919D53335008BA398 /* DCXOREncryptUtility.h */,
-				89C5B1EA19D53335008BA398 /* DCXOREncryptUtility.m */,
 			);
 			path = Encrypt;
+			sourceTree = "<group>";
+		};
+		89C94D271A7B04B200BCC65C /* SafeCRUD */ = {
+			isa = PBXGroup;
+			children = (
+				89C94D291A7B04D300BCC65C /* NSArray+DCHSafeCRUD.h */,
+				89C94D2A1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m */,
+				89C94D301A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.h */,
+				89C94D311A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m */,
+				89C94D371A7B05B000BCC65C /* NSString+DCHSafeCRUD.h */,
+				89C94D381A7B05B000BCC65C /* NSString+DCHSafeCRUD.m */,
+				89C94D3E1A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.h */,
+				89C94D3F1A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m */,
+				89C94D451A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.h */,
+				89C94D461A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m */,
+				89C94D4C1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.h */,
+				89C94D4D1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m */,
+				89C94D531A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.h */,
+				89C94D541A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m */,
+			);
+			path = SafeCRUD;
+			sourceTree = "<group>";
+		};
+		89C94D281A7B04B200BCC65C /* ThreadSafeMutableCollection */ = {
+			isa = PBXGroup;
+			children = (
+				89C94D5A1A7B180000BCC65C /* NSObject+DCHThreadSafe.h */,
+				89C94D5B1A7B180000BCC65C /* NSObject+DCHThreadSafe.m */,
+				89C94D6F1A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.h */,
+				89C94D701A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m */,
+				89C94D761A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.h */,
+				89C94D771A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m */,
+				89C94D7D1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.h */,
+				89C94D7E1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m */,
+				89C94D841A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.h */,
+				89C94D851A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m */,
+				89C94D8B1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.h */,
+				89C94D8C1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m */,
+			);
+			path = ThreadSafeMutableCollection;
 			sourceTree = "<group>";
 		};
 		89E137361925B11000A3EFB7 = {
@@ -1283,74 +723,26 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89B7877D1990FB6100A726F1 /* NSData+DCBase64.h in Headers */,
-				89B787C81990FB6100A726F1 /* NSURL+DCUTTypeSupport.h in Headers */,
-				89B787F41990FB6100A726F1 /* DCGZipDecompressor.h in Headers */,
-				89B7879B1990FB6100A726F1 /* NSBundle+DCLibrarySupport.h in Headers */,
-				89B787771990FB6100A726F1 /* NSData+GZipExtension.h in Headers */,
-				89B787721990FB6100A726F1 /* NSObject+DCGCDThreadSafe.h in Headers */,
-				89B787D61990FB6100A726F1 /* DCCommonUtility.h in Headers */,
-				89B787DB1990FB6100A726F1 /* DCImageUtility.h in Headers */,
-				89B7878C1990FB6100A726F1 /* NSString+DCBase64.h in Headers */,
-				89B787CF1990FB6100A726F1 /* DCSingletonTemplate.h in Headers */,
-				89B787C31990FB6100A726F1 /* NSString+DCURLCoding.h in Headers */,
-				89B787CE1990FB6100A726F1 /* DCSafeARC.h in Headers */,
-				89B787591990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.h in Headers */,
-				89B788081990FB6100A726F1 /* DCRunLoopOperation.h in Headers */,
-				89B787961990FB6100A726F1 /* NSArray+DCContentExtension.h in Headers */,
-				89B787E01990FB6100A726F1 /* DCRPNUtility.h in Headers */,
-				89B7876D1990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.h in Headers */,
-				89B787B91990FB6100A726F1 /* NSObject+DCUUIDExtension.h in Headers */,
-				89B787911990FB6100A726F1 /* NSString+DCHash.h in Headers */,
-				89B787EA1990FB6100A726F1 /* DCWebUtility.h in Headers */,
-				89B788301990FB6E00A726F1 /* NSColor+DCAdditions.h in Headers */,
-				89B788361990FB6E00A726F1 /* NSViewController+DCViewLogic.h in Headers */,
-				89B787B41990FB6100A726F1 /* NSObject+DCSwizzle.h in Headers */,
-				89B787631990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.h in Headers */,
-				89B787EF1990FB6100A726F1 /* DCGZipCompressor.h in Headers */,
-				89B787CD1990FB6100A726F1 /* DCCommonConstants.h in Headers */,
-				89B7877C1990FB6100A726F1 /* DCBase64Define.h in Headers */,
-				89B787D51990FB6100A726F1 /* DCAtomicSetters.h in Headers */,
-				89B787E51990FB6100A726F1 /* DCUIMainThreadGuard.h in Headers */,
-				89B788391990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.h in Headers */,
-				89B787681990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.h in Headers */,
-				89B787821990FB6100A726F1 /* NSData+DCHash.h in Headers */,
-				89B788121990FB6100A726F1 /* DCStack.h in Headers */,
-				89B7875E1990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.h in Headers */,
-				89B787BE1990FB6100A726F1 /* NSString+DCParseCSV.h in Headers */,
-				89B787D01990FB6100A726F1 /* DCTestBlocker.h in Headers */,
-				89B787AA1990FB6100A726F1 /* NSNumber+DCRandom.h in Headers */,
-				89B7880D1990FB6100A726F1 /* DCWatchedOperationQueue.h in Headers */,
-				89B788031990FB6100A726F1 /* DCHTTPOperation.h in Headers */,
-				89B787FE1990FB6100A726F1 /* DCLogger.h in Headers */,
-				89B787A01990FB6100A726F1 /* NSData+DCLibrarySupport.h in Headers */,
-				89B788331990FB6E00A726F1 /* NSColor+DCColorful.h in Headers */,
-				89B7881C1990FB6100A726F1 /* DCTreeNode.h in Headers */,
-				89B787A51990FB6100A726F1 /* NSDictionary+DCSortable.h in Headers */,
-				89B787AF1990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.h in Headers */,
-				89B788171990FB6100A726F1 /* DCTree.h in Headers */,
-				89B5E08B19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.h in Headers */,
-				897C1E6E19A4876F00C3B8A9 /* DCComponentPathManager.h in Headers */,
-				895AF1A51991AC9F00500A6F /* DCTourbillon.h in Headers */,
-				89009F0519A58D4600F54598 /* NSViewController+ComponentPathExtension.h in Headers */,
-				89BC4DC219CAC9A90034179E /* DCXOREncryptedInputStream.h in Headers */,
-				89BC4DBB19CAC9820034179E /* DCXOREncryptedOutputStream.h in Headers */,
-				89BC4D9F19CAB0570034179E /* DCMemoryUsageReporter.h in Headers */,
-				89009F1019A5CA9100F54598 /* DCDictionaryCache.h in Headers */,
-				895A6C5419A6314A00E56909 /* DCCommonFuncations.h in Headers */,
-				8964B52619F8D97500E15B35 /* NSArray+DCSafeCRUD.h in Headers */,
-				8964B53519F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.h in Headers */,
-				8964B54319F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.h in Headers */,
-				8964B52B19F8D97500E15B35 /* NSDictionary+DCSafeCRUD.h in Headers */,
-				8964B54A19F8EEA300E15B35 /* NSString+DCSafeCRUD.h in Headers */,
-				8964B53C19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.h in Headers */,
-				8964B53019F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.h in Headers */,
-				89E833D519CB012500F26088 /* DCOSXCommonFuncations.h in Headers */,
-				89B4FCB419CBC3AE004F99C1 /* DCMemoryUsageMonitor.h in Headers */,
-				89C5B1EB19D53335008BA398 /* DCXOREncryptUtility.h in Headers */,
-				89B4FCA319CBAE42004F99C1 /* DCHashUtility.h in Headers */,
-				893F66F319E7DBB700F92B1A /* DCColorEnumerator.h in Headers */,
-				89B787871990FB6100A726F1 /* NSData+DCHex.h in Headers */,
+				89C94D551A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.h in Headers */,
+				89C94D7F1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.h in Headers */,
+				89C94D4E1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.h in Headers */,
+				89C94D5C1A7B180000BCC65C /* NSObject+DCHThreadSafe.h in Headers */,
+				89F9D6E51A7A470800A5528A /* DCHCommonFuncations.h in Headers */,
+				89F9D6E01A7A37C200A5528A /* DCHTourbillon.h in Headers */,
+				89C94D2B1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.h in Headers */,
+				89C94D401A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.h in Headers */,
+				89C94D391A7B05B000BCC65C /* NSString+DCHSafeCRUD.h in Headers */,
+				89C94D321A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.h in Headers */,
+				89F9D6EB1A7A492400A5528A /* DCHSafeARC.h in Headers */,
+				89F9D6ED1A7A49BF00A5528A /* DCHSingletonTemplate.h in Headers */,
+				89C94D631A7B193B00BCC65C /* NSObject+DCHSwizzle.h in Headers */,
+				89C94D6A1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.h in Headers */,
+				89C94D861A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.h in Headers */,
+				89F9D6E21A7A381B00A5528A /* DCHCommonConstants.h in Headers */,
+				89C94D8D1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.h in Headers */,
+				89C94D781A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.h in Headers */,
+				89C94D471A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.h in Headers */,
+				89C94D711A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1482,68 +874,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89B787C91990FB6100A726F1 /* NSURL+DCUTTypeSupport.m in Sources */,
-				89B787641990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */,
-				8964B52C19F8D97500E15B35 /* NSDictionary+DCSafeCRUD.m in Sources */,
-				89B7878D1990FB6100A726F1 /* NSString+DCBase64.m in Sources */,
-				89B7879C1990FB6100A726F1 /* NSBundle+DCLibrarySupport.m in Sources */,
-				89B787EB1990FB6100A726F1 /* DCWebUtility.m in Sources */,
-				89B787A11990FB6100A726F1 /* NSData+DCLibrarySupport.m in Sources */,
-				89B788041990FB6100A726F1 /* DCHTTPOperation.m in Sources */,
-				89B787F51990FB6100A726F1 /* DCGZipDecompressor.m in Sources */,
-				89B7876E1990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */,
-				893F66F119E7DBB700F92B1A /* DCColorEnumerator.m in Sources */,
-				89B4FCB519CBC3AE004F99C1 /* DCMemoryUsageMonitor.m in Sources */,
-				89B787B51990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */,
-				89B787921990FB6100A726F1 /* NSString+DCHash.m in Sources */,
-				89B7881D1990FB6100A726F1 /* DCTreeNode.m in Sources */,
-				8964B53119F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.m in Sources */,
-				89B788341990FB6E00A726F1 /* NSColor+DCColorful.m in Sources */,
-				89B7875A1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
-				89C5B1EC19D53335008BA398 /* DCXOREncryptUtility.m in Sources */,
-				89B788131990FB6100A726F1 /* DCStack.m in Sources */,
-				89B787FF1990FB6100A726F1 /* DCLogger.m in Sources */,
-				89BC4DA019CAB0570034179E /* DCMemoryUsageReporter.m in Sources */,
-				89B788311990FB6E00A726F1 /* NSColor+DCAdditions.m in Sources */,
-				89B787B01990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
-				89B5E08C19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
-				89BC4DBC19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */,
-				89B4FCA419CBAE42004F99C1 /* DCHashUtility.m in Sources */,
-				89009F0619A58D4600F54598 /* NSViewController+ComponentPathExtension.m in Sources */,
-				89009F1119A5CA9100F54598 /* DCDictionaryCache.m in Sources */,
-				89B787BF1990FB6100A726F1 /* NSString+DCParseCSV.m in Sources */,
-				89B7880E1990FB6100A726F1 /* DCWatchedOperationQueue.m in Sources */,
-				89B787831990FB6100A726F1 /* NSData+DCHash.m in Sources */,
-				89B787E11990FB6100A726F1 /* DCRPNUtility.m in Sources */,
-				89B787D71990FB6100A726F1 /* DCCommonUtility.m in Sources */,
-				89B787691990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m in Sources */,
-				89E833D619CB012500F26088 /* DCOSXCommonFuncations.m in Sources */,
-				89B787971990FB6100A726F1 /* NSArray+DCContentExtension.m in Sources */,
-				89B787E61990FB6100A726F1 /* DCUIMainThreadGuard.m in Sources */,
-				89B787DC1990FB6100A726F1 /* DCImageUtility.m in Sources */,
-				89B788371990FB6E00A726F1 /* NSViewController+DCViewLogic.m in Sources */,
-				8964B52719F8D97500E15B35 /* NSArray+DCSafeCRUD.m in Sources */,
-				89B787F01990FB6100A726F1 /* DCGZipCompressor.m in Sources */,
-				89B7877E1990FB6100A726F1 /* NSData+DCBase64.m in Sources */,
-				89BC4DC319CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */,
-				89B7883A1990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.m in Sources */,
-				89B787AB1990FB6100A726F1 /* NSNumber+DCRandom.m in Sources */,
-				89B788091990FB6100A726F1 /* DCRunLoopOperation.m in Sources */,
-				8964B54419F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.m in Sources */,
-				89B788181990FB6100A726F1 /* DCTree.m in Sources */,
-				89B787BA1990FB6100A726F1 /* NSObject+DCUUIDExtension.m in Sources */,
-				89B787C41990FB6100A726F1 /* NSString+DCURLCoding.m in Sources */,
-				8964B53D19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.m in Sources */,
-				89B787881990FB6100A726F1 /* NSData+DCHex.m in Sources */,
-				895A6C5519A6314A00E56909 /* DCCommonFuncations.m in Sources */,
-				89B787D11990FB6100A726F1 /* DCTestBlocker.m in Sources */,
-				897C1E6F19A4876F00C3B8A9 /* DCComponentPathManager.m in Sources */,
-				89B787A61990FB6100A726F1 /* NSDictionary+DCSortable.m in Sources */,
-				89B787731990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */,
-				89B787781990FB6100A726F1 /* NSData+GZipExtension.m in Sources */,
-				8964B53619F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.m in Sources */,
-				89B7875F1990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m in Sources */,
-				8964B54B19F8EEA300E15B35 /* NSString+DCSafeCRUD.m in Sources */,
+				89C94D641A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */,
+				89C94D411A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */,
+				89C94D561A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */,
+				89C94D871A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */,
+				89C94D791A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */,
+				89C94D5D1A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */,
+				89C94D3A1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */,
+				89C94D6B1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */,
+				89C94D331A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */,
+				89C94D801A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */,
+				89F9D6E61A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
+				89C94D721A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
+				89C94D481A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */,
+				89C94D8E1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
+				89C94D4F1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
+				89C94D2C1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1551,72 +897,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89C221FC19B6C12A007F5CF2 /* DCCommonFuncations.m in Sources */,
-				89C221FD19B6C12A007F5CF2 /* DCDictionaryCache.m in Sources */,
-				8964B52819F8D97500E15B35 /* NSArray+DCSafeCRUD.m in Sources */,
-				89C221FE19B6C12A007F5CF2 /* DCComponentPathManager.m in Sources */,
-				89C221FF19B6C12A007F5CF2 /* NSViewController+ComponentPathExtension.m in Sources */,
-				89BC4DA119CAB0570034179E /* DCMemoryUsageReporter.m in Sources */,
-				89B787CA1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m in Sources */,
-				89B787651990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */,
-				89B7878E1990FB6100A726F1 /* NSString+DCBase64.m in Sources */,
-				89B7879D1990FB6100A726F1 /* NSBundle+DCLibrarySupport.m in Sources */,
-				89B787EC1990FB6100A726F1 /* DCWebUtility.m in Sources */,
-				89BC4DC419CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */,
-				89C5B1ED19D53335008BA398 /* DCXOREncryptUtility.m in Sources */,
-				89B787A21990FB6100A726F1 /* NSData+DCLibrarySupport.m in Sources */,
-				89B788051990FB6100A726F1 /* DCHTTPOperation.m in Sources */,
-				8964B53219F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.m in Sources */,
-				89B787F61990FB6100A726F1 /* DCGZipDecompressor.m in Sources */,
-				89B7876F1990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */,
-				89B787B61990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */,
-				89B787931990FB6100A726F1 /* NSString+DCHash.m in Sources */,
-				89B7881E1990FB6100A726F1 /* DCTreeNode.m in Sources */,
-				89B788351990FB6E00A726F1 /* NSColor+DCColorful.m in Sources */,
-				89B7875B1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
-				89B788141990FB6100A726F1 /* DCStack.m in Sources */,
-				8964B52D19F8D97500E15B35 /* NSDictionary+DCSafeCRUD.m in Sources */,
-				89B5E08D19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
-				89B788001990FB6100A726F1 /* DCLogger.m in Sources */,
-				89B788321990FB6E00A726F1 /* NSColor+DCAdditions.m in Sources */,
-				89B787B11990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
-				89B787C01990FB6100A726F1 /* NSString+DCParseCSV.m in Sources */,
-				89B7880F1990FB6100A726F1 /* DCWatchedOperationQueue.m in Sources */,
-				89B787841990FB6100A726F1 /* NSData+DCHash.m in Sources */,
-				89B787E21990FB6100A726F1 /* DCRPNUtility.m in Sources */,
+				89C94D651A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */,
+				89C94D8F1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
+				89C94D3B1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */,
+				89C94D341A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */,
+				89F9D6E71A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
+				89C94D731A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
 				89E833DB19CB037800F26088 /* DCEncryptTestCase.m in Sources */,
-				89BC4DBD19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */,
-				89B787D81990FB6100A726F1 /* DCCommonUtility.m in Sources */,
-				89B7876A1990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m in Sources */,
-				89B787981990FB6100A726F1 /* NSArray+DCContentExtension.m in Sources */,
-				89B787E71990FB6100A726F1 /* DCUIMainThreadGuard.m in Sources */,
-				89B787DD1990FB6100A726F1 /* DCImageUtility.m in Sources */,
-				89B788381990FB6E00A726F1 /* NSViewController+DCViewLogic.m in Sources */,
-				89B787F11990FB6100A726F1 /* DCGZipCompressor.m in Sources */,
-				8964B53E19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.m in Sources */,
-				89B7877F1990FB6100A726F1 /* NSData+DCBase64.m in Sources */,
-				89B4FCB619CBC3AE004F99C1 /* DCMemoryUsageMonitor.m in Sources */,
-				89B7883B1990FB6E00A726F1 /* NSWindowController+DCCenterToScreen.m in Sources */,
-				8964B54519F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.m in Sources */,
-				89B787AC1990FB6100A726F1 /* NSNumber+DCRandom.m in Sources */,
-				89B7880A1990FB6100A726F1 /* DCRunLoopOperation.m in Sources */,
-				89B788191990FB6100A726F1 /* DCTree.m in Sources */,
-				8964B53719F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.m in Sources */,
-				89E833D719CB012500F26088 /* DCOSXCommonFuncations.m in Sources */,
-				89B787BB1990FB6100A726F1 /* NSObject+DCUUIDExtension.m in Sources */,
+				89C94D491A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */,
 				89B4FCAB19CBAEB0004F99C1 /* DCCompressorTestCase.m in Sources */,
+				89C94D501A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
+				89C94D881A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */,
+				89C94D7A1A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */,
+				89C94D811A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */,
 				89B786C91990FB4500A726F1 /* Tourbillon_OSXTests.m in Sources */,
-				89B787C51990FB6100A726F1 /* NSString+DCURLCoding.m in Sources */,
-				89B787891990FB6100A726F1 /* NSData+DCHex.m in Sources */,
-				89B787D21990FB6100A726F1 /* DCTestBlocker.m in Sources */,
-				89B787A71990FB6100A726F1 /* NSDictionary+DCSortable.m in Sources */,
-				89B787741990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */,
-				893F66F219E7DBB700F92B1A /* DCColorEnumerator.m in Sources */,
 				89B4FCB119CBBEAA004F99C1 /* DCloggerTastCase.m in Sources */,
-				89B787791990FB6100A726F1 /* NSData+GZipExtension.m in Sources */,
-				8964B54C19F8EEA300E15B35 /* NSString+DCSafeCRUD.m in Sources */,
-				89B787601990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m in Sources */,
-				89B4FCA519CBAE42004F99C1 /* DCHashUtility.m in Sources */,
+				89C94D571A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */,
+				89C94D421A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */,
+				89C94D6C1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */,
+				89C94D2D1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */,
+				89C94D5E1A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1624,68 +924,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89B787CB1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m in Sources */,
-				89B787661990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */,
-				8964B52E19F8D97500E15B35 /* NSDictionary+DCSafeCRUD.m in Sources */,
-				89B4FCA619CBAE42004F99C1 /* DCHashUtility.m in Sources */,
-				89B7878F1990FB6100A726F1 /* NSString+DCBase64.m in Sources */,
-				89B7884B1990FB7600A726F1 /* UIColor+DCAdditions.m in Sources */,
-				89B7879E1990FB6100A726F1 /* NSBundle+DCLibrarySupport.m in Sources */,
-				89B787ED1990FB6100A726F1 /* DCWebUtility.m in Sources */,
-				89C5B1EE19D53335008BA398 /* DCXOREncryptUtility.m in Sources */,
-				89B787A31990FB6100A726F1 /* NSData+DCLibrarySupport.m in Sources */,
-				893F66E719E7CEF500F92B1A /* DCColorEnumerator.m in Sources */,
-				89B788061990FB6100A726F1 /* DCHTTPOperation.m in Sources */,
-				89B7884D1990FB7600A726F1 /* UIColor+DCColorful.m in Sources */,
-				89B787F71990FB6100A726F1 /* DCGZipDecompressor.m in Sources */,
-				89B7884F1990FB7600A726F1 /* UIImage+DCLibrarySupport.m in Sources */,
-				8964B53319F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.m in Sources */,
-				89B787701990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */,
-				89B787B71990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */,
-				89B787941990FB6100A726F1 /* NSString+DCHash.m in Sources */,
-				89B788511990FB7600A726F1 /* UIViewController+DCLibrarySupport.m in Sources */,
-				893F66B319E7BDE000F92B1A /* DCGradientView.m in Sources */,
-				89B7881F1990FB6100A726F1 /* DCTreeNode.m in Sources */,
-				89BC4DA219CAB0570034179E /* DCMemoryUsageReporter.m in Sources */,
-				89B7875C1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
-				89B788151990FB6100A726F1 /* DCStack.m in Sources */,
-				89B5E08E19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
-				89BC4DBE19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */,
-				89B788011990FB6100A726F1 /* DCLogger.m in Sources */,
-				89009F1219A5CA9100F54598 /* DCDictionaryCache.m in Sources */,
-				89B787B21990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
-				89B787C11990FB6100A726F1 /* NSString+DCParseCSV.m in Sources */,
-				89B788101990FB6100A726F1 /* DCWatchedOperationQueue.m in Sources */,
-				89B787851990FB6100A726F1 /* NSData+DCHash.m in Sources */,
-				89B787E31990FB6100A726F1 /* DCRPNUtility.m in Sources */,
-				89B787D91990FB6100A726F1 /* DCCommonUtility.m in Sources */,
-				89B7876B1990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m in Sources */,
-				89B787991990FB6100A726F1 /* NSArray+DCContentExtension.m in Sources */,
-				89B787E81990FB6100A726F1 /* DCUIMainThreadGuard.m in Sources */,
-				89B787DE1990FB6100A726F1 /* DCImageUtility.m in Sources */,
-				89B787F21990FB6100A726F1 /* DCGZipCompressor.m in Sources */,
-				8964B52919F8D97500E15B35 /* NSArray+DCSafeCRUD.m in Sources */,
-				89B787801990FB6100A726F1 /* NSData+DCBase64.m in Sources */,
-				89BC4DC519CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */,
-				89B787AD1990FB6100A726F1 /* NSNumber+DCRandom.m in Sources */,
-				89B4FCB719CBC3AE004F99C1 /* DCMemoryUsageMonitor.m in Sources */,
-				89B7880B1990FB6100A726F1 /* DCRunLoopOperation.m in Sources */,
-				89B7881A1990FB6100A726F1 /* DCTree.m in Sources */,
-				8964B54619F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.m in Sources */,
-				89B787BC1990FB6100A726F1 /* NSObject+DCUUIDExtension.m in Sources */,
-				89B787C61990FB6100A726F1 /* NSString+DCURLCoding.m in Sources */,
-				89B7878A1990FB6100A726F1 /* NSData+DCHex.m in Sources */,
-				8964B53F19F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.m in Sources */,
-				89B787D31990FB6100A726F1 /* DCTestBlocker.m in Sources */,
-				895A6C5619A6314A00E56909 /* DCCommonFuncations.m in Sources */,
-				897C1E7019A4876F00C3B8A9 /* DCComponentPathManager.m in Sources */,
-				89B787A81990FB6100A726F1 /* NSDictionary+DCSortable.m in Sources */,
-				89B787751990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */,
-				89009F0919A58F6E00F54598 /* UIViewController+ComponentPathExtension.m in Sources */,
-				89B7877A1990FB6100A726F1 /* NSData+GZipExtension.m in Sources */,
-				8964B53819F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.m in Sources */,
-				89B787611990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m in Sources */,
-				8964B54D19F8EEA300E15B35 /* NSString+DCSafeCRUD.m in Sources */,
+				89C94D661A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */,
+				89C94D431A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */,
+				89C94D581A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */,
+				89C94D891A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */,
+				89C94D7B1A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */,
+				89C94D5F1A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */,
+				89C94D3C1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */,
+				89C94D6D1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */,
+				89C94D351A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */,
+				89C94D821A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */,
+				89F9D6E81A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
+				89C94D741A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
+				89C94D4A1A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */,
+				89C94D901A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
+				89C94D511A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
+				89C94D2E1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1693,69 +947,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89E833D819CB01B800F26088 /* DCDictionaryCache.m in Sources */,
-				89C2220019B6C143007F5CF2 /* DCCommonFuncations.m in Sources */,
-				89C2220119B6C143007F5CF2 /* DCComponentPathManager.m in Sources */,
-				89C2220219B6C143007F5CF2 /* UIViewController+ComponentPathExtension.m in Sources */,
-				89B787CC1990FB6100A726F1 /* NSURL+DCUTTypeSupport.m in Sources */,
-				89B787671990FB6100A726F1 /* NSMutableDictionary+DCGCDThreadSafe.m in Sources */,
-				89B787901990FB6100A726F1 /* NSString+DCBase64.m in Sources */,
-				89B7884C1990FB7600A726F1 /* UIColor+DCAdditions.m in Sources */,
-				89B7879F1990FB6100A726F1 /* NSBundle+DCLibrarySupport.m in Sources */,
-				89B4FCB819CBC3AE004F99C1 /* DCMemoryUsageMonitor.m in Sources */,
-				89B787EE1990FB6100A726F1 /* DCWebUtility.m in Sources */,
-				89B787A41990FB6100A726F1 /* NSData+DCLibrarySupport.m in Sources */,
-				893F66B419E7BDE000F92B1A /* DCGradientView.m in Sources */,
-				89B788071990FB6100A726F1 /* DCHTTPOperation.m in Sources */,
-				89B7884E1990FB7600A726F1 /* UIColor+DCColorful.m in Sources */,
-				89B787F81990FB6100A726F1 /* DCGZipDecompressor.m in Sources */,
-				8964B54019F8E22300E15B35 /* NSMutableSet+DCSafeCRUD.m in Sources */,
-				8964B52F19F8D97500E15B35 /* NSDictionary+DCSafeCRUD.m in Sources */,
-				89C5B1EF19D53335008BA398 /* DCXOREncryptUtility.m in Sources */,
-				89B788501990FB7600A726F1 /* UIImage+DCLibrarySupport.m in Sources */,
-				89B787711990FB6100A726F1 /* NSMutableString+DCGCDThreadSafe.m in Sources */,
-				89B787B81990FB6100A726F1 /* NSObject+DCSwizzle.m in Sources */,
-				89BC4DA319CAB0570034179E /* DCMemoryUsageReporter.m in Sources */,
-				89B787951990FB6100A726F1 /* NSString+DCHash.m in Sources */,
-				89B788521990FB7600A726F1 /* UIViewController+DCLibrarySupport.m in Sources */,
-				89B5E08F19A37F8700490C85 /* NSObject+DCAssociatedObjectExtension.m in Sources */,
-				8964B54719F8E7BB00E15B35 /* NSMutableString+DCSafeCRUD.m in Sources */,
-				89B4FCA719CBAE42004F99C1 /* DCHashUtility.m in Sources */,
-				89BC4DBF19CAC9820034179E /* DCXOREncryptedOutputStream.m in Sources */,
-				89B788201990FB6100A726F1 /* DCTreeNode.m in Sources */,
-				89B7875D1990FB6100A726F1 /* NSMutableArray+DCGCDThreadSafe.m in Sources */,
-				89B788161990FB6100A726F1 /* DCStack.m in Sources */,
-				89B788021990FB6100A726F1 /* DCLogger.m in Sources */,
-				89B787B31990FB6100A726F1 /* NSObject+DCMainThreadAsyncReactive.m in Sources */,
-				89B787C21990FB6100A726F1 /* NSString+DCParseCSV.m in Sources */,
-				8964B52A19F8D97500E15B35 /* NSArray+DCSafeCRUD.m in Sources */,
-				89B788111990FB6100A726F1 /* DCWatchedOperationQueue.m in Sources */,
-				89B787861990FB6100A726F1 /* NSData+DCHash.m in Sources */,
-				89B787E41990FB6100A726F1 /* DCRPNUtility.m in Sources */,
-				89B787DA1990FB6100A726F1 /* DCCommonUtility.m in Sources */,
-				89B7876C1990FB6100A726F1 /* NSMutableSet+DCGCDThreadSafe.m in Sources */,
-				89B7879A1990FB6100A726F1 /* NSArray+DCContentExtension.m in Sources */,
-				89B787E91990FB6100A726F1 /* DCUIMainThreadGuard.m in Sources */,
-				89B787DF1990FB6100A726F1 /* DCImageUtility.m in Sources */,
-				89BC4DC619CAC9A90034179E /* DCXOREncryptedInputStream.m in Sources */,
-				89B787F31990FB6100A726F1 /* DCGZipCompressor.m in Sources */,
-				89B787811990FB6100A726F1 /* NSData+DCBase64.m in Sources */,
-				89B787AE1990FB6100A726F1 /* NSNumber+DCRandom.m in Sources */,
-				8964B53419F8D97500E15B35 /* NSMutableArray+DCSafeCRUD.m in Sources */,
-				89B7880C1990FB6100A726F1 /* DCRunLoopOperation.m in Sources */,
-				89B7881B1990FB6100A726F1 /* DCTree.m in Sources */,
-				89B787BD1990FB6100A726F1 /* NSObject+DCUUIDExtension.m in Sources */,
+				89C94D6E1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */,
+				89C94D4B1A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */,
+				89C94D671A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */,
+				89C94D3D1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */,
+				89F9D6E91A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
+				89C94D521A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
+				89C94D7C1A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */,
+				89C94D751A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
+				89C94D601A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */,
 				89B786EF1990FB5000A726F1 /* Tourbillon_iOSTests.m in Sources */,
-				89B787C71990FB6100A726F1 /* NSString+DCURLCoding.m in Sources */,
-				89B7878B1990FB6100A726F1 /* NSData+DCHex.m in Sources */,
-				89B787D41990FB6100A726F1 /* DCTestBlocker.m in Sources */,
-				8964B53919F8D97500E15B35 /* NSMutableDictionary+DCSafeCRUD.m in Sources */,
-				8964B54E19F8EEA300E15B35 /* NSString+DCSafeCRUD.m in Sources */,
-				89B787A91990FB6100A726F1 /* NSDictionary+DCSortable.m in Sources */,
-				89B787761990FB6100A726F1 /* NSObject+DCGCDThreadSafe.m in Sources */,
-				89B7877B1990FB6100A726F1 /* NSData+GZipExtension.m in Sources */,
-				893F66E819E7CEF500F92B1A /* DCColorEnumerator.m in Sources */,
-				89B787621990FB6100A726F1 /* NSMutableData+DCGCDThreadSafe.m in Sources */,
+				89C94D831A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */,
+				89C94D2F1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */,
+				89C94D591A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */,
+				89C94D441A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */,
+				89C94D361A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */,
+				89C94D911A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
+				89C94D8A1A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
