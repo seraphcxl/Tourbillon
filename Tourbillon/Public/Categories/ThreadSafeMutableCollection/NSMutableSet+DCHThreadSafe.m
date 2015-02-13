@@ -7,7 +7,6 @@
 //
 
 #import "NSMutableSet+DCHThreadSafe.h"
-#import "NSObject+DCHThreadSafe.h"
 #import "NSMutableSet+DCHSafeCRUD.h"
 
 @implementation NSMutableSet (DCHThreadSafe)

@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89B4FCAB19CBAEB0004F99C1 /* DCCompressorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCAA19CBAEB0004F99C1 /* DCCompressorTestCase.m */; };
 		89B4FCAD19CBB3E9004F99C1 /* Apple think different.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 89B4FCAC19CBB3E9004F99C1 /* Apple think different.rtf */; };
 		89B4FCAE19CBB3E9004F99C1 /* Apple think different.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 89B4FCAC19CBB3E9004F99C1 /* Apple think different.rtf */; };
-		89B4FCB119CBBEAA004F99C1 /* DCloggerTastCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4FCB019CBBEAA004F99C1 /* DCloggerTastCase.m */; };
 		89B786B11990FB4400A726F1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
 		89B786BD1990FB4500A726F1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137581925B11000A3EFB7 /* XCTest.framework */; };
 		89B786BE1990FB4500A726F1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
@@ -122,7 +120,6 @@
 		89E833CB19CB001E00F26088 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8955F7F5197135E500B390C6 /* libz.dylib */; };
 		89E833CC19CB003D00F26088 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8955F7F7197135ED00B390C6 /* libz.dylib */; };
 		89E833CD19CB004500F26088 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */; };
-		89E833DB19CB037800F26088 /* DCEncryptTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E833DA19CB037800F26088 /* DCEncryptTestCase.m */; };
 		89F9D6E01A7A37C200A5528A /* DCHTourbillon.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6DF1A7A37C200A5528A /* DCHTourbillon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89F9D6E21A7A381B00A5528A /* DCHCommonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6E11A7A381B00A5528A /* DCHCommonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89F9D6E51A7A470800A5528A /* DCHCommonFuncations.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6E31A7A470800A5528A /* DCHCommonFuncations.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -132,6 +129,16 @@
 		89F9D6E91A7A470800A5528A /* DCHCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */; };
 		89F9D6EB1A7A492400A5528A /* DCHSafeARC.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6EA1A7A492400A5528A /* DCHSafeARC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89F9D6ED1A7A49BF00A5528A /* DCHSingletonTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6EC1A7A49BF00A5528A /* DCHSingletonTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DD769B91A8DE0DB00EBB5F9 /* DCHStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD769B71A8DE0DB00EBB5F9 /* DCHStack.h */; };
+		8DD769BA1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
+		8DD769BB1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
+		8DD769BC1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
+		8DD769BD1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
+		8DD769C71A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD769C51A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h */; };
+		8DD769C81A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */; };
+		8DD769C91A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */; };
+		8DD769CA1A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */; };
+		8DD769CB1A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,11 +197,7 @@
 		89ADE832198F4C2900DD27B2 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
 		89ADE834198F4C3200DD27B2 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib; sourceTree = DEVELOPER_DIR; };
 		89ADE836198F4C6B00DD27B2 /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = usr/lib/libSystem.dylib; sourceTree = SDKROOT; };
-		89B4FCA919CBAEB0004F99C1 /* DCCompressorTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCompressorTestCase.h; sourceTree = "<group>"; };
-		89B4FCAA19CBAEB0004F99C1 /* DCCompressorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCompressorTestCase.m; sourceTree = "<group>"; };
 		89B4FCAC19CBB3E9004F99C1 /* Apple think different.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Apple think different.rtf"; sourceTree = "<group>"; };
-		89B4FCAF19CBBEAA004F99C1 /* DCloggerTastCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCloggerTastCase.h; sourceTree = "<group>"; };
-		89B4FCB019CBBEAA004F99C1 /* DCloggerTastCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCloggerTastCase.m; sourceTree = "<group>"; };
 		89B786B01990FB4400A726F1 /* libTourbillon-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTourbillon-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B786B41990FB4400A726F1 /* Tourbillon-OSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tourbillon-OSX-Prefix.pch"; sourceTree = "<group>"; };
 		89B786BC1990FB4500A726F1 /* Tourbillon-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tourbillon-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,14 +247,16 @@
 		89E137581925B11000A3EFB7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		89E137731925B13D00A3EFB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89E137831925B13D00A3EFB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		89E833D919CB037800F26088 /* DCEncryptTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCEncryptTestCase.h; sourceTree = "<group>"; };
-		89E833DA19CB037800F26088 /* DCEncryptTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCEncryptTestCase.m; sourceTree = "<group>"; };
 		89F9D6DF1A7A37C200A5528A /* DCHTourbillon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHTourbillon.h; sourceTree = "<group>"; };
 		89F9D6E11A7A381B00A5528A /* DCHCommonConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHCommonConstants.h; sourceTree = "<group>"; };
 		89F9D6E31A7A470800A5528A /* DCHCommonFuncations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHCommonFuncations.h; sourceTree = "<group>"; };
 		89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHCommonFuncations.m; sourceTree = "<group>"; };
 		89F9D6EA1A7A492400A5528A /* DCHSafeARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHSafeARC.h; sourceTree = "<group>"; };
 		89F9D6EC1A7A49BF00A5528A /* DCHSingletonTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHSingletonTemplate.h; sourceTree = "<group>"; };
+		8DD769B71A8DE0DB00EBB5F9 /* DCHStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHStack.h; sourceTree = "<group>"; };
+		8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHStack.m; sourceTree = "<group>"; };
+		8DD769C51A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCHUUIDExtension.h"; sourceTree = "<group>"; };
+		8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCHUUIDExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,12 +340,6 @@
 			children = (
 				89B786C31990FB4500A726F1 /* Supporting Files */,
 				89B786C81990FB4500A726F1 /* Tourbillon_OSXTests.m */,
-				89E833D919CB037800F26088 /* DCEncryptTestCase.h */,
-				89E833DA19CB037800F26088 /* DCEncryptTestCase.m */,
-				89B4FCA919CBAEB0004F99C1 /* DCCompressorTestCase.h */,
-				89B4FCAA19CBAEB0004F99C1 /* DCCompressorTestCase.m */,
-				89B4FCAF19CBBEAA004F99C1 /* DCloggerTastCase.h */,
-				89B4FCB019CBBEAA004F99C1 /* DCloggerTastCase.m */,
 			);
 			path = "Tourbillon-OSXTests";
 			sourceTree = "<group>";
@@ -428,6 +427,8 @@
 				89C94D621A7B193B00BCC65C /* NSObject+DCHSwizzle.m */,
 				89C94D681A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.h */,
 				89C94D691A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m */,
+				8DD769C51A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h */,
+				8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -498,6 +499,8 @@
 		89B787511990FB6100A726F1 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
+				8DD769B71A8DE0DB00EBB5F9 /* DCHStack.h */,
+				8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -724,6 +727,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C94D551A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.h in Headers */,
+				8DD769B91A8DE0DB00EBB5F9 /* DCHStack.h in Headers */,
 				89C94D7F1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.h in Headers */,
 				89C94D4E1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.h in Headers */,
 				89C94D5C1A7B180000BCC65C /* NSObject+DCHThreadSafe.h in Headers */,
@@ -743,6 +747,7 @@
 				89C94D781A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.h in Headers */,
 				89C94D471A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.h in Headers */,
 				89C94D711A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.h in Headers */,
+				8DD769C71A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,7 +892,9 @@
 				89F9D6E61A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
 				89C94D721A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
 				89C94D481A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */,
+				8DD769BA1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */,
 				89C94D8E1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
+				8DD769C81A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */,
 				89C94D4F1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
 				89C94D2C1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */,
 			);
@@ -897,21 +904,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD769C91A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */,
+				8DD769BB1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */,
 				89C94D651A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */,
 				89C94D8F1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
 				89C94D3B1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */,
 				89C94D341A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */,
 				89F9D6E71A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
 				89C94D731A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
-				89E833DB19CB037800F26088 /* DCEncryptTestCase.m in Sources */,
 				89C94D491A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */,
-				89B4FCAB19CBAEB0004F99C1 /* DCCompressorTestCase.m in Sources */,
 				89C94D501A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
 				89C94D881A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */,
 				89C94D7A1A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */,
 				89C94D811A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */,
 				89B786C91990FB4500A726F1 /* Tourbillon_OSXTests.m in Sources */,
-				89B4FCB119CBBEAA004F99C1 /* DCloggerTastCase.m in Sources */,
 				89C94D571A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */,
 				89C94D421A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */,
 				89C94D6C1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */,
@@ -937,7 +943,9 @@
 				89F9D6E81A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
 				89C94D741A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
 				89C94D4A1A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */,
+				8DD769BC1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */,
 				89C94D901A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
+				8DD769CA1A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */,
 				89C94D511A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
 				89C94D2E1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */,
 			);
@@ -947,6 +955,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD769CB1A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */,
 				89C94D6E1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */,
 				89C94D4B1A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */,
 				89C94D671A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */,
@@ -954,6 +963,7 @@
 				89F9D6E91A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
 				89C94D521A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
 				89C94D7C1A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */,
+				8DD769BD1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */,
 				89C94D751A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
 				89C94D601A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */,
 				89B786EF1990FB5000A726F1 /* Tourbillon_iOSTests.m in Sources */,

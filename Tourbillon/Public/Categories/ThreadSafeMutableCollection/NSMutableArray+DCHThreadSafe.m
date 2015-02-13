@@ -7,7 +7,6 @@
 //
 
 #import "NSMutableArray+DCHThreadSafe.h"
-#import "NSObject+DCHThreadSafe.h"
 #import "NSArray+DCHSafeCRUD.h"
 #import "NSMutableArray+DCHSafeCRUD.h"
 

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSObject+DCHThreadSafe.h"
 
 @interface NSMutableSet (DCHThreadSafe)
 

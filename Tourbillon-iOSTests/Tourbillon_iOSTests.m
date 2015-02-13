@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 
+#import "DCHTourbillon.h"
+
 @interface Tourbillon_iOSTests : XCTestCase
 
 @end

@@ -12,6 +12,7 @@
 #pragma mark - Categories
 #import "NSObject+DCHSwizzle.h"
 #import "NSObject+DCHAssociatedObjectExtension.h"
+#import "NSObject+DCHUUIDExtension.h"
 
 #pragma mark - GCDThreadSafe
 #import "NSObject+DCHThreadSafe.h"
@@ -35,6 +36,9 @@
 #import "DCHCommonConstants.h"
 #import "DCHCommonFuncations.h"
 #import "DCHSingletonTemplate.h"
+
+#pragma mark - Utilities
+#import "DCHStack.h"
 
 #if TARGET_OS_IPHONE
 // iOS
