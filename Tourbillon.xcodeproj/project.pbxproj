@@ -129,16 +129,21 @@
 		89F9D6E91A7A470800A5528A /* DCHCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */; };
 		89F9D6EB1A7A492400A5528A /* DCHSafeARC.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6EA1A7A492400A5528A /* DCHSafeARC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89F9D6ED1A7A49BF00A5528A /* DCHSingletonTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6EC1A7A49BF00A5528A /* DCHSingletonTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8DD769B91A8DE0DB00EBB5F9 /* DCHStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD769B71A8DE0DB00EBB5F9 /* DCHStack.h */; };
+		8D7B43911AC52E0E00D6D57B /* DCHAsyncTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D7B438F1AC52E0E00D6D57B /* DCHAsyncTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D7B43921AC52E0E00D6D57B /* DCHAsyncTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B43901AC52E0E00D6D57B /* DCHAsyncTest.m */; };
+		8D7B43931AC52E0E00D6D57B /* DCHAsyncTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B43901AC52E0E00D6D57B /* DCHAsyncTest.m */; };
+		8DD769B91A8DE0DB00EBB5F9 /* DCHStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD769B71A8DE0DB00EBB5F9 /* DCHStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DD769BA1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
 		8DD769BB1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
 		8DD769BC1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
 		8DD769BD1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
-		8DD769C71A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD769C51A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h */; };
+		8DD769C71A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD769C51A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DD769C81A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */; };
 		8DD769C91A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */; };
 		8DD769CA1A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */; };
 		8DD769CB1A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */; };
+		BA62046DF840429972A2DE0C /* libPods-Tourbillon-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D805F156C963A2D6CFCEA5 /* libPods-Tourbillon-OSX.a */; };
+		DCC78E4B7758B13DB78065B2 /* libPods-Tourbillon-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F071A7518139977766EA425A /* libPods-Tourbillon-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +196,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		073117267D271843B43A0359 /* Pods-Tourbillon-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourbillon-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tourbillon-OSX/Pods-Tourbillon-OSX.release.xcconfig"; sourceTree = "<group>"; };
+		3C553C8034E1969FA80075E3 /* Pods-Tourbillon-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourbillon-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tourbillon-OSX/Pods-Tourbillon-OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		55D805F156C963A2D6CFCEA5 /* libPods-Tourbillon-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tourbillon-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		8955F7F5197135E500B390C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		8955F7F7197135ED00B390C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
@@ -253,10 +261,15 @@
 		89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHCommonFuncations.m; sourceTree = "<group>"; };
 		89F9D6EA1A7A492400A5528A /* DCHSafeARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHSafeARC.h; sourceTree = "<group>"; };
 		89F9D6EC1A7A49BF00A5528A /* DCHSingletonTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHSingletonTemplate.h; sourceTree = "<group>"; };
+		8D7B438F1AC52E0E00D6D57B /* DCHAsyncTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHAsyncTest.h; sourceTree = "<group>"; };
+		8D7B43901AC52E0E00D6D57B /* DCHAsyncTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHAsyncTest.m; sourceTree = "<group>"; };
 		8DD769B71A8DE0DB00EBB5F9 /* DCHStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHStack.h; sourceTree = "<group>"; };
 		8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHStack.m; sourceTree = "<group>"; };
 		8DD769C51A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCHUUIDExtension.h"; sourceTree = "<group>"; };
 		8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCHUUIDExtension.m"; sourceTree = "<group>"; };
+		EB46FE63CFEECE08843FC297 /* Pods-Tourbillon-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourbillon-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tourbillon-iOS/Pods-Tourbillon-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		ECC1D11185D852F3F220BD52 /* Pods-Tourbillon-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourbillon-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tourbillon-iOS/Pods-Tourbillon-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F071A7518139977766EA425A /* libPods-Tourbillon-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tourbillon-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B786B11990FB4400A726F1 /* Cocoa.framework in Frameworks */,
+				BA62046DF840429972A2DE0C /* libPods-Tourbillon-OSX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B786D51990FB4F00A726F1 /* Foundation.framework in Frameworks */,
+				DCC78E4B7758B13DB78065B2 /* libPods-Tourbillon-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +318,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		247979211DCC4D0D04145323 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C553C8034E1969FA80075E3 /* Pods-Tourbillon-OSX.debug.xcconfig */,
+				073117267D271843B43A0359 /* Pods-Tourbillon-OSX.release.xcconfig */,
+				ECC1D11185D852F3F220BD52 /* Pods-Tourbillon-iOS.debug.xcconfig */,
+				EB46FE63CFEECE08843FC297 /* Pods-Tourbillon-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		89009F0D19A5CA4800F54598 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,6 +474,8 @@
 		89B787301990FB6100A726F1 /* Testers */ = {
 			isa = PBXGroup;
 			children = (
+				8D7B438F1AC52E0E00D6D57B /* DCHAsyncTest.h */,
+				8D7B43901AC52E0E00D6D57B /* DCHAsyncTest.m */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -677,6 +705,7 @@
 				89B786E81990FB5000A726F1 /* Tourbillon-iOSTests */,
 				89E137421925B11000A3EFB7 /* Frameworks */,
 				89E137411925B11000A3EFB7 /* Products */,
+				247979211DCC4D0D04145323 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -705,6 +734,8 @@
 				89E137731925B13D00A3EFB7 /* Foundation.framework */,
 				89E137831925B13D00A3EFB7 /* UIKit.framework */,
 				89E137451925B11000A3EFB7 /* Other Frameworks */,
+				55D805F156C963A2D6CFCEA5 /* libPods-Tourbillon-OSX.a */,
+				F071A7518139977766EA425A /* libPods-Tourbillon-iOS.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -727,7 +758,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C94D551A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.h in Headers */,
-				8DD769B91A8DE0DB00EBB5F9 /* DCHStack.h in Headers */,
 				89C94D7F1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.h in Headers */,
 				89C94D4E1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.h in Headers */,
 				89C94D5C1A7B180000BCC65C /* NSObject+DCHThreadSafe.h in Headers */,
@@ -746,8 +776,10 @@
 				89C94D8D1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.h in Headers */,
 				89C94D781A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.h in Headers */,
 				89C94D471A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.h in Headers */,
-				89C94D711A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.h in Headers */,
+				8DD769B91A8DE0DB00EBB5F9 /* DCHStack.h in Headers */,
+				8D7B43911AC52E0E00D6D57B /* DCHAsyncTest.h in Headers */,
 				8DD769C71A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h in Headers */,
+				89C94D711A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,9 +790,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89B786CA1990FB4500A726F1 /* Build configuration list for PBXNativeTarget "Tourbillon-OSX" */;
 			buildPhases = (
+				607EFBD32F4C3FD195D7233A /* Check Pods Manifest.lock */,
 				89B786AC1990FB4400A726F1 /* Sources */,
 				89B786AD1990FB4400A726F1 /* Frameworks */,
 				89B786AE1990FB4400A726F1 /* Headers */,
+				C25DFEA23300EDB1CEC9FFC2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -793,9 +827,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89B786F01990FB5000A726F1 /* Build configuration list for PBXNativeTarget "Tourbillon-iOS" */;
 			buildPhases = (
+				BC2A8F86B0C8D5EAE9F5D55C /* Check Pods Manifest.lock */,
 				89B786D01990FB4F00A726F1 /* Sources */,
 				89B786D11990FB4F00A726F1 /* Frameworks */,
 				89B786D21990FB4F00A726F1 /* CopyFiles */,
+				C0CA37E44B81FA7A1EF44AF2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -874,6 +910,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		607EFBD32F4C3FD195D7233A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC2A8F86B0C8D5EAE9F5D55C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0CA37E44B81FA7A1EF44AF2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tourbillon-iOS/Pods-Tourbillon-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C25DFEA23300EDB1CEC9FFC2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tourbillon-OSX/Pods-Tourbillon-OSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		89B786AC1990FB4400A726F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -896,6 +995,7 @@
 				89C94D8E1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
 				8DD769C81A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */,
 				89C94D4F1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
+				8D7B43921AC52E0E00D6D57B /* DCHAsyncTest.m in Sources */,
 				89C94D2C1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -947,6 +1047,7 @@
 				89C94D901A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
 				8DD769CA1A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */,
 				89C94D511A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
+				8D7B43931AC52E0E00D6D57B /* DCHAsyncTest.m in Sources */,
 				89C94D2E1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1014,6 +1115,7 @@
 /* Begin XCBuildConfiguration section */
 		89B786CB1990FB4500A726F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C553C8034E1969FA80075E3 /* Pods-Tourbillon-OSX.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1029,6 +1131,7 @@
 		};
 		89B786CC1990FB4500A726F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 073117267D271843B43A0359 /* Pods-Tourbillon-OSX.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1080,6 +1183,7 @@
 		};
 		89B786F11990FB5000A726F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECC1D11185D852F3F220BD52 /* Pods-Tourbillon-iOS.debug.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Tourbillon_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1098,6 +1202,7 @@
 		};
 		89B786F21990FB5000A726F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB46FE63CFEECE08843FC297 /* Pods-Tourbillon-iOS.release.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Tourbillon_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
