@@ -10,13 +10,10 @@
 
 @implementation NSObject (DCHUUIDExtension)
 
-+ (NSString *)createMemoryID:(NSObject *)object {
+- (NSString *)createMemoryID {
     NSString *result = nil;
     do {
-        if (!object) {
-            break;
-        }
-        result = [NSString stringWithFormat:@"%@_%p", NSStringFromClass([object class]), object];
+        result = [NSString stringWithFormat:@"%@_%p", NSStringFromClass([self class]), self];
     } while (NO);
     return result;
 }
