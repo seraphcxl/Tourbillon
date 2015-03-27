@@ -40,6 +40,9 @@
 #pragma mark - Utilities
 #import "DCHStack.h"
 
+#pragma mark - Testers
+#import "DCHAsyncTest.h"
+
 #if TARGET_OS_IPHONE
 // iOS
 #else
