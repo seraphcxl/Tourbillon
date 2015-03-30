@@ -141,6 +141,45 @@
     return result;
 }
 
+- (void)threadSafe_enumerateObjectsUsingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block {
+    do {
+        if (!block) {
+            break;
+        }
+        if (![self threadSafe_QueueBarrierSync:^{
+            [self enumerateObjectsUsingBlock:block];
+        }]) {
+            break;
+        }
+    } while (NO);
+}
+
+- (void)threadSafe_enumerateObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block NS_AVAILABLE(10_6, 4_0) {
+    do {
+        if (!block) {
+            break;
+        }
+        if (![self threadSafe_QueueBarrierSync:^{
+            [self enumerateObjectsWithOptions:opts usingBlock:block];
+        }]) {
+            break;
+        }
+    } while (NO);
+}
+
+- (void)threadSafe_enumerateObjectsAtIndexes:(NSIndexSet *)s options:(NSEnumerationOptions)opts usingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block NS_AVAILABLE(10_6, 4_0) {
+    do {
+        if (!s || !block) {
+            break;
+        }
+        if (![self threadSafe_QueueBarrierSync:^{
+            [self enumerateObjectsAtIndexes:s options:opts usingBlock:block];
+        }]) {
+            break;
+        }
+    } while (NO);
+}
+
 #pragma mark - NSMutableArray
 - (void)threadSafe_addObject:(id)anObject {
     do {

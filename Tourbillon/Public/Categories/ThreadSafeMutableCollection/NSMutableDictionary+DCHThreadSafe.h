@@ -18,6 +18,9 @@
 - (NSArray *)threadSafe_allKeysForObject:(id)anObject;
 - (NSArray *)threadSafe_allValues;
 
+- (void)threadSafe_enumerateKeysAndObjectsUsingBlock:(void (^)(id key, id obj, BOOL *stop))block NS_AVAILABLE(10_6, 4_0);
+- (void)threadSafe_enumerateKeysAndObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id key, id obj, BOOL *stop))block NS_AVAILABLE(10_6, 4_0);
+
 #pragma mark - NSMutableDictionary
 - (void)threadSafe_removeObjectForKey:(id)aKey;
 - (void)threadSafe_setObject:(id)anObject forKey:(id <NSCopying>)aKey;

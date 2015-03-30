@@ -182,6 +182,32 @@
     return result;
 }
 
+- (void)threadSafe_enumerateObjectsUsingBlock:(void (^)(id obj, BOOL *stop))block {
+    do {
+        if (!block) {
+            break;
+        }
+        if (![self threadSafe_QueueBarrierSync:^{
+            [self enumerateObjectsUsingBlock:block];
+        }]) {
+            break;
+        }
+    } while (NO);
+}
+
+- (void)threadSafe_enumerateObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id obj, BOOL *stop))block {
+    do {
+        if (!block) {
+            break;
+        }
+        if (![self threadSafe_QueueBarrierSync:^{
+            [self enumerateObjectsWithOptions:opts usingBlock:block];
+        }]) {
+            break;
+        }
+    } while (NO);
+}
+
 #pragma mark NSMutableSet
 - (void)threadSafe_addObject:(id)object {
     do {

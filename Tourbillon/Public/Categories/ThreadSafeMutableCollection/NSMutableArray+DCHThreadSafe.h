@@ -24,6 +24,10 @@
 
 - (BOOL)threadSafe_contentEqualTo:(NSArray *)otherArray;
 
+- (void)threadSafe_enumerateObjectsUsingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block NS_AVAILABLE(10_6, 4_0);
+- (void)threadSafe_enumerateObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block NS_AVAILABLE(10_6, 4_0);
+- (void)threadSafe_enumerateObjectsAtIndexes:(NSIndexSet *)s options:(NSEnumerationOptions)opts usingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block NS_AVAILABLE(10_6, 4_0);
+
 #pragma mark - NSMutableArray
 - (void)threadSafe_addObject:(id)anObject;
 - (void)threadSafe_insertObject:(id)anObject atIndex:(NSUInteger)index;

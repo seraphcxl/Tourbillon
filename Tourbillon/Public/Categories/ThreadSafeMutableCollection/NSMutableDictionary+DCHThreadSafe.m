@@ -79,6 +79,32 @@
     return result;
 }
 
+- (void)threadSafe_enumerateKeysAndObjectsUsingBlock:(void (^)(id key, id obj, BOOL *stop))block {
+    do {
+        if (!block) {
+            break;
+        }
+        if (![self threadSafe_QueueBarrierSync:^{
+            [self threadSafe_enumerateKeysAndObjectsUsingBlock:block];
+        }]) {
+            break;
+        }
+    } while (NO);
+}
+
+- (void)threadSafe_enumerateKeysAndObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id key, id obj, BOOL *stop))block {
+    do {
+        if (!block) {
+            break;
+        }
+        if (![self threadSafe_QueueBarrierSync:^{
+            [self enumerateKeysAndObjectsWithOptions:opts usingBlock:block];
+        }]) {
+            break;
+        }
+    } while (NO);
+}
+
 #pragma mark NSMutableDictionary
 - (void)threadSafe_removeObjectForKey:(id)aKey {
     do {

@@ -24,6 +24,8 @@
 - (NSSet *)threadSafe_setByAddingObject:(id)anObject NS_AVAILABLE(10_5, 2_0);
 - (NSSet *)threadSafe_setByAddingObjectsFromSet:(NSSet *)other NS_AVAILABLE(10_5, 2_0);
 - (NSSet *)threadSafe_setByAddingObjectsFromArray:(NSArray *)other NS_AVAILABLE(10_5, 2_0);
+- (void)threadSafe_enumerateObjectsUsingBlock:(void (^)(id obj, BOOL *stop))block NS_AVAILABLE(10_6, 4_0);
+- (void)threadSafe_enumerateObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id obj, BOOL *stop))block NS_AVAILABLE(10_6, 4_0);
 
 #pragma mark - NSMutableSet
 - (void)threadSafe_addObject:(id)object;
