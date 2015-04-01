@@ -129,6 +129,25 @@
 		89F9D6E91A7A470800A5528A /* DCHCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */; };
 		89F9D6EB1A7A492400A5528A /* DCHSafeARC.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6EA1A7A492400A5528A /* DCHSafeARC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89F9D6ED1A7A49BF00A5528A /* DCHSingletonTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6EC1A7A49BF00A5528A /* DCHSingletonTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D25BC4A1ACC1832003B1E8A /* DCHBase64Define.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D25BC451ACC1832003B1E8A /* DCHBase64Define.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D25BC4B1ACC1832003B1E8A /* NSData+DCHBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D25BC461ACC1832003B1E8A /* NSData+DCHBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D25BC4C1ACC1832003B1E8A /* NSData+DCHBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D25BC471ACC1832003B1E8A /* NSData+DCHBase64.m */; };
+		8D25BC4D1ACC1832003B1E8A /* NSData+DCHBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D25BC471ACC1832003B1E8A /* NSData+DCHBase64.m */; };
+		8D25BC4E1ACC1832003B1E8A /* NSData+DCHHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D25BC481ACC1832003B1E8A /* NSData+DCHHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D25BC4F1ACC1832003B1E8A /* NSData+DCHHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D25BC491ACC1832003B1E8A /* NSData+DCHHex.m */; };
+		8D25BC501ACC1832003B1E8A /* NSData+DCHHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D25BC491ACC1832003B1E8A /* NSData+DCHHex.m */; };
+		8D25BC531ACC187B003B1E8A /* NSString+DCHBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D25BC511ACC187B003B1E8A /* NSString+DCHBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D25BC541ACC187B003B1E8A /* NSString+DCHBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D25BC521ACC187B003B1E8A /* NSString+DCHBase64.m */; };
+		8D25BC551ACC187B003B1E8A /* NSString+DCHBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D25BC521ACC187B003B1E8A /* NSString+DCHBase64.m */; };
+		8D25BC581ACC18B9003B1E8A /* DCHGZipDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D25BC561ACC18B9003B1E8A /* DCHGZipDecompressor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D25BC591ACC18B9003B1E8A /* DCHGZipDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D25BC571ACC18B9003B1E8A /* DCHGZipDecompressor.m */; };
+		8D25BC5A1ACC18B9003B1E8A /* DCHGZipDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D25BC571ACC18B9003B1E8A /* DCHGZipDecompressor.m */; };
+		8D25BC5F1ACC196F003B1E8A /* NSData+DCHHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D25BC5B1ACC196F003B1E8A /* NSData+DCHHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D25BC601ACC196F003B1E8A /* NSData+DCHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D25BC5C1ACC196F003B1E8A /* NSData+DCHHash.m */; };
+		8D25BC611ACC196F003B1E8A /* NSData+DCHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D25BC5C1ACC196F003B1E8A /* NSData+DCHHash.m */; };
+		8D25BC621ACC196F003B1E8A /* NSString+DCHHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D25BC5D1ACC196F003B1E8A /* NSString+DCHHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D25BC631ACC196F003B1E8A /* NSString+DCHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D25BC5E1ACC196F003B1E8A /* NSString+DCHHash.m */; };
+		8D25BC641ACC196F003B1E8A /* NSString+DCHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D25BC5E1ACC196F003B1E8A /* NSString+DCHHash.m */; };
 		8D7B43911AC52E0E00D6D57B /* DCHAsyncTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D7B438F1AC52E0E00D6D57B /* DCHAsyncTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D7B43921AC52E0E00D6D57B /* DCHAsyncTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B43901AC52E0E00D6D57B /* DCHAsyncTest.m */; };
 		8D7B43931AC52E0E00D6D57B /* DCHAsyncTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B43901AC52E0E00D6D57B /* DCHAsyncTest.m */; };
@@ -136,6 +155,12 @@
 		8DAD5D801ACC0A67006699FD /* DCHUIMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD5D7E1ACC0A67006699FD /* DCHUIMainThreadGuard.m */; };
 		8DAD5D811ACC0A67006699FD /* DCHUIMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD5D7E1ACC0A67006699FD /* DCHUIMainThreadGuard.m */; };
 		8DAD5D831ACC0DA6006699FD /* DCHUIMainThreadGuardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD5D821ACC0DA6006699FD /* DCHUIMainThreadGuardTests.m */; };
+		8DAD5D861ACC13C3006699FD /* DCHGZipCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DAD5D841ACC13C3006699FD /* DCHGZipCompressor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DAD5D871ACC13C3006699FD /* DCHGZipCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD5D851ACC13C3006699FD /* DCHGZipCompressor.m */; };
+		8DAD5D881ACC13C3006699FD /* DCHGZipCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD5D851ACC13C3006699FD /* DCHGZipCompressor.m */; };
+		8DAD5D8B1ACC14FE006699FD /* DCHHashUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DAD5D891ACC14FE006699FD /* DCHHashUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DAD5D8C1ACC14FE006699FD /* DCHHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD5D8A1ACC14FE006699FD /* DCHHashUtility.m */; };
+		8DAD5D8D1ACC14FE006699FD /* DCHHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD5D8A1ACC14FE006699FD /* DCHHashUtility.m */; };
 		8DD769B91A8DE0DB00EBB5F9 /* DCHStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD769B71A8DE0DB00EBB5F9 /* DCHStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DD769BA1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
 		8DD769BB1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
@@ -265,11 +290,28 @@
 		89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHCommonFuncations.m; sourceTree = "<group>"; };
 		89F9D6EA1A7A492400A5528A /* DCHSafeARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHSafeARC.h; sourceTree = "<group>"; };
 		89F9D6EC1A7A49BF00A5528A /* DCHSingletonTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHSingletonTemplate.h; sourceTree = "<group>"; };
+		8D25BC451ACC1832003B1E8A /* DCHBase64Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHBase64Define.h; sourceTree = "<group>"; };
+		8D25BC461ACC1832003B1E8A /* NSData+DCHBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DCHBase64.h"; sourceTree = "<group>"; };
+		8D25BC471ACC1832003B1E8A /* NSData+DCHBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DCHBase64.m"; sourceTree = "<group>"; };
+		8D25BC481ACC1832003B1E8A /* NSData+DCHHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DCHHex.h"; sourceTree = "<group>"; };
+		8D25BC491ACC1832003B1E8A /* NSData+DCHHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DCHHex.m"; sourceTree = "<group>"; };
+		8D25BC511ACC187B003B1E8A /* NSString+DCHBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DCHBase64.h"; sourceTree = "<group>"; };
+		8D25BC521ACC187B003B1E8A /* NSString+DCHBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DCHBase64.m"; sourceTree = "<group>"; };
+		8D25BC561ACC18B9003B1E8A /* DCHGZipDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHGZipDecompressor.h; sourceTree = "<group>"; };
+		8D25BC571ACC18B9003B1E8A /* DCHGZipDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHGZipDecompressor.m; sourceTree = "<group>"; };
+		8D25BC5B1ACC196F003B1E8A /* NSData+DCHHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DCHHash.h"; sourceTree = "<group>"; };
+		8D25BC5C1ACC196F003B1E8A /* NSData+DCHHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DCHHash.m"; sourceTree = "<group>"; };
+		8D25BC5D1ACC196F003B1E8A /* NSString+DCHHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DCHHash.h"; sourceTree = "<group>"; };
+		8D25BC5E1ACC196F003B1E8A /* NSString+DCHHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DCHHash.m"; sourceTree = "<group>"; };
 		8D7B438F1AC52E0E00D6D57B /* DCHAsyncTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHAsyncTest.h; sourceTree = "<group>"; };
 		8D7B43901AC52E0E00D6D57B /* DCHAsyncTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHAsyncTest.m; sourceTree = "<group>"; };
 		8DAD5D7D1ACC0A67006699FD /* DCHUIMainThreadGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHUIMainThreadGuard.h; sourceTree = "<group>"; };
 		8DAD5D7E1ACC0A67006699FD /* DCHUIMainThreadGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHUIMainThreadGuard.m; sourceTree = "<group>"; };
 		8DAD5D821ACC0DA6006699FD /* DCHUIMainThreadGuardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHUIMainThreadGuardTests.m; sourceTree = "<group>"; };
+		8DAD5D841ACC13C3006699FD /* DCHGZipCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHGZipCompressor.h; sourceTree = "<group>"; };
+		8DAD5D851ACC13C3006699FD /* DCHGZipCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHGZipCompressor.m; sourceTree = "<group>"; };
+		8DAD5D891ACC14FE006699FD /* DCHHashUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHHashUtility.h; sourceTree = "<group>"; };
+		8DAD5D8A1ACC14FE006699FD /* DCHHashUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHHashUtility.m; sourceTree = "<group>"; };
 		8DD769B71A8DE0DB00EBB5F9 /* DCHStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHStack.h; sourceTree = "<group>"; };
 		8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHStack.m; sourceTree = "<group>"; };
 		8DD769C51A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCHUUIDExtension.h"; sourceTree = "<group>"; };
@@ -455,6 +497,7 @@
 		89B786F91990FB6100A726F1 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				8D25BC441ACC1832003B1E8A /* Hash */,
 				89C94D271A7B04B200BCC65C /* SafeCRUD */,
 				89C94D281A7B04B200BCC65C /* ThreadSafeMutableCollection */,
 				89C94D611A7B193B00BCC65C /* NSObject+DCHSwizzle.h */,
@@ -509,6 +552,10 @@
 		89B7873F1990FB6100A726F1 /* GZip */ = {
 			isa = PBXGroup;
 			children = (
+				8D25BC561ACC18B9003B1E8A /* DCHGZipDecompressor.h */,
+				8D25BC571ACC18B9003B1E8A /* DCHGZipDecompressor.m */,
+				8DAD5D841ACC13C3006699FD /* DCHGZipCompressor.h */,
+				8DAD5D851ACC13C3006699FD /* DCHGZipCompressor.m */,
 			);
 			path = GZip;
 			sourceTree = "<group>";
@@ -516,6 +563,8 @@
 		89B787461990FB6100A726F1 /* Hash */ = {
 			isa = PBXGroup;
 			children = (
+				8DAD5D891ACC14FE006699FD /* DCHHashUtility.h */,
+				8DAD5D8A1ACC14FE006699FD /* DCHHashUtility.m */,
 			);
 			path = Hash;
 			sourceTree = "<group>";
@@ -760,6 +809,24 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
+		8D25BC441ACC1832003B1E8A /* Hash */ = {
+			isa = PBXGroup;
+			children = (
+				8D25BC5B1ACC196F003B1E8A /* NSData+DCHHash.h */,
+				8D25BC5C1ACC196F003B1E8A /* NSData+DCHHash.m */,
+				8D25BC5D1ACC196F003B1E8A /* NSString+DCHHash.h */,
+				8D25BC5E1ACC196F003B1E8A /* NSString+DCHHash.m */,
+				8D25BC511ACC187B003B1E8A /* NSString+DCHBase64.h */,
+				8D25BC521ACC187B003B1E8A /* NSString+DCHBase64.m */,
+				8D25BC451ACC1832003B1E8A /* DCHBase64Define.h */,
+				8D25BC461ACC1832003B1E8A /* NSData+DCHBase64.h */,
+				8D25BC471ACC1832003B1E8A /* NSData+DCHBase64.m */,
+				8D25BC481ACC1832003B1E8A /* NSData+DCHHex.h */,
+				8D25BC491ACC1832003B1E8A /* NSData+DCHHex.m */,
+			);
+			path = Hash;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -784,6 +851,15 @@
 				89C94D861A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.h in Headers */,
 				89F9D6E21A7A381B00A5528A /* DCHCommonConstants.h in Headers */,
 				89C94D8D1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.h in Headers */,
+				8D25BC4B1ACC1832003B1E8A /* NSData+DCHBase64.h in Headers */,
+				8DAD5D8B1ACC14FE006699FD /* DCHHashUtility.h in Headers */,
+				8D25BC4E1ACC1832003B1E8A /* NSData+DCHHex.h in Headers */,
+				8D25BC621ACC196F003B1E8A /* NSString+DCHHash.h in Headers */,
+				8D25BC4A1ACC1832003B1E8A /* DCHBase64Define.h in Headers */,
+				8D25BC531ACC187B003B1E8A /* NSString+DCHBase64.h in Headers */,
+				8D25BC581ACC18B9003B1E8A /* DCHGZipDecompressor.h in Headers */,
+				8DAD5D861ACC13C3006699FD /* DCHGZipCompressor.h in Headers */,
+				8D25BC5F1ACC196F003B1E8A /* NSData+DCHHash.h in Headers */,
 				89C94D781A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.h in Headers */,
 				89C94D471A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.h in Headers */,
 				8DD769B91A8DE0DB00EBB5F9 /* DCHStack.h in Headers */,
@@ -990,6 +1066,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C94D641A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */,
+				8D25BC541ACC187B003B1E8A /* NSString+DCHBase64.m in Sources */,
 				89C94D411A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */,
 				89C94D561A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */,
 				89C94D871A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */,
@@ -1001,14 +1078,21 @@
 				89C94D801A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */,
 				89F9D6E61A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
 				89C94D721A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
+				8DAD5D871ACC13C3006699FD /* DCHGZipCompressor.m in Sources */,
 				89C94D481A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */,
+				8D25BC631ACC196F003B1E8A /* NSString+DCHHash.m in Sources */,
 				8DD769BA1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */,
 				8DAD5D801ACC0A67006699FD /* DCHUIMainThreadGuard.m in Sources */,
+				8DAD5D8C1ACC14FE006699FD /* DCHHashUtility.m in Sources */,
+				8D25BC601ACC196F003B1E8A /* NSData+DCHHash.m in Sources */,
 				89C94D8E1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
 				8DD769C81A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */,
 				89C94D4F1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
+				8D25BC4F1ACC1832003B1E8A /* NSData+DCHHex.m in Sources */,
+				8D25BC4C1ACC1832003B1E8A /* NSData+DCHBase64.m in Sources */,
 				8D7B43921AC52E0E00D6D57B /* DCHAsyncTest.m in Sources */,
 				89C94D2C1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */,
+				8D25BC591ACC18B9003B1E8A /* DCHGZipDecompressor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1043,6 +1127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C94D661A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */,
+				8D25BC551ACC187B003B1E8A /* NSString+DCHBase64.m in Sources */,
 				89C94D431A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */,
 				89C94D581A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */,
 				89C94D891A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */,
@@ -1054,14 +1139,21 @@
 				89C94D821A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */,
 				89F9D6E81A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
 				89C94D741A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
+				8DAD5D881ACC13C3006699FD /* DCHGZipCompressor.m in Sources */,
 				89C94D4A1A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */,
+				8D25BC641ACC196F003B1E8A /* NSString+DCHHash.m in Sources */,
 				8DD769BC1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */,
 				8DAD5D811ACC0A67006699FD /* DCHUIMainThreadGuard.m in Sources */,
+				8DAD5D8D1ACC14FE006699FD /* DCHHashUtility.m in Sources */,
+				8D25BC611ACC196F003B1E8A /* NSData+DCHHash.m in Sources */,
 				89C94D901A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
 				8DD769CA1A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */,
 				89C94D511A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
+				8D25BC501ACC1832003B1E8A /* NSData+DCHHex.m in Sources */,
+				8D25BC4D1ACC1832003B1E8A /* NSData+DCHBase64.m in Sources */,
 				8D7B43931AC52E0E00D6D57B /* DCHAsyncTest.m in Sources */,
 				89C94D2E1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */,
+				8D25BC5A1ACC18B9003B1E8A /* DCHGZipDecompressor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
