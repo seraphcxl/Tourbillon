@@ -132,6 +132,10 @@
 		8D7B43911AC52E0E00D6D57B /* DCHAsyncTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D7B438F1AC52E0E00D6D57B /* DCHAsyncTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D7B43921AC52E0E00D6D57B /* DCHAsyncTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B43901AC52E0E00D6D57B /* DCHAsyncTest.m */; };
 		8D7B43931AC52E0E00D6D57B /* DCHAsyncTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B43901AC52E0E00D6D57B /* DCHAsyncTest.m */; };
+		8DAD5D7F1ACC0A67006699FD /* DCHUIMainThreadGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DAD5D7D1ACC0A67006699FD /* DCHUIMainThreadGuard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DAD5D801ACC0A67006699FD /* DCHUIMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD5D7E1ACC0A67006699FD /* DCHUIMainThreadGuard.m */; };
+		8DAD5D811ACC0A67006699FD /* DCHUIMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD5D7E1ACC0A67006699FD /* DCHUIMainThreadGuard.m */; };
+		8DAD5D831ACC0DA6006699FD /* DCHUIMainThreadGuardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD5D821ACC0DA6006699FD /* DCHUIMainThreadGuardTests.m */; };
 		8DD769B91A8DE0DB00EBB5F9 /* DCHStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD769B71A8DE0DB00EBB5F9 /* DCHStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DD769BA1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
 		8DD769BB1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
@@ -263,6 +267,9 @@
 		89F9D6EC1A7A49BF00A5528A /* DCHSingletonTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHSingletonTemplate.h; sourceTree = "<group>"; };
 		8D7B438F1AC52E0E00D6D57B /* DCHAsyncTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHAsyncTest.h; sourceTree = "<group>"; };
 		8D7B43901AC52E0E00D6D57B /* DCHAsyncTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHAsyncTest.m; sourceTree = "<group>"; };
+		8DAD5D7D1ACC0A67006699FD /* DCHUIMainThreadGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHUIMainThreadGuard.h; sourceTree = "<group>"; };
+		8DAD5D7E1ACC0A67006699FD /* DCHUIMainThreadGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHUIMainThreadGuard.m; sourceTree = "<group>"; };
+		8DAD5D821ACC0DA6006699FD /* DCHUIMainThreadGuardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHUIMainThreadGuardTests.m; sourceTree = "<group>"; };
 		8DD769B71A8DE0DB00EBB5F9 /* DCHStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHStack.h; sourceTree = "<group>"; };
 		8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHStack.m; sourceTree = "<group>"; };
 		8DD769C51A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCHUUIDExtension.h"; sourceTree = "<group>"; };
@@ -402,6 +409,7 @@
 			children = (
 				89B786EE1990FB5000A726F1 /* Tourbillon_iOSTests.m */,
 				89B786E91990FB5000A726F1 /* Supporting Files */,
+				8DAD5D821ACC0DA6006699FD /* DCHUIMainThreadGuardTests.m */,
 			);
 			path = "Tourbillon-iOSTests";
 			sourceTree = "<group>";
@@ -492,6 +500,8 @@
 				89B787511990FB6100A726F1 /* Stack */,
 				89B787541990FB6100A726F1 /* Tree */,
 				897C1E6B19A4876F00C3B8A9 /* ComponentPathManager */,
+				8DAD5D7D1ACC0A67006699FD /* DCHUIMainThreadGuard.h */,
+				8DAD5D7E1ACC0A67006699FD /* DCHUIMainThreadGuard.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -779,6 +789,7 @@
 				8DD769B91A8DE0DB00EBB5F9 /* DCHStack.h in Headers */,
 				8D7B43911AC52E0E00D6D57B /* DCHAsyncTest.h in Headers */,
 				8DD769C71A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h in Headers */,
+				8DAD5D7F1ACC0A67006699FD /* DCHUIMainThreadGuard.h in Headers */,
 				89C94D711A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -992,6 +1003,7 @@
 				89C94D721A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
 				89C94D481A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */,
 				8DD769BA1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */,
+				8DAD5D801ACC0A67006699FD /* DCHUIMainThreadGuard.m in Sources */,
 				89C94D8E1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
 				8DD769C81A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */,
 				89C94D4F1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
@@ -1044,6 +1056,7 @@
 				89C94D741A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
 				89C94D4A1A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */,
 				8DD769BC1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */,
+				8DAD5D811ACC0A67006699FD /* DCHUIMainThreadGuard.m in Sources */,
 				89C94D901A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
 				8DD769CA1A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */,
 				89C94D511A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
@@ -1062,6 +1075,7 @@
 				89C94D671A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */,
 				89C94D3D1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */,
 				89F9D6E91A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
+				8DAD5D831ACC0DA6006699FD /* DCHUIMainThreadGuardTests.m in Sources */,
 				89C94D521A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
 				89C94D7C1A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */,
 				8DD769BD1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */,

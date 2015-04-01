@@ -10,7 +10,7 @@
 #import <objc/runtime.h>
 #import "DCHCommonConstants.h"
 
-BOOL DCReplaceMethodWithBlock(Class c, SEL origSEL, SEL newSEL, id block) {
+BOOL DCHReplaceMethodWithBlock(Class c, SEL origSEL, SEL newSEL, id block) {
     BOOL result = NO;
     do {
         DCHAssert(c && origSEL && newSEL && block);

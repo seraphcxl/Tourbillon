@@ -39,6 +39,7 @@
 
 #pragma mark - Utilities
 #import "DCHStack.h"
+#import "DCHUIMainThreadGuard.h"
 
 #pragma mark - Testers
 #import "DCHAsyncTest.h"
