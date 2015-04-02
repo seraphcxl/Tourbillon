@@ -9,6 +9,22 @@
 #ifndef Tourbillon_DCHTourbillon_h
 #define Tourbillon_DCHTourbillon_h
 
+#pragma mark - Operation
+#import "DCHWatchedOperation.h"
+
+#pragma mark - GZip
+#import "DCHGZipCompressor.h"
+#import "DCHGZipDecompressor.h"
+
+#pragma mark - Hash
+#import "DCHBase64Define.h"
+#import "NSData+DCHBase64.h"
+#import "NSString+DCHBase64.h"
+#import "DCHHashUtility.h"
+#import "NSData+DCHHex.h"
+#import "NSData+DCHHash.h"
+#import "NSString+DCHHash.h"
+
 #pragma mark - Categories
 #import "NSObject+DCHSwizzle.h"
 #import "NSObject+DCHAssociatedObjectExtension.h"

@@ -24,79 +24,49 @@
 		89B786EF1990FB5000A726F1 /* Tourbillon_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B786EE1990FB5000A726F1 /* Tourbillon_iOSTests.m */; };
 		89C94D2B1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D291A7B04D300BCC65C /* NSArray+DCHSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C94D2C1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D2A1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m */; };
-		89C94D2D1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D2A1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m */; };
 		89C94D2E1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D2A1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m */; };
-		89C94D2F1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D2A1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m */; };
 		89C94D321A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D301A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C94D331A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D311A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m */; };
-		89C94D341A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D311A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m */; };
 		89C94D351A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D311A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m */; };
-		89C94D361A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D311A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m */; };
 		89C94D391A7B05B000BCC65C /* NSString+DCHSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D371A7B05B000BCC65C /* NSString+DCHSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C94D3A1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D381A7B05B000BCC65C /* NSString+DCHSafeCRUD.m */; };
-		89C94D3B1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D381A7B05B000BCC65C /* NSString+DCHSafeCRUD.m */; };
 		89C94D3C1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D381A7B05B000BCC65C /* NSString+DCHSafeCRUD.m */; };
-		89C94D3D1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D381A7B05B000BCC65C /* NSString+DCHSafeCRUD.m */; };
 		89C94D401A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D3E1A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C94D411A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D3F1A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m */; };
-		89C94D421A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D3F1A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m */; };
 		89C94D431A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D3F1A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m */; };
-		89C94D441A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D3F1A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m */; };
 		89C94D471A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D451A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C94D481A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D461A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m */; };
-		89C94D491A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D461A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m */; };
 		89C94D4A1A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D461A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m */; };
-		89C94D4B1A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D461A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m */; };
 		89C94D4E1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D4C1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C94D4F1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D4D1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m */; };
-		89C94D501A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D4D1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m */; };
 		89C94D511A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D4D1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m */; };
-		89C94D521A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D4D1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m */; };
 		89C94D551A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D531A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C94D561A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D541A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m */; };
-		89C94D571A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D541A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m */; };
 		89C94D581A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D541A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m */; };
-		89C94D591A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D541A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m */; };
 		89C94D5C1A7B180000BCC65C /* NSObject+DCHThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D5A1A7B180000BCC65C /* NSObject+DCHThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C94D5D1A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D5B1A7B180000BCC65C /* NSObject+DCHThreadSafe.m */; };
-		89C94D5E1A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D5B1A7B180000BCC65C /* NSObject+DCHThreadSafe.m */; };
 		89C94D5F1A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D5B1A7B180000BCC65C /* NSObject+DCHThreadSafe.m */; };
-		89C94D601A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D5B1A7B180000BCC65C /* NSObject+DCHThreadSafe.m */; };
 		89C94D631A7B193B00BCC65C /* NSObject+DCHSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D611A7B193B00BCC65C /* NSObject+DCHSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C94D641A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D621A7B193B00BCC65C /* NSObject+DCHSwizzle.m */; };
-		89C94D651A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D621A7B193B00BCC65C /* NSObject+DCHSwizzle.m */; };
 		89C94D661A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D621A7B193B00BCC65C /* NSObject+DCHSwizzle.m */; };
-		89C94D671A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D621A7B193B00BCC65C /* NSObject+DCHSwizzle.m */; };
 		89C94D6A1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D681A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C94D6B1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D691A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m */; };
-		89C94D6C1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D691A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m */; };
 		89C94D6D1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D691A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m */; };
-		89C94D6E1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D691A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m */; };
 		89C94D711A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D6F1A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C94D721A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D701A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m */; };
-		89C94D731A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D701A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m */; };
 		89C94D741A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D701A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m */; };
-		89C94D751A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D701A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m */; };
 		89C94D781A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D761A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C94D791A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D771A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m */; };
-		89C94D7A1A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D771A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m */; };
 		89C94D7B1A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D771A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m */; };
-		89C94D7C1A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D771A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m */; };
 		89C94D7F1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D7D1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C94D801A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D7E1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m */; };
-		89C94D811A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D7E1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m */; };
 		89C94D821A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D7E1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m */; };
-		89C94D831A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D7E1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m */; };
 		89C94D861A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D841A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C94D871A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D851A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m */; };
-		89C94D881A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D851A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m */; };
 		89C94D891A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D851A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m */; };
-		89C94D8A1A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D851A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m */; };
 		89C94D8D1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C94D8B1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C94D8E1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D8C1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m */; };
-		89C94D8F1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D8C1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m */; };
 		89C94D901A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D8C1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m */; };
-		89C94D911A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94D8C1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m */; };
 		89C94D921A7B2E3F00BCC65C /* DCHTourbillon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89F9D6DF1A7A37C200A5528A /* DCHTourbillon.h */; };
 		89C94D931A7B2E3F00BCC65C /* NSArray+DCHSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D291A7B04D300BCC65C /* NSArray+DCHSafeCRUD.h */; };
 		89C94D941A7B2E3F00BCC65C /* NSDictionary+DCHSafeCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89C94D301A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.h */; };
@@ -124,9 +94,7 @@
 		89F9D6E21A7A381B00A5528A /* DCHCommonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6E11A7A381B00A5528A /* DCHCommonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89F9D6E51A7A470800A5528A /* DCHCommonFuncations.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6E31A7A470800A5528A /* DCHCommonFuncations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89F9D6E61A7A470800A5528A /* DCHCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */; };
-		89F9D6E71A7A470800A5528A /* DCHCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */; };
 		89F9D6E81A7A470800A5528A /* DCHCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */; };
-		89F9D6E91A7A470800A5528A /* DCHCommonFuncations.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F9D6E41A7A470800A5528A /* DCHCommonFuncations.m */; };
 		89F9D6EB1A7A492400A5528A /* DCHSafeARC.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6EA1A7A492400A5528A /* DCHSafeARC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89F9D6ED1A7A49BF00A5528A /* DCHSingletonTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F9D6EC1A7A49BF00A5528A /* DCHSingletonTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D25BC4A1ACC1832003B1E8A /* DCHBase64Define.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D25BC451ACC1832003B1E8A /* DCHBase64Define.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -163,14 +131,15 @@
 		8DAD5D8D1ACC14FE006699FD /* DCHHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD5D8A1ACC14FE006699FD /* DCHHashUtility.m */; };
 		8DD769B91A8DE0DB00EBB5F9 /* DCHStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD769B71A8DE0DB00EBB5F9 /* DCHStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DD769BA1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
-		8DD769BB1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
 		8DD769BC1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
-		8DD769BD1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
 		8DD769C71A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD769C51A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DD769C81A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */; };
-		8DD769C91A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */; };
 		8DD769CA1A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */; };
-		8DD769CB1A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */; };
+		8DF6547B1ACCCD30003FAF5D /* DCHWatchedOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF654791ACCCD30003FAF5D /* DCHWatchedOperation.m */; };
+		8DF6547C1ACCCD30003FAF5D /* DCHWatchedOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF654791ACCCD30003FAF5D /* DCHWatchedOperation.m */; };
+		8DF6547D1ACCCD30003FAF5D /* DCHWatchedOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF6547A1ACCCD30003FAF5D /* DCHWatchedOperation.h */; };
+		8DF6547F1ACCCD3C003FAF5D /* DCHWatchedOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF6547E1ACCCD3C003FAF5D /* DCHWatchedOperationTests.m */; };
+		B333CB4FA661DB6D6CE0D9BB /* libPods-Tourbillon-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 584EF38E8DBE8940E4187740 /* libPods-Tourbillon-iOSTests.a */; };
 		BA62046DF840429972A2DE0C /* libPods-Tourbillon-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D805F156C963A2D6CFCEA5 /* libPods-Tourbillon-OSX.a */; };
 		DCC78E4B7758B13DB78065B2 /* libPods-Tourbillon-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F071A7518139977766EA425A /* libPods-Tourbillon-iOS.a */; };
 /* End PBXBuildFile section */
@@ -228,6 +197,9 @@
 		073117267D271843B43A0359 /* Pods-Tourbillon-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourbillon-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tourbillon-OSX/Pods-Tourbillon-OSX.release.xcconfig"; sourceTree = "<group>"; };
 		3C553C8034E1969FA80075E3 /* Pods-Tourbillon-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourbillon-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tourbillon-OSX/Pods-Tourbillon-OSX.debug.xcconfig"; sourceTree = "<group>"; };
 		55D805F156C963A2D6CFCEA5 /* libPods-Tourbillon-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tourbillon-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		584EF38E8DBE8940E4187740 /* libPods-Tourbillon-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tourbillon-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A80E94723452821DF0CB8D /* Pods-Tourbillon-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourbillon-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tourbillon-iOSTests/Pods-Tourbillon-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		886CB1C45E7B0A83FD022DFB /* Pods-Tourbillon-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourbillon-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tourbillon-iOSTests/Pods-Tourbillon-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		8952D2EC196CDD260068CBCF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		8955F7F5197135E500B390C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		8955F7F7197135ED00B390C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
@@ -316,6 +288,9 @@
 		8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHStack.m; sourceTree = "<group>"; };
 		8DD769C51A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCHUUIDExtension.h"; sourceTree = "<group>"; };
 		8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCHUUIDExtension.m"; sourceTree = "<group>"; };
+		8DF654791ACCCD30003FAF5D /* DCHWatchedOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHWatchedOperation.m; sourceTree = "<group>"; };
+		8DF6547A1ACCCD30003FAF5D /* DCHWatchedOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHWatchedOperation.h; sourceTree = "<group>"; };
+		8DF6547E1ACCCD3C003FAF5D /* DCHWatchedOperationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHWatchedOperationTests.m; sourceTree = "<group>"; };
 		EB46FE63CFEECE08843FC297 /* Pods-Tourbillon-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourbillon-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tourbillon-iOS/Pods-Tourbillon-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		ECC1D11185D852F3F220BD52 /* Pods-Tourbillon-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourbillon-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tourbillon-iOS/Pods-Tourbillon-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F071A7518139977766EA425A /* libPods-Tourbillon-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tourbillon-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -361,6 +336,7 @@
 				89B786E41990FB5000A726F1 /* UIKit.framework in Frameworks */,
 				89B786E31990FB5000A726F1 /* Foundation.framework in Frameworks */,
 				89B786E71990FB5000A726F1 /* libTourbillon-iOS.a in Frameworks */,
+				B333CB4FA661DB6D6CE0D9BB /* libPods-Tourbillon-iOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +350,8 @@
 				073117267D271843B43A0359 /* Pods-Tourbillon-OSX.release.xcconfig */,
 				ECC1D11185D852F3F220BD52 /* Pods-Tourbillon-iOS.debug.xcconfig */,
 				EB46FE63CFEECE08843FC297 /* Pods-Tourbillon-iOS.release.xcconfig */,
+				70A80E94723452821DF0CB8D /* Pods-Tourbillon-iOSTests.debug.xcconfig */,
+				886CB1C45E7B0A83FD022DFB /* Pods-Tourbillon-iOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -452,6 +430,7 @@
 				89B786EE1990FB5000A726F1 /* Tourbillon_iOSTests.m */,
 				89B786E91990FB5000A726F1 /* Supporting Files */,
 				8DAD5D821ACC0DA6006699FD /* DCHUIMainThreadGuardTests.m */,
+				8DF6547E1ACCCD3C003FAF5D /* DCHWatchedOperationTests.m */,
 			);
 			path = "Tourbillon-iOSTests";
 			sourceTree = "<group>";
@@ -579,6 +558,8 @@
 		89B7874A1990FB6100A726F1 /* Operation */ = {
 			isa = PBXGroup;
 			children = (
+				8DF654791ACCCD30003FAF5D /* DCHWatchedOperation.m */,
+				8DF6547A1ACCCD30003FAF5D /* DCHWatchedOperation.h */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -795,6 +776,7 @@
 				89E137451925B11000A3EFB7 /* Other Frameworks */,
 				55D805F156C963A2D6CFCEA5 /* libPods-Tourbillon-OSX.a */,
 				F071A7518139977766EA425A /* libPods-Tourbillon-iOS.a */,
+				584EF38E8DBE8940E4187740 /* libPods-Tourbillon-iOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -835,6 +817,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C94D551A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.h in Headers */,
+				8DF6547D1ACCCD30003FAF5D /* DCHWatchedOperation.h in Headers */,
 				89C94D7F1A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.h in Headers */,
 				89C94D4E1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.h in Headers */,
 				89C94D5C1A7B180000BCC65C /* NSObject+DCHThreadSafe.h in Headers */,
@@ -933,9 +916,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89B786F31990FB5000A726F1 /* Build configuration list for PBXNativeTarget "Tourbillon-iOSTests" */;
 			buildPhases = (
+				1117D5E97CD43587193636DE /* Check Pods Manifest.lock */,
 				89B786DD1990FB4F00A726F1 /* Sources */,
 				89B786DE1990FB4F00A726F1 /* Frameworks */,
 				89B786DF1990FB4F00A726F1 /* Resources */,
+				14B844E2C6D567FB9F874437 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -998,6 +983,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1117D5E97CD43587193636DE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		14B844E2C6D567FB9F874437 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tourbillon-iOSTests/Pods-Tourbillon-iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		607EFBD32F4C3FD195D7233A /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1074,6 +1089,7 @@
 				89C94D5D1A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */,
 				89C94D3A1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */,
 				89C94D6B1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */,
+				8DF6547B1ACCCD30003FAF5D /* DCHWatchedOperation.m in Sources */,
 				89C94D331A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */,
 				89C94D801A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */,
 				89F9D6E61A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
@@ -1100,25 +1116,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD769C91A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */,
-				8DD769BB1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */,
-				89C94D651A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */,
-				89C94D8F1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
-				89C94D3B1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */,
-				89C94D341A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */,
-				89F9D6E71A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
-				89C94D731A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
-				89C94D491A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */,
-				89C94D501A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
-				89C94D881A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */,
-				89C94D7A1A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */,
-				89C94D811A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */,
 				89B786C91990FB4500A726F1 /* Tourbillon_OSXTests.m in Sources */,
-				89C94D571A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */,
-				89C94D421A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */,
-				89C94D6C1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */,
-				89C94D2D1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */,
-				89C94D5E1A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1135,6 +1133,7 @@
 				89C94D5F1A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */,
 				89C94D3C1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */,
 				89C94D6D1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */,
+				8DF6547C1ACCCD30003FAF5D /* DCHWatchedOperation.m in Sources */,
 				89C94D351A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */,
 				89C94D821A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */,
 				89F9D6E81A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
@@ -1161,26 +1160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD769CB1A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */,
-				89C94D6E1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m in Sources */,
-				89C94D4B1A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.m in Sources */,
-				89C94D671A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */,
-				89C94D3D1A7B05B000BCC65C /* NSString+DCHSafeCRUD.m in Sources */,
-				89F9D6E91A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
 				8DAD5D831ACC0DA6006699FD /* DCHUIMainThreadGuardTests.m in Sources */,
-				89C94D521A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
-				89C94D7C1A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.m in Sources */,
-				8DD769BD1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */,
-				89C94D751A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
-				89C94D601A7B180000BCC65C /* NSObject+DCHThreadSafe.m in Sources */,
+				8DF6547F1ACCCD3C003FAF5D /* DCHWatchedOperationTests.m in Sources */,
 				89B786EF1990FB5000A726F1 /* Tourbillon_iOSTests.m in Sources */,
-				89C94D831A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */,
-				89C94D2F1A7B04D300BCC65C /* NSArray+DCHSafeCRUD.m in Sources */,
-				89C94D591A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */,
-				89C94D441A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */,
-				89C94D361A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */,
-				89C94D911A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
-				89C94D8A1A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1324,6 +1306,7 @@
 		};
 		89B786F41990FB5000A726F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70A80E94723452821DF0CB8D /* Pods-Tourbillon-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1347,6 +1330,7 @@
 		};
 		89B786F51990FB5000A726F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 886CB1C45E7B0A83FD022DFB /* Pods-Tourbillon-iOSTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
