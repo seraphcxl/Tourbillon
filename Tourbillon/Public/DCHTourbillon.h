@@ -42,6 +42,10 @@
 #import "NSObject+DCHAssociatedObjectExtension.h"
 #import "NSObject+DCHUUIDExtension.h"
 #import "NSString+DCHURLCoding.h"
+#import "NSBundle+DCHBundleResourceSupport.h"
+#import "NSData+DCHBundleResourceSupport.h"
+#import "NSDictionary+DCHSortable.h"
+#import "NSNumber+DCHRandom.h"
 
 #pragma mark - GCDThreadSafe
 #import "NSObject+DCHThreadSafe.h"
@@ -75,8 +79,12 @@
 
 #if TARGET_OS_IPHONE
 // iOS
+#import "UIColor+DCHAdditions.h"
+#import "UIColor+DCHColorful.h"
 #else
 // Mac OS X
+#import "NSColor+DCHAdditions.h"
+#import "NSColor+DCHColorful.h"
 #endif
 
 #endif
