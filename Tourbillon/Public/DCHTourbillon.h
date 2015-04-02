@@ -9,6 +9,18 @@
 #ifndef Tourbillon_DCHTourbillon_h
 #define Tourbillon_DCHTourbillon_h
 
+#pragma mark - Tree
+#import "DCHTreeNode.h"
+#import "DCHTree.h"
+
+#pragma mark - ComponentPathManager
+#import "DCHComponentPathManager.h"
+
+#pragma mark - Encrypt
+#import "DCHXOREncryptedInputStream.h"
+#import "DCHXOREncryptedOutputStream.h"
+#import "DCHXOREncryptUtility.h"
+
 #pragma mark - Operation
 #import "DCHWatchedOperation.h"
 
@@ -29,6 +41,7 @@
 #import "NSObject+DCHSwizzle.h"
 #import "NSObject+DCHAssociatedObjectExtension.h"
 #import "NSObject+DCHUUIDExtension.h"
+#import "NSString+DCHURLCoding.h"
 
 #pragma mark - GCDThreadSafe
 #import "NSObject+DCHThreadSafe.h"

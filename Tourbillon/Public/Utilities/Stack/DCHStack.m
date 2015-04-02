@@ -9,7 +9,7 @@
 #import "DCHStack.h"
 #import "NSMutableArray+DCHThreadSafe.h"
 
-const NSUInteger kDCStackDefaultCount = 128;
+const NSUInteger kDCHStackDefaultCount = 128;
 
 @interface DCHStack () {
 }
@@ -39,7 +39,7 @@ const NSUInteger kDCStackDefaultCount = 128;
     @synchronized(self) {
         self = [super init];
         if (self) {
-            self.maxCount = kDCStackDefaultCount;
+            self.maxCount = kDCHStackDefaultCount;
             self.objects = [[NSMutableArray arrayWithArray:array] threadSafe_init:YES];
         }
         return self;
@@ -71,7 +71,7 @@ const NSUInteger kDCStackDefaultCount = 128;
         [self.objects threadSafe_removeAllObjects];
         [self.objects threadSafe_uninit];
         self.objects = nil;
-        self.maxCount = kDCStackDefaultCount;
+        self.maxCount = kDCHStackDefaultCount;
     } while (NO);
 }
 
