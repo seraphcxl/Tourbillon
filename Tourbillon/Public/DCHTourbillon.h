@@ -81,10 +81,12 @@
 // iOS
 #import "UIColor+DCHAdditions.h"
 #import "UIColor+DCHColorful.h"
+#import "DCHUIColorEnumerator.h"
 #else
 // Mac OS X
 #import "NSColor+DCHAdditions.h"
 #import "NSColor+DCHColorful.h"
+#import "DCHNSColorEnumerator.h"
 #endif
 
 #endif

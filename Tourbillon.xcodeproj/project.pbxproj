@@ -121,24 +121,56 @@
 		8D0F1B881ACCDFB100DE3E0E /* NSString+DCHURLCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0F1B861ACCDFB100DE3E0E /* NSString+DCHURLCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D0F1B891ACCDFB100DE3E0E /* NSString+DCHURLCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1B871ACCDFB100DE3E0E /* NSString+DCHURLCoding.m */; };
 		8D0F1B8A1ACCDFB100DE3E0E /* NSString+DCHURLCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1B871ACCDFB100DE3E0E /* NSString+DCHURLCoding.m */; };
-		8D0F1B8F1ACCE42000DE3E0E /* NSColor+DCHAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0F1B8B1ACCE42000DE3E0E /* NSColor+DCHAdditions.h */; };
+		8D0F1B8F1ACCE42000DE3E0E /* NSColor+DCHAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0F1B8B1ACCE42000DE3E0E /* NSColor+DCHAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D0F1B901ACCE42000DE3E0E /* NSColor+DCHAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1B8C1ACCE42000DE3E0E /* NSColor+DCHAdditions.m */; };
-		8D0F1B911ACCE42000DE3E0E /* NSColor+DCHColorful.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0F1B8D1ACCE42000DE3E0E /* NSColor+DCHColorful.h */; };
+		8D0F1B911ACCE42000DE3E0E /* NSColor+DCHColorful.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0F1B8D1ACCE42000DE3E0E /* NSColor+DCHColorful.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D0F1B921ACCE42000DE3E0E /* NSColor+DCHColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1B8E1ACCE42000DE3E0E /* NSColor+DCHColorful.m */; };
-		8D0F1B9B1ACCE84800DE3E0E /* NSBundle+DCHBundleResourceSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0F1B931ACCE84800DE3E0E /* NSBundle+DCHBundleResourceSupport.h */; };
+		8D0F1B9B1ACCE84800DE3E0E /* NSBundle+DCHBundleResourceSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0F1B931ACCE84800DE3E0E /* NSBundle+DCHBundleResourceSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D0F1B9C1ACCE84800DE3E0E /* NSBundle+DCHBundleResourceSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1B941ACCE84800DE3E0E /* NSBundle+DCHBundleResourceSupport.m */; };
 		8D0F1B9D1ACCE84800DE3E0E /* NSBundle+DCHBundleResourceSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1B941ACCE84800DE3E0E /* NSBundle+DCHBundleResourceSupport.m */; };
-		8D0F1B9E1ACCE84800DE3E0E /* NSData+DCHBundleResourceSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0F1B951ACCE84800DE3E0E /* NSData+DCHBundleResourceSupport.h */; };
+		8D0F1B9E1ACCE84800DE3E0E /* NSData+DCHBundleResourceSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0F1B951ACCE84800DE3E0E /* NSData+DCHBundleResourceSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D0F1B9F1ACCE84800DE3E0E /* NSData+DCHBundleResourceSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1B961ACCE84800DE3E0E /* NSData+DCHBundleResourceSupport.m */; };
 		8D0F1BA01ACCE84800DE3E0E /* NSData+DCHBundleResourceSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1B961ACCE84800DE3E0E /* NSData+DCHBundleResourceSupport.m */; };
-		8D0F1BA11ACCE84800DE3E0E /* NSDictionary+DCHSortable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0F1B971ACCE84800DE3E0E /* NSDictionary+DCHSortable.h */; };
+		8D0F1BA11ACCE84800DE3E0E /* NSDictionary+DCHSortable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0F1B971ACCE84800DE3E0E /* NSDictionary+DCHSortable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D0F1BA21ACCE84800DE3E0E /* NSDictionary+DCHSortable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1B981ACCE84800DE3E0E /* NSDictionary+DCHSortable.m */; };
 		8D0F1BA31ACCE84800DE3E0E /* NSDictionary+DCHSortable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1B981ACCE84800DE3E0E /* NSDictionary+DCHSortable.m */; };
-		8D0F1BA41ACCE84800DE3E0E /* NSNumber+DCHRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0F1B991ACCE84800DE3E0E /* NSNumber+DCHRandom.h */; };
+		8D0F1BA41ACCE84800DE3E0E /* NSNumber+DCHRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0F1B991ACCE84800DE3E0E /* NSNumber+DCHRandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D0F1BA51ACCE84800DE3E0E /* NSNumber+DCHRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1B9A1ACCE84800DE3E0E /* NSNumber+DCHRandom.m */; };
 		8D0F1BA61ACCE84800DE3E0E /* NSNumber+DCHRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1B9A1ACCE84800DE3E0E /* NSNumber+DCHRandom.m */; };
 		8D0F1BAB1ACCEAE300DE3E0E /* UIColor+DCHAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1BA81ACCEAE300DE3E0E /* UIColor+DCHAdditions.m */; };
 		8D0F1BAC1ACCEAE300DE3E0E /* UIColor+DCHColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1BAA1ACCEAE300DE3E0E /* UIColor+DCHColorful.m */; };
+		8D0F1BB61ACCEF5D00DE3E0E /* DCHUIColorEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1BB51ACCEF5D00DE3E0E /* DCHUIColorEnumerator.m */; };
+		8D0F1BB91ACCEF8A00DE3E0E /* DCHNSColorEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0F1BB71ACCEF8A00DE3E0E /* DCHNSColorEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D0F1BBA1ACCEF8A00DE3E0E /* DCHNSColorEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F1BB81ACCEF8A00DE3E0E /* DCHNSColorEnumerator.m */; };
+		8D0F1BBB1ACCF00100DE3E0E /* NSBundle+DCHBundleResourceSupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D0F1B931ACCE84800DE3E0E /* NSBundle+DCHBundleResourceSupport.h */; };
+		8D0F1BBC1ACCF00100DE3E0E /* NSData+DCHBundleResourceSupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D0F1B951ACCE84800DE3E0E /* NSData+DCHBundleResourceSupport.h */; };
+		8D0F1BBD1ACCF00100DE3E0E /* NSDictionary+DCHSortable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D0F1B971ACCE84800DE3E0E /* NSDictionary+DCHSortable.h */; };
+		8D0F1BBE1ACCF00100DE3E0E /* NSNumber+DCHRandom.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D0F1B991ACCE84800DE3E0E /* NSNumber+DCHRandom.h */; };
+		8D0F1BBF1ACCF00100DE3E0E /* NSString+DCHURLCoding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D0F1B861ACCDFB100DE3E0E /* NSString+DCHURLCoding.h */; };
+		8D0F1BC01ACCF00100DE3E0E /* NSData+DCHGZipExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D0F1B811ACCDEBC00DE3E0E /* NSData+DCHGZipExtension.h */; };
+		8D0F1BC11ACCF00100DE3E0E /* NSData+DCHHash.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D25BC5B1ACC196F003B1E8A /* NSData+DCHHash.h */; };
+		8D0F1BC21ACCF00100DE3E0E /* NSString+DCHHash.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D25BC5D1ACC196F003B1E8A /* NSString+DCHHash.h */; };
+		8D0F1BC31ACCF00100DE3E0E /* NSString+DCHBase64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D25BC511ACC187B003B1E8A /* NSString+DCHBase64.h */; };
+		8D0F1BC41ACCF00100DE3E0E /* DCHBase64Define.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D25BC451ACC1832003B1E8A /* DCHBase64Define.h */; };
+		8D0F1BC51ACCF00100DE3E0E /* NSData+DCHBase64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D25BC461ACC1832003B1E8A /* NSData+DCHBase64.h */; };
+		8D0F1BC61ACCF00100DE3E0E /* NSData+DCHHex.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D25BC481ACC1832003B1E8A /* NSData+DCHHex.h */; };
+		8D0F1BC71ACCF00100DE3E0E /* NSObject+DCHUUIDExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8DD769C51A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h */; };
+		8D0F1BC81ACCF00100DE3E0E /* DCHAsyncTest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D7B438F1AC52E0E00D6D57B /* DCHAsyncTest.h */; };
+		8D0F1BC91ACCF00100DE3E0E /* DCHXOREncryptedInputStream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D0F1B621ACCDB8300DE3E0E /* DCHXOREncryptedInputStream.h */; };
+		8D0F1BCA1ACCF00100DE3E0E /* DCHXOREncryptedOutputStream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D0F1B641ACCDB8300DE3E0E /* DCHXOREncryptedOutputStream.h */; };
+		8D0F1BCB1ACCF00100DE3E0E /* DCHXOREncryptUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D0F1B661ACCDB8300DE3E0E /* DCHXOREncryptUtility.h */; };
+		8D0F1BCC1ACCF00100DE3E0E /* DCHGZipDecompressor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D25BC561ACC18B9003B1E8A /* DCHGZipDecompressor.h */; };
+		8D0F1BCD1ACCF00100DE3E0E /* DCHGZipCompressor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8DAD5D841ACC13C3006699FD /* DCHGZipCompressor.h */; };
+		8D0F1BCE1ACCF00100DE3E0E /* DCHHashUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8DAD5D891ACC14FE006699FD /* DCHHashUtility.h */; };
+		8D0F1BCF1ACCF00100DE3E0E /* DCHWatchedOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8DF6547A1ACCCD30003FAF5D /* DCHWatchedOperation.h */; };
+		8D0F1BD01ACCF00100DE3E0E /* DCHStack.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8DD769B71A8DE0DB00EBB5F9 /* DCHStack.h */; };
+		8D0F1BD11ACCF00100DE3E0E /* DCHTree.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D0F1B711ACCDDC500DE3E0E /* DCHTree.h */; };
+		8D0F1BD21ACCF00100DE3E0E /* DCHTreeNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D0F1B731ACCDDC500DE3E0E /* DCHTreeNode.h */; };
+		8D0F1BD31ACCF00100DE3E0E /* DCHComponentPathManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D0F1B7B1ACCDDCC00DE3E0E /* DCHComponentPathManager.h */; };
+		8D0F1BD41ACCF00100DE3E0E /* DCHUIMainThreadGuard.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8DAD5D7D1ACC0A67006699FD /* DCHUIMainThreadGuard.h */; };
+		8D0F1BD51ACCF00100DE3E0E /* UIColor+DCHAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D0F1BA71ACCEAE300DE3E0E /* UIColor+DCHAdditions.h */; };
+		8D0F1BD61ACCF00100DE3E0E /* UIColor+DCHColorful.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D0F1BA91ACCEAE300DE3E0E /* UIColor+DCHColorful.h */; };
+		8D0F1BD71ACCF00100DE3E0E /* DCHUIColorEnumerator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D0F1BB41ACCEF5D00DE3E0E /* DCHUIColorEnumerator.h */; };
 		8D25BC4A1ACC1832003B1E8A /* DCHBase64Define.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D25BC451ACC1832003B1E8A /* DCHBase64Define.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D25BC4B1ACC1832003B1E8A /* NSData+DCHBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D25BC461ACC1832003B1E8A /* NSData+DCHBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D25BC4C1ACC1832003B1E8A /* NSData+DCHBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D25BC471ACC1832003B1E8A /* NSData+DCHBase64.m */; };
@@ -210,6 +242,35 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				8D0F1BBB1ACCF00100DE3E0E /* NSBundle+DCHBundleResourceSupport.h in CopyFiles */,
+				8D0F1BBC1ACCF00100DE3E0E /* NSData+DCHBundleResourceSupport.h in CopyFiles */,
+				8D0F1BBD1ACCF00100DE3E0E /* NSDictionary+DCHSortable.h in CopyFiles */,
+				8D0F1BBE1ACCF00100DE3E0E /* NSNumber+DCHRandom.h in CopyFiles */,
+				8D0F1BBF1ACCF00100DE3E0E /* NSString+DCHURLCoding.h in CopyFiles */,
+				8D0F1BC01ACCF00100DE3E0E /* NSData+DCHGZipExtension.h in CopyFiles */,
+				8D0F1BC11ACCF00100DE3E0E /* NSData+DCHHash.h in CopyFiles */,
+				8D0F1BC21ACCF00100DE3E0E /* NSString+DCHHash.h in CopyFiles */,
+				8D0F1BC31ACCF00100DE3E0E /* NSString+DCHBase64.h in CopyFiles */,
+				8D0F1BC41ACCF00100DE3E0E /* DCHBase64Define.h in CopyFiles */,
+				8D0F1BC51ACCF00100DE3E0E /* NSData+DCHBase64.h in CopyFiles */,
+				8D0F1BC61ACCF00100DE3E0E /* NSData+DCHHex.h in CopyFiles */,
+				8D0F1BC71ACCF00100DE3E0E /* NSObject+DCHUUIDExtension.h in CopyFiles */,
+				8D0F1BC81ACCF00100DE3E0E /* DCHAsyncTest.h in CopyFiles */,
+				8D0F1BC91ACCF00100DE3E0E /* DCHXOREncryptedInputStream.h in CopyFiles */,
+				8D0F1BCA1ACCF00100DE3E0E /* DCHXOREncryptedOutputStream.h in CopyFiles */,
+				8D0F1BCB1ACCF00100DE3E0E /* DCHXOREncryptUtility.h in CopyFiles */,
+				8D0F1BCC1ACCF00100DE3E0E /* DCHGZipDecompressor.h in CopyFiles */,
+				8D0F1BCD1ACCF00100DE3E0E /* DCHGZipCompressor.h in CopyFiles */,
+				8D0F1BCE1ACCF00100DE3E0E /* DCHHashUtility.h in CopyFiles */,
+				8D0F1BCF1ACCF00100DE3E0E /* DCHWatchedOperation.h in CopyFiles */,
+				8D0F1BD01ACCF00100DE3E0E /* DCHStack.h in CopyFiles */,
+				8D0F1BD11ACCF00100DE3E0E /* DCHTree.h in CopyFiles */,
+				8D0F1BD21ACCF00100DE3E0E /* DCHTreeNode.h in CopyFiles */,
+				8D0F1BD31ACCF00100DE3E0E /* DCHComponentPathManager.h in CopyFiles */,
+				8D0F1BD41ACCF00100DE3E0E /* DCHUIMainThreadGuard.h in CopyFiles */,
+				8D0F1BD51ACCF00100DE3E0E /* UIColor+DCHAdditions.h in CopyFiles */,
+				8D0F1BD61ACCF00100DE3E0E /* UIColor+DCHColorful.h in CopyFiles */,
+				8D0F1BD71ACCF00100DE3E0E /* DCHUIColorEnumerator.h in CopyFiles */,
 				89C94D921A7B2E3F00BCC65C /* DCHTourbillon.h in CopyFiles */,
 				89C94D931A7B2E3F00BCC65C /* NSArray+DCHSafeCRUD.h in CopyFiles */,
 				89C94D941A7B2E3F00BCC65C /* NSDictionary+DCHSafeCRUD.h in CopyFiles */,
@@ -336,6 +397,10 @@
 		8D0F1BA81ACCEAE300DE3E0E /* UIColor+DCHAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DCHAdditions.m"; sourceTree = "<group>"; };
 		8D0F1BA91ACCEAE300DE3E0E /* UIColor+DCHColorful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DCHColorful.h"; sourceTree = "<group>"; };
 		8D0F1BAA1ACCEAE300DE3E0E /* UIColor+DCHColorful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DCHColorful.m"; sourceTree = "<group>"; };
+		8D0F1BB41ACCEF5D00DE3E0E /* DCHUIColorEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHUIColorEnumerator.h; sourceTree = "<group>"; };
+		8D0F1BB51ACCEF5D00DE3E0E /* DCHUIColorEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHUIColorEnumerator.m; sourceTree = "<group>"; };
+		8D0F1BB71ACCEF8A00DE3E0E /* DCHNSColorEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHNSColorEnumerator.h; sourceTree = "<group>"; };
+		8D0F1BB81ACCEF8A00DE3E0E /* DCHNSColorEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHNSColorEnumerator.m; sourceTree = "<group>"; };
 		8D25BC451ACC1832003B1E8A /* DCHBase64Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHBase64Define.h; sourceTree = "<group>"; };
 		8D25BC461ACC1832003B1E8A /* NSData+DCHBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DCHBase64.h"; sourceTree = "<group>"; };
 		8D25BC471ACC1832003B1E8A /* NSData+DCHBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DCHBase64.m"; sourceTree = "<group>"; };
@@ -711,6 +776,8 @@
 		89B7882D1990FB6E00A726F1 /* Testers */ = {
 			isa = PBXGroup;
 			children = (
+				8D0F1BB71ACCEF8A00DE3E0E /* DCHNSColorEnumerator.h */,
+				8D0F1BB81ACCEF8A00DE3E0E /* DCHNSColorEnumerator.m */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -769,6 +836,8 @@
 		89B788481990FB7600A726F1 /* Testers */ = {
 			isa = PBXGroup;
 			children = (
+				8D0F1BB41ACCEF5D00DE3E0E /* DCHUIColorEnumerator.h */,
+				8D0F1BB51ACCEF5D00DE3E0E /* DCHUIColorEnumerator.m */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -941,7 +1010,6 @@
 				89C94D391A7B05B000BCC65C /* NSString+DCHSafeCRUD.h in Headers */,
 				89C94D321A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.h in Headers */,
 				89F9D6EB1A7A492400A5528A /* DCHSafeARC.h in Headers */,
-				8D0F1BA11ACCE84800DE3E0E /* NSDictionary+DCHSortable.h in Headers */,
 				89F9D6ED1A7A49BF00A5528A /* DCHSingletonTemplate.h in Headers */,
 				89C94D631A7B193B00BCC65C /* NSObject+DCHSwizzle.h in Headers */,
 				89C94D6A1A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.h in Headers */,
@@ -952,28 +1020,30 @@
 				8DAD5D8B1ACC14FE006699FD /* DCHHashUtility.h in Headers */,
 				8D25BC4E1ACC1832003B1E8A /* NSData+DCHHex.h in Headers */,
 				8D25BC621ACC196F003B1E8A /* NSString+DCHHash.h in Headers */,
-				8D0F1B9E1ACCE84800DE3E0E /* NSData+DCHBundleResourceSupport.h in Headers */,
 				8D25BC4A1ACC1832003B1E8A /* DCHBase64Define.h in Headers */,
 				8D25BC531ACC187B003B1E8A /* NSString+DCHBase64.h in Headers */,
 				8D25BC581ACC18B9003B1E8A /* DCHGZipDecompressor.h in Headers */,
 				8DAD5D861ACC13C3006699FD /* DCHGZipCompressor.h in Headers */,
-				8D0F1B9B1ACCE84800DE3E0E /* NSBundle+DCHBundleResourceSupport.h in Headers */,
 				8DF6547D1ACCCD30003FAF5D /* DCHWatchedOperation.h in Headers */,
 				8D0F1B681ACCDB8300DE3E0E /* DCHXOREncryptedInputStream.h in Headers */,
-				8D0F1B911ACCE42000DE3E0E /* NSColor+DCHColorful.h in Headers */,
-				8D0F1BA41ACCE84800DE3E0E /* NSNumber+DCHRandom.h in Headers */,
 				8D0F1B6B1ACCDB8300DE3E0E /* DCHXOREncryptedOutputStream.h in Headers */,
 				8D0F1B6E1ACCDB8300DE3E0E /* DCHXOREncryptUtility.h in Headers */,
 				8D0F1B831ACCDEBC00DE3E0E /* NSData+DCHGZipExtension.h in Headers */,
-				8D0F1B8F1ACCE42000DE3E0E /* NSColor+DCHAdditions.h in Headers */,
 				8D0F1B881ACCDFB100DE3E0E /* NSString+DCHURLCoding.h in Headers */,
 				8D0F1B751ACCDDC500DE3E0E /* DCHTree.h in Headers */,
 				8D0F1B7D1ACCDDCC00DE3E0E /* DCHComponentPathManager.h in Headers */,
+				8D0F1BA11ACCE84800DE3E0E /* NSDictionary+DCHSortable.h in Headers */,
+				8D0F1B9E1ACCE84800DE3E0E /* NSData+DCHBundleResourceSupport.h in Headers */,
+				8D0F1B9B1ACCE84800DE3E0E /* NSBundle+DCHBundleResourceSupport.h in Headers */,
+				8D0F1B911ACCE42000DE3E0E /* NSColor+DCHColorful.h in Headers */,
+				8D0F1BA41ACCE84800DE3E0E /* NSNumber+DCHRandom.h in Headers */,
+				8D0F1B8F1ACCE42000DE3E0E /* NSColor+DCHAdditions.h in Headers */,
 				8D0F1B781ACCDDC500DE3E0E /* DCHTreeNode.h in Headers */,
 				8D25BC5F1ACC196F003B1E8A /* NSData+DCHHash.h in Headers */,
 				89C94D781A7B24F200BCC65C /* NSMutableData+DCHThreadSafe.h in Headers */,
 				89C94D471A7B154C00BCC65C /* NSMutableDictionary+DCHSafeCRUD.h in Headers */,
 				8DD769B91A8DE0DB00EBB5F9 /* DCHStack.h in Headers */,
+				8D0F1BB91ACCEF8A00DE3E0E /* DCHNSColorEnumerator.h in Headers */,
 				8D7B43911AC52E0E00D6D57B /* DCHAsyncTest.h in Headers */,
 				8DD769C71A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h in Headers */,
 				8DAD5D7F1ACC0A67006699FD /* DCHUIMainThreadGuard.h in Headers */,
@@ -1243,6 +1313,7 @@
 				8D25BC601ACC196F003B1E8A /* NSData+DCHHash.m in Sources */,
 				8D0F1B921ACCE42000DE3E0E /* NSColor+DCHColorful.m in Sources */,
 				8D0F1B6C1ACCDB8300DE3E0E /* DCHXOREncryptedOutputStream.m in Sources */,
+				8D0F1BBA1ACCEF8A00DE3E0E /* DCHNSColorEnumerator.m in Sources */,
 				89C94D8E1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
 				8DD769C81A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */,
 				89C94D4F1A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
@@ -1301,6 +1372,7 @@
 				8D0F1BA01ACCE84800DE3E0E /* NSData+DCHBundleResourceSupport.m in Sources */,
 				8D25BC611ACC196F003B1E8A /* NSData+DCHHash.m in Sources */,
 				8D0F1B6D1ACCDB8300DE3E0E /* DCHXOREncryptedOutputStream.m in Sources */,
+				8D0F1BB61ACCEF5D00DE3E0E /* DCHUIColorEnumerator.m in Sources */,
 				89C94D901A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m in Sources */,
 				8DD769CA1A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m in Sources */,
 				89C94D511A7B158E00BCC65C /* NSMutableSet+DCHSafeCRUD.m in Sources */,
