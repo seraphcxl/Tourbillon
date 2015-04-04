@@ -203,6 +203,9 @@
 		8DAD5D8B1ACC14FE006699FD /* DCHHashUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DAD5D891ACC14FE006699FD /* DCHHashUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DAD5D8C1ACC14FE006699FD /* DCHHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD5D8A1ACC14FE006699FD /* DCHHashUtility.m */; };
 		8DAD5D8D1ACC14FE006699FD /* DCHHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD5D8A1ACC14FE006699FD /* DCHHashUtility.m */; };
+		8DBAFD171ACFA4C5000E1624 /* NSThread+DCHBlockExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DBAFD151ACFA4C5000E1624 /* NSThread+DCHBlockExtension.h */; };
+		8DBAFD181ACFA4C5000E1624 /* NSThread+DCHBlockExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBAFD161ACFA4C5000E1624 /* NSThread+DCHBlockExtension.m */; };
+		8DBAFD191ACFA4C5000E1624 /* NSThread+DCHBlockExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBAFD161ACFA4C5000E1624 /* NSThread+DCHBlockExtension.m */; };
 		8DD769B91A8DE0DB00EBB5F9 /* DCHStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD769B71A8DE0DB00EBB5F9 /* DCHStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DD769BA1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
 		8DD769BC1A8DE0DB00EBB5F9 /* DCHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */; };
@@ -423,6 +426,8 @@
 		8DAD5D851ACC13C3006699FD /* DCHGZipCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHGZipCompressor.m; sourceTree = "<group>"; };
 		8DAD5D891ACC14FE006699FD /* DCHHashUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHHashUtility.h; sourceTree = "<group>"; };
 		8DAD5D8A1ACC14FE006699FD /* DCHHashUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHHashUtility.m; sourceTree = "<group>"; };
+		8DBAFD151ACFA4C5000E1624 /* NSThread+DCHBlockExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+DCHBlockExtension.h"; sourceTree = "<group>"; };
+		8DBAFD161ACFA4C5000E1624 /* NSThread+DCHBlockExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+DCHBlockExtension.m"; sourceTree = "<group>"; };
 		8DD769B71A8DE0DB00EBB5F9 /* DCHStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHStack.h; sourceTree = "<group>"; };
 		8DD769B81A8DE0DB00EBB5F9 /* DCHStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHStack.m; sourceTree = "<group>"; };
 		8DD769C51A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCHUUIDExtension.h"; sourceTree = "<group>"; };
@@ -637,6 +642,8 @@
 				89C94D691A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.m */,
 				8DD769C51A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h */,
 				8DD769C61A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.m */,
+				8DBAFD151ACFA4C5000E1624 /* NSThread+DCHBlockExtension.h */,
+				8DBAFD161ACFA4C5000E1624 /* NSThread+DCHBlockExtension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1032,6 +1039,7 @@
 				8D0F1B881ACCDFB100DE3E0E /* NSString+DCHURLCoding.h in Headers */,
 				8D0F1B751ACCDDC500DE3E0E /* DCHTree.h in Headers */,
 				8D0F1B7D1ACCDDCC00DE3E0E /* DCHComponentPathManager.h in Headers */,
+				8DBAFD171ACFA4C5000E1624 /* NSThread+DCHBlockExtension.h in Headers */,
 				8D0F1BA11ACCE84800DE3E0E /* NSDictionary+DCHSortable.h in Headers */,
 				8D0F1B9E1ACCE84800DE3E0E /* NSData+DCHBundleResourceSupport.h in Headers */,
 				8D0F1B9B1ACCE84800DE3E0E /* NSBundle+DCHBundleResourceSupport.h in Headers */,
@@ -1281,6 +1289,7 @@
 				89C94D641A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */,
 				8D25BC541ACC187B003B1E8A /* NSString+DCHBase64.m in Sources */,
 				8D0F1B901ACCE42000DE3E0E /* NSColor+DCHAdditions.m in Sources */,
+				8DBAFD181ACFA4C5000E1624 /* NSThread+DCHBlockExtension.m in Sources */,
 				8D0F1B9F1ACCE84800DE3E0E /* NSData+DCHBundleResourceSupport.m in Sources */,
 				8D0F1BA21ACCE84800DE3E0E /* NSDictionary+DCHSortable.m in Sources */,
 				89C94D411A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */,
@@ -1340,6 +1349,7 @@
 				89C94D661A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */,
 				8D25BC551ACC187B003B1E8A /* NSString+DCHBase64.m in Sources */,
 				8D0F1B9D1ACCE84800DE3E0E /* NSBundle+DCHBundleResourceSupport.m in Sources */,
+				8DBAFD191ACFA4C5000E1624 /* NSThread+DCHBlockExtension.m in Sources */,
 				89C94D431A7B14E300BCC65C /* NSMutableArray+DCHSafeCRUD.m in Sources */,
 				89C94D581A7B15C900BCC65C /* NSMutableString+DCHSafeCRUD.m in Sources */,
 				89C94D891A7B2CAF00BCC65C /* NSMutableSet+DCHThreadSafe.m in Sources */,

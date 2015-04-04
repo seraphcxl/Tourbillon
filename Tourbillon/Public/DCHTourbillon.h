@@ -46,6 +46,7 @@
 #import "NSData+DCHBundleResourceSupport.h"
 #import "NSDictionary+DCHSortable.h"
 #import "NSNumber+DCHRandom.h"
+#import "NSThread+DCHBlockExtension.h"
 
 #pragma mark - GCDThreadSafe
 #import "NSObject+DCHThreadSafe.h"

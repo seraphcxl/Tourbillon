@@ -4,6 +4,7 @@
 target 'Tourbillon-OSX' do
 platform :osx, '10.9'
 pod 'BlocksKit', '~> 2.2.5'
+pod 'libextobjc', '~> 0.4.1'
 end
 
 target 'Tourbillon-OSXTests' do
@@ -13,10 +14,12 @@ end
 target 'Tourbillon-iOS' do
 platform :ios, '7.0'
 pod 'BlocksKit', '~> 2.2.5'
+pod 'libextobjc', '~> 0.4.1'
 end
 
 target 'Tourbillon-iOSTests' do
 platform :ios, '7.0'
 pod 'BlocksKit', '~> 2.2.5'
+pod 'libextobjc', '~> 0.4.1'
 end
 
