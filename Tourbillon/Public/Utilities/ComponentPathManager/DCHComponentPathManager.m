@@ -36,39 +36,34 @@ NSString * const kDCHComponentPathManagerArchiveTree = @"DCHComponentPathManager
 //DEFINE_SINGLETON_FOR_CLASS(DCHComponentPathManager)
 
 - (instancetype)initWithRootNodeKey:(NSString *)key andValue:(id<NSCoding>)value {
-    DCHComponentPathManager *result = nil;
-    do {
-        DCHAssert(key != nil && [key length] != 0 && value != nil);
+    DCHAssert(key != nil && [key length] != 0 && value != nil);
+    self = [self init];
+    if (self) {
         self.delegate = nil;
         self.archiveURL = nil;
         self.tree = [[DCHTree alloc] initWithRootNodeKey:key andValue:value];
         self.tree.delegate = self;
         self.undoStack = [[DCHStack alloc] init];
         self.redoStack = [[DCHStack alloc] init];
-        result = self;
-    } while (NO);
-    return result;
+    }
+    return self;
 }
 
 - (instancetype)initWithArchive:(NSURL *)url {
-    DCHComponentPathManager *result = nil;
-    do {
-        DCHAssert(url != nil);
+    DCHAssert(url != nil);
+    self = [self init];
+    if (self) {
         self.delegate = nil;
         self.archiveURL = [url copy];
         NSData *compressedData = [NSData dataWithContentsOfURL:url];
         NSError *err = nil;
         NSData *rawData = [compressedData dch_decompressByGZipWithError:&err];
-        if (err) {
-            NSLog(@"%@", [err localizedDescription]);
-            break;
-        }
+        DCHAssert(err == nil);
         [self unarchiveTreeFromData:rawData];
         self.undoStack = [[DCHStack alloc] init];
         self.redoStack = [[DCHStack alloc] init];
-        result = self;
-    } while (NO);
-    return result;
+    }
+    return self;
 }
 
 - (void)dealloc {
