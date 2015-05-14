@@ -26,4 +26,10 @@
 
 @interface NSMutableString (DCHSafeCRUD)
 
+- (void)DCH_safe_replaceCharactersInRange:(NSRange)range withString:(NSString *)aString;
+- (void)DCH_safe_insertString:(NSString *)aString atIndex:(NSUInteger)loc;
+- (void)DCH_safe_deleteCharactersInRange:(NSRange)range;
+- (void)DCH_safe_appendString:(NSString *)aString;
+- (void)DCH_safe_setString:(NSString *)aString;
+
 @end

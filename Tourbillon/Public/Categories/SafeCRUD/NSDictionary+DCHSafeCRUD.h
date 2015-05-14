@@ -20,4 +20,7 @@
 
 @interface NSDictionary (DCHSafeCRUD)
 
+- (id)DCH_safe_objectForKey:(id)aKey;
+- (NSArray *)DCH_safe_allKeysForObject:(id)anObject;
+
 @end

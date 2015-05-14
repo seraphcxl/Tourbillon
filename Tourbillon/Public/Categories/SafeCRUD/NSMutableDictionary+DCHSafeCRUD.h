@@ -20,4 +20,7 @@
 
 @interface NSMutableDictionary (DCHSafeCRUD)
 
+- (void)DCH_safe_removeObjectForKey:(id)aKey;
+- (void)DCH_safe_setObject:(id)anObject forKey:(id <NSCopying>)aKey;
+
 @end

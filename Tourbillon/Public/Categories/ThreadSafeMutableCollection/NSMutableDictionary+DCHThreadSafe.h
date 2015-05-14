@@ -12,20 +12,20 @@
 @interface NSMutableDictionary (DCHThreadSafe)
 
 #pragma mark - NSDictionary
-- (NSUInteger)threadSafe_count;
-- (id)threadSafe_objectForKey:(id)aKey;
-- (NSArray *)threadSafe_allKeys;
-- (NSArray *)threadSafe_allKeysForObject:(id)anObject;
-- (NSArray *)threadSafe_allValues;
+- (NSUInteger)DCH_threadSafe_count;
+- (id)DCH_threadSafe_objectForKey:(id)aKey;
+- (NSArray *)DCH_threadSafe_allKeys;
+- (NSArray *)DCH_threadSafe_allKeysForObject:(id)anObject;
+- (NSArray *)DCH_threadSafe_allValues;
 
-- (void)threadSafe_enumerateKeysAndObjectsUsingBlock:(void (^)(id key, id obj, BOOL *stop))block NS_AVAILABLE(10_6, 4_0);
-- (void)threadSafe_enumerateKeysAndObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id key, id obj, BOOL *stop))block NS_AVAILABLE(10_6, 4_0);
+- (void)DCH_threadSafe_enumerateKeysAndObjectsUsingBlock:(void (^)(id key, id obj, BOOL *stop))block NS_AVAILABLE(10_6, 4_0);
+- (void)DCH_threadSafe_enumerateKeysAndObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id key, id obj, BOOL *stop))block NS_AVAILABLE(10_6, 4_0);
 
 #pragma mark - NSMutableDictionary
-- (void)threadSafe_removeObjectForKey:(id)aKey;
-- (void)threadSafe_setObject:(id)anObject forKey:(id <NSCopying>)aKey;
-- (void)threadSafe_removeAllObjects;
-- (void)threadSafe_removeObjectsForKeys:(NSArray *)keyArray;
-- (void)threadSafe_setDictionary:(NSDictionary *)otherDictionary;
+- (void)DCH_threadSafe_removeObjectForKey:(id)aKey;
+- (void)DCH_threadSafe_setObject:(id)anObject forKey:(id <NSCopying>)aKey;
+- (void)DCH_threadSafe_removeAllObjects;
+- (void)DCH_threadSafe_removeObjectsForKeys:(NSArray *)keyArray;
+- (void)DCH_threadSafe_setDictionary:(NSDictionary *)otherDictionary;
 
 @end

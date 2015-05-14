@@ -22,16 +22,16 @@ static NSMutableDictionary *s_libraryResourcesBundleDict = nil;
         
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
-            s_libraryResourcesBundleDict = [[NSMutableDictionary dictionary] threadSafe_init:YES];
+            s_libraryResourcesBundleDict = [[NSMutableDictionary dictionary] DCH_threadSafe_init:YES];
         });
         
-        libraryResourcesBundle = [s_libraryResourcesBundleDict threadSafe_objectForKey:libraryName];
+        libraryResourcesBundle = [s_libraryResourcesBundleDict DCH_threadSafe_objectForKey:libraryName];
         if (libraryResourcesBundle) {
             break;
         }
         
         libraryResourcesBundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:libraryName withExtension:@"bundle"]];
-        [s_libraryResourcesBundleDict threadSafe_setObject:libraryResourcesBundle forKey:libraryName];
+        [s_libraryResourcesBundleDict DCH_threadSafe_setObject:libraryResourcesBundle forKey:libraryName];
         
     } while (NO);
     return libraryResourcesBundle;
@@ -40,7 +40,7 @@ static NSMutableDictionary *s_libraryResourcesBundleDict = nil;
 + (void)removeAllLibraryResourcesBundles {
     do {
         if (s_libraryResourcesBundleDict) {
-            [s_libraryResourcesBundleDict threadSafe_removeAllObjects];
+            [s_libraryResourcesBundleDict DCH_threadSafe_removeAllObjects];
         }
     } while (NO);
 }

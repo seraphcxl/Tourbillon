@@ -278,4 +278,10 @@ do { \
 
 #endif  // DCH_ConditionalRunBlock_DEFINE
 /**** **** **** **** **** **** **** ****/
+/**** **** **** **** **** **** **** ****/
+#pragma mark - Is empty
+static inline BOOL DCH_IsEmpty(id thing) {
+    return thing == nil || ([thing isEqual:[NSNull null]]) || ([thing respondsToSelector:@selector(length)] && [thing length] == 0) || ([thing respondsToSelector:@selector(count)] && [thing count] == 0);
+}
+/**** **** **** **** **** **** **** ****/
 #endif  // Tourbillon_DCHCommonConstants_h

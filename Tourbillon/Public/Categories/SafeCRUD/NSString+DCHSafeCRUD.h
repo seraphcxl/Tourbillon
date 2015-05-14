@@ -32,4 +32,13 @@
 
 @interface NSString (DCHSafeCRUD)
 
+- (unichar)DCH_safe_characterAtIndex:(NSUInteger)index;
+- (NSString *)DCH_safe_substringFromIndex:(NSUInteger)from;
+- (NSString *)DCH_safe_substringToIndex:(NSUInteger)to;
+- (NSString *)DCH_safe_substringWithRange:(NSRange)range;
+- (BOOL)DCH_safe_hasPrefix:(NSString *)aString;
+- (BOOL)DCH_safe_hasSuffix:(NSString *)aString;
+- (NSRange)DCH_safe_rangeOfString:(NSString *)aString;
+- (NSString *)DCH_safe_stringByAppendingString:(NSString *)aString;
+
 @end

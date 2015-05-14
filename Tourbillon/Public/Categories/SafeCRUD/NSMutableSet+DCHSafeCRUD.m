@@ -10,4 +10,22 @@
 
 @implementation NSMutableSet (DCHSafeCRUD)
 
+- (void)DCH_safe_addObject:(id)object {
+    do {
+        if (DCH_IsEmpty(object)) {
+            break;
+        }
+        [self addObject:object];
+    } while (NO);
+}
+
+- (void)DCH_safe_removeObject:(id)object {
+    do {
+        if (DCH_IsEmpty(object)) {
+            break;
+        }
+        [self removeObject:object];
+    } while (NO);
+}
+
 @end

@@ -10,4 +10,26 @@
 
 @implementation NSDictionary (DCHSafeCRUD)
 
+- (id)DCH_safe_objectForKey:(id)aKey {
+    id result = nil;
+    do {
+        if (DCH_IsEmpty(aKey)) {
+            break;
+        }
+        result = [self objectForKey:aKey];
+    } while (NO);
+    return result;
+}
+
+- (NSArray *)DCH_safe_allKeysForObject:(id)anObject {
+    NSArray *result = nil;
+    do {
+        if (DCH_IsEmpty(anObject)) {
+            break;
+        }
+        result = [self allKeysForObject:anObject];
+    } while (NO);
+    return result;
+}
+
 @end

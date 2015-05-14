@@ -16,7 +16,7 @@ DCH_DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(GCDThreadSafeQueue, NSObject_DCHGCDThreadS
 
 DCH_DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(SyncSetting, NSObject_DCHSyncSetting_Key, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
-- (instancetype)threadSafe_init:(BOOL)isSyncSetting {
+- (instancetype)DCH_threadSafe_init:(BOOL)isSyncSetting {
     do {
         @synchronized(self) {
             if ([self getGCDThreadSafeQueue]) {
@@ -31,7 +31,7 @@ DCH_DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(SyncSetting, NSObject_DCHSyncSetting_Key, 
     return self;
 }
 
-- (void)threadSafe_uninit {
+- (void)DCH_threadSafe_uninit {
     do {
         @synchronized(self) {
             [self setSyncSetting:nil];
@@ -68,7 +68,7 @@ DCH_DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(SyncSetting, NSObject_DCHSyncSetting_Key, 
     return result;
 }
 
-- (BOOL)threadSafe_QueueSync:(dispatch_block_t)block {
+- (BOOL)DCH_threadSafe_QueueSync:(dispatch_block_t)block {
     BOOL result = NO;
     do {
         if (!block) {
@@ -84,7 +84,7 @@ DCH_DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(SyncSetting, NSObject_DCHSyncSetting_Key, 
     return result;
 }
 
-- (BOOL)threadSafe_QueueBarrierSync:(dispatch_block_t)block {
+- (BOOL)DCH_threadSafe_QueueBarrierSync:(dispatch_block_t)block {
     BOOL result = NO;
     do {
         if (!block) {
@@ -100,7 +100,7 @@ DCH_DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(SyncSetting, NSObject_DCHSyncSetting_Key, 
     return result;
 }
 
-- (BOOL)threadSafe_QueueAsync:(dispatch_block_t)block {
+- (BOOL)DCH_threadSafe_QueueAsync:(dispatch_block_t)block {
     BOOL result = NO;
     do {
         if (!block) {
@@ -116,7 +116,7 @@ DCH_DEFINE_ASSOCIATEDOBJECT_FOR_CLASS(SyncSetting, NSObject_DCHSyncSetting_Key, 
     return result;
 }
 
-- (BOOL)threadSafe_QueueBarrierAsync:(dispatch_block_t)block {
+- (BOOL)DCH_threadSafe_QueueBarrierAsync:(dispatch_block_t)block {
     BOOL result = NO;
     do {
         if (!block) {

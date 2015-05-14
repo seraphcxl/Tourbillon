@@ -13,10 +13,10 @@
 @implementation NSMutableString (DCHThreadSafe)
 
 #pragma mark NSString
-- (NSUInteger)threadSafe_length {
+- (NSUInteger)DCH_threadSafe_length {
     __block NSUInteger result = 0;
     do {
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             result = [self length];
         }]) {
             break;
@@ -25,13 +25,13 @@
     return result;
 }
 
-- (unichar)threadSafe_characterAtIndex:(NSUInteger)index {
+- (unichar)DCH_threadSafe_characterAtIndex:(NSUInteger)index {
     __block unichar result = 0;
     do {
-        if (index >= [self threadSafe_length]) {
+        if (index >= [self DCH_threadSafe_length]) {
             break;
         }
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             DCHStringSafeCharacterAtIndex(self, index, result);
         }]) {
             break;
@@ -40,13 +40,13 @@
     return result;
 }
 
-- (NSString *)threadSafe_substringFromIndex:(NSUInteger)from {
+- (NSString *)DCH_threadSafe_substringFromIndex:(NSUInteger)from {
     __block NSString *result = nil;
     do {
-        if (from >= [self threadSafe_length]) {
+        if (from >= [self DCH_threadSafe_length]) {
             break;
         }
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             DCHStringSafeSubstringFromIndex(self, from, result);
         }]) {
             break;
@@ -55,13 +55,13 @@
     return result;
 }
 
-- (NSString *)threadSafe_substringToIndex:(NSUInteger)to {
+- (NSString *)DCH_threadSafe_substringToIndex:(NSUInteger)to {
     __block NSString *result = nil;
     do {
-        if (to >= [self threadSafe_length]) {
+        if (to >= [self DCH_threadSafe_length]) {
             break;
         }
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             DCHStringSafeSubstringToIndex(self, to, result);
         }]) {
             break;
@@ -70,13 +70,13 @@
     return result;
 }
 
-- (NSString *)threadSafe_substringWithRange:(NSRange)range {
+- (NSString *)DCH_threadSafe_substringWithRange:(NSRange)range {
     __block NSString *result = nil;
     do {
         if (range.length == 0) {
             break;
         }
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             DCHStringSafeSubstringWithRange(self, range, result);
         }]) {
             break;
@@ -85,13 +85,13 @@
     return result;
 }
 
-- (NSComparisonResult)threadSafe_compare:(NSString *)string {
+- (NSComparisonResult)DCH_threadSafe_compare:(NSString *)string {
     __block NSComparisonResult result = NSOrderedSame;
     do {
         if (!string) {
             break;
         }
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             result = [self compare:string];
         }]) {
             break;
@@ -100,13 +100,13 @@
     return result;
 }
 
-- (NSComparisonResult)threadSafe_caseInsensitiveCompare:(NSString *)string {
+- (NSComparisonResult)DCH_threadSafe_caseInsensitiveCompare:(NSString *)string {
     __block NSComparisonResult result = NSOrderedSame;
     do {
         if (!string) {
             break;
         }
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             result = [self caseInsensitiveCompare:string];
         }]) {
             break;
@@ -115,13 +115,13 @@
     return result;
 }
 
-- (NSComparisonResult)threadSafe_localizedCompare:(NSString *)string {
+- (NSComparisonResult)DCH_threadSafe_localizedCompare:(NSString *)string {
     __block NSComparisonResult result = NSOrderedSame;
     do {
         if (!string) {
             break;
         }
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             result = [self localizedCompare:string];
         }]) {
             break;
@@ -130,13 +130,13 @@
     return result;
 }
 
-- (NSComparisonResult)threadSafe_localizedCaseInsensitiveCompare:(NSString *)string {
+- (NSComparisonResult)DCH_threadSafe_localizedCaseInsensitiveCompare:(NSString *)string {
     __block NSComparisonResult result = NSOrderedSame;
     do {
         if (!string) {
             break;
         }
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             result = [self localizedCaseInsensitiveCompare:string];
         }]) {
             break;
@@ -145,13 +145,13 @@
     return result;
 }
 
-- (BOOL)threadSafe_isEqualToString:(NSString *)aString {
+- (BOOL)DCH_threadSafe_isEqualToString:(NSString *)aString {
     __block BOOL result = NO;
     do {
         if (!aString) {
             break;
         }
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             result = [self isEqualToString:aString];
         }]) {
             break;
@@ -160,13 +160,13 @@
     return result;
 }
 
-- (BOOL)threadSafe_hasPrefix:(NSString *)aString {
+- (BOOL)DCH_threadSafe_hasPrefix:(NSString *)aString {
     __block BOOL result = NO;
     do {
         if (!aString) {
             break;
         }
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             DCHStringSafeHasPrefix(self, aString, result);
         }]) {
             break;
@@ -175,13 +175,13 @@
     return result;
 }
 
-- (BOOL)threadSafe_hasSuffix:(NSString *)aString {
+- (BOOL)DCH_threadSafe_hasSuffix:(NSString *)aString {
     __block BOOL result = NO;
     do {
         if (!aString) {
             break;
         }
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             DCHStringSafeHasSuffix(self, aString, result);
         }]) {
             break;
@@ -190,13 +190,13 @@
     return result;
 }
 
-- (NSRange)threadSafe_rangeOfString:(NSString *)aString {
+- (NSRange)DCH_threadSafe_rangeOfString:(NSString *)aString {
     __block NSRange result = NSMakeRange(0, 0);
     do {
         if (!aString) {
             break;
         }
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             DCHStringSafeRangeOfString(self, aString, result);
         }]) {
             break;
@@ -205,13 +205,13 @@
     return result;
 }
 
-- (NSString *)threadSafe_stringByAppendingString:(NSString *)aString {
+- (NSString *)DCH_threadSafe_stringByAppendingString:(NSString *)aString {
     __block NSString *result = [self copy];
     do {
         if (!aString) {
             break;
         }
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             DCHStringSafeStringByAppendingString(self, aString, result);
         }]) {
             break;
@@ -220,7 +220,7 @@
     return result;
 }
 
-- (NSString *)threadSafe_stringByAppendingFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2) {
+- (NSString *)DCH_threadSafe_stringByAppendingFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2) {
     __block NSString *result = [self copy];
     do {
         if (!format) {
@@ -230,7 +230,7 @@
         va_start(arglist, format);
         NSString *statement = [[NSString alloc] initWithFormat:format arguments:arglist];
         va_end(arglist);
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             result = [self stringByAppendingString:statement];
         }]) {
             break;
@@ -239,10 +239,10 @@
     return result;
 }
 
-- (NSString *)threadSafe_uppercaseString {
+- (NSString *)DCH_threadSafe_uppercaseString {
     __block NSString *result = [self copy];
     do {
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             result = [self uppercaseString];
         }]) {
             break;
@@ -251,10 +251,10 @@
     return result;
 }
 
-- (NSString *)threadSafe_lowercaseString {
+- (NSString *)DCH_threadSafe_lowercaseString {
     __block NSString *result = [self copy];
     do {
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             result = [self lowercaseString];
         }]) {
             break;
@@ -263,10 +263,10 @@
     return result;
 }
 
-- (NSString *)threadSafe_capitalizedString {
+- (NSString *)DCH_threadSafe_capitalizedString {
     __block NSString *result = [self copy];
     do {
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             result = [self capitalizedString];
         }]) {
             break;
@@ -275,10 +275,10 @@
     return result;
 }
 
-- (const char *)threadSafe_UTF8String {
+- (const char *)DCH_threadSafe_UTF8String {
     __block const char *result = nil;
     do {
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             result = [self UTF8String];
         }]) {
             break;
@@ -288,7 +288,7 @@
 }
 
 #pragma mark NSMutableString
-- (void)threadSafe_replaceCharactersInRange:(NSRange)range withString:(NSString *)aString {
+- (void)DCH_threadSafe_replaceCharactersInRange:(NSRange)range withString:(NSString *)aString {
     do {
         if (range.length == 0 || !aString) {
             break;
@@ -301,9 +301,9 @@
     } while (NO);
 }
 
-- (void)threadSafe_insertString:(NSString *)aString atIndex:(NSUInteger)loc {
+- (void)DCH_threadSafe_insertString:(NSString *)aString atIndex:(NSUInteger)loc {
     do {
-        if (!aString || loc > [self threadSafe_length]) {
+        if (!aString || loc > [self DCH_threadSafe_length]) {
             break;
         }
         if (![self threafSafe_Setting:^{
@@ -314,7 +314,7 @@
     } while (NO);
 }
 
-- (void)threadSafe_deleteCharactersInRange:(NSRange)range {
+- (void)DCH_threadSafe_deleteCharactersInRange:(NSRange)range {
     do {
         if (range.length == 0) {
             break;
@@ -327,7 +327,7 @@
     } while (NO);
 }
 
-- (void)threadSafe_appendString:(NSString *)aString {
+- (void)DCH_threadSafe_appendString:(NSString *)aString {
     do {
         if (!aString) {
             break;
@@ -340,7 +340,7 @@
     } while (NO);
 }
 
-- (void)threadSafe_appendFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2) {
+- (void)DCH_threadSafe_appendFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2) {
     do {
         if (!format) {
             break;
@@ -357,7 +357,7 @@
     } while (NO);
 }
 
-- (void)threadSafe_setString:(NSString *)aString {
+- (void)DCH_threadSafe_setString:(NSString *)aString {
     do {
         if (![self threafSafe_Setting:^{
             DCHMutableStringSafeSet(self, aString);

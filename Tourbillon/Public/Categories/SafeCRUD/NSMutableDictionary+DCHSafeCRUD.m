@@ -10,4 +10,22 @@
 
 @implementation NSMutableDictionary (DCHSafeCRUD)
 
+- (void)DCH_safe_removeObjectForKey:(id)aKey {
+    do {
+        if (DCH_IsEmpty(aKey)) {
+            break;
+        }
+        [self removeObjectForKey:aKey];
+    } while (NO);
+}
+
+- (void)DCH_safe_setObject:(id)anObject forKey:(id <NSCopying>)aKey {
+    do {
+        if (DCH_IsEmpty(aKey) || DCH_IsEmpty(anObject)) {
+            break;
+        }
+        [self setObject:anObject forKey:aKey];
+    } while (NO);
+}
+
 @end

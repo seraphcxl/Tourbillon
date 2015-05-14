@@ -13,10 +13,10 @@
 @implementation NSMutableDictionary (DCHThreadSafe)
 
 #pragma mark NSDictionary
-- (NSUInteger)threadSafe_count {
+- (NSUInteger)DCH_threadSafe_count {
     __block NSUInteger result = 0;
     do {
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             result = [self count];
         }]) {
             break;
@@ -25,13 +25,13 @@
     return result;
 }
 
-- (id)threadSafe_objectForKey:(id)aKey {
+- (id)DCH_threadSafe_objectForKey:(id)aKey {
     __block id result = nil;
     do {
         if (!aKey) {
             break;
         }
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             DCHDictionarySafeRead(self, aKey, result);
         }]) {
             break;
@@ -40,10 +40,10 @@
     return result;
 }
 
-- (NSArray *)threadSafe_allKeys {
+- (NSArray *)DCH_threadSafe_allKeys {
     __block NSArray *result = nil;
     do {
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             result = [self allKeys];
         }]) {
             break;
@@ -52,13 +52,13 @@
     return result;
 }
 
-- (NSArray *)threadSafe_allKeysForObject:(id)anObject {
+- (NSArray *)DCH_threadSafe_allKeysForObject:(id)anObject {
     __block NSArray *result = nil;
     do {
         if (!anObject) {
             break;
         }
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             DCHDictionarySafeAllKeysForObject(self, anObject, result);
         }]) {
             break;
@@ -67,10 +67,10 @@
     return result;
 }
 
-- (NSArray *)threadSafe_allValues {
+- (NSArray *)DCH_threadSafe_allValues {
     __block NSArray *result = nil;
     do {
-        if (![self threadSafe_QueueSync:^{
+        if (![self DCH_threadSafe_QueueSync:^{
             result = [self allValues];
         }]) {
             break;
@@ -79,25 +79,25 @@
     return result;
 }
 
-- (void)threadSafe_enumerateKeysAndObjectsUsingBlock:(void (^)(id key, id obj, BOOL *stop))block {
+- (void)DCH_threadSafe_enumerateKeysAndObjectsUsingBlock:(void (^)(id key, id obj, BOOL *stop))block {
     do {
         if (!block) {
             break;
         }
-        if (![self threadSafe_QueueBarrierSync:^{
-            [self threadSafe_enumerateKeysAndObjectsUsingBlock:block];
+        if (![self DCH_threadSafe_QueueBarrierSync:^{
+            [self DCH_threadSafe_enumerateKeysAndObjectsUsingBlock:block];
         }]) {
             break;
         }
     } while (NO);
 }
 
-- (void)threadSafe_enumerateKeysAndObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id key, id obj, BOOL *stop))block {
+- (void)DCH_threadSafe_enumerateKeysAndObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id key, id obj, BOOL *stop))block {
     do {
         if (!block) {
             break;
         }
-        if (![self threadSafe_QueueBarrierSync:^{
+        if (![self DCH_threadSafe_QueueBarrierSync:^{
             [self enumerateKeysAndObjectsWithOptions:opts usingBlock:block];
         }]) {
             break;
@@ -106,7 +106,7 @@
 }
 
 #pragma mark NSMutableDictionary
-- (void)threadSafe_removeObjectForKey:(id)aKey {
+- (void)DCH_threadSafe_removeObjectForKey:(id)aKey {
     do {
         if (!aKey) {
             break;
@@ -119,7 +119,7 @@
     } while (NO);
 }
 
-- (void)threadSafe_setObject:(id)anObject forKey:(id<NSCopying>)aKey {
+- (void)DCH_threadSafe_setObject:(id)anObject forKey:(id<NSCopying>)aKey {
     do {
         if (!aKey || !anObject) {
             break;
@@ -132,7 +132,7 @@
     } while (NO);
 }
 
-- (void)threadSafe_removeAllObjects {
+- (void)DCH_threadSafe_removeAllObjects {
     do {
         if (![self threafSafe_Setting:^{
             [self removeAllObjects];
@@ -142,7 +142,7 @@
     } while (NO);
 }
 
-- (void)threadSafe_removeObjectsForKeys:(NSArray *)keyArray {
+- (void)DCH_threadSafe_removeObjectsForKeys:(NSArray *)keyArray {
     do {
         if (!keyArray || [keyArray count] == 0) {
             break;
@@ -155,7 +155,7 @@
     } while (NO);
 }
 
-- (void)threadSafe_setDictionary:(NSDictionary *)otherDictionary {
+- (void)DCH_threadSafe_setDictionary:(NSDictionary *)otherDictionary {
     do {
         if (![self threafSafe_Setting:^{
             [self setDictionary:otherDictionary];

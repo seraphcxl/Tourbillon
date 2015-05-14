@@ -10,15 +10,15 @@
 
 @interface NSObject (DCHThreadSafe)
 
-- (instancetype)threadSafe_init:(BOOL)isSyncSetting;
-- (void)threadSafe_uninit;
+- (instancetype)DCH_threadSafe_init:(BOOL)isSyncSetting;
+- (void)DCH_threadSafe_uninit;
 - (BOOL)isSyncSetting;
 - (BOOL)threafSafe_Setting:(dispatch_block_t) block;
 
-- (BOOL)threadSafe_QueueSync:(dispatch_block_t) block;
-- (BOOL)threadSafe_QueueBarrierSync:(dispatch_block_t) block;
+- (BOOL)DCH_threadSafe_QueueSync:(dispatch_block_t) block;
+- (BOOL)DCH_threadSafe_QueueBarrierSync:(dispatch_block_t) block;
 
-- (BOOL)threadSafe_QueueAsync:(dispatch_block_t) block;
-- (BOOL)threadSafe_QueueBarrierAsync:(dispatch_block_t) block;
+- (BOOL)DCH_threadSafe_QueueAsync:(dispatch_block_t) block;
+- (BOOL)DCH_threadSafe_QueueBarrierAsync:(dispatch_block_t) block;
 
 @end

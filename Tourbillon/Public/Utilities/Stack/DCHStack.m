@@ -40,7 +40,7 @@ const NSUInteger kDCHStackDefaultCount = 128;
         self = [super init];
         if (self) {
             self.maxCount = kDCHStackDefaultCount;
-            self.objects = [[NSMutableArray arrayWithArray:array] threadSafe_init:YES];
+            self.objects = [[NSMutableArray arrayWithArray:array] DCH_threadSafe_init:YES];
         }
         return self;
     }
@@ -62,14 +62,14 @@ const NSUInteger kDCHStackDefaultCount = 128;
 
 - (void)resetStack {
     do {
-        [self.objects threadSafe_removeAllObjects];
+        [self.objects DCH_threadSafe_removeAllObjects];
     } while (NO);
 }
 
 - (void)dealloc {
     do {
-        [self.objects threadSafe_removeAllObjects];
-        [self.objects threadSafe_uninit];
+        [self.objects DCH_threadSafe_removeAllObjects];
+        [self.objects DCH_threadSafe_uninit];
         self.objects = nil;
         self.maxCount = kDCHStackDefaultCount;
     } while (NO);
@@ -81,7 +81,7 @@ const NSUInteger kDCHStackDefaultCount = 128;
         if (!self.objects) {
             break;
         }
-        result = [self.objects threadSafe_count];
+        result = [self.objects DCH_threadSafe_count];
     } while (NO);
     return result;
 }
@@ -94,7 +94,7 @@ const NSUInteger kDCHStackDefaultCount = 128;
         if (self.count == self.maxCount) {
             [self removeFirstObject];
         }
-        [self.objects threadSafe_addObject:object];
+        [self.objects DCH_threadSafe_addObject:object];
     } while (NO);
 }
 
@@ -108,7 +108,7 @@ const NSUInteger kDCHStackDefaultCount = 128;
             NSRange removeRange = NSMakeRange(0, diff);
             [self removeObjectsInRange:removeRange];
         }
-        [self.objects threadSafe_addObjectsFromArray:objects];
+        [self.objects DCH_threadSafe_addObjectsFromArray:objects];
     } while (NO);
 }
 
@@ -119,7 +119,7 @@ const NSUInteger kDCHStackDefaultCount = 128;
             break;
         }
         result = [self peekObject];
-        [self.objects threadSafe_removeLastObject];
+        [self.objects DCH_threadSafe_removeLastObject];
     } while (NO);
     return result;
 }
@@ -130,7 +130,7 @@ const NSUInteger kDCHStackDefaultCount = 128;
         if (!self.objects || self.count == 0) {
             break;
         }
-        result = [self.objects threadSafe_lastObject];
+        result = [self.objects DCH_threadSafe_lastObject];
     } while (NO);
     return result;
 }
@@ -141,7 +141,7 @@ const NSUInteger kDCHStackDefaultCount = 128;
         if (!self.objects || self.count == 0) {
             break;
         }
-        result = [self.objects threadSafe_firstObject];
+        result = [self.objects DCH_threadSafe_firstObject];
     } while (NO);
     return result;
 }
@@ -152,7 +152,7 @@ const NSUInteger kDCHStackDefaultCount = 128;
         if (!self.objects || self.count == 0) {
             break;
         }
-        result = [self.objects threadSafe_lastObject];
+        result = [self.objects DCH_threadSafe_lastObject];
     } while (NO);
     return result;
 }
@@ -169,7 +169,7 @@ const NSUInteger kDCHStackDefaultCount = 128;
             break;
         }
         @synchronized (self) {
-            [self.objects threadSafe_removeObjectAtIndex:0];
+            [self.objects DCH_threadSafe_removeObjectAtIndex:0];
         }
     } while (NO);
 }
@@ -180,7 +180,7 @@ const NSUInteger kDCHStackDefaultCount = 128;
             break;
         }
         @synchronized (self) {
-            [self.objects threadSafe_removeObjectsInRange:range];
+            [self.objects DCH_threadSafe_removeObjectsInRange:range];
         }
     } while (NO);
 }

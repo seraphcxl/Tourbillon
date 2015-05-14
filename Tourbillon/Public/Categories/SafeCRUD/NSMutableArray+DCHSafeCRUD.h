@@ -34,4 +34,14 @@
 
 @interface NSMutableArray (DCHSafeCRUD)
 
+- (void)DCH_safe_addObject:(id)anObject;
+- (void)DCH_safe_insertObject:(id)anObject atIndex:(NSUInteger)index;
+- (void)DCH_safe_removeObjectAtIndex:(NSUInteger)index;
+- (void)DCH_safe_replaceObjectAtIndex:(NSUInteger)index withObject:(id)anObject;
+- (void)DCH_safe_removeObject:(id)anObject inRange:(NSRange)range;
+- (void)DCH_safe_removeObject:(id)anObject;
+- (void)DCH_safe_removeObjectIdenticalTo:(id)anObject inRange:(NSRange)range;
+- (void)DCH_safe_removeObjectIdenticalTo:(id)anObject;
+- (void)DCH_safe_removeObjectsInRange:(NSRange)range;
+
 @end
