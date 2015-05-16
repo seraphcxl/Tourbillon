@@ -58,4 +58,7 @@
 + (UIColor *)tungstenColor;
 + (UIColor *)turquoiseColor;
 
++ (NSArray *)DCH_colorfulArray;
++ (NSString *)DCH_colorName:(UIColor *)color;
+
 @end

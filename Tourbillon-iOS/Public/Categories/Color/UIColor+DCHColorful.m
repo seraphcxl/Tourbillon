@@ -435,4 +435,126 @@
     return color;
 }
 
++ (NSArray *)DCH_colorfulArray {
+    static NSArray *colorfulArray = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        colorfulArray = @[[UIColor aluminumColor]
+                          , [UIColor aquaColor]
+                          , [UIColor asparagusColor]
+                          , [UIColor bananaColor]
+                          , [UIColor blueberryColor]
+                          , [UIColor bubblegumColor]
+                          , [UIColor cantaloupeColor]
+                          , [UIColor carnationColor]
+                          , [UIColor cayenneColor]
+                          , [UIColor cloverColor]
+                          , [UIColor eggplantColor]
+                          , [UIColor fernColor]
+                          , [UIColor floraColor]
+                          , [UIColor grapeColor]
+                          , [UIColor honeydewColor]
+                          , [UIColor iceColor]
+                          , [UIColor ironColor]
+                          , [UIColor lavenderColor]
+                          , [UIColor leadColor]
+                          , [UIColor lemonColor]
+                          , [UIColor licoriceColor]
+                          , [UIColor limeColor]
+                          , [UIColor magnesiumColor]
+                          , [UIColor maraschinoColor]
+                          , [UIColor maroonColor]
+                          , [UIColor midnightColor]
+                          , [UIColor mochaColor]
+                          , [UIColor mossColor]
+                          , [UIColor murcuryColor]
+                          , [UIColor nickelColor]
+                          , [UIColor oceanColor]
+                          , [UIColor orchidColor]
+                          , [UIColor plumColor]
+                          , [UIColor salmonColor]
+                          , [UIColor seaFoamColor]
+                          , [UIColor silverColor]
+                          , [UIColor skyColor]
+                          , [UIColor snowColor]
+                          , [UIColor spindriftColor]
+                          , [UIColor springColor]
+                          , [UIColor steelColor]
+                          , [UIColor strawberryColor]
+                          , [UIColor tangerineColor]
+                          , [UIColor tealColor]
+                          , [UIColor tinColor]
+                          , [UIColor tungstenColor]
+                          , [UIColor turquoiseColor]
+                          ];
+    });
+    return colorfulArray;
+}
+
++ (NSString *)DCH_colorName:(UIColor *)color {
+    NSString *result = @"";
+    do {
+        if (!color) {
+            break;
+        }
+        static NSArray *colorfulNameArray = nil;
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            colorfulNameArray = @[@"aluminumColor"
+                                  , @"aquaColor"
+                                  , @"asparagusColor"
+                                  , @"bananaColor"
+                                  , @"blueberryColor"
+                                  , @"bubblegumColor"
+                                  , @"cantaloupeColor"
+                                  , @"carnationColor"
+                                  , @"cayenneColor"
+                                  , @"cloverColor"
+                                  , @"eggplantColor"
+                                  , @"fernColor"
+                                  , @"floraColor"
+                                  , @"grapeColor"
+                                  , @"honeydewColor"
+                                  , @"iceColor"
+                                  , @"ironColor"
+                                  , @"lavenderColor"
+                                  , @"leadColor"
+                                  , @"lemonColor"
+                                  , @"licoriceColor"
+                                  , @"limeColor"
+                                  , @"magnesiumColor"
+                                  , @"maraschinoColor"
+                                  , @"maroonColor"
+                                  , @"midnightColor"
+                                  , @"mochaColor"
+                                  , @"mossColor"
+                                  , @"murcuryColor"
+                                  , @"nickelColor"
+                                  , @"oceanColor"
+                                  , @"orchidColor"
+                                  , @"plumColor"
+                                  , @"salmonColor"
+                                  , @"seaFoamColor"
+                                  , @"silverColor"
+                                  , @"skyColor"
+                                  , @"snowColor"
+                                  , @"spindriftColor"
+                                  , @"springColor"
+                                  , @"steelColor"
+                                  , @"strawberryColor"
+                                  , @"tangerineColor"
+                                  , @"tealColor"
+                                  , @"tinColor"
+                                  , @"tungstenColor"
+                                  , @"turquoiseColor"
+                                  ];
+        });
+        NSUInteger idx = [[self DCH_colorfulArray] indexOfObject:color];
+        if (idx != NSNotFound) {
+            result = [colorfulNameArray objectAtIndex:idx];
+        }
+    } while (NO);
+    return result;
+}
+
 @end
