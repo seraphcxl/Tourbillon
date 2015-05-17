@@ -15,4 +15,6 @@
 - (UIColor *)blackOrWhiteContrastingColor;
 - (CGFloat)luminosityDifference:(UIColor *)otherColor;
 
++ (UIColor *)colorWithColor:(UIColor *)color andAlpha:(CGFloat)alpha;
+
 @end

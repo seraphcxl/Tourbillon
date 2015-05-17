@@ -17,4 +17,6 @@
 
 - (CGColorRef)cgColor;
 
++ (NSColor *)colorWithColor:(NSColor *)color andAlpha:(CGFloat)alpha;
+
 @end

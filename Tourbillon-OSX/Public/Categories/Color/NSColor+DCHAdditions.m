@@ -132,4 +132,23 @@
     return result;
 }
 
++ (NSColor *)colorWithColor:(NSColor *)color andAlpha:(CGFloat)alpha {
+    NSColor *result = nil;
+    do {
+        if (!color) {
+            break;
+        }
+        if (alpha < 0) {
+            alpha = 0;
+        }
+        if (alpha > 1) {
+            alpha = 1;
+        }
+        CGFloat components[4] = {0.0, 0.0, 0.0, 0.0};
+        [color getRed:&components[0] green:&components[1] blue:&components[2] alpha:&components[3]];
+        result = [NSColor colorWithRed:components[0] green:components[1] blue:components[2] alpha:alpha];
+    } while (NO);
+    return result;
+}
+
 @end
