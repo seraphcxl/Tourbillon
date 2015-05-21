@@ -17,4 +17,6 @@
 
 + (UIColor *)colorWithColor:(UIColor *)color andAlpha:(CGFloat)alpha;
 
+- (BOOL)isEqualTo:(UIColor *)other bySingleVectorDiff:(CGFloat)singleVectorDiff andTotleDiff:(CGFloat)totleDiff;
+
 @end

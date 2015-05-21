@@ -151,4 +151,28 @@
     return result;
 }
 
+- (BOOL)isEqualTo:(NSColor *)other bySingleVectorDiff:(CGFloat)singleVectorDiff andTotleDiff:(CGFloat)totleDiff {
+    BOOL result = NO;
+    do {
+        if (!other) {
+            break;
+        }
+        CGFloat components[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+        [self getRed:&components[0] green:&components[1] blue:&components[2] alpha:&components[3]];
+        [other getRed:&components[4] green:&components[5] blue:&components[6] alpha:&components[7]];
+        CGFloat redDiff = ABS(components[0] - components[4]);
+        CGFloat greenDiff = ABS(components[1] - components[5]);
+        CGFloat blueDiff = ABS(components[2] - components[6]);
+        CGFloat alphaDiff = ABS(components[3] - components[7]);
+        if (redDiff > singleVectorDiff || greenDiff > singleVectorDiff || blueDiff > singleVectorDiff || alphaDiff > singleVectorDiff) {
+            break;
+        }
+        if ((redDiff + greenDiff + blueDiff + alphaDiff) > totleDiff) {
+            break;
+        }
+        result = YES;
+    } while (NO);
+    return result;
+}
+
 @end
