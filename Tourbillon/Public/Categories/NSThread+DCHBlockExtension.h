@@ -10,8 +10,8 @@
 
 @interface NSThread (DCHBlockExtension)
 
-+ (void)runInMain:(void (^)(void))block;
++ (void)dch_runInMain:(void (^)(void))block;
 
-+ (void)runInBackground:(void (^)(void))block;
++ (void)dch_runInBackground:(void (^)(void))block;
 
 @end

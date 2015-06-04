@@ -10,6 +10,6 @@
 
 @interface NSData (DCHBase64)
 
-- (NSString *)base64EncodedString;
+- (NSString *)dch_base64EncodedString;
 
 @end

@@ -12,15 +12,15 @@
 
 @implementation NSNumber (DCHRandom)
 
-+ (NSNumber *)randomUnsignedInt {
++ (NSNumber *)dch_randomUnsignedInt {
     return [NSNumber numberWithUnsignedInt:arc4random()];
 }
 
-+ (NSNumber *)randomUnsignedIntForm:(unsigned int)start range:(unsigned int)range {
++ (NSNumber *)dch_randomUnsignedIntForm:(unsigned int)start range:(unsigned int)range {
     return [NSNumber numberWithUnsignedInt:((arc4random() % range) + start)];
 }
 
-+ (NSNumber *)randomDoubleForm:(double)start range:(double)range {
++ (NSNumber *)dch_randomDoubleForm:(double)start range:(double)range {
     return [NSNumber numberWithDouble:(floor(((double)arc4random() / ARC4RANDOM_MAX) * 100.0f) + start)];
 }
 

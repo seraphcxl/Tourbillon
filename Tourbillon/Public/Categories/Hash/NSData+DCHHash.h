@@ -12,19 +12,19 @@
 @interface NSData (DCHHash)
 
 #pragma mark - MD5
-- (NSString *)md5String;
-- (NSData *)md5Data;
+- (NSString *)dch_md5String;
+- (NSData *)dch_md5Data;
 
 #pragma mark HMAC-MD5
-- (NSString *)hmacMD5StringWithHmacKey:(NSString *)key;
-- (NSData *)hmacMD5DataWithHmacKey:(NSString *)key;
+- (NSString *)dch_hmacMD5StringWithHmacKey:(NSString *)key;
+- (NSData *)dch_hmacMD5DataWithHmacKey:(NSString *)key;
 
 #pragma mark - SHA
-- (NSString *)shaStringWithType:(DCHSHAType)type;
-- (NSData *)shaDataWithType:(DCHSHAType)type;
+- (NSString *)dch_shaStringWithType:(DCHSHAType)type;
+- (NSData *)dch_shaDataWithType:(DCHSHAType)type;
 
 #pragma mark - HMAC-SHA
-- (NSString *)hmacSHAStringWithType:(DCHSHAType)type andHmacKey:(NSString *)key;
-- (NSData *)hmacSHADataWithType:(DCHSHAType)type andHmacKey:(NSString *)key;
+- (NSString *)dch_hmacSHAStringWithType:(DCHSHAType)type andHmacKey:(NSString *)key;
+- (NSData *)dch_hmacSHADataWithType:(DCHSHAType)type andHmacKey:(NSString *)key;
 
 @end

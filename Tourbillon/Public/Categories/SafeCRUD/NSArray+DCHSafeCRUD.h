@@ -26,10 +26,10 @@
 
 @interface NSArray (DCHSafeCRUD)
 
-- (id)DCH_safe_objectAtIndex:(NSUInteger)index;
-- (NSUInteger)DCH_safe_indexOfObject:(id)anObject;
-- (NSUInteger)DCH_safe_indexOfObject:(id)anObject inRange:(NSRange)range;
-- (NSUInteger)DCH_safe_indexOfObjectIdenticalTo:(id)anObject;
-- (NSUInteger)DCH_safe_indexOfObjectIdenticalTo:(id)anObject inRange:(NSRange)range;
+- (id)dch_safe_objectAtIndex:(NSUInteger)index;
+- (NSUInteger)dch_safe_indexOfObject:(id)anObject;
+- (NSUInteger)dch_safe_indexOfObject:(id)anObject inRange:(NSRange)range;
+- (NSUInteger)dch_safe_indexOfObjectIdenticalTo:(id)anObject;
+- (NSUInteger)dch_safe_indexOfObjectIdenticalTo:(id)anObject inRange:(NSRange)range;
 
 @end

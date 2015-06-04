@@ -10,7 +10,7 @@
 
 @implementation NSDictionary (DCHSafeCRUD)
 
-- (id)DCH_safe_objectForKey:(id)aKey {
+- (id)dch_safe_objectForKey:(id)aKey {
     id result = nil;
     do {
         if (DCH_IsEmpty(aKey)) {
@@ -21,7 +21,7 @@
     return result;
 }
 
-- (NSArray *)DCH_safe_allKeysForObject:(id)anObject {
+- (NSArray *)dch_safe_allKeysForObject:(id)anObject {
     NSArray *result = nil;
     do {
         if (DCH_IsEmpty(anObject)) {

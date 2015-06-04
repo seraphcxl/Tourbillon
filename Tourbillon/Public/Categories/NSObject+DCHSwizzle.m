@@ -49,7 +49,7 @@ BOOL DCHReplaceMethodWithBlock(Class c, SEL origSEL, SEL newSEL, id block) {
 
 @implementation NSObject (DCHSwizzle)
 
-+ (void)swizzleInstanceSelector:(SEL)originalSelector withNewSelector:(SEL)newSelector {
++ (void)dch_swizzleInstanceSelector:(SEL)originalSelector withNewSelector:(SEL)newSelector {
     Method originalMethod = class_getInstanceMethod(self, originalSelector);
     Method newMethod = class_getInstanceMethod(self, newSelector);
     

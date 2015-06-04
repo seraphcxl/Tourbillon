@@ -10,15 +10,15 @@
 
 @implementation NSData (DCHHex)
 
-- (NSString *)hex {
-    return [self hexUseLower:NO];
+- (NSString *)dch_hex {
+    return [self dch_hexUseLower:NO];
 }
 
-- (NSString *)hexLower {
-    return [self hexUseLower:YES];
+- (NSString *)dch_hexLower {
+    return [self dch_hexUseLower:YES];
 }
 
-- (NSString *)hexUseLower:(BOOL)isOutputLower {
+- (NSString *)dch_hexUseLower:(BOOL)isOutputLower {
     NSString *result = nil;
     
     static const char NSData_DCHHex_HexEncodeCharsLower[] = "0123456789abcdef";

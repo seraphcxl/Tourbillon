@@ -29,7 +29,7 @@
             break;
         }
         
-        NSString *path = [NSString stringWithFormat:@"%@_%@", dest, [NSObject createUUID]];
+        NSString *path = [NSString stringWithFormat:@"%@_%@", dest, [NSObject dch_createUUID]];
         NSError *err = nil;
         if ([fileMgr fileExistsAtPath:path]) {
             if (![fileMgr removeItemAtPath:path error:&err] || err) {
@@ -102,7 +102,7 @@
             break;
         }
         
-        NSString *path = [NSString stringWithFormat:@"%@_%@", dest, [NSObject createUUID]];
+        NSString *path = [NSString stringWithFormat:@"%@_%@", dest, [NSObject dch_createUUID]];
         NSError *err = nil;
         if ([fileMgr fileExistsAtPath:path]) {
             if (![fileMgr removeItemAtPath:path error:&err] || err) {

@@ -10,7 +10,7 @@
 
 @implementation NSString (DCHSafeCRUD)
 
-- (unichar)DCH_safe_characterAtIndex:(NSUInteger)index {
+- (unichar)dch_safe_characterAtIndex:(NSUInteger)index {
     unichar result = 0;
     do {
         if (index < self.length) {
@@ -20,7 +20,7 @@
     return result;
 }
 
-- (NSString *)DCH_safe_substringFromIndex:(NSUInteger)from {
+- (NSString *)dch_safe_substringFromIndex:(NSUInteger)from {
     NSString *result = nil;
     do {
         if (from < self.length) {
@@ -30,7 +30,7 @@
     return result;
 }
 
-- (NSString *)DCH_safe_substringToIndex:(NSUInteger)to {
+- (NSString *)dch_safe_substringToIndex:(NSUInteger)to {
     NSString *result = nil;
     do {
         if (to < self.length) {
@@ -40,7 +40,7 @@
     return result;
 }
 
-- (NSString *)DCH_safe_substringWithRange:(NSRange)range {
+- (NSString *)dch_safe_substringWithRange:(NSRange)range {
     NSString *result = nil;
     do {
         if (range.location <= self.length && (range.location + range.length) <= self.length) {
@@ -50,7 +50,7 @@
     return result;
 }
 
-- (BOOL)DCH_safe_hasPrefix:(NSString *)aString {
+- (BOOL)dch_safe_hasPrefix:(NSString *)aString {
     BOOL result = NO;
     do {
         if (DCH_IsEmpty(aString)) {
@@ -61,7 +61,7 @@
     return result;
 }
 
-- (BOOL)DCH_safe_hasSuffix:(NSString *)aString {
+- (BOOL)dch_safe_hasSuffix:(NSString *)aString {
     BOOL result = NO;
     do {
         if (DCH_IsEmpty(aString)) {
@@ -72,7 +72,7 @@
     return result;
 }
 
-- (NSRange)DCH_safe_rangeOfString:(NSString *)aString {
+- (NSRange)dch_safe_rangeOfString:(NSString *)aString {
     NSRange result = NSMakeRange(0, 0);
     do {
         if (DCH_IsEmpty(aString)) {
@@ -83,7 +83,7 @@
     return result;
 }
 
-- (NSString *)DCH_safe_stringByAppendingString:(NSString *)aString {
+- (NSString *)dch_safe_stringByAppendingString:(NSString *)aString {
     NSString *result = nil;
     do {
         if (DCH_IsEmpty(aString)) {

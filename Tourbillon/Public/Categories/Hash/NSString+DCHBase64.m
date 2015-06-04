@@ -11,7 +11,7 @@
 
 @implementation NSString (DCHBase64)
 
-- (NSData *)dataFromBase64String {
+- (NSData *)dch_dataFromBase64String {
     NSData *result = nil;
     do {
         const char *bytes = nil;

@@ -20,7 +20,7 @@
 
 @interface NSMutableSet (DCHSafeCRUD)
 
-- (void)DCH_safe_addObject:(id)object;
-- (void)DCH_safe_removeObject:(id)object;
+- (void)dch_safe_addObject:(id)object;
+- (void)dch_safe_removeObject:(id)object;
 
 @end

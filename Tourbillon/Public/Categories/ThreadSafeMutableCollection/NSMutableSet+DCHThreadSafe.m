@@ -12,10 +12,10 @@
 @implementation NSMutableSet (DCHThreadSafe)
 
 #pragma mark NSSet
-- (NSUInteger)DCH_threadSafe_count {
+- (NSUInteger)dch_threadSafe_count {
     __block NSUInteger result = 0;
     do {
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self count];
         }]) {
             break;
@@ -24,13 +24,13 @@
     return result;
 }
 
-- (id)DCH_threadSafe_member:(id)object {
+- (id)dch_threadSafe_member:(id)object {
     __block id result = nil;
     do {
         if (!object) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self member:object];
         }]) {
             break;
@@ -39,10 +39,10 @@
     return result;
 }
 
-- (NSArray *)DCH_threadSafe_allObjects {
+- (NSArray *)dch_threadSafe_allObjects {
     __block NSArray *result = nil;
     do {
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self allObjects];
         }]) {
             break;
@@ -51,13 +51,13 @@
     return result;
 }
 
-- (BOOL)DCH_threadSafe_containsObject:(id)anObject {
+- (BOOL)dch_threadSafe_containsObject:(id)anObject {
     __block BOOL result = NO;
     do {
         if (!anObject) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self containsObject:anObject];
         }]) {
             break;
@@ -66,13 +66,13 @@
     return result;
 }
 
-- (BOOL)DCH_threadSafe_intersectsSet:(NSSet *)otherSet {
+- (BOOL)dch_threadSafe_intersectsSet:(NSSet *)otherSet {
     __block BOOL result = NO;
     do {
         if (!otherSet) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self intersectsSet:otherSet];
         }]) {
             break;
@@ -81,13 +81,13 @@
     return result;
 }
 
-- (BOOL)DCH_threadSafe_isEqualToSet:(NSSet *)otherSet {
+- (BOOL)dch_threadSafe_isEqualToSet:(NSSet *)otherSet {
     __block BOOL result = NO;
     do {
         if (!otherSet) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self isEqualToSet:otherSet];
         }]) {
             break;
@@ -96,13 +96,13 @@
     return result;
 }
 
-- (BOOL)DCH_threadSafe_isSubsetOfSet:(NSSet *)otherSet {
+- (BOOL)dch_threadSafe_isSubsetOfSet:(NSSet *)otherSet {
     __block BOOL result = NO;
     do {
         if (!otherSet) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self isSubsetOfSet:otherSet];
         }]) {
             break;
@@ -111,12 +111,12 @@
     return result;
 }
 
-- (void)DCH_threadSafe_makeObjectsPerformSelector:(SEL)aSelector {
+- (void)dch_threadSafe_makeObjectsPerformSelector:(SEL)aSelector {
     do {
         if (!aSelector) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             [self makeObjectsPerformSelector:aSelector];
         }]) {
             break;
@@ -124,12 +124,12 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_makeObjectsPerformSelector:(SEL)aSelector withObject:(id)argument {
+- (void)dch_threadSafe_makeObjectsPerformSelector:(SEL)aSelector withObject:(id)argument {
     do {
         if (!aSelector || !argument) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             [self makeObjectsPerformSelector:aSelector withObject:argument];
         }]) {
             break;
@@ -137,13 +137,13 @@
     } while (NO);
 }
 
-- (NSSet *)DCH_threadSafe_setByAddingObject:(id)anObject {
+- (NSSet *)dch_threadSafe_setByAddingObject:(id)anObject {
     __block NSSet *result = nil;
     do {
         if (!anObject) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self setByAddingObject:anObject];
         }]) {
             break;
@@ -152,13 +152,13 @@
     return result;
 }
 
-- (NSSet *)DCH_threadSafe_setByAddingObjectsFromSet:(NSSet *)other {
+- (NSSet *)dch_threadSafe_setByAddingObjectsFromSet:(NSSet *)other {
     __block NSSet *result = nil;
     do {
         if (!other) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self setByAddingObjectsFromSet:other];
         }]) {
             break;
@@ -167,13 +167,13 @@
     return result;
 }
 
-- (NSSet *)DCH_threadSafe_setByAddingObjectsFromArray:(NSArray *)other {
+- (NSSet *)dch_threadSafe_setByAddingObjectsFromArray:(NSArray *)other {
     __block NSSet *result = nil;
     do {
         if (!other) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self setByAddingObjectsFromArray:other];
         }]) {
             break;
@@ -182,12 +182,12 @@
     return result;
 }
 
-- (void)DCH_threadSafe_enumerateObjectsUsingBlock:(void (^)(id obj, BOOL *stop))block {
+- (void)dch_threadSafe_enumerateObjectsUsingBlock:(void (^)(id obj, BOOL *stop))block {
     do {
         if (!block) {
             break;
         }
-        if (![self DCH_threadSafe_QueueBarrierSync:^{
+        if (![self dch_threadSafe_QueueBarrierSync:^{
             [self enumerateObjectsUsingBlock:block];
         }]) {
             break;
@@ -195,12 +195,12 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_enumerateObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id obj, BOOL *stop))block {
+- (void)dch_threadSafe_enumerateObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id obj, BOOL *stop))block {
     do {
         if (!block) {
             break;
         }
-        if (![self DCH_threadSafe_QueueBarrierSync:^{
+        if (![self dch_threadSafe_QueueBarrierSync:^{
             [self enumerateObjectsWithOptions:opts usingBlock:block];
         }]) {
             break;
@@ -209,7 +209,7 @@
 }
 
 #pragma mark NSMutableSet
-- (void)DCH_threadSafe_addObject:(id)object {
+- (void)dch_threadSafe_addObject:(id)object {
     do {
         if (!object) {
             break;
@@ -222,7 +222,7 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_removeObject:(id)object {
+- (void)dch_threadSafe_removeObject:(id)object {
     do {
         if (!object) {
             break;
@@ -235,7 +235,7 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_addObjectsFromArray:(NSArray *)array {
+- (void)dch_threadSafe_addObjectsFromArray:(NSArray *)array {
     do {
         if (!array || [array count]) {
             break;
@@ -248,7 +248,7 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_intersectSet:(NSSet *)otherSet {
+- (void)dch_threadSafe_intersectSet:(NSSet *)otherSet {
     do {
         if (!otherSet) {
             break;
@@ -261,7 +261,7 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_minusSet:(NSSet *)otherSet {
+- (void)dch_threadSafe_minusSet:(NSSet *)otherSet {
     do {
         if (!otherSet) {
             break;
@@ -274,7 +274,7 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_removeAllObjects {
+- (void)dch_threadSafe_removeAllObjects {
     do {
         if (![self threafSafe_Setting:^{
             [self removeAllObjects];
@@ -284,7 +284,7 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_unionSet:(NSSet *)otherSet {
+- (void)dch_threadSafe_unionSet:(NSSet *)otherSet {
     do {
         if (!otherSet) {
             break;
@@ -297,7 +297,7 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_setSet:(NSSet *)otherSet {
+- (void)dch_threadSafe_setSet:(NSSet *)otherSet {
     do {
         if (![self threafSafe_Setting:^{
             [self setSet:otherSet];

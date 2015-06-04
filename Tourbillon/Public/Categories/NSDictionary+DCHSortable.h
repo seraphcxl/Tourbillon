@@ -10,8 +10,8 @@
 
 @interface NSDictionary (DCHSortable)
 
-- (NSArray *)sortedKeysUsingComparator:(NSComparator)comparator;
-- (NSArray *)sortedValuesUsingKeyComparator:(NSComparator)comparator;
-- (void)enumerateSortedKeysAndObjectsUsingComparator:(NSComparator)comparator usingBlock:(void (^)(id key, id value, BOOL *stop))block;
+- (NSArray *)dch_sortedKeysUsingComparator:(NSComparator)comparator;
+- (NSArray *)dch_sortedValuesUsingKeyComparator:(NSComparator)comparator;
+- (void)dch_enumerateSortedKeysAndObjectsUsingComparator:(NSComparator)comparator usingBlock:(void (^)(id key, id value, BOOL *stop))block;
 
 @end

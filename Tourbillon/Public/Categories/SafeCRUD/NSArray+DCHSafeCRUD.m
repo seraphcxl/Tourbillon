@@ -10,7 +10,7 @@
 
 @implementation NSArray (DCHSafeCRUD)
 
-- (id)DCH_safe_objectAtIndex:(NSUInteger)index {
+- (id)dch_safe_objectAtIndex:(NSUInteger)index {
     id result = nil;
     do {
         if (index < self.count) {
@@ -20,7 +20,7 @@
     return result;
 }
 
-- (NSUInteger)DCH_safe_indexOfObject:(id)anObject {
+- (NSUInteger)dch_safe_indexOfObject:(id)anObject {
     NSUInteger result = 0;
     do {
         if (DCH_IsEmpty(anObject)) {
@@ -31,7 +31,7 @@
     return result;
 }
 
-- (NSUInteger)DCH_safe_indexOfObject:(id)anObject inRange:(NSRange)range {
+- (NSUInteger)dch_safe_indexOfObject:(id)anObject inRange:(NSRange)range {
     NSUInteger result = 0;
     do {
         if (!DCH_IsEmpty(anObject) && range.length != 0 && range.location <= self.count && (range.location + range.length) <= self.count) {
@@ -41,7 +41,7 @@
     return result;
 }
 
-- (NSUInteger)DCH_safe_indexOfObjectIdenticalTo:(id)anObject {
+- (NSUInteger)dch_safe_indexOfObjectIdenticalTo:(id)anObject {
     NSUInteger result = 0;
     do {
         if (DCH_IsEmpty(anObject)) {
@@ -52,7 +52,7 @@
     return result;
 }
 
-- (NSUInteger)DCH_safe_indexOfObjectIdenticalTo:(id)anObject inRange:(NSRange)range {
+- (NSUInteger)dch_safe_indexOfObjectIdenticalTo:(id)anObject inRange:(NSRange)range {
     NSUInteger result = 0;
     do {
         if (!DCH_IsEmpty(anObject) && range.length != 0 && range.location <= self.count && (range.location + range.length) <= self.count) {

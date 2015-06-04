@@ -31,8 +31,8 @@
 - (id)init {
     self = [super init];
     if (self) {
-        _pwSHA1 = [[NSObject createUUID] shaStringWithType:DCHSHAType_SHA1];
-        _passwordData = [[_pwSHA1 shaStringWithType:DCHSHAType_SHA1] dataUsingEncoding:NSUTF8StringEncoding];
+        _pwSHA1 = [[NSObject dch_createUUID] dch_shaStringWithType:DCHSHAType_SHA1];
+        _passwordData = [[_pwSHA1 dch_shaStringWithType:DCHSHAType_SHA1] dataUsingEncoding:NSUTF8StringEncoding];
         self.stream = [[NSOutputStream alloc] initToMemory];
     }
     return self;

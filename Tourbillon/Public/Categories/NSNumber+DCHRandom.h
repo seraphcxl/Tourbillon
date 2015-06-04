@@ -10,8 +10,8 @@
 
 @interface NSNumber (DCHRandom)
 
-+ (NSNumber *)randomUnsignedInt;
-+ (NSNumber *)randomUnsignedIntForm:(unsigned int)start range:(unsigned int)range;  // [start, (start + range - 1)]
-+ (NSNumber *)randomDoubleForm:(double)start range:(double)range;  // [start, (start + range)]
++ (NSNumber *)dch_randomUnsignedInt;
++ (NSNumber *)dch_randomUnsignedIntForm:(unsigned int)start range:(unsigned int)range;  // [start, (start + range - 1)]
++ (NSNumber *)dch_randomDoubleForm:(double)start range:(double)range;  // [start, (start + range)]
 
 @end

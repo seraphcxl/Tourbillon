@@ -12,6 +12,6 @@ extern BOOL DCHReplaceMethodWithBlock(Class c, SEL origSEL, SEL newSEL, id block
 
 @interface NSObject (DCHSwizzle)
 
-+ (void)swizzleInstanceSelector:(SEL)originalSelector withNewSelector:(SEL)newSelector;
++ (void)dch_swizzleInstanceSelector:(SEL)originalSelector withNewSelector:(SEL)newSelector;
 
 @end

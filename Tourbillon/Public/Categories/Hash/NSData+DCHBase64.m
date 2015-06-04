@@ -11,7 +11,7 @@
 
 @implementation NSData (DCHBase64)
 
-- (NSString *)base64EncodedString {
+- (NSString *)dch_base64EncodedString {
     NSString *result = nil;
     do {
         NSMutableData *buffer = [NSMutableData data];
@@ -26,13 +26,13 @@
             while ((c1 = BASE64_GETC) != (unsigned int)EOF) {
                 c2 = BASE64_GETC;
                 if (c2 == (unsigned int)EOF) {
-                    output64Chunk(c1, 0, 0, 2, buffer);
+                    dch_output64Chunk(c1, 0, 0, 2, buffer);
                 } else {
                     c3 = BASE64_GETC;
                     if (c3 == (unsigned int)EOF) {
-                        output64Chunk(c1, c2, 0, 1, buffer);
+                        dch_output64Chunk(c1, c2, 0, 1, buffer);
                     } else {
-                        output64Chunk(c1, c2, c3, 0, buffer);
+                        dch_output64Chunk(c1, c2, c3, 0, buffer);
                     }
                 }
             }

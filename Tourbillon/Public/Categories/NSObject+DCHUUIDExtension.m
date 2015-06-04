@@ -10,7 +10,7 @@
 
 @implementation NSObject (DCHUUIDExtension)
 
-- (NSString *)createMemoryID {
+- (NSString *)dch_createMemoryID {
     NSString *result = nil;
     do {
         result = [NSString stringWithFormat:@"%@_%p", NSStringFromClass([self class]), self];
@@ -18,7 +18,7 @@
     return result;
 }
 
-+ (NSString *)createUUID {
++ (NSString *)dch_createUUID {
     NSString *result = nil;
     CFUUIDRef uuidObj = NULL;
     do {

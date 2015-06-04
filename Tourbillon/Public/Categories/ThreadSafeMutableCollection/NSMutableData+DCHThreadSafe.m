@@ -11,10 +11,10 @@
 @implementation NSMutableData (DCHThreadSafe)
 
 #pragma mark - NSData
-- (NSUInteger)DCH_threadSafe_length {
+- (NSUInteger)dch_threadSafe_length {
     __block NSUInteger result = 0;
     do {
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self length];
         }]) {
             break;
@@ -23,10 +23,10 @@
     return result;
 }
 
-- (const void *)DCH_threadSafe_bytes {
+- (const void *)dch_threadSafe_bytes {
     __block const void *result = nil;
     do {
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self bytes];
         }]) {
             break;
@@ -35,12 +35,12 @@
     return result;
 }
 
-- (void)DCH_threadSafe_getBytes:(void *)buffer length:(NSUInteger)length {
+- (void)dch_threadSafe_getBytes:(void *)buffer length:(NSUInteger)length {
     do {
         if (!buffer || length == 0) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             [self getBytes:buffer length:length];
         }]) {
             break;
@@ -48,12 +48,12 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_getBytes:(void *)buffer range:(NSRange)range {
+- (void)dch_threadSafe_getBytes:(void *)buffer range:(NSRange)range {
     do {
         if (!buffer || range.length == 0) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             [self getBytes:buffer range:range];
         }]) {
             break;
@@ -61,13 +61,13 @@
     } while (NO);
 }
 
-- (BOOL)DCH_threadSafe_isEqualToData:(NSData *)other {
+- (BOOL)dch_threadSafe_isEqualToData:(NSData *)other {
     __block BOOL result = NO;
     do {
         if (!other) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self isEqualToData:other];
         }]) {
             break;
@@ -76,13 +76,13 @@
     return result;
 }
 
-- (NSData *)DCH_threadSafe_subdataWithRange:(NSRange)range {
+- (NSData *)dch_threadSafe_subdataWithRange:(NSRange)range {
     __block NSData *result = nil;
     do {
         if (range.length == 0) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self subdataWithRange:range];
         }]) {
             break;
@@ -91,13 +91,13 @@
     return result;
 }
 
-- (BOOL)DCH_threadSafe_writeToFile:(NSString *)path atomically:(BOOL)useAuxiliaryFile {
+- (BOOL)dch_threadSafe_writeToFile:(NSString *)path atomically:(BOOL)useAuxiliaryFile {
     __block BOOL result = NO;
     do {
         if (!path) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self writeToFile:path atomically:useAuxiliaryFile];
         }]) {
             break;
@@ -106,13 +106,13 @@
     return result;
 }
 
-- (BOOL)DCH_threadSafe_writeToURL:(NSURL *)url atomically:(BOOL)atomically {
+- (BOOL)dch_threadSafe_writeToURL:(NSURL *)url atomically:(BOOL)atomically {
     __block BOOL result = NO;
     do {
         if (!url) {
             break;
         }
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self writeToURL:url atomically:atomically];
         }]) {
             break;
@@ -122,10 +122,10 @@
 }
 
 #pragma mark - NSMutableData
-- (void *)DCH_threadSafe_mutableBytes {
+- (void *)dch_threadSafe_mutableBytes {
     __block void *result = nil;
     do {
-        if (![self DCH_threadSafe_QueueSync:^{
+        if (![self dch_threadSafe_QueueSync:^{
             result = [self mutableBytes];
         }]) {
             break;
@@ -134,7 +134,7 @@
     return result;
 }
 
-- (void)DCH_threadSafe_setLength:(NSUInteger)length {
+- (void)dch_threadSafe_setLength:(NSUInteger)length {
     do {
         if (![self threafSafe_Setting:^{
             [self setLength:length];
@@ -144,7 +144,7 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_appendBytes:(const void *)bytes length:(NSUInteger)length {
+- (void)dch_threadSafe_appendBytes:(const void *)bytes length:(NSUInteger)length {
     do {
         if (!bytes || length == 0) {
             break;
@@ -157,7 +157,7 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_appendData:(NSData *)other {
+- (void)dch_threadSafe_appendData:(NSData *)other {
     do {
         if (!other) {
             break;
@@ -170,7 +170,7 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_increaseLengthBy:(NSUInteger)extraLength {
+- (void)dch_threadSafe_increaseLengthBy:(NSUInteger)extraLength {
     do {
         if (extraLength == 0) {
             break;
@@ -183,7 +183,7 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_replaceBytesInRange:(NSRange)range withBytes:(const void *)bytes {
+- (void)dch_threadSafe_replaceBytesInRange:(NSRange)range withBytes:(const void *)bytes {
     do {
         if (range.length == 0 || !bytes) {
             break;
@@ -196,7 +196,7 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_resetBytesInRange:(NSRange)range {
+- (void)dch_threadSafe_resetBytesInRange:(NSRange)range {
     do {
         if (range.length == 0) {
             break;
@@ -209,7 +209,7 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_setData:(NSData *)data {
+- (void)dch_threadSafe_setData:(NSData *)data {
     do {
         if (![self threafSafe_Setting:^{
             [self setData:data];
@@ -219,7 +219,7 @@
     } while (NO);
 }
 
-- (void)DCH_threadSafe_replaceBytesInRange:(NSRange)range withBytes:(const void *)replacementBytes length:(NSUInteger)replacementLength {
+- (void)dch_threadSafe_replaceBytesInRange:(NSRange)range withBytes:(const void *)replacementBytes length:(NSUInteger)replacementLength {
     do {
         if (range.length == 0 || !replacementBytes || replacementLength == 0) {
             break;

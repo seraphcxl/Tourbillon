@@ -10,7 +10,7 @@
 
 @interface NSObject (DCHUUIDExtension)
 
-- (NSString *)createMemoryID;
-+ (NSString *)createUUID;
+- (NSString *)dch_createMemoryID;
++ (NSString *)dch_createUUID;
 
 @end

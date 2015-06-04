@@ -10,7 +10,7 @@
 
 @implementation NSDictionary (DCHSortable)
 
-- (NSArray *)sortedKeysUsingComparator:(NSComparator)comparator {
+- (NSArray *)dch_sortedKeysUsingComparator:(NSComparator)comparator {
     NSArray *result = nil;
     do {
         if (!comparator) {
@@ -24,7 +24,7 @@
     return result;
 }
 
-- (NSArray *)sortedValuesUsingKeyComparator:(NSComparator)comparator {
+- (NSArray *)dch_sortedValuesUsingKeyComparator:(NSComparator)comparator {
     NSMutableArray *result = nil;
     do {
         if (!comparator) {
@@ -33,7 +33,7 @@
         
         @synchronized(self) {
             result = [NSMutableArray array];
-            [self enumerateSortedKeysAndObjectsUsingComparator:comparator usingBlock:^(id key, id value, BOOL *stop) {
+            [self dch_enumerateSortedKeysAndObjectsUsingComparator:comparator usingBlock:^(id key, id value, BOOL *stop) {
                 [result addObject:value];
             }];
         }
@@ -41,13 +41,13 @@
     return result;
 }
 
-- (void)enumerateSortedKeysAndObjectsUsingComparator:(NSComparator)comparator usingBlock:(void (^)(id key, id value, BOOL *stop))block {
+- (void)dch_enumerateSortedKeysAndObjectsUsingComparator:(NSComparator)comparator usingBlock:(void (^)(id key, id value, BOOL *stop))block {
     do {
         if (!comparator || !block) {
             break;
         }
         @synchronized(self) {
-            NSArray *sortedKeys = [self sortedKeysUsingComparator:comparator];
+            NSArray *sortedKeys = [self dch_sortedKeysUsingComparator:comparator];
             [sortedKeys enumerateObjectsUsingBlock:^(id key, NSUInteger idx, BOOL *stop) {
                 id value = [self objectForKey:key];
                 block(key, value, stop);

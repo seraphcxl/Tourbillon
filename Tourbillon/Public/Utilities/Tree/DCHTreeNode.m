@@ -60,17 +60,17 @@ NSString * const kDCHTreeNodeCodingChildren = @"DCHTreeNodeCodingChildren";
         self.value = value;
         
         self.parent = nil;
-        self.children = [[NSMutableArray array] DCH_threadSafe_init:YES];
-        self.childrenDict = [[NSMutableDictionary dictionary] DCH_threadSafe_init:YES];
+        self.children = [[NSMutableArray array] dch_threadSafe_init:YES];
+        self.childrenDict = [[NSMutableDictionary dictionary] dch_threadSafe_init:YES];
     }
     return self;
 }
 
 - (void)dealloc {
     do {
-        [self.childrenDict DCH_threadSafe_removeAllObjects];
+        [self.childrenDict dch_threadSafe_removeAllObjects];
         self.childrenDict = nil;
-        [self.children DCH_threadSafe_removeAllObjects];
+        [self.children dch_threadSafe_removeAllObjects];
         self.children = nil;
         self.parent = nil;
         
@@ -96,12 +96,12 @@ NSString * const kDCHTreeNodeCodingChildren = @"DCHTreeNodeCodingChildren";
         if (!child) {
             break;
         }
-        if ([self.childrenDict DCH_threadSafe_objectForKey:child.key]) {
+        if ([self.childrenDict dch_threadSafe_objectForKey:child.key]) {
             break;
         }
-        [self.children DCH_threadSafe_addObject:child];
+        [self.children dch_threadSafe_addObject:child];
         child.parent = self;
-        [self.childrenDict DCH_threadSafe_setObject:child forKey:child.key];
+        [self.childrenDict dch_threadSafe_setObject:child forKey:child.key];
     } while (NO);
 }
 
@@ -120,22 +120,22 @@ NSString * const kDCHTreeNodeCodingChildren = @"DCHTreeNodeCodingChildren";
 - (void)removeAllChildren {
     do {
         DCHAssert(self.children != nil && self.childrenDict != nil);
-        [self.children DCH_threadSafe_removeAllObjects];
-        [self.childrenDict DCH_threadSafe_removeAllObjects];
+        [self.children dch_threadSafe_removeAllObjects];
+        [self.childrenDict dch_threadSafe_removeAllObjects];
     } while (NO);
 }
 
 - (void)removeChildrenAtIndex:(NSUInteger)childIndex {
     do {
         DCHAssert(self.children != nil && self.childrenDict != nil);
-        if (childIndex >= [self.children DCH_threadSafe_count]) {
+        if (childIndex >= [self.children dch_threadSafe_count]) {
             break;
         }
-        DCHTreeNode *node = [self.children DCH_threadSafe_objectAtIndex:childIndex];
+        DCHTreeNode *node = [self.children dch_threadSafe_objectAtIndex:childIndex];
         if (node) {
             [self.childrenDict removeObjectForKey:node.key];
         }
-        [self.children DCH_threadSafe_removeObjectAtIndex:childIndex];
+        [self.children dch_threadSafe_removeObjectAtIndex:childIndex];
     } while (NO);
 }
 
@@ -146,7 +146,7 @@ NSString * const kDCHTreeNodeCodingChildren = @"DCHTreeNodeCodingChildren";
             break;
         }
         NSString *key = [childKey dch_urlEncodedString];
-        DCHTreeNode *node = [self.childrenDict DCH_threadSafe_objectForKey:key];
+        DCHTreeNode *node = [self.childrenDict dch_threadSafe_objectForKey:key];
         if (node) {
             [self.children removeObject:node];
         }
@@ -160,7 +160,7 @@ NSString * const kDCHTreeNodeCodingChildren = @"DCHTreeNodeCodingChildren";
         if (!children || children.count == 0) {
             break;
         }
-        NSUInteger count = [self.children DCH_threadSafe_count];
+        NSUInteger count = [self.children dch_threadSafe_count];
         for (NSUInteger idx = 0; idx < count; ++idx) {
             [self removeChildrenAtIndex:idx];
         }
@@ -171,10 +171,10 @@ NSString * const kDCHTreeNodeCodingChildren = @"DCHTreeNodeCodingChildren";
     DCHTreeNode *result = nil;
     do {
         DCHAssert(self.children != nil && self.childrenDict != nil);
-        if (childIndex >= [self.children DCH_threadSafe_count]) {
+        if (childIndex >= [self.children dch_threadSafe_count]) {
             break;
         }
-        result = [self.children DCH_threadSafe_objectAtIndex:childIndex];
+        result = [self.children dch_threadSafe_objectAtIndex:childIndex];
     } while (NO);
     return result;
 }
@@ -187,7 +187,7 @@ NSString * const kDCHTreeNodeCodingChildren = @"DCHTreeNodeCodingChildren";
             break;
         }
         NSString *key = [childKey dch_urlEncodedString];
-        result = [self.childrenDict DCH_threadSafe_objectForKey:key];
+        result = [self.childrenDict dch_threadSafe_objectForKey:key];
     } while (NO);
     return result;
 }
@@ -264,11 +264,11 @@ NSString * const kDCHTreeNodeCodingChildren = @"DCHTreeNodeCodingChildren";
         DCHAssert(aDecoder != nil && [aDecoder allowsKeyedCoding]);
         self.key = [aDecoder decodeObjectForKey:kDCHTreeNodeCodingKey];
         self.value = [aDecoder decodeObjectForKey:kDCHTreeNodeCodingValue];
-        self.children = [[aDecoder decodeObjectForKey:kDCHTreeNodeCodingChildren] DCH_threadSafe_init:YES];
-        self.childrenDict = [[NSMutableDictionary dictionary] DCH_threadSafe_init:YES];
+        self.children = [[aDecoder decodeObjectForKey:kDCHTreeNodeCodingChildren] dch_threadSafe_init:YES];
+        self.childrenDict = [[NSMutableDictionary dictionary] dch_threadSafe_init:YES];
         for (DCHTreeNode *node in self.children) {
             node.parent = self;
-            [self.childrenDict DCH_threadSafe_setObject:node forKey:node.key];
+            [self.childrenDict dch_threadSafe_setObject:node forKey:node.key];
         }
     }
     return self;

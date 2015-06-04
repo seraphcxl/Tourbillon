@@ -22,7 +22,7 @@
             break;
         }
         NSData *md5Data = [DCHHashUtility md5DataForData:[string dataUsingEncoding:NSUTF8StringEncoding]];
-        result = [md5Data hex];
+        result = [md5Data dch_hex];
     } while (NO);
     return result;
 }
@@ -45,7 +45,7 @@
             break;
         }
         NSData *md5Data = [DCHHashUtility md5DataForData:data];
-        result = [md5Data hex];
+        result = [md5Data dch_hex];
     } while (NO);
     return result;
 }
@@ -79,7 +79,7 @@
             break;
         }
         NSData *hmacMd5Data = [DCHHashUtility hmacMd5DataForData:[string dataUsingEncoding:NSUTF8StringEncoding] withHmacKey:key];
-        result = [hmacMd5Data hex];
+        result = [hmacMd5Data dch_hex];
     } while (NO);
     return result;
 }
@@ -102,7 +102,7 @@
             break;
         }
         NSData *hmacMd5Data = [DCHHashUtility hmacMd5DataForData:data withHmacKey:key];
-        result = [hmacMd5Data hex];
+        result = [hmacMd5Data dch_hex];
     } while (NO);
     return result;
 }
@@ -139,7 +139,7 @@
             break;
         }
         NSData *shaData = [DCHHashUtility shaDataForData:[string dataUsingEncoding:NSUTF8StringEncoding] withSHAType:type];
-        result = [shaData hexLower];
+        result = [shaData dch_hexLower];
     } while (NO);
     return result;
 }
@@ -162,7 +162,7 @@
             break;
         }
         NSData *shaData = [DCHHashUtility shaDataForData:data withSHAType:type];
-        result = [shaData hexLower];
+        result = [shaData dch_hexLower];
     } while (NO);
     return result;
 }
@@ -248,7 +248,7 @@
             break;
         }
         NSData *hmacSHAData = [DCHHashUtility hmacSHADataForData:[string dataUsingEncoding:NSUTF8StringEncoding] withSHAType:type andHmacKey:key];
-        result = [hmacSHAData hexLower];
+        result = [hmacSHAData dch_hexLower];
     } while (NO);
     return result;
 }
@@ -271,7 +271,7 @@
             break;
         }
         NSData *hmacSHAData = [DCHHashUtility hmacSHADataForData:data withSHAType:type andHmacKey:key];
-        result = [hmacSHAData hexLower];
+        result = [hmacSHAData dch_hexLower];
     } while (NO);
     return result;
 }

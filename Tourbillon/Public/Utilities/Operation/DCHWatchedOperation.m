@@ -31,7 +31,7 @@
     self = [self init];
     if (self) {
         self.completionHandler = completionHandler;
-        [self addObserver:self forKeyPath:@"isFinished" options:0 context:(__bridge void *)([self createMemoryID])];
+        [self addObserver:self forKeyPath:@"isFinished" options:0 context:(__bridge void *)([self dch_createMemoryID])];
     }
     return self;
 }
@@ -42,7 +42,7 @@
             break;
         }
         NSString *uuid = (__bridge NSString *)context;
-        if ([[self createMemoryID] isEqualToString:uuid]) {
+        if ([[self dch_createMemoryID] isEqualToString:uuid]) {
             if ([keyPath isEqual:@"isFinished"]) {
                 self.completionHandler(self);
             }

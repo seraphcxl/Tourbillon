@@ -10,7 +10,7 @@
 
 @implementation NSThread (DCHBlockExtension)
 
-+ (void)runInMain:(void (^)(void))block {
++ (void)dch_runInMain:(void (^)(void))block {
     do {
         if (!block) {
             break;
@@ -25,7 +25,7 @@
     } while (NO);
 }
 
-+ (void)runInBackground:(void (^)(void))block {
++ (void)dch_runInBackground:(void (^)(void))block {
     do {
         if (!block) {
             break;

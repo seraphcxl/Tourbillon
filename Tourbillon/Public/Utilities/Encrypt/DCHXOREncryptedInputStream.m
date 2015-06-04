@@ -65,7 +65,7 @@
             self.passwordData = nil;
             self.pwSHA1 = nil;
             
-            NSUInteger pwSHA1len = [[[[NSObject createUUID] shaStringWithType:DCHSHAType_SHA1] dataUsingEncoding:NSUTF8StringEncoding] length];
+            NSUInteger pwSHA1len = [[[[NSObject dch_createUUID] dch_shaStringWithType:DCHSHAType_SHA1] dataUsingEncoding:NSUTF8StringEncoding] length];
             NSMutableData *pwSHA1DataLeft = [NSMutableData data];
             NSMutableData *pwSHA1DataRight = [NSMutableData data];
             
@@ -89,7 +89,7 @@
             [pwSHA1Data appendData:pwSHA1DataRight];
             
             _pwSHA1 = [[NSString alloc] initWithData:pwSHA1Data encoding:NSUTF8StringEncoding];
-            _passwordData = [[_pwSHA1 shaStringWithType:DCHSHAType_SHA1] dataUsingEncoding:NSUTF8StringEncoding];
+            _passwordData = [[_pwSHA1 dch_shaStringWithType:DCHSHAType_SHA1] dataUsingEncoding:NSUTF8StringEncoding];
             _pwIndex = 0;
         }
     } while (NO);

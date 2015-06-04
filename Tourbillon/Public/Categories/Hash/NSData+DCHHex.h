@@ -10,9 +10,9 @@
 
 @interface NSData (DCHHex)
 
-- (NSString *)hex;
-- (NSString *)hexLower;
+- (NSString *)dch_hex;
+- (NSString *)dch_hexLower;
 
-- (NSString *)hexUseLower:(BOOL)isOutputLower;
+- (NSString *)dch_hexUseLower:(BOOL)isOutputLower;
 
 @end

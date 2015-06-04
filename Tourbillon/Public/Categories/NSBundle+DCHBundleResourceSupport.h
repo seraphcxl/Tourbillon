@@ -10,8 +10,8 @@
 
 @interface NSBundle (DCHBundleResourceSupport)
 
-+ (NSBundle *)libraryResourcesBundle:(NSString *)libraryName;
++ (NSBundle *)dch_libraryResourcesBundle:(NSString *)libraryName;
 
-+ (void)removeAllLibraryResourcesBundles;
++ (void)dch_removeAllLibraryResourcesBundles;
 
 @end

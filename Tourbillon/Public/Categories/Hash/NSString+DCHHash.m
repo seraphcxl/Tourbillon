@@ -11,38 +11,38 @@
 @implementation NSString (DCHHash)
 
 #pragma mark - MD5
-- (NSString *)md5String {
+- (NSString *)dch_md5String {
     return [DCHHashUtility md5StringForString:self];
 }
 
-- (NSData *)md5Data {
+- (NSData *)dch_md5Data {
     return [DCHHashUtility md5DataForString:self];
 }
 
 #pragma mark HMAC-MD5
-- (NSString *)hmacMD5StringWithHmacKey:(NSString *)key {
+- (NSString *)dch_hmacMD5StringWithHmacKey:(NSString *)key {
     return [DCHHashUtility hmacMd5StringForString:self withHmacKey:key];
 }
 
-- (NSData *)hmacMD5DataWithHmacKey:(NSString *)key {
+- (NSData *)dch_hmacMD5DataWithHmacKey:(NSString *)key {
     return [DCHHashUtility hmacMd5DataForString:self withHmacKey:key];
 }
 
 #pragma mark - SHA
-- (NSString *)shaStringWithType:(DCHSHAType)type {
+- (NSString *)dch_shaStringWithType:(DCHSHAType)type {
     return [DCHHashUtility shaStringForString:self withSHAType:type];
 }
 
-- (NSData *)shaDataWithType:(DCHSHAType)type {
+- (NSData *)dch_shaDataWithType:(DCHSHAType)type {
     return [DCHHashUtility shaDataForString:self withSHAType:type];
 }
 
 #pragma mark - HMAC-SHA
-- (NSString *)hmacSHAStringWithType:(DCHSHAType)type andHmacKey:(NSString *)key {
+- (NSString *)dch_hmacSHAStringWithType:(DCHSHAType)type andHmacKey:(NSString *)key {
     return [DCHHashUtility hmacSHAStringForString:self withSHAType:type andHmacKey:key];
 }
 
-- (NSData *)hmacSHADataWithType:(DCHSHAType)type andHmacKey:(NSString *)key {
+- (NSData *)dch_hmacSHADataWithType:(DCHSHAType)type andHmacKey:(NSString *)key {
     return [DCHHashUtility hmacSHADataForString:self withSHAType:type andHmacKey:key];
 }
 

@@ -10,7 +10,7 @@
 
 @interface NSData (DCHBundleResourceSupport)
 
-+ (instancetype)dataInLibrary:(NSString *)libraryName withBundleResource:(NSString *)resourceName ofType:(NSString *)type options:(NSDataReadingOptions)readOptionsMask error:(NSError **)errorPtr;
-+ (instancetype)dataInLibrary:(NSString *)libraryName withBundleResource:(NSString *)resourceName ofType:(NSString *)type;
++ (instancetype)dch_dataInLibrary:(NSString *)libraryName withBundleResource:(NSString *)resourceName ofType:(NSString *)type options:(NSDataReadingOptions)readOptionsMask error:(NSError **)errorPtr;
++ (instancetype)dch_dataInLibrary:(NSString *)libraryName withBundleResource:(NSString *)resourceName ofType:(NSString *)type;
 
 @end

@@ -37,7 +37,7 @@ static char index_64[256] = {
 
 static char basis_64[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
-static inline void output64Chunk(int c1, int c2, int c3, int pads, NSMutableData *buffer) {
+static inline void dch_output64Chunk(int c1, int c2, int c3, int pads, NSMutableData *buffer) {
 	char pad = '=';
 	BASE64_PUTC(basis_64[c1 >> 2]);
 	BASE64_PUTC(basis_64[((c1 & 0x3) << 4) | ((c2 & 0xF0) >> 4)]);
