@@ -14,4 +14,6 @@
 
 + (void)dch_runInBackground:(void (^)(void))block;
 
++ (void)dch_run:(void (^)(void))block synchronous:(BOOL)sync;
+
 @end

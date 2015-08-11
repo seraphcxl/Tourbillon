@@ -12,14 +12,15 @@
 
 + (void)dch_runInMain:(void (^)(void))block {
     do {
-        if (!block) {
-            break;
-        }
         if ([NSThread isMainThread]) {
-            block();
+            if (block) {
+                block();
+            }
         } else {
             dispatch_async(dispatch_get_main_queue(), ^{
-                block();
+                if (block) {
+                    block();
+                }
             });
         }
     } while (NO);
@@ -27,14 +28,31 @@
 
 + (void)dch_runInBackground:(void (^)(void))block {
     do {
-        if (!block) {
-            break;
-        }
         if (![NSThread isMainThread]) {
-            block();
+            if (block) {
+                block();
+            }
         } else {
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+                if (block) {
+                    block();
+                }
+            });
+        }
+    } while (NO);
+}
+
++ (void)dch_run:(void (^)(void))block synchronous:(BOOL)sync {
+    do {
+        if (sync) {
+            if (block) {
                 block();
+            }
+        } else {
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+                if (block) {
+                    block();
+                }
             });
         }
     } while (NO);
