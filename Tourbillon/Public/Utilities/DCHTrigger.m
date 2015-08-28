@@ -15,6 +15,12 @@
 #import "NSMutableArray+DCHThreadSafe.h"
 #import "NSMutableDictionary+DCHThreadSafe.h"
 
+NSString * const key_DCHTrigger_Observable = @"key_DCHTrigger_Observable";
+NSString * const key_DCHTrigger_NotificationName = @"key_DCHTrigger_NotificationName";
+NSString * const key_DCHTrigger_Notification = @"key_DCHTrigger_Notification";
+NSString * const key_DCHTrigger_KeyPath = @"key_DCHTrigger_KeyPath";
+NSString * const key_DCHTrigger_Object = @"key_DCHTrigger_Object";
+
 @interface DCHTriggerCallbackPair ()
 
 @property (nonatomic, strong) NSString *uuid;
@@ -124,7 +130,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self forName:notificationName object:nil queue:nil usingBlock:^(NSNotification *note, id observer) {
         @strongify(observable, notificationName, self)
         if (!DCH_IsEmpty(note) && !DCH_IsEmpty(observable) && !DCH_IsEmpty(notificationName) && note.object == observable) {
-            NSDictionary *exInfo = @{@"kObservable": observable, @"kNotificationName": notificationName, @"kNotification": note};
+            NSDictionary *exInfo = @{key_DCHTrigger_Observable: observable, key_DCHTrigger_NotificationName: notificationName, key_DCHTrigger_Notification: note};
             [self runCallbacks:exInfo];
         }
     }];
@@ -152,7 +158,7 @@
     [self.KVOController observe:observable keyPath:keyPath options:NSKeyValueObservingOptionNew block:^(id observer, id object, NSDictionary *change) {
         @strongify(observable, keyPath, self)
         if (!DCH_IsEmpty(object) && !DCH_IsEmpty(observable) && !DCH_IsEmpty(keyPath)) {
-            NSDictionary *exInfo = @{@"kObservable": observable, @"kKeyPath": keyPath, @"kObject": object};
+            NSDictionary *exInfo = @{key_DCHTrigger_Observable: observable, key_DCHTrigger_KeyPath: keyPath, key_DCHTrigger_Object: object};
             [self runCallbacks:exInfo];
         }
     }];

@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString * const key_DCHTrigger_Observable;
+extern NSString * const key_DCHTrigger_NotificationName;
+extern NSString * const key_DCHTrigger_Notification;
+extern NSString * const key_DCHTrigger_KeyPath;
+extern NSString * const key_DCHTrigger_Object;
+
 @class DCHTrigger;
 @class DCHTriggerCallbackPair;
 
