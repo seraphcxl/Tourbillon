@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Tourbillon"
-  s.version      = "1.0.11"
+  s.version      = "1.0.12"
   s.summary      = "Code foundation for Objective-C."
 
   s.description  = <<-DESC
@@ -135,5 +135,8 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "BlocksKit", "~> 2.2.5"
+  s.dependency "libextobjc", "~> 0.4.1"
+  s.dependency "FXNotifications", "~> 1.1"
+  s.dependency "KVOController", "~> 1.0.0"
 
 end
