@@ -7,8 +7,8 @@
 //
 
 #import "DCHTrigger.h"
-#import <FXNotifications.h>
-#import <FBKVOController.h>
+#import <FXNotifications/FXNotifications.h>
+#import <KVOController/FBKVOController.h>
 #import <libextobjc/EXTScope.h>
 #import "DCHCommonConstants.h"
 #import "DCHWeakObjectWrapper.h"
