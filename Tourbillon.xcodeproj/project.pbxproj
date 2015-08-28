@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17935FE5568444A176DA97E4 /* libPods-Tourbillon-OSXTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA58072DF3386E06DCA33C49 /* libPods-Tourbillon-OSXTests.a */; };
 		89B4FCAD19CBB3E9004F99C1 /* Apple think different.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 89B4FCAC19CBB3E9004F99C1 /* Apple think different.rtf */; };
 		89B4FCAE19CBB3E9004F99C1 /* Apple think different.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 89B4FCAC19CBB3E9004F99C1 /* Apple think different.rtf */; };
 		89B786B11990FB4400A726F1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E137431925B11000A3EFB7 /* Cocoa.framework */; };
@@ -190,6 +191,15 @@
 		8D25BC621ACC196F003B1E8A /* NSString+DCHHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D25BC5D1ACC196F003B1E8A /* NSString+DCHHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D25BC631ACC196F003B1E8A /* NSString+DCHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D25BC5E1ACC196F003B1E8A /* NSString+DCHHash.m */; };
 		8D25BC641ACC196F003B1E8A /* NSString+DCHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D25BC5E1ACC196F003B1E8A /* NSString+DCHHash.m */; };
+		8D2EADEA1B902F230096F7C1 /* DCHTrigger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D2EADE81B902F230096F7C1 /* DCHTrigger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D2EADEB1B902F230096F7C1 /* DCHTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EADE91B902F230096F7C1 /* DCHTrigger.m */; };
+		8D2EADEC1B902F230096F7C1 /* DCHTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EADE91B902F230096F7C1 /* DCHTrigger.m */; };
+		8D2EADEF1B9031180096F7C1 /* DCHWeakObjectWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D2EADED1B9031180096F7C1 /* DCHWeakObjectWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D2EADF01B9031180096F7C1 /* DCHWeakObjectWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EADEE1B9031180096F7C1 /* DCHWeakObjectWrapper.m */; };
+		8D2EADF11B9031180096F7C1 /* DCHWeakObjectWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EADEE1B9031180096F7C1 /* DCHWeakObjectWrapper.m */; };
+		8D2EADF21B903B640096F7C1 /* NSThread+DCHBlockExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8DBAFD151ACFA4C5000E1624 /* NSThread+DCHBlockExtension.h */; };
+		8D2EADF31B903B640096F7C1 /* DCHTrigger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D2EADE81B902F230096F7C1 /* DCHTrigger.h */; };
+		8D2EADF41B903B640096F7C1 /* DCHWeakObjectWrapper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D2EADED1B9031180096F7C1 /* DCHWeakObjectWrapper.h */; };
 		8D7B43911AC52E0E00D6D57B /* DCHAsyncTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D7B438F1AC52E0E00D6D57B /* DCHAsyncTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D7B43921AC52E0E00D6D57B /* DCHAsyncTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B43901AC52E0E00D6D57B /* DCHAsyncTest.m */; };
 		8D7B43931AC52E0E00D6D57B /* DCHAsyncTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B43901AC52E0E00D6D57B /* DCHAsyncTest.m */; };
@@ -203,7 +213,7 @@
 		8DAD5D8B1ACC14FE006699FD /* DCHHashUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DAD5D891ACC14FE006699FD /* DCHHashUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DAD5D8C1ACC14FE006699FD /* DCHHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD5D8A1ACC14FE006699FD /* DCHHashUtility.m */; };
 		8DAD5D8D1ACC14FE006699FD /* DCHHashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD5D8A1ACC14FE006699FD /* DCHHashUtility.m */; };
-		8DBAFD171ACFA4C5000E1624 /* NSThread+DCHBlockExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DBAFD151ACFA4C5000E1624 /* NSThread+DCHBlockExtension.h */; };
+		8DBAFD171ACFA4C5000E1624 /* NSThread+DCHBlockExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DBAFD151ACFA4C5000E1624 /* NSThread+DCHBlockExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DBAFD181ACFA4C5000E1624 /* NSThread+DCHBlockExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBAFD161ACFA4C5000E1624 /* NSThread+DCHBlockExtension.m */; };
 		8DBAFD191ACFA4C5000E1624 /* NSThread+DCHBlockExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBAFD161ACFA4C5000E1624 /* NSThread+DCHBlockExtension.m */; };
 		8DD769B91A8DE0DB00EBB5F9 /* DCHStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD769B71A8DE0DB00EBB5F9 /* DCHStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -245,6 +255,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				8D2EADF21B903B640096F7C1 /* NSThread+DCHBlockExtension.h in CopyFiles */,
+				8D2EADF31B903B640096F7C1 /* DCHTrigger.h in CopyFiles */,
+				8D2EADF41B903B640096F7C1 /* DCHWeakObjectWrapper.h in CopyFiles */,
 				8D0F1BBB1ACCF00100DE3E0E /* NSBundle+DCHBundleResourceSupport.h in CopyFiles */,
 				8D0F1BBC1ACCF00100DE3E0E /* NSData+DCHBundleResourceSupport.h in CopyFiles */,
 				8D0F1BBD1ACCF00100DE3E0E /* NSDictionary+DCHSortable.h in CopyFiles */,
@@ -417,6 +430,10 @@
 		8D25BC5C1ACC196F003B1E8A /* NSData+DCHHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DCHHash.m"; sourceTree = "<group>"; };
 		8D25BC5D1ACC196F003B1E8A /* NSString+DCHHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DCHHash.h"; sourceTree = "<group>"; };
 		8D25BC5E1ACC196F003B1E8A /* NSString+DCHHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DCHHash.m"; sourceTree = "<group>"; };
+		8D2EADE81B902F230096F7C1 /* DCHTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHTrigger.h; sourceTree = "<group>"; };
+		8D2EADE91B902F230096F7C1 /* DCHTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHTrigger.m; sourceTree = "<group>"; };
+		8D2EADED1B9031180096F7C1 /* DCHWeakObjectWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHWeakObjectWrapper.h; sourceTree = "<group>"; };
+		8D2EADEE1B9031180096F7C1 /* DCHWeakObjectWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHWeakObjectWrapper.m; sourceTree = "<group>"; };
 		8D7B438F1AC52E0E00D6D57B /* DCHAsyncTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHAsyncTest.h; sourceTree = "<group>"; };
 		8D7B43901AC52E0E00D6D57B /* DCHAsyncTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHAsyncTest.m; sourceTree = "<group>"; };
 		8DAD5D7D1ACC0A67006699FD /* DCHUIMainThreadGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHUIMainThreadGuard.h; sourceTree = "<group>"; };
@@ -435,6 +452,9 @@
 		8DF654791ACCCD30003FAF5D /* DCHWatchedOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHWatchedOperation.m; sourceTree = "<group>"; };
 		8DF6547A1ACCCD30003FAF5D /* DCHWatchedOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHWatchedOperation.h; sourceTree = "<group>"; };
 		8DF6547E1ACCCD3C003FAF5D /* DCHWatchedOperationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHWatchedOperationTests.m; sourceTree = "<group>"; };
+		9B603A572188C68F0DAF8530 /* Pods-Tourbillon-OSXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourbillon-OSXTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tourbillon-OSXTests/Pods-Tourbillon-OSXTests.release.xcconfig"; sourceTree = "<group>"; };
+		D487A9B85192F75D5EE55B1D /* Pods-Tourbillon-OSXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourbillon-OSXTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tourbillon-OSXTests/Pods-Tourbillon-OSXTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA58072DF3386E06DCA33C49 /* libPods-Tourbillon-OSXTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tourbillon-OSXTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB46FE63CFEECE08843FC297 /* Pods-Tourbillon-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourbillon-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tourbillon-iOS/Pods-Tourbillon-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		ECC1D11185D852F3F220BD52 /* Pods-Tourbillon-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourbillon-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tourbillon-iOS/Pods-Tourbillon-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F071A7518139977766EA425A /* libPods-Tourbillon-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tourbillon-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -458,6 +478,7 @@
 				89B786BE1990FB4500A726F1 /* Cocoa.framework in Frameworks */,
 				89B786C11990FB4500A726F1 /* libTourbillon-OSX.a in Frameworks */,
 				89B786BD1990FB4500A726F1 /* XCTest.framework in Frameworks */,
+				17935FE5568444A176DA97E4 /* libPods-Tourbillon-OSXTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,15 +517,10 @@
 				EB46FE63CFEECE08843FC297 /* Pods-Tourbillon-iOS.release.xcconfig */,
 				70A80E94723452821DF0CB8D /* Pods-Tourbillon-iOSTests.debug.xcconfig */,
 				886CB1C45E7B0A83FD022DFB /* Pods-Tourbillon-iOSTests.release.xcconfig */,
+				D487A9B85192F75D5EE55B1D /* Pods-Tourbillon-OSXTests.debug.xcconfig */,
+				9B603A572188C68F0DAF8530 /* Pods-Tourbillon-OSXTests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		89009F0D19A5CA4800F54598 /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cache;
 			sourceTree = "<group>";
 		};
 		897C1E6B19A4876F00C3B8A9 /* ComponentPathManager */ = {
@@ -635,7 +651,7 @@
 				8D0F1B801ACCDEBC00DE3E0E /* GZip */,
 				8D25BC441ACC1832003B1E8A /* Hash */,
 				89C94D271A7B04B200BCC65C /* SafeCRUD */,
-				89C94D281A7B04B200BCC65C /* ThreadSafeMutableCollection */,
+				89C94D281A7B04B200BCC65C /* ThreadSafe */,
 				89C94D611A7B193B00BCC65C /* NSObject+DCHSwizzle.h */,
 				89C94D621A7B193B00BCC65C /* NSObject+DCHSwizzle.m */,
 				89C94D681A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.h */,
@@ -673,16 +689,18 @@
 			isa = PBXGroup;
 			children = (
 				89BC4DAA19CAC0720034179E /* Encrypt */,
-				89009F0D19A5CA4800F54598 /* Cache */,
 				89B7873F1990FB6100A726F1 /* GZip */,
 				89B787461990FB6100A726F1 /* Hash */,
-				89B787471990FB6100A726F1 /* Logger */,
 				89B7874A1990FB6100A726F1 /* Operation */,
 				89B787511990FB6100A726F1 /* Stack */,
 				89B787541990FB6100A726F1 /* Tree */,
 				897C1E6B19A4876F00C3B8A9 /* ComponentPathManager */,
 				8DAD5D7D1ACC0A67006699FD /* DCHUIMainThreadGuard.h */,
 				8DAD5D7E1ACC0A67006699FD /* DCHUIMainThreadGuard.m */,
+				8D2EADE81B902F230096F7C1 /* DCHTrigger.h */,
+				8D2EADE91B902F230096F7C1 /* DCHTrigger.m */,
+				8D2EADED1B9031180096F7C1 /* DCHWeakObjectWrapper.h */,
+				8D2EADEE1B9031180096F7C1 /* DCHWeakObjectWrapper.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -705,13 +723,6 @@
 				8DAD5D8A1ACC14FE006699FD /* DCHHashUtility.m */,
 			);
 			path = Hash;
-			sourceTree = "<group>";
-		};
-		89B787471990FB6100A726F1 /* Logger */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Logger;
 			sourceTree = "<group>";
 		};
 		89B7874A1990FB6100A726F1 /* Operation */ = {
@@ -897,7 +908,7 @@
 			path = SafeCRUD;
 			sourceTree = "<group>";
 		};
-		89C94D281A7B04B200BCC65C /* ThreadSafeMutableCollection */ = {
+		89C94D281A7B04B200BCC65C /* ThreadSafe */ = {
 			isa = PBXGroup;
 			children = (
 				89C94D5A1A7B180000BCC65C /* NSObject+DCHThreadSafe.h */,
@@ -913,7 +924,7 @@
 				89C94D8B1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.h */,
 				89C94D8C1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m */,
 			);
-			path = ThreadSafeMutableCollection;
+			path = ThreadSafe;
 			sourceTree = "<group>";
 		};
 		89E137361925B11000A3EFB7 = {
@@ -958,6 +969,7 @@
 				55D805F156C963A2D6CFCEA5 /* libPods-Tourbillon-OSX.a */,
 				F071A7518139977766EA425A /* libPods-Tourbillon-iOS.a */,
 				584EF38E8DBE8940E4187740 /* libPods-Tourbillon-iOSTests.a */,
+				EA58072DF3386E06DCA33C49 /* libPods-Tourbillon-OSXTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1039,7 +1051,6 @@
 				8D0F1B881ACCDFB100DE3E0E /* NSString+DCHURLCoding.h in Headers */,
 				8D0F1B751ACCDDC500DE3E0E /* DCHTree.h in Headers */,
 				8D0F1B7D1ACCDDCC00DE3E0E /* DCHComponentPathManager.h in Headers */,
-				8DBAFD171ACFA4C5000E1624 /* NSThread+DCHBlockExtension.h in Headers */,
 				8D0F1BA11ACCE84800DE3E0E /* NSDictionary+DCHSortable.h in Headers */,
 				8D0F1B9E1ACCE84800DE3E0E /* NSData+DCHBundleResourceSupport.h in Headers */,
 				8D0F1B9B1ACCE84800DE3E0E /* NSBundle+DCHBundleResourceSupport.h in Headers */,
@@ -1054,6 +1065,9 @@
 				8D0F1BB91ACCEF8A00DE3E0E /* DCHNSColorEnumerator.h in Headers */,
 				8D7B43911AC52E0E00D6D57B /* DCHAsyncTest.h in Headers */,
 				8DD769C71A8DEED700EBB5F9 /* NSObject+DCHUUIDExtension.h in Headers */,
+				8D2EADEA1B902F230096F7C1 /* DCHTrigger.h in Headers */,
+				8DBAFD171ACFA4C5000E1624 /* NSThread+DCHBlockExtension.h in Headers */,
+				8D2EADEF1B9031180096F7C1 /* DCHWeakObjectWrapper.h in Headers */,
 				8DAD5D7F1ACC0A67006699FD /* DCHUIMainThreadGuard.h in Headers */,
 				89C94D711A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.h in Headers */,
 			);
@@ -1085,9 +1099,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89B786CD1990FB4500A726F1 /* Build configuration list for PBXNativeTarget "Tourbillon-OSXTests" */;
 			buildPhases = (
+				8C367C2D6015EEEB84A589BA /* Check Pods Manifest.lock */,
 				89B786B81990FB4500A726F1 /* Sources */,
 				89B786B91990FB4500A726F1 /* Frameworks */,
 				89B786BA1990FB4500A726F1 /* Resources */,
+				442D6373737929FD0CCACC56 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1219,7 +1235,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tourbillon-iOSTests/Pods-Tourbillon-iOSTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		442D6373737929FD0CCACC56 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tourbillon-OSXTests/Pods-Tourbillon-OSXTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		607EFBD32F4C3FD195D7233A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8C367C2D6015EEEB84A589BA /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1287,6 +1333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C94D641A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */,
+				8D2EADF01B9031180096F7C1 /* DCHWeakObjectWrapper.m in Sources */,
 				8D25BC541ACC187B003B1E8A /* NSString+DCHBase64.m in Sources */,
 				8D0F1B901ACCE42000DE3E0E /* NSColor+DCHAdditions.m in Sources */,
 				8DBAFD181ACFA4C5000E1624 /* NSThread+DCHBlockExtension.m in Sources */,
@@ -1306,6 +1353,7 @@
 				8DF6547B1ACCCD30003FAF5D /* DCHWatchedOperation.m in Sources */,
 				89C94D331A7B056E00BCC65C /* NSDictionary+DCHSafeCRUD.m in Sources */,
 				8D0F1B761ACCDDC500DE3E0E /* DCHTree.m in Sources */,
+				8D2EADEB1B902F230096F7C1 /* DCHTrigger.m in Sources */,
 				89C94D801A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */,
 				89F9D6E61A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
 				89C94D721A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
@@ -1347,6 +1395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C94D661A7B193B00BCC65C /* NSObject+DCHSwizzle.m in Sources */,
+				8D2EADF11B9031180096F7C1 /* DCHWeakObjectWrapper.m in Sources */,
 				8D25BC551ACC187B003B1E8A /* NSString+DCHBase64.m in Sources */,
 				8D0F1B9D1ACCE84800DE3E0E /* NSBundle+DCHBundleResourceSupport.m in Sources */,
 				8DBAFD191ACFA4C5000E1624 /* NSThread+DCHBlockExtension.m in Sources */,
@@ -1366,6 +1415,7 @@
 				8D0F1B771ACCDDC500DE3E0E /* DCHTree.m in Sources */,
 				89C94D821A7B2BD400BCC65C /* NSMutableDictionary+DCHThreadSafe.m in Sources */,
 				89F9D6E81A7A470800A5528A /* DCHCommonFuncations.m in Sources */,
+				8D2EADEC1B902F230096F7C1 /* DCHTrigger.m in Sources */,
 				8D0F1BAB1ACCEAE300DE3E0E /* UIColor+DCHAdditions.m in Sources */,
 				89C94D741A7B20CD00BCC65C /* NSMutableArray+DCHThreadSafe.m in Sources */,
 				8D0F1BAC1ACCEAE300DE3E0E /* UIColor+DCHColorful.m in Sources */,
@@ -1469,6 +1519,7 @@
 		};
 		89B786CE1990FB4500A726F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D487A9B85192F75D5EE55B1D /* Pods-Tourbillon-OSXTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_LINK_OBJC_RUNTIME = YES;
@@ -1491,6 +1542,7 @@
 		};
 		89B786CF1990FB4500A726F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B603A572188C68F0DAF8530 /* Pods-Tourbillon-OSXTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_LINK_OBJC_RUNTIME = YES;
