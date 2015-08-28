@@ -635,7 +635,7 @@
 				8D0F1B801ACCDEBC00DE3E0E /* GZip */,
 				8D25BC441ACC1832003B1E8A /* Hash */,
 				89C94D271A7B04B200BCC65C /* SafeCRUD */,
-				89C94D281A7B04B200BCC65C /* ThreadSafeMutableCollection */,
+				89C94D281A7B04B200BCC65C /* ThreadSafe */,
 				89C94D611A7B193B00BCC65C /* NSObject+DCHSwizzle.h */,
 				89C94D621A7B193B00BCC65C /* NSObject+DCHSwizzle.m */,
 				89C94D681A7B19EE00BCC65C /* NSObject+DCHAssociatedObjectExtension.h */,
@@ -897,7 +897,7 @@
 			path = SafeCRUD;
 			sourceTree = "<group>";
 		};
-		89C94D281A7B04B200BCC65C /* ThreadSafeMutableCollection */ = {
+		89C94D281A7B04B200BCC65C /* ThreadSafe */ = {
 			isa = PBXGroup;
 			children = (
 				89C94D5A1A7B180000BCC65C /* NSObject+DCHThreadSafe.h */,
@@ -913,7 +913,7 @@
 				89C94D8B1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.h */,
 				89C94D8C1A7B2D1F00BCC65C /* NSMutableString+DCHThreadSafe.m */,
 			);
-			path = ThreadSafeMutableCollection;
+			path = ThreadSafe;
 			sourceTree = "<group>";
 		};
 		89E137361925B11000A3EFB7 = {
