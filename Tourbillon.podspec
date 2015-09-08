@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Tourbillon"
-  s.version      = "1.0.12"
+  s.version      = "1.0.13"
   s.summary      = "Code foundation for Objective-C."
 
   s.description  = <<-DESC
