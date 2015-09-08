@@ -14,6 +14,7 @@
 #import "DCHWeakObjectWrapper.h"
 #import "NSMutableArray+DCHThreadSafe.h"
 #import "NSMutableDictionary+DCHThreadSafe.h"
+#import "NSObject+DCHUUIDExtension.h"
 
 NSString * const key_DCHTrigger_Observable = @"key_DCHTrigger_Observable";
 NSString * const key_DCHTrigger_NotificationName = @"key_DCHTrigger_NotificationName";
@@ -36,13 +37,13 @@ NSString * const key_DCHTrigger_Object = @"key_DCHTrigger_Object";
     self.condition = nil;
 }
 
-- (instancetype)initWithUUID:(NSString *)uuid action:(DCHTriggerActionBlock)action onCondition:(DCHTriggerConditionBlock)condition {
-    if (DCH_IsEmpty(uuid) || DCH_IsEmpty(condition) || DCH_IsEmpty(action)) {
+- (instancetype)initWithAction:(DCHTriggerActionBlock)action onCondition:(DCHTriggerConditionBlock)condition {
+    if (!condition || !action) {
         return nil;
     }
     self = [self init];
     if (self) {
-        self.uuid = uuid;
+        self.uuid = [NSObject dch_createUUID];
         self.condition = condition;
         self.action = action;
     }
@@ -83,14 +84,17 @@ NSString * const key_DCHTrigger_Object = @"key_DCHTrigger_Object";
     return self;
 }
 
-- (void)addAction:(DCHTriggerActionBlock)action onCondition:(DCHTriggerConditionBlock)condition withUUID:(NSString *)uuid {
+- (NSString *)addAction:(DCHTriggerActionBlock)action onCondition:(DCHTriggerConditionBlock)condition {
+    NSString *result = nil;
     do {
-        if (DCH_IsEmpty(uuid) || !action || !condition) {
+        if (!action || !condition) {
             break;
         }
-        DCHTriggerCallbackPair *pair = [[DCHTriggerCallbackPair alloc] initWithUUID:uuid action:action onCondition:condition];
-        [self.callbackPairDic dch_threadSafe_setObject:pair forKey:uuid];
+        DCHTriggerCallbackPair *pair = [[DCHTriggerCallbackPair alloc] initWithAction:action onCondition:condition];
+        [self.callbackPairDic dch_threadSafe_setObject:pair forKey:pair.uuid];
+        result = pair.uuid;
     } while (NO);
+    return result;
 }
 
 - (void)removeCallbackPairWithUUID:(NSString *)uuid {
