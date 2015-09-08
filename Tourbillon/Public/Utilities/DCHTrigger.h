@@ -27,13 +27,13 @@ typedef void(^DCHTriggerEnumCallbackBlock)(DCHTriggerCallbackPair *pair, BOOL *s
 @property (nonatomic, copy, readonly) DCHTriggerConditionBlock condition;
 @property (nonatomic, copy, readonly) DCHTriggerActionBlock action;
 
-- (instancetype)initWithUUID:(NSString *)uuid action:(DCHTriggerActionBlock)action onCondition:(DCHTriggerConditionBlock)condition;
+- (instancetype)initWithAction:(DCHTriggerActionBlock)action onCondition:(DCHTriggerConditionBlock)condition;
 
 @end
 
 @interface DCHTrigger : NSObject
 
-- (void)addAction:(DCHTriggerActionBlock)action onCondition:(DCHTriggerConditionBlock)condition withUUID:(NSString *)uuid;
+- (NSString *)addAction:(DCHTriggerActionBlock)action onCondition:(DCHTriggerConditionBlock)condition;
 - (void)removeCallbackPairWithUUID:(NSString *)uuid;
 - (void)enumCallBackPiars:(DCHTriggerEnumCallbackBlock)enumCallbackBlock;
 
