@@ -74,6 +74,8 @@
 #pragma mark - Utilities
 #import "DCHStack.h"
 #import "DCHUIMainThreadGuard.h"
+#import "DCHTrigger.h"
+#import "DCHWeakObjectWrapper.h"
 
 #pragma mark - Testers
 #import "DCHAsyncTest.h"
