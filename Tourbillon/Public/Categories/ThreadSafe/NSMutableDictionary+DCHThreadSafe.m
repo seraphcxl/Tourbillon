@@ -85,7 +85,7 @@
             break;
         }
         if (![self dch_threadSafe_QueueBarrierSync:^{
-            [self dch_threadSafe_enumerateKeysAndObjectsUsingBlock:block];
+            [self enumerateKeysAndObjectsUsingBlock:block];
         }]) {
             break;
         }
