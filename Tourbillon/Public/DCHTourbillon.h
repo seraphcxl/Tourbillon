@@ -47,7 +47,6 @@
 #import "NSDictionary+DCHSortable.h"
 #import "NSNumber+DCHRandom.h"
 #import "NSThread+DCHBlockExtension.h"
-#import "UIView+DCHSnapshot.h"
 
 #pragma mark - GCDThreadSafe
 #import "NSObject+DCHThreadSafe.h"
@@ -86,6 +85,7 @@
 #import "UIColor+DCHAdditions.h"
 #import "UIColor+DCHColorful.h"
 #import "DCHUIColorEnumerator.h"
+#import "UIView+DCHSnapshot.h"
 #else
 // Mac OS X
 #import "NSColor+DCHAdditions.h"
